@@ -3,69 +3,170 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Canon Map v0.14 · 原力战略三部曲</title>
-  <meta name="description" content="原力战略三部曲 v0.14：给企业家、专家型创业者与高认知个体的 AI 时代事业复利系统。" />
-  <link rel="stylesheet" href="modules/module-style.css" />
-  <style>
-    body{background:radial-gradient(circle at 12% 0%,rgba(243,213,138,.20),transparent 27%),radial-gradient(circle at 84% 10%,rgba(99,230,190,.12),transparent 29%),linear-gradient(135deg,#050706 0%,#0b1713 45%,#07100d 100%)}
-    .shell{width:min(1720px,calc(100vw - 34px));padding-top:22px}.topbar{top:12px}.hero-entrepreneur{padding:58px 0 32px}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:22px;align-items:stretch}.hero-main{min-height:610px;display:flex;flex-direction:column;justify-content:space-between}.hero-title{font-size:clamp(54px,7.1vw,124px);line-height:.9;letter-spacing:-.078em;margin:18px 0 24px}.hero-title span{color:var(--gold2)}.hero-lead{font-size:23px;line-height:1.88;color:#f1f5ee;max-width:1060px;margin:0}.audience{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.audience span{border:1px solid rgba(201,169,97,.28);background:rgba(201,169,97,.08);border-radius:999px;color:var(--gold2);padding:8px 12px;font-weight:800;font-size:13px}.thesis{margin-top:26px;border:1px solid rgba(201,169,97,.35);border-radius:22px;background:rgba(0,0,0,.24);padding:18px 20px;color:var(--gold2);font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;line-height:1.72}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.side-stack{display:grid;grid-template-rows:auto 1fr;gap:14px}.pain-panel{border:1px solid rgba(255,181,159,.28);border-radius:26px;background:linear-gradient(180deg,rgba(71,28,20,.22),rgba(7,16,13,.70));padding:24px}.pain-panel h2{font-size:32px}.pain-list{display:grid;gap:10px;margin-top:16px}.pain{border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:13px;background:rgba(0,0,0,.16);color:#e9eee7;line-height:1.55}.promise-panel{border:1px solid rgba(201,169,97,.28);border-radius:26px;background:linear-gradient(180deg,rgba(18,42,34,.78),rgba(7,16,13,.70));padding:24px}.promise-grid{display:grid;gap:12px;margin-top:16px}.promise{display:grid;grid-template-columns:52px 1fr;gap:13px;align-items:start;border:1px solid rgba(201,169,97,.18);border-radius:18px;padding:14px;background:rgba(255,255,255,.035)}.promise b{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:rgba(201,169,97,.14);color:var(--gold2);font-size:24px}.promise h3{font-size:22px;margin:0 0 5px}.promise p{margin:0;color:var(--muted);line-height:1.6}.gold-strip{border:1px solid rgba(201,169,97,.30);border-radius:28px;background:linear-gradient(135deg,rgba(201,169,97,.14),rgba(18,42,34,.56));padding:30px;margin-top:28px}.gold-strip p{font-size:clamp(28px,3.4vw,52px);line-height:1.24;letter-spacing:-.04em;color:var(--gold2);margin:0}.section-gap{margin-top:34px}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.result-card{border:1px solid rgba(201,169,97,.22);border-radius:26px;background:rgba(255,255,255,.04);padding:24px}.result-card h3{font-size:28px;color:var(--gold2)}.result-card p{color:var(--muted);line-height:1.76}.result-card .formula{margin-top:14px}.console-intro{display:grid;grid-template-columns:.86fr 1.14fr;gap:18px;margin-bottom:18px}.console{display:grid;grid-template-columns:360px 1fr;gap:18px}.sidebar{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 110px);overflow:auto}.side-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.tree{display:grid;gap:10px}.tree-root{border:1px solid rgba(201,169,97,.25);background:rgba(201,169,97,.07);border-radius:18px;padding:13px}.tree-root b{color:var(--gold2)}.part{border:1px solid rgba(201,169,97,.18);background:rgba(255,255,255,.035);border-radius:20px;padding:12px}.part-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.part-head b{color:var(--gold2)}.tree-btn{width:100%;text-align:left;display:block;border:1px solid rgba(201,169,97,.12);background:rgba(0,0,0,.12);color:var(--muted);border-radius:14px;padding:10px 11px;margin-top:7px;cursor:pointer;font:inherit}.tree-btn:hover{border-color:var(--line2);color:var(--text);background:rgba(201,169,97,.08)}.tree-btn.active{border-color:var(--line2);color:var(--gold2);background:rgba(201,169,97,.14)}.tree-btn small{display:block;margin-top:4px;color:var(--muted);line-height:1.35}.content{min-width:0}.module-detail{display:grid;gap:16px}.module-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:16px}.crumb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.crumb span{border:1px solid rgba(201,169,97,.18);border-radius:999px;padding:6px 10px;color:var(--muted);background:rgba(255,255,255,.03);font-size:12px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mini-item{border:1px solid rgba(201,169,97,.18);background:rgba(255,255,255,.035);border-radius:16px;padding:13px}.mini-item b{color:var(--gold2)}.mini-item span{display:block;color:var(--muted);line-height:1.58;margin-top:6px;font-size:13px}.level-band{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.level{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.035);border-radius:16px;padding:12px;min-height:102px}.level b{display:block;color:var(--gold2);margin-bottom:6px}.level span{color:var(--muted);font-size:12.5px;line-height:1.45}.mobile-tip{display:none}@media(max-width:1180px){.hero-grid,.result-grid,.console-intro,.console,.module-hero,.two-col,.mini-grid,.level-band{grid-template-columns:1fr}.sidebar{position:static;max-height:none}.mobile-tip{display:block}.shell{width:min(100vw - 24px,100%)}.hero-title{font-size:clamp(44px,12.4vw,76px)}}
-  </style>
+  <title>Canon Map · 原力战略三部曲</title>
+  <meta name="description" content="原力战略三部曲 Canon Map：从原力资产、原力创业到原力OS的十二模块战略地图。" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" /><link rel="stylesheet" href="modules/module-style.css" />
 </head>
 <body>
 <main class="shell">
   <header class="topbar">
-    <div class="brand"><div class="sigil">ʸx</div><div>Canon Map · 原力战略三部曲</div></div>
-    <nav class="nav"><a href="index.html">Home</a><a href="trilogy-concept-map.html">Canon Map</a><a href="modules/index.html">Modules</a><a href="asset.html">Asset Tool</a><a href="startup.html">Startup Tool</a><a href="os.html">OS Tool</a><a href="https://github.com/moonstachain/yuanli-strategy-soul">GitHub</a></nav>
+    <div class="brand"><div class="sigil">图</div><div>Canon Map · 原力战略三部曲</div></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="trilogy-concept-map.html">Canon Map</a>
+      <a href="modules/index.html">Modules</a>
+      <a href="asset.html">Asset Tool</a>
+      <a href="startup.html">Startup Tool</a>
+      <a href="os.html">OS Tool</a>
+      <a class="external" href="https://github.com/moonstachain/yuanli-strategy-soul">GitHub</a>
+    </nav>
   </header>
 
-  <section class="hero-entrepreneur">
-    <div class="hero-grid">
-      <div class="hero-card hero-main"><div class="pad">
-        <div class="audience"><span>给企业家</span><span>给专家型创业者</span><span>给高认知个体</span><span>给正在用 AI 重构事业的人</span></div>
-        <div class="eyebrow">Canon Map v0.14 · 企业家第一眼入口</div>
-        <h1 class="hero-title">把你的<span>不可复制</span><br/>变成会复利的<span>事业系统</span></h1>
-        <p class="hero-lead">你真正缺的不是更多 AI 工具，也不是更多流量技巧，而是一套能把你的判断、经验、品味、用户洞察和商业势能沉淀下来的系统：让个人能力变成原力资产，让原力进入市场成为生意，再把每一次交付写回 OS，让下一次更准、更快、更强。</p>
-        <div class="thesis">一句话：原力战略三部曲 = 找到你的原力母体，把它放进时代与市场，再用 OS 让它自我繁殖。</div>
-        <div class="hero-actions"><a class="cta" href="#start">从这里开始</a><a class="ghost" href="asset.html">先做原力资产</a><a class="ghost" href="startup.html">进入原力创业</a><a class="ghost" href="os.html">搭建原力OS</a></div>
+  <section class="portal-hero">
+    <div class="hero-main"><div class="pad">
+      <div class="eyebrow">Canon Map v0.15 · 战略地图入口</div>
+      <h1>不是思维导图<br/><span>是事业系统地图</span></h1>
+      <p class="lead">这张图的任务不是解释更多概念，而是帮助企业家判断：我的不可复制性在哪里，如何进入市场，如何写回 OS，让下一次判断、交付、组织协同更强。</p>
+      <div class="formula">当前判定：先找到原力母体，再进入时代势能，最后写成可递归的文脉、大脑、地图、链路。
+验收标准：每个模块都有输入、判断、输出、回写和下一步接口。</div>
+      <div class="cta-row">
+        <a class="cta" href="#console">进入目录总控台</a>
+        <a class="ghost" href="asset.html">从 Asset Tool 开始</a>
+        <a class="ghost" href="modules/index.html">查看模块库</a>
+      </div>
+    </div></div>
+    <aside class="hero-aside"><div class="pad metrics">
+      <div class="metric"><b>12 modules</b><span>三部各四步，每步都必须可执行、可验收、可回写。</span></div>
+      <div class="metric"><b>7 layers</b><span>从 L1 三部曲到 L7 任务、陷阱、验收，先压缩再钻取。</span></div>
+      <div class="metric"><b>local-first</b><span>工具页只在浏览器本地保存草稿，导出后回写你的原力OS。</span></div>
+    </div></aside>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <div><h2>三部曲状态机</h2><p class="sub">不要把十二模块等权展开。先判断自己处在哪一段，再进入对应工具。</p></div>
+      <span class="state celadon">D7 · state machine</span>
+    </div>
+    <div class="grid3">
+      <article class="decision-card">
+        <span class="state slate">Part I · 原力资产</span>
+        <h3>你还没有稳定母体时，先别急着创业。</h3>
+        <p>重点是发现母体、回到母体、获得原力、显化原力，最终生成创业输入包。</p>
+        <a class="next" href="asset.html">进入 Asset Tool</a>
+      </article>
+      <article class="decision-card">
+        <span class="state seal">Part II · 原力创业</span>
+        <h3>你已有验证线索时，判断市场如何认得你。</h3>
+        <p>重点是借势、品类、模式、壁垒，最终生成 OS 回写包。</p>
+        <a class="next" href="startup.html">进入 Startup Tool</a>
+      </article>
+      <article class="decision-card">
+        <span class="state celadon">Part III · 原力OS</span>
+        <h3>你已经在交付时，必须解决组织不失忆。</h3>
+        <p>重点是文脉、大脑、战略地图、行动链路，让系统递归进化。</p>
+        <a class="next" href="os.html">进入 OS Tool</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="path-strip">
+      <div class="path-node"><b>L1</b><span>原力战略三部曲</span></div>
+      <div class="path-node"><b>L2</b><span>资产 / 创业 / OS</span></div>
+      <div class="path-node"><b>L3</b><span>十二核心模块</span></div>
+      <div class="path-node"><b>L4</b><span>概念原子卡</span></div>
+      <div class="path-node"><b>L5</b><span>当前模块详情</span></div>
+      <div class="path-node"><b>L6-L7</b><span>输入 / 判断 / 输出 / 回写 / 任务 / 验收</span></div>
+    </div>
+  </section>
+
+  <section id="console" class="section">
+    <div class="console-intro">
+      <div class="panel"><div class="pad">
+        <div class="tag">Directory</div>
+        <h2>目录树总控台</h2>
+        <p class="sub">左侧负责定位，右侧负责判断和执行。每个模块都以“为什么存在、输入什么、输出什么、写回哪里”来展开。</p>
       </div></div>
-      <aside class="side-stack">
-        <div class="pain-panel"><h2>你可能正在遇到</h2><div class="pain-list"><div class="pain">AI 正在平权大量“会做事”的能力，过去的专业优势开始被重新定价。</div><div class="pain">企业增长越来越靠创始人本人，经验很强，但难复制、难交付、难组织化。</div><div class="pain">内容、产品、团队、客户案例都在发生，但没有沉淀成一个越来越强的系统。</div></div></div>
-        <div class="promise-panel"><h2>这套体系给你的结果</h2><div class="promise-grid"><div class="promise"><b>1</b><div><h3>原力资产</h3><p>找到你不可复制的源头，把能力从“会做”升级为“会复利”。</p></div></div><div class="promise"><b>2</b><div><h3>原力创业</h3><p>把原力放进时代势能、用户心智、商业模式和系统壁垒。</p></div></div><div class="promise"><b>3</b><div><h3>原力OS</h3><p>把经验写成文脉、大脑、战略地图和行动链路，让组织不失忆。</p></div></div></div></div>
-      </aside>
+      <div class="panel"><div class="pad">
+        <div class="tag">Rule</div>
+        <h2>模块必须带行动建议</h2>
+        <div class="formula">定义 → 不是它 → 第一性问题 → 原子模块 → 输入 → 判断 → 输出 → 回写 → 任务 → 陷阱 → 下一步 → 验收</div>
+      </div></div>
     </div>
-    <div class="gold-strip"><p>这不是一套概念课，而是一套把“创始人不可复制性”变成“事业可复制系统”的方法。</p></div>
+    <section class="console">
+      <aside class="sidebar panel"><div class="pad">
+        <div class="side-title">
+          <div><div class="tag">Directory Tree</div><h2>目录索引</h2></div>
+          <a class="ghost" href="modules/index.html">子页</a>
+        </div>
+        <p class="sub mobile-tip">移动端下目录显示在内容上方。</p>
+        <div class="tree" id="tree"></div>
+      </div></aside>
+      <section class="content" id="detail"></section>
+    </section>
   </section>
 
-  <section id="start" class="section-gap">
-    <div class="section-head"><div><h2>第一眼应该看懂的三件事</h2><p class="sub">先别进入细节。企业家学员进入这张图，首先要知道它解决什么、拿到什么、怎么开始。</p></div></div>
-    <div class="result-grid">
-      <article class="result-card"><div class="tag">Why</div><h3>为什么需要它</h3><p>因为 AI 会把大量能力变成基础设施，真正稀缺的是你的原力母体、战略判断、商业势能和可复利系统。</p><div class="formula">问题：我身上什么东西，不会被 AI 和同行轻易复制？</div></article>
-      <article class="result-card"><div class="tag">What</div><h3>它给你什么</h3><p>一套从个人原力到创业飞轮，再到 OS 回写的完整系统，不是灵感、口号或工具清单。</p><div class="formula">产出：原力资产 / 原力创业 / 原力OS</div></article>
-      <article class="result-card"><div class="tag">How</div><h3>怎么开始</h3><p>先用 Asset Tool 发现母体，再用 Startup Tool 完成创业四关，最后用 OS Tool 把经验写成系统。</p><div class="formula">路径：母体 → 原力 → 市场 → 生意 → OS → 升级</div></article>
+  <section class="section data-pulse">
+    <div class="section-head">
+      <div><h2>特别裁决：一张地图不是思维导图</h2><p class="sub">原力OS里的“一张地图”，是战略地图 / 能力组件地图 / 事业系统地图。它用于取舍、优先级、路径与能力组件配置，而不是把信息画得好看。</p></div>
+      <span class="state seal">canonical ruling</span>
     </div>
   </section>
 
-  <section class="section-gap panel"><div class="pad">
-    <div class="level-band"><div class="level"><b>L1</b><span>原力战略三部曲。</span></div><div class="level"><b>L2</b><span>资产 / 创业 / OS。</span></div><div class="level"><b>L3</b><span>十二核心模块。</span></div><div class="level"><b>L4</b><span>概念原子卡。</span></div><div class="level"><b>L5</b><span>当前模块详情。</span></div><div class="level"><b>L6</b><span>定义 / 边界 / 输入 / 判断 / 输出 / 回写。</span></div><div class="level"><b>L7</b><span>任务 / 陷阱 / 下一步 / 验收。</span></div></div>
-  </div></section>
-
-  <section id="console" class="section-gap">
-    <div class="console-intro"><div class="panel"><div class="pad"><div class="tag">Directory</div><h2>目录树总控台</h2><p class="sub">左侧负责定位，右侧负责深度。总图不丢失，模块在右侧展开。</p></div></div><div class="panel"><div class="pad"><div class="tag">Rule</div><h2>每个模块都必须可执行</h2><div class="formula" style="margin-top:14px">定义 → 不是它 → 第一性问题 → 原子模块 → 输入 → 判断 → 输出 → 回写 → 任务 → 陷阱 → 下一步 → 验收</div></div></div></div>
-    <section class="console"><aside class="sidebar panel"><div class="pad"><div class="side-title"><div><div class="tag">Directory Tree</div><h2 style="font-size:28px">目录索引</h2></div><a class="ghost" href="modules/index.html">子页</a></div><p class="sub mobile-tip">移动端下目录会显示在内容上方。</p><div class="tree" id="tree"></div></div></aside><section class="content" id="detail"></section></section>
-  </section>
-
-  <section class="section-gap panel"><div class="pad"><div class="tag">OS Special Canon</div><h2>特别裁决：<span>一张地图不是思维导图</span></h2><p class="sub">原力OS里的“一张地图”，是战略地图 / 能力组件地图 / 事业系统地图。它接近 IBM CBM 的精神，但用于个人与事业OS：把事业系统拆成可判断、可取舍、可配置、可执行、可升级的能力组件。</p></div></section>
-  <footer class="footer"><div>Canon Map v0.14 · 企业家第一眼门户</div><div>先回答为什么，再进入目录树；先看到结果，再进入模块原子。</div></footer>
+  <footer class="footer"><div>Canon Map v0.15 · 原力战略三部曲</div><div>先看到判断，再进入目录树；先拿到输出，再回写系统。</div></footer>
 </main>
+
 <script src="modules/module-data.js"></script>
 <script>
-const parts=[{name:'第一部：原力资产',path:'发现母体 → 回到母体 → 获得原力 → 显化原力',ids:['A1','A2','A3','A4']},{name:'第二部：原力创业',path:'原力借势 → 品类独创 → 模式升维 → 壁垒锁定',ids:['B1','B2','B3','B4']},{name:'第三部：原力OS',path:'一纸文脉 → 一个大脑 → 一张地图 → 一条链路',ids:['C1','C2','C3','C4']}];
+const parts=[
+  {name:'第一部：原力资产',path:'发现母体 → 回到母体 → 获得原力 → 显化原力',tool:'asset.html',ids:['A1','A2','A3','A4']},
+  {name:'第二部：原力创业',path:'原力借势 → 品类独创 → 模式升维 → 壁垒锁定',tool:'startup.html',ids:['B1','B2','B3','B4']},
+  {name:'第三部：原力OS',path:'一纸文脉 → 一个大脑 → 一张地图 → 一条链路',tool:'os.html',ids:['C1','C2','C3','C4']}
+];
 function list(items){return `<div class="list">${items.map(x=>`<div class="item"><b>${x.split('：')[0]}</b><span>${x.includes('：')?x.substring(x.indexOf('：')+1):x}</span></div>`).join('')}</div>`}
 function compactList(items){return `<div class="mini-grid">${items.map(x=>`<div class="mini-item"><b>${x.split('：')[0]}</b><span>${x.includes('：')?x.substring(x.indexOf('：')+1):x}</span></div>`).join('')}</div>`}
-function buildTree(){const root=document.getElementById('tree');root.innerHTML=`<div class="tree-root"><b>L1 · 原力战略三部曲</b><small style="display:block;color:var(--muted);margin-top:6px">母体 → 原力 → 创业 → OS → 母体升级</small></div>`+parts.map(p=>`<div class="part"><div class="part-head"><b>L2 · ${p.name}</b><span class="pill">${p.ids.length}</span></div><small style="color:var(--muted);line-height:1.5">${p.path}</small>${p.ids.map(id=>{const m=window.YUANLI_BY_ID[id];return `<button class="tree-btn" data-id="${id}"><b>L3 · ${id} ${m.name}</b><small>${m.subtitle}</small></button>`}).join('')}</div>`).join('');root.querySelectorAll('.tree-btn').forEach(btn=>btn.onclick=()=>selectModule(btn.dataset.id,true));}
 function section(title,body){return `<section class="section panel"><div class="pad"><div class="tag">${title}</div>${body}</div></section>`}
-function selectModule(id,push){const m=window.YUANLI_BY_ID[id]||window.YUANLI_BY_ID.A1;document.querySelectorAll('.tree-btn').forEach(b=>b.classList.toggle('active',b.dataset.id===m.id));if(push)history.replaceState(null,'','#'+m.id);const part=parts.find(p=>p.ids.includes(m.id));document.getElementById('detail').innerHTML=`<div class="module-detail"><section class="module-hero"><div class="hero-card"><div class="pad"><div class="crumb"><span>L1 原力战略三部曲</span><span>L2 ${part.name}</span><span>L3 ${m.id} ${m.name}</span></div><div class="eyebrow">L5 Module Detail · ${m.id} · ${m.label}</div><h1>${m.name}<br/><span>${m.subtitle}</span></h1><p class="lead">${m.definition}</p><div class="formula" style="margin-top:18px">第一性问题：${m.question}\n工具接口：${m.tool}\n深链接：#${m.id}</div><div class="cta-row"><a class="cta" href="modules/${m.slug}">打开独立子页</a><a class="ghost" href="modules/index.html">模块索引</a></div></div></div><aside class="hero-card"><div class="pad"><p class="quote">${m.firstPrinciple}</p></div></aside></section>${section('L4 · 概念原子卡',`<div class="two-col"><div><h2>它是什么</h2><p class="lead">${m.definition}</p></div><div><h2>不是它</h2><div class="formula">${m.not}</div></div></div>`)}${section('L6 · 原子模块',`<h2>内部组件</h2>${compactList(m.atoms)}`)}<div class="two-col">${section('L6 · 输入材料',`<h2>进入前必须准备</h2>${list(m.inputs)}`)}${section('L6 · 判断标准',`<h2>如何判断成立</h2>${list(m.standards)}`)}</div><div class="two-col">${section('L6 · 输出物',`<h2>必须产出</h2>${list(m.outputs)}`)}${section('L6 · 回写位置',`<h2>必须写回</h2>${list(m.writeback)}`)}</div><div class="two-col">${section('L7 · 可执行任务',`<h2>人机协作任务</h2>${list(m.tasks)}`)}${section('L7 · 常见陷阱',`<h2>反模式清单</h2>${list(m.traps)}`)}</div>${section('L7 · 下一步接口',`<h2>递进关系</h2><div class="formula">${m.next}</div>`)}${section('最终验收',`<div class="formula">这个模块是否有明确输入？\n是否有清晰判断标准？\n是否生成了可复用输出？\n是否写回到文脉、大脑、地图、链路或母体？\n是否让下一次更强？</div>`)}</div>`;}
-buildTree();selectModule((location.hash||'#A1').replace('#',''),false);window.addEventListener('hashchange',()=>selectModule((location.hash||'#A1').replace('#',''),false));
+function buildTree(){
+  const root=document.getElementById('tree');
+  root.innerHTML=`<div class="tree-root"><b>L1 · 原力战略三部曲</b><span class="sub">母体 → 原力 → 市场 → 生意 → OS → 母体升级</span></div>`+
+  parts.map(p=>`<div class="part"><div class="part-head"><b>L2 · ${p.name}</b><a class="pill" href="${p.tool}">Tool</a></div><p class="sub">${p.path}</p>${p.ids.map(id=>{const m=window.YUANLI_BY_ID[id];return `<button class="tree-btn" data-id="${id}"><b>L3 · ${id} ${m.name}</b><small>${m.subtitle}</small></button>`}).join('')}</div>`).join('');
+  root.querySelectorAll('.tree-btn').forEach(btn=>btn.onclick=()=>selectModule(btn.dataset.id,true));
+}
+function selectModule(id,push){
+  const m=window.YUANLI_BY_ID[id]||window.YUANLI_BY_ID.A1;
+  document.querySelectorAll('.tree-btn').forEach(b=>b.classList.toggle('active',b.dataset.id===m.id));
+  if(push)history.replaceState(null,'','#'+m.id);
+  const part=parts.find(p=>p.ids.includes(m.id));
+  document.getElementById('detail').innerHTML=`<div class="module-detail">
+    <section class="module-hero">
+      <div class="hero-main"><div class="pad">
+        <div class="crumb"><span>L1 原力战略三部曲</span><span>L2 ${part.name}</span><span>L3 ${m.id} ${m.name}</span></div>
+        <div class="eyebrow">Module Detail · ${m.id} · ${m.label}</div>
+        <h1>${m.name}<br/><span>${m.subtitle}</span></h1>
+        <p class="lead">${m.definition}</p>
+        <div class="formula">第一性问题：${m.question}
+工具接口：${m.tool}
+深链接：#${m.id}</div>
+        <div class="cta-row"><a class="cta" href="modules/${m.slug}">打开独立子页</a><a class="ghost" href="${part.tool}">进入对应工具</a></div>
+      </div></div>
+      <aside class="hero-aside"><div class="pad"><p class="quote">${m.firstPrinciple}</p></div></aside>
+    </section>
+    ${section('L4 · 概念原子卡',`<div class="two-col"><div><h2>它是什么</h2><p class="lead">${m.definition}</p></div><div><h2>不是它</h2><div class="formula">${m.not}</div></div></div>`)}
+    ${section('L6 · 原子模块',`<h2>内部组件</h2>${compactList(m.atoms)}`)}
+    <div class="two-col">${section('L6 · 输入材料',`<h2>进入前必须准备</h2>${list(m.inputs)}`)}${section('L6 · 判断标准',`<h2>如何判断成立</h2>${list(m.standards)}`)}</div>
+    <div class="two-col">${section('L6 · 输出物',`<h2>必须产出</h2>${list(m.outputs)}`)}${section('L6 · 回写位置',`<h2>必须写回</h2>${list(m.writeback)}`)}</div>
+    <div class="two-col">${section('L7 · 可执行任务',`<h2>人机协作任务</h2>${list(m.tasks)}`)}${section('L7 · 常见陷阱',`<h2>反模式清单</h2>${list(m.traps)}`)}</div>
+    ${section('L7 · 下一步接口',`<h2>递进关系</h2><div class="formula">${m.next}</div>`)}
+    ${section('最终验收',`<div class="formula">这个模块是否有明确输入？
+是否有清晰判断标准？
+是否生成了可复用输出？
+是否写回到文脉、大脑、地图、链路或母体？
+是否让下一次更强？</div>`)}
+  </div>`;
+}
+buildTree();
+selectModule((location.hash||'#A1').replace('#',''),false);
+window.addEventListener('hashchange',()=>selectModule((location.hash||'#A1').replace('#',''),false));
 </script>
 </body>
 </html>
