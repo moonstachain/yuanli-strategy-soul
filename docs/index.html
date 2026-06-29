@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>原力战略三部曲 · Soul Cockpit</title>
-  <meta name="description" content="原力战略三部曲 Soul Operating Base：概念宪法、入口仓制度、OS 四组件、任务治理与递归回写。" />
+  <meta name="description" content="原力战略三部曲 Soul Operating Base：概念宪法、原力借势、入口仓制度、OS 四组件、任务治理与递归回写。" />
   <style>
     :root {
       --bg: #08110f;
@@ -17,6 +17,7 @@
       --muted: #9fb3a7;
       --green: #63e6be;
       --red: #ff8f70;
+      --blue: #8ec5ff;
       --shadow: 0 30px 90px rgba(0,0,0,.38);
       --radius: 28px;
     }
@@ -179,10 +180,10 @@
     .metric b { display: block; color: var(--gold-2); font-size: 28px; margin-bottom: 8px; }
     .metric span { color: var(--muted); line-height: 1.65; }
 
-    .section { margin-top: 34px; }
+    .section { margin-top: 34px; scroll-margin-top: 120px; }
     .section-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin: 0 0 18px; }
     h2 { font-size: clamp(28px, 4vw, 48px); margin: 0; letter-spacing: -.04em; }
-    .sub { color: var(--muted); line-height: 1.7; max-width: 660px; margin: 8px 0 0; }
+    .sub { color: var(--muted); line-height: 1.7; max-width: 760px; margin: 8px 0 0; }
 
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
@@ -210,6 +211,107 @@
       border-radius: 999px;
       padding: 6px 10px;
       background: rgba(201,169,97,.08);
+    }
+
+    .momentum-grid {
+      display: grid;
+      grid-template-columns: .96fr 1.04fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .momentum-core {
+      min-height: 520px;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+    }
+    .compass {
+      width: min(460px, 100%);
+      aspect-ratio: 1;
+      border: 1px solid rgba(201,169,97,.24);
+      border-radius: 50%;
+      position: relative;
+      background:
+        radial-gradient(circle, rgba(201,169,97,.22) 0 10%, transparent 10.5% 100%),
+        conic-gradient(from 45deg, rgba(201,169,97,.08), rgba(99,230,190,.12), rgba(201,169,97,.08), rgba(142,197,255,.10), rgba(201,169,97,.08));
+      box-shadow: inset 0 0 80px rgba(0,0,0,.32), 0 0 60px rgba(99,230,190,.08);
+    }
+    .compass::before, .compass::after {
+      content: "";
+      position: absolute;
+      inset: 50%;
+      width: 88%;
+      height: 1px;
+      transform-origin: left center;
+      background: linear-gradient(90deg, rgba(201,169,97,.5), transparent);
+    }
+    .compass::before { transform: translate(-50%, -50%) rotate(0deg); }
+    .compass::after { transform: translate(-50%, -50%) rotate(90deg); }
+    .center-seal {
+      position: absolute;
+      inset: 50%;
+      transform: translate(-50%, -50%);
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,169,97,.42);
+      background: rgba(8,17,15,.78);
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 18px;
+      box-shadow: 0 0 36px rgba(201,169,97,.18);
+      z-index: 2;
+    }
+    .center-seal strong { color: var(--gold-2); font-size: 28px; display: block; margin-bottom: 8px; }
+    .center-seal span { color: var(--muted); font-size: 13px; line-height: 1.55; }
+    .axis-node {
+      position: absolute;
+      width: 168px;
+      min-height: 112px;
+      border: 1px solid rgba(201,169,97,.30);
+      background: rgba(8,17,15,.80);
+      border-radius: 22px;
+      padding: 16px;
+      z-index: 3;
+      box-shadow: 0 20px 50px rgba(0,0,0,.28);
+    }
+    .axis-node strong { color: var(--gold-2); display: block; margin-bottom: 6px; }
+    .axis-node small { color: var(--muted); line-height: 1.55; display: block; }
+    .axis-node:nth-child(2) { top: -10px; left: 50%; transform: translateX(-50%); }
+    .axis-node:nth-child(3) { right: -10px; top: 50%; transform: translateY(-50%); }
+    .axis-node:nth-child(4) { bottom: -10px; left: 50%; transform: translateX(-50%); }
+    .axis-node:nth-child(5) { left: -10px; top: 50%; transform: translateY(-50%); }
+
+    .momentum-list { display: grid; gap: 14px; }
+    .layer {
+      position: relative;
+      z-index: 1;
+      border: 1px solid rgba(201,169,97,.22);
+      background: rgba(255,255,255,.04);
+      border-radius: 22px;
+      padding: 18px;
+    }
+    .layer-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 10px; }
+    .layer h3 { margin: 0; font-size: 22px; }
+    .layer code {
+      color: var(--gold-2);
+      border: 1px solid rgba(201,169,97,.22);
+      background: rgba(0,0,0,.18);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .layer p { margin: 0; color: var(--muted); line-height: 1.7; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .pill {
+      display: inline-flex;
+      color: #d8e0d7;
+      border: 1px solid rgba(201,169,97,.18);
+      background: rgba(201,169,97,.06);
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 13px;
     }
 
     .flow {
@@ -274,12 +376,19 @@
       line-height: 1.8;
     }
 
+    @media (max-width: 1100px) {
+      .momentum-grid { grid-template-columns: 1fr; }
+      .momentum-core { min-height: auto; }
+    }
     @media (max-width: 980px) {
       .hero, .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
       .flow { grid-template-columns: 1fr; }
       .topbar { position: static; border-radius: 24px; align-items: flex-start; flex-direction: column; }
       nav { justify-content: flex-start; }
       .hero-inner { padding: 30px; }
+      .compass { border-radius: 28px; aspect-ratio: auto; display: grid; gap: 12px; padding: 16px; }
+      .compass::before, .compass::after { display: none; }
+      .center-seal, .axis-node { position: static; transform: none !important; width: auto; height: auto; min-height: auto; }
     }
   </style>
 </head>
@@ -289,6 +398,7 @@
       <div class="brand"><div class="sigil">ʸx</div><div>原力战略三部曲 · Soul Cockpit</div></div>
       <nav>
         <a href="#trilogy">三部曲</a>
+        <a href="#momentum">原力借势</a>
         <a href="#os">原力OS</a>
         <a href="#intake">入口仓</a>
         <a href="#kanban">看板</a>
@@ -299,11 +409,12 @@
     <section class="hero">
       <div class="hero-card">
         <div class="hero-inner">
-          <div class="eyebrow">Soul Operating Base · v0.2</div>
+          <div class="eyebrow">Soul Operating Base · v0.3</div>
           <h1>所有原力衍生任务，先回到 <span>ʸx</span></h1>
           <p class="lead">本仓是原力战略三部曲的唯一入口仓：先裁决归属，再分发执行；先定义输出，再交给 Codex；先完成任务，再递归回写。</p>
           <div class="formula">母公理：ʸx = 做会自我繁殖的事
 三部曲：原力资产 / 原力创业 / 原力OS
+创业新四关：原力借势 → 品类独创 → 模式升维 → 壁垒锁定
 入口流：Issue → 裁决 → 拆解 → 分发 → 验收 → 回写</div>
         </div>
       </div>
@@ -311,7 +422,7 @@
         <div class="hero-side">
           <div class="metric"><b>1</b><span>唯一母公理：做会自我繁殖的事，不做一次性的事。</span></div>
           <div class="metric"><b>3</b><span>三本书：找到你、变现你、系统你。</span></div>
-          <div class="metric"><b>4</b><span>OS 四组件：文脉、大脑、地图、链路。</span></div>
+          <div class="metric"><b>4</b><span>创业四关：借势、独创、升维、锁定。</span></div>
           <div class="metric"><b>6</b><span>共享脊骨：ʸx、你×AI、借势×合力、四关、OSA、递归回写。</span></div>
         </div>
       </aside>
@@ -328,18 +439,75 @@
         <article class="card">
           <div class="tag">Part I · Asset</div>
           <h3>原力资产</h3>
-          <p>公式：你 × AI。把“你”这颗最贵算法解码出来，经过原力U，形成会复利的你。</p>
+          <p>公式：你 × AI。把“你”这颗最贵算法解码出来，完成觉醒，生成合力，形成会复利的你。</p>
         </article>
         <article class="card">
           <div class="tag">Part II · Startup</div>
           <h3>原力创业</h3>
-          <p>公式：借势 × 合力。把原力资产送进市场、现金流与壁垒系统，形成会复利的生意。</p>
+          <p>公式：借势 × 合力。拿着已经确认的原力资产，先完成借势，再进入品类、模式与壁垒。</p>
         </article>
         <article class="card">
           <div class="tag">Part III · OS</div>
           <h3>原力OS</h3>
           <p>公式：文脉 × 大脑 × 地图 × 链路 × 回写。把做事系统变成会自我繁殖的工作生命体。</p>
         </article>
+      </div>
+    </section>
+
+    <section id="momentum" class="section">
+      <div class="section-head">
+        <div>
+          <h2>原力借势 · 势能导航</h2>
+          <p class="sub">“原力觉醒”迁移回《原力资产》；《原力创业》第一关正式升级为“原力借势”：拿着已经确认的原力资产，寻找它最该搭上的时代顺风。</p>
+        </div>
+      </div>
+      <div class="momentum-grid">
+        <div class="panel momentum-core">
+          <div class="compass">
+            <div class="center-seal"><div><strong>借势 × 合力</strong><span>不是追风口，而是让原力资产进入时代窗口。</span></div></div>
+            <div class="axis-node"><strong>宏周期势</strong><small>康波 · 技术范式 · AI渗透率 · 千日窗口</small></div>
+            <div class="axis-node"><strong>中结构势</strong><small>PEST / PESTEL · 政策 · 经济 · 社会 · 技术</small></div>
+            <div class="axis-node"><strong>微入口势</strong><small>用户心智 · 心理账户 · 渠道窗口 · 预算迁移</small></div>
+            <div class="axis-node"><strong>合力匹配</strong><small>母体定义卡 · 三圈交集 · 非线性回报</small></div>
+          </div>
+        </div>
+        <div class="momentum-list">
+          <article class="layer">
+            <div class="layer-head"><h3>01 宏周期势</h3><code>K5 → K6</code></div>
+            <p>先判断大时间：第五康波深冬还是第六康波初春？机会属于 K5 存量整合，还是 K6 增量开新？</p>
+            <div class="pills"><span class="pill">康波窗口判断卡</span><span class="pill">技术 S 曲线</span><span class="pill">千日窗口</span></div>
+          </article>
+          <article class="layer">
+            <div class="layer-head"><h3>02 中结构势</h3><code>PEST / PESTEL</code></div>
+            <p>把“时代来了”翻译成结构变化：政策、经济、社会、技术、法律、环境，哪一项正在改变供需与成本？</p>
+            <div class="pills"><span class="pill">政策势</span><span class="pill">经济势</span><span class="pill">社会势</span><span class="pill">技术势</span></div>
+          </article>
+          <article class="layer">
+            <div class="layer-head"><h3>03 微入口势</h3><code>Mind × Budget</code></div>
+            <p>宏观趋势必须落到小入口：谁最先感到变化？旧方案哪里失效？预算从哪里迁移？谁愿意先付费？</p>
+            <div class="pills"><span class="pill">甜用户</span><span class="pill">贵任务</span><span class="pill">心理账户</span><span class="pill">渠道窗口</span></div>
+          </article>
+          <article class="layer">
+            <div class="layer-head"><h3>04 合力匹配</h3><code>Force Fit</code></div>
+            <p>不是所有大势都是你的势。只有能放大你的非对称优势、非理性痴迷与非线性回报的势，才叫原力借势。</p>
+            <div class="pills"><span class="pill">原力借势卡</span><span class="pill">机会假设卡</span><span class="pill">母体定义卡</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="panel">
+        <div class="panel-pad">
+          <p class="quote">原力借势 = 宏周期势 × 中结构势 × 微入口势 × 合力匹配</p>
+          <div class="flow" style="margin-top:24px;">
+            <div class="step"><strong>01 合力输入</strong><span>从原力资产读取母体定义卡、三圈交集、天才区。</span></div>
+            <div class="step"><strong>02 康波判断</strong><span>识别 K5/K6、技术范式、千日窗口。</span></div>
+            <div class="step"><strong>03 PEST 扫描</strong><span>政策、经济、社会、技术结构变化。</span></div>
+            <div class="step"><strong>04 入口假设</strong><span>甜用户、贵任务、预算来源、品类机会。</span></div>
+            <div class="step"><strong>05 通关输出</strong><span>势能地图、借势卡、机会假设卡。</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -427,7 +595,7 @@
 
     <footer>
       <div>原力战略三部曲 · Soul Operating Base</div>
-      <div>找到你 → 变现你 → 系统你 → 复利你</div>
+      <div>找到你 → 借势你 → 变现你 → 系统你 → 复利你</div>
     </footer>
   </main>
 </body>
