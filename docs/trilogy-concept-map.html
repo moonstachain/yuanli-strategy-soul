@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Canon Map v0.12 · 原力战略三部曲正典总控台</title>
-  <meta name="description" content="原力战略三部曲 v0.12 正典总控台：左侧一级二级三级目录树，右侧五六七级模块详情。" />
+  <title>Canon Map v0.13 · 原力战略三部曲正典门户</title>
+  <meta name="description" content="原力战略三部曲 v0.13 正典门户：首屏门户、阅读路径、操作路径、左侧目录树、右侧模块详情。" />
   <link rel="stylesheet" href="modules/module-style.css" />
   <style>
-    .shell{width:min(1760px,calc(100vw - 34px))}.console{display:grid;grid-template-columns:360px 1fr;gap:18px;margin-top:24px}.sidebar{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 110px);overflow:auto}.side-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.tree{display:grid;gap:10px}.tree-root{border:1px solid rgba(201,169,97,.25);background:rgba(201,169,97,.07);border-radius:18px;padding:13px}.tree-root b{color:var(--gold2)}.part{border:1px solid rgba(201,169,97,.18);background:rgba(255,255,255,.035);border-radius:20px;padding:12px}.part-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.part-head b{color:var(--gold2)}.tree-btn{width:100%;text-align:left;display:block;border:1px solid rgba(201,169,97,.12);background:rgba(0,0,0,.12);color:var(--muted);border-radius:14px;padding:10px 11px;margin-top:7px;cursor:pointer;font:inherit}.tree-btn:hover{border-color:var(--line2);color:var(--text);background:rgba(201,169,97,.08)}.tree-btn.active{border-color:var(--line2);color:var(--gold2);background:rgba(201,169,97,.14)}.tree-btn small{display:block;margin-top:4px;color:var(--muted);line-height:1.35}.content{min-width:0}.hero.compact{padding:0 0 20px}.module-detail{display:grid;gap:16px}.module-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:16px}.crumb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.crumb span{border:1px solid rgba(201,169,97,.18);border-radius:999px;padding:6px 10px;color:var(--muted);background:rgba(255,255,255,.03);font-size:12px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mini-item{border:1px solid rgba(201,169,97,.18);background:rgba(255,255,255,.035);border-radius:16px;padding:13px}.mini-item b{color:var(--gold2)}.mini-item span{display:block;color:var(--muted);line-height:1.58;margin-top:6px;font-size:13px}.level-band{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.level{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.035);border-radius:16px;padding:12px;min-height:102px}.level b{display:block;color:var(--gold2);margin-bottom:6px}.level span{color:var(--muted);font-size:12.5px;line-height:1.45}.mobile-tip{display:none}@media(max-width:1180px){.console,.module-hero,.two-col,.mini-grid,.level-band{grid-template-columns:1fr}.sidebar{position:static;max-height:none}.mobile-tip{display:block}.shell{width:min(100vw - 24px,100%)}}
+    :root{--deep:#040806;--veil:rgba(4,8,6,.58);--warm:rgba(201,169,97,.12);--emerald:rgba(99,230,190,.10)}
+    body{background:radial-gradient(circle at 18% 0%,rgba(243,213,138,.18),transparent 28%),radial-gradient(circle at 88% 8%,rgba(99,230,190,.13),transparent 30%),linear-gradient(135deg,#050706 0%,#0a1713 48%,#07100d 100%)}
+    .shell{width:min(1720px,calc(100vw - 34px));padding-top:22px}.topbar{top:12px}.portal{padding:58px 0 32px}.portal-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:22px;align-items:stretch}.portal-main{min-height:560px;display:flex;flex-direction:column;justify-content:space-between}.portal-title{font-size:clamp(56px,7.6vw,132px);line-height:.88;letter-spacing:-.08em;margin:16px 0 22px}.portal-title span{color:var(--gold2)}.portal-lead{font-size:22px;line-height:1.9;color:#eef4eb;max-width:1040px;margin:0}.portal-kicker{display:inline-flex;color:var(--gold2);border:1px solid var(--line);background:rgba(201,169,97,.08);padding:9px 13px;border-radius:999px;font-size:13px}.axiom{margin-top:26px}.portal-side{display:grid;gap:14px}.num-card{border:1px solid rgba(201,169,97,.22);border-radius:24px;background:linear-gradient(180deg,rgba(18,42,34,.72),rgba(7,16,13,.62));padding:22px;box-shadow:0 20px 60px rgba(0,0,0,.24)}.num-card b{display:block;font-size:38px;color:var(--gold2);line-height:1;margin-bottom:8px}.num-card span{display:block;color:var(--muted);line-height:1.65}.portal-strip{border:1px solid rgba(201,169,97,.26);border-radius:28px;background:linear-gradient(135deg,rgba(201,169,97,.13),rgba(18,42,34,.54));padding:28px;margin-top:30px}.portal-strip p{font-size:clamp(28px,3.6vw,54px);line-height:1.23;letter-spacing:-.04em;color:var(--gold2);margin:0}.path-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.path-card{border:1px solid rgba(201,169,97,.20);border-radius:24px;background:rgba(255,255,255,.035);padding:22px}.path-card h3{color:var(--gold2);font-size:26px}.path-card p{color:var(--muted);line-height:1.75}.portal-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.console-wrap{margin-top:34px}.console-intro{display:grid;grid-template-columns:.86fr 1.14fr;gap:18px;margin-bottom:18px}.console{display:grid;grid-template-columns:360px 1fr;gap:18px}.sidebar{position:sticky;top:88px;align-self:start;max-height:calc(100vh - 110px);overflow:auto}.side-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}.tree{display:grid;gap:10px}.tree-root{border:1px solid rgba(201,169,97,.25);background:rgba(201,169,97,.07);border-radius:18px;padding:13px}.tree-root b{color:var(--gold2)}.part{border:1px solid rgba(201,169,97,.18);background:rgba(255,255,255,.035);border-radius:20px;padding:12px}.part-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}.part-head b{color:var(--gold2)}.tree-btn{width:100%;text-align:left;display:block;border:1px solid rgba(201,169,97,.12);background:rgba(0,0,0,.12);color:var(--muted);border-radius:14px;padding:10px 11px;margin-top:7px;cursor:pointer;font:inherit}.tree-btn:hover{border-color:var(--line2);color:var(--text);background:rgba(201,169,97,.08)}.tree-btn.active{border-color:var(--line2);color:var(--gold2);background:rgba(201,169,97,.14)}.tree-btn small{display:block;margin-top:4px;color:var(--muted);line-height:1.35}.content{min-width:0}.module-detail{display:grid;gap:16px}.module-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:16px}.crumb{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.crumb span{border:1px solid rgba(201,169,97,.18);border-radius:999px;padding:6px 10px;color:var(--muted);background:rgba(255,255,255,.03);font-size:12px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mini-item{border:1px solid rgba(201,169,97,.18);background:rgba(255,255,255,.035);border-radius:16px;padding:13px}.mini-item b{color:var(--gold2)}.mini-item span{display:block;color:var(--muted);line-height:1.58;margin-top:6px;font-size:13px}.level-band{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}.level{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.035);border-radius:16px;padding:12px;min-height:102px}.level b{display:block;color:var(--gold2);margin-bottom:6px}.level span{color:var(--muted);font-size:12.5px;line-height:1.45}.portal-section{margin-top:34px}.reader-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.flow-node{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.035);border-radius:18px;padding:15px}.flow-node b{display:block;color:var(--gold2);margin-bottom:7px}.flow-node span{color:var(--muted);font-size:13px;line-height:1.48}.mobile-tip{display:none}@media(max-width:1180px){.portal-grid,.console-intro,.console,.module-hero,.two-col,.mini-grid,.level-band,.path-grid,.reader-flow{grid-template-columns:1fr}.sidebar{position:static;max-height:none}.mobile-tip{display:block}.shell{width:min(100vw - 24px,100%)}.portal-title{font-size:clamp(46px,13vw,78px)}}
   </style>
 </head>
 <body>
@@ -25,20 +27,49 @@
     </nav>
   </header>
 
-  <section class="hero compact">
-    <div class="hero-card"><div class="pad">
-      <div class="eyebrow">Canon Map v0.12 · 左侧目录树 / 右侧模块详情</div>
-      <h1>总图不丢失，<span>模块在右侧展开</span></h1>
-      <p class="lead">现在的正典地图不是孤立子页系统，而是总控台：左侧固定一级、二级、三级目录，右侧承载五、六、七级深度内容。点击模块后，左侧高亮当前路径，右侧展开定义、边界、原子、输入、判断、输出、回写、任务、陷阱和验收。</p>
-      <div class="formula" style="margin-top:18px">L1 原力战略三部曲
-L2 原力资产 / 原力创业 / 原力OS
-L3 十二核心模块
-L4 概念原子卡
-L5-L7 在右侧模块详情中展开</div>
-    </div></div>
+  <section class="portal">
+    <div class="portal-grid">
+      <div class="hero-card portal-main"><div class="pad">
+        <div class="portal-kicker">Canon Map v0.13 · 正典门户总入口</div>
+        <h1 class="portal-title">找到母体，<span>获得原力；</span><br/>借势成事，<span>写成系统</span></h1>
+        <p class="portal-lead">原力战略三部曲，是一套给 AI 时代个人与事业使用的复利操作系统：先从同质化能力中发现不可复制的原力母体，再把原力放进时代势能、用户心智、商业模式与壁垒，最后写入文脉、大脑、战略地图与行动链路，让每一次行动都成为下一次能力。</p>
+        <div class="formula axiom">母公理：ʸx = 做会自我繁殖的事，不做一次性的事。
+总路径：原力资产 → 原力创业 → 原力OS → 母体升级
+阅读方式：先理解门户，再进入左侧目录树；先看总图，再展开模块原子。</div>
+        <div class="portal-actions"><a class="cta" href="#console">进入目录树总控台</a><a class="ghost" href="asset.html">Asset Tool</a><a class="ghost" href="startup.html">Startup Tool</a><a class="ghost" href="os.html">OS Tool</a></div>
+      </div></div>
+      <aside class="hero-card"><div class="pad portal-side">
+        <div class="num-card"><b>1</b><span>一条母公理：只做会自我繁殖的事。</span></div>
+        <div class="num-card"><b>3</b><span>三部递进：资产、创业、OS。</span></div>
+        <div class="num-card"><b>12</b><span>十二个核心模块，每个都有输入、判断、输出、回写。</span></div>
+        <div class="num-card"><b>∞</b><span>每一次行动，都回写为下一次能力。</span></div>
+      </div></aside>
+    </div>
+    <div class="portal-strip"><p>概念不是堆满，而是正交；正交不是简化，而是更高阶的完备。</p></div>
   </section>
 
-  <section class="section panel"><div class="pad">
+  <section class="portal-section">
+    <div class="section-head"><div><h2>这张地图解决什么</h2><p class="sub">它不是普通目录，而是把“人、事、法”组织成一套可执行、可验收、可回写的生命链。</p></div></div>
+    <div class="reader-flow">
+      <div class="flow-node"><b>母体</b><span>持续生成判断、作品、关系和意义的底层结构。</span></div>
+      <div class="flow-node"><b>原力</b><span>母体被看见、训练、外化后的可调用能力。</span></div>
+      <div class="flow-node"><b>市场</b><span>真实世界是否靠近、相信、付费、复用、共建。</span></div>
+      <div class="flow-node"><b>生意</b><span>把原力放入时代势能、用户心智和模式。</span></div>
+      <div class="flow-node"><b>OS</b><span>把经验写成文脉、大脑、战略地图与链路。</span></div>
+      <div class="flow-node"><b>升级</b><span>系统回写母体，让下一轮更清楚、更快、更强。</span></div>
+    </div>
+  </section>
+
+  <section class="portal-section">
+    <div class="section-head"><div><h2>三种进入方式</h2><p class="sub">读者可以按认知、操作、模块三条路径进入同一套正典。</p></div></div>
+    <div class="path-grid">
+      <article class="path-card"><div class="tag">Read</div><h3>先读总图</h3><p>理解母公理、三部边界和十二模块递进，建立全局心智地图。</p></article>
+      <article class="path-card"><div class="tag">Operate</div><h3>直接填工具</h3><p>从 Asset Tool 到 Startup Tool，再到 OS Tool，把体系变成可执行任务。</p></article>
+      <article class="path-card"><div class="tag">Deep Dive</div><h3>进入模块</h3><p>在左侧目录树选择任意核心模块，右侧展开五六七级细节。</p></article>
+    </div>
+  </section>
+
+  <section class="portal-section panel"><div class="pad">
     <div class="level-band">
       <div class="level"><b>L1</b><span>原力战略三部曲。</span></div>
       <div class="level"><b>L2</b><span>资产 / 创业 / OS。</span></div>
@@ -50,22 +81,28 @@ L5-L7 在右侧模块详情中展开</div>
     </div>
   </div></section>
 
-  <section class="console">
-    <aside class="sidebar panel"><div class="pad">
-      <div class="side-title"><div><div class="tag">Directory Tree</div><h2 style="font-size:28px">目录索引</h2></div><a class="ghost" href="modules/index.html">子页</a></div>
-      <p class="sub mobile-tip">移动端下目录会显示在内容上方。</p>
-      <div class="tree" id="tree"></div>
-    </div></aside>
-    <section class="content" id="detail"></section>
+  <section id="console" class="console-wrap">
+    <div class="console-intro">
+      <div class="panel"><div class="pad"><div class="tag">Console</div><h2>目录树总控台</h2><p class="sub">左侧负责定位，右侧负责深度。你不会在子页中迷路，也不会在总图中丢失层级。</p></div></div>
+      <div class="panel"><div class="pad"><div class="tag">Rule</div><h2>每个模块都必须可执行</h2><div class="formula" style="margin-top:14px">定义 → 不是它 → 第一性问题 → 原子模块 → 输入 → 判断 → 输出 → 回写 → 任务 → 陷阱 → 下一步 → 验收</div></div></div>
+    </div>
+    <section class="console">
+      <aside class="sidebar panel"><div class="pad">
+        <div class="side-title"><div><div class="tag">Directory Tree</div><h2 style="font-size:28px">目录索引</h2></div><a class="ghost" href="modules/index.html">子页</a></div>
+        <p class="sub mobile-tip">移动端下目录会显示在内容上方。</p>
+        <div class="tree" id="tree"></div>
+      </div></aside>
+      <section class="content" id="detail"></section>
+    </section>
   </section>
 
-  <section class="section panel"><div class="pad">
+  <section class="portal-section panel"><div class="pad">
     <div class="tag">OS Special Canon</div>
     <h2>特别裁决：<span>一张地图不是思维导图</span></h2>
     <p class="sub">原力OS里的“一张地图”，是战略地图 / 能力组件地图 / 事业系统地图。它接近 IBM CBM 的精神，但用于个人与事业OS：把事业系统拆成可判断、可取舍、可配置、可执行、可升级的能力组件。</p>
   </div></section>
 
-  <footer class="footer"><div>Canon Map v0.12 · 左侧目录树 / 右侧模块详情</div><div>总图负责定位，右侧负责深度，子页负责分享。</div></footer>
+  <footer class="footer"><div>Canon Map v0.13 · 正典门户总入口</div><div>门户负责立意，目录负责定位，右侧负责深度，工具负责执行。</div></footer>
 </main>
 <script src="modules/module-data.js"></script>
 <script>
