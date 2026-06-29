@@ -6,84 +6,65 @@
   <title>原力战略三部曲 · 原力母体正典地图</title>
   <meta name="description" content="原力战略三部曲正典概念地图：原力母体、AI外化、市场验证、OS回写、原力创业与原力OS。" />
   <style>
-    :root{--bg:#07100d;--panel:rgba(14,32,26,.78);--panel2:rgba(18,42,34,.88);--line:rgba(201,169,97,.30);--line2:rgba(201,169,97,.48);--gold:#c9a961;--gold2:#f3d58a;--text:#f3efe4;--muted:#9fb3a7;--green:#63e6be;--red:#ff9a7b;--shadow:0 28px 90px rgba(0,0,0,.42);--r:26px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;background:radial-gradient(circle at 8% 0%,rgba(201,169,97,.20),transparent 30%),radial-gradient(circle at 92% 10%,rgba(99,230,190,.12),transparent 28%),linear-gradient(135deg,#050807 0%,#0b1713 48%,#08110f 100%);min-height:100vh} body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at center,black,transparent 78%)}
-    .shell{width:min(1560px,calc(100vw - 36px));margin:0 auto;padding:26px 0 72px}.topbar{position:sticky;top:14px;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(8,17,15,.72);backdrop-filter:blur(18px);box-shadow:0 14px 50px rgba(0,0,0,.28)}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}.sigil{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#07100d;font-weight:950;box-shadow:0 0 28px rgba(201,169,97,.35)}nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}nav a{color:var(--muted);text-decoration:none;font-size:13px;padding:8px 11px;border-radius:999px;border:1px solid transparent}nav a:hover{color:var(--text);border-color:var(--line);background:rgba(201,169,97,.08)}
-    .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;padding:58px 0 28px}.card,.panel,.hero-card{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(18,42,34,.88),rgba(8,17,15,.76));box-shadow:var(--shadow);position:relative;overflow:hidden}.card:after,.panel:after,.hero-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 0%,rgba(201,169,97,.18),transparent 40%)}.pad{position:relative;z-index:1;padding:32px}.eyebrow{display:inline-flex;color:var(--gold2);border:1px solid var(--line);background:rgba(201,169,97,.08);padding:8px 12px;border-radius:999px;font-size:13px;margin-bottom:20px}h1{font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px}h1 span,h2 span{color:var(--gold2)}.lead{font-size:20px;line-height:1.82;color:#d9e1d8;margin:0;max-width:900px}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;border:1px solid var(--line);background:rgba(0,0,0,.22);border-radius:20px;padding:16px 18px;color:var(--gold2);line-height:1.72;font-size:14px;white-space:pre-wrap}.metrics{display:grid;gap:14px}.metric{border:1px solid rgba(201,169,97,.20);border-radius:22px;background:rgba(255,255,255,.04);padding:18px}.metric b{display:block;color:var(--gold2);font-size:25px;margin-bottom:6px}.metric span{color:var(--muted);line-height:1.65}
-    .section{margin-top:32px;scroll-margin-top:112px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:17px}h2{font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.045em;margin:0}.sub{color:var(--muted);line-height:1.75;max-width:980px;margin:8px 0 0}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{padding:20px;min-height:160px}.tag{display:inline-flex;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:13px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(201,169,97,.08)}.card h3{font-size:23px;margin:0 0 10px;letter-spacing:-.02em}.card p,.card li{color:var(--muted);line-height:1.67}.card p{margin:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;color:var(--gold2)}
-    .flowline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:20px;padding:16px;min-height:112px}.step strong{display:block;color:var(--gold2);margin-bottom:8px}.step span{color:var(--muted);font-size:14px;line-height:1.55}.matrix{overflow-x:auto;position:relative;z-index:1}table{width:100%;border-collapse:collapse;min-width:1080px}th,td{padding:14px 13px;text-align:left;border-bottom:1px solid rgba(201,169,97,.16);vertical-align:top}th{color:var(--gold2);font-weight:800;background:rgba(201,169,97,.06)}td{color:#d8e0d7;line-height:1.58}.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.pill{display:inline-flex;color:#d8e0d7;border:1px solid rgba(201,169,97,.18);background:rgba(201,169,97,.06);border-radius:999px;padding:6px 9px;font-size:12.5px}.quote{font-size:clamp(24px,3.4vw,44px);line-height:1.35;letter-spacing:-.04em;color:var(--gold2);margin:0}.footer{margin-top:34px;text-align:center;color:var(--muted);line-height:1.8;font-size:14px}.warn{border-color:rgba(255,154,123,.35)!important;background:rgba(255,154,123,.06)!important}.sourcebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.sourcebar span{border:1px solid rgba(201,169,97,.20);border-radius:999px;background:rgba(255,255,255,.04);padding:7px 10px;color:var(--muted);font-size:12.5px}.toc{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.toc a{text-decoration:none;color:#d8e0d7;border:1px solid rgba(201,169,97,.20);border-radius:18px;background:rgba(255,255,255,.04);padding:13px;line-height:1.45}.toc a b{display:block;color:var(--gold2);margin-bottom:5px}
-    @media(max-width:1180px){.hero,.grid2,.grid3,.grid4,.grid5,.toc,.flowline{grid-template-columns:1fr}.topbar{position:static;border-radius:24px;align-items:flex-start;flex-direction:column}nav{justify-content:flex-start}.pad{padding:24px}table{min-width:860px}}
+    :root{--bg:#07100d;--panel:rgba(14,32,26,.78);--panel2:rgba(18,42,34,.88);--line:rgba(201,169,97,.30);--line2:rgba(201,169,97,.48);--gold:#c9a961;--gold2:#f3d58a;--text:#f3efe4;--muted:#9fb3a7;--green:#63e6be;--red:#ff9a7b;--shadow:0 28px 90px rgba(0,0,0,.42);--r:26px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;background:radial-gradient(circle at 8% 0%,rgba(201,169,97,.20),transparent 30%),radial-gradient(circle at 92% 10%,rgba(99,230,190,.12),transparent 28%),linear-gradient(135deg,#050807 0%,#0b1713 48%,#08110f 100%);min-height:100vh}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at center,black,transparent 78%)}.shell{width:min(1560px,calc(100vw - 36px));margin:0 auto;padding:26px 0 72px}.topbar{position:sticky;top:14px;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(8,17,15,.72);backdrop-filter:blur(18px);box-shadow:0 14px 50px rgba(0,0,0,.28)}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}.sigil{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#07100d;font-weight:950;box-shadow:0 0 28px rgba(201,169,97,.35)}nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}nav a{color:var(--muted);text-decoration:none;font-size:13px;padding:8px 11px;border-radius:999px;border:1px solid transparent}nav a:hover{color:var(--text);border-color:var(--line);background:rgba(201,169,97,.08)}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;padding:58px 0 28px}.card,.panel,.hero-card{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(18,42,34,.88),rgba(8,17,15,.76));box-shadow:var(--shadow);position:relative;overflow:hidden}.card:after,.panel:after,.hero-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 0%,rgba(201,169,97,.18),transparent 40%)}.pad{position:relative;z-index:1;padding:32px}.eyebrow{display:inline-flex;color:var(--gold2);border:1px solid var(--line);background:rgba(201,169,97,.08);padding:8px 12px;border-radius:999px;font-size:13px;margin-bottom:20px}h1{font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px}h1 span,h2 span{color:var(--gold2)}.lead{font-size:20px;line-height:1.82;color:#d9e1d8;margin:0;max-width:900px}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;border:1px solid var(--line);background:rgba(0,0,0,.22);border-radius:20px;padding:16px 18px;color:var(--gold2);line-height:1.72;font-size:14px;white-space:pre-wrap}.metrics{display:grid;gap:14px}.metric{border:1px solid rgba(201,169,97,.20);border-radius:22px;background:rgba(255,255,255,.04);padding:18px}.metric b{display:block;color:var(--gold2);font-size:25px;margin-bottom:6px}.metric span{color:var(--muted);line-height:1.65}.section{margin-top:32px;scroll-margin-top:112px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:17px}h2{font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.045em;margin:0}.sub{color:var(--muted);line-height:1.75;max-width:980px;margin:8px 0 0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{padding:20px;min-height:160px}.tag{display:inline-flex;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:13px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(201,169,97,.08)}.card h3{font-size:23px;margin:0 0 10px;letter-spacing:-.02em}.card p,.card li{color:var(--muted);line-height:1.67}.card p{margin:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;color:var(--gold2)}.flowline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:20px;padding:16px;min-height:112px}.step strong{display:block;color:var(--gold2);margin-bottom:8px}.step span{color:var(--muted);font-size:14px;line-height:1.55}.matrix{overflow-x:auto;position:relative;z-index:1}table{width:100%;border-collapse:collapse;min-width:1080px}th,td{padding:14px 13px;text-align:left;border-bottom:1px solid rgba(201,169,97,.16);vertical-align:top}th{color:var(--gold2);font-weight:800;background:rgba(201,169,97,.06)}td{color:#d8e0d7;line-height:1.58}.cta{display:inline-flex;margin-top:18px;color:#07100d;background:linear-gradient(135deg,var(--gold),var(--gold2));padding:11px 15px;border-radius:999px;text-decoration:none;font-weight:900;box-shadow:0 0 28px rgba(201,169,97,.20)}.sourcebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.sourcebar span,.sourcebar a{border:1px solid rgba(201,169,97,.20);border-radius:999px;background:rgba(255,255,255,.04);padding:7px 10px;color:var(--muted);font-size:12.5px;text-decoration:none}.sourcebar a:hover{color:var(--gold2);border-color:var(--line2)}.footer{margin-top:34px;text-align:center;color:var(--muted);line-height:1.8;font-size:14px}@media(max-width:1180px){.hero,.grid3,.grid4,.grid5,.flowline{grid-template-columns:1fr}.topbar{position:static;border-radius:24px;align-items:flex-start;flex-direction:column}nav{justify-content:flex-start}.pad{padding:24px}table{min-width:860px}}
   </style>
 </head>
 <body>
 <main class="shell">
   <header class="topbar">
-    <div class="brand"><div class="sigil">ʸx</div><div>原力战略三部曲 · 原力母体正典地图</div></div>
-    <nav><a href="#map">全貌</a><a href="#asset">资产</a><a href="#startup">创业</a><a href="#os">OS</a><a href="#flywheel">飞轮</a><a href="#next">下一步</a></nav>
+    <div class="brand"><div class="sigil">母</div><div>原力战略三部曲 · 原力母体正典地图</div></div>
+    <nav><a href="index.html">总入口</a><a href="asset.html">原力资产填写页</a><a href="#asset">资产</a><a href="#startup">创业</a><a href="#os">OS</a><a href="#flywheel">飞轮</a></nav>
   </header>
 
   <section class="hero">
     <div class="hero-card"><div class="pad">
-      <div class="eyebrow">Canonical Map · v0.4 Yuanli Matrix</div>
+      <div class="eyebrow">Canonical Map · v0.5 Linked Entry</div>
       <h1>原力资产 = <span>会复利的原力母体</span></h1>
-      <p class="lead">本版将《原力资产》的第一性概念确定为“原力母体”：一个人持续生成判断、作品、关系和意义的底层生命结构。生成函数保留为内部硬定义；对外传播和正典主概念统一为“原力母体”。</p>
-      <div class="sourcebar"><span>source/extracts/01c-原力母体正典重构.md</span><span>manuscript/01 v0.3</span><span>原力母体 × AI外化 × 市场验证 × OS回写</span></div>
+      <p class="lead">本页是三部曲概念地图；`asset.html` 是《原力资产》的交互式填写页。概念地图负责看全貌，填写页负责把原力母体变成可填写、可验证、可回写的资产流程。</p>
+      <div class="sourcebar"><span>原力母体 × AI外化 × 市场验证 × OS回写</span><a href="asset.html">进入 asset.html</a><a href="index.html">返回 Soul Cockpit</a></div>
     </div></div>
     <aside class="hero-card"><div class="pad metrics">
       <div class="metric"><b>母公理</b><span>ʸx：做会自我繁殖的事，不做一次性的事。</span></div>
       <div class="metric"><b>资产公式</b><span>原力资产 = 原力母体 × AI外化 × 市场验证 × OS回写。</span></div>
-      <div class="metric"><b>母体结构</b><span>注意力雷达 × 品味函数 × 身体化能力 × 生命经验 × 长期承诺。</span></div>
+      <div class="metric"><b>交互入口</b><span><a href="asset.html" style="color:var(--gold2);text-decoration:none">asset.html · 原力母体填写页</a></span></div>
     </div></aside>
   </section>
-
-  <section id="map" class="section panel"><div class="pad">
-    <div class="section-head"><div><h2>一张图看全貌</h2><p class="sub">《原力资产》不再是自我探索课，而是一套资产生成机制。</p></div></div>
-    <div class="flowline">
-      <div class="step"><strong>01 清算</strong><span>AI 清算可学习、可表达、可执行、可流程化、可模仿的同质化能力。</span></div>
-      <div class="step"><strong>02 返源</strong><span>回到不可复制的原力母体：持续生成差异的底层生命结构。</span></div>
-      <div class="step"><strong>03 外化</strong><span>AI 不是替代器，而是把母体外化成表达、模型、产品和系统。</span></div>
-      <div class="step"><strong>04 验证</strong><span>市场验证这个母体是否被人相信、靠近、付费、复用和传播。</span></div>
-      <div class="step"><strong>05 回写</strong><span>OS 把反馈回写到文脉、大脑、地图、链路与下一轮母体认知。</span></div>
-    </div>
-    <div class="formula" style="margin-top:18px">原力资产 = 原力母体 × AI外化 × 市场验证 × OS回写</div>
-  </div></section>
 
   <section id="asset" class="section">
     <div class="section-head"><div><h2>第一部：原力资产 · 原力母体</h2><p class="sub">原力母体不是兴趣、优势、性格或人设；它是一个人持续生成判断、作品、关系和意义的底层结构。</p></div></div>
     <div class="grid3">
-      <div class="card"><div class="tag">Definition</div><h3>一句话定义</h3><p>原力资产，是一个人以原力母体为源头，经由 AI 外化、市场验证与 OS 回写，形成的可复利、不可复制、可进入时代与市场的生命资产。</p></div>
-      <div class="card"><div class="tag">Short</div><h3>短定义</h3><p class="mono">原力资产 = 被 AI 外化、被市场验证、被 OS 回写的原力母体。</p></div>
+      <div class="card"><div class="tag">Definition</div><h3>长定义</h3><p>原力资产，是一个人以原力母体为源头，经由 AI 外化、市场验证与 OS 回写，形成的可复利、不可复制、可进入时代与市场的生命资产。</p></div>
       <div class="card"><div class="tag">Shortest</div><h3>最短定义</h3><p class="mono">原力资产 = 会复利的原力母体。</p></div>
+      <div class="card"><div class="tag">Action</div><h3>交互填写</h3><p>六张核心卡已经外显为可填写页面，支持本地保存、评分与 Markdown 导出。</p><a class="cta" href="asset.html">进入 asset.html</a></div>
     </div>
-
     <div class="section panel"><div class="pad">
       <h2>原力母体的五个组成</h2>
       <p class="sub">母体必须可描述、可识别、可训练、可外化、可验证、可回写。</p>
       <div class="grid5" style="margin-top:18px">
-        <div class="card"><div class="tag">01</div><h3>注意力雷达</h3><p>我天然会看见什么，别人看不见什么；我对哪些信号有高分辨率。</p></div>
-        <div class="card"><div class="tag">02</div><h3>品味函数</h3><p>我如何判断什么值得做、什么不值得做；什么是高级，什么是伪高级。</p></div>
+        <div class="card"><div class="tag">01</div><h3>注意力雷达</h3><p>我天然会看见什么，别人看不见什么。</p></div>
+        <div class="card"><div class="tag">02</div><h3>品味函数</h3><p>我如何判断什么值得做、什么不值得做。</p></div>
         <div class="card"><div class="tag">03</div><h3>身体化能力</h3><p>我长期训练出的手感、嗅觉、判断和行动回路。</p></div>
-        <div class="card"><div class="tag">04</div><h3>生命经验</h3><p>我被哪些经历不可逆地塑形；为何对某些问题有执念与共情。</p></div>
-        <div class="card"><div class="tag">05</div><h3>长期承诺</h3><p>我愿意用十年持续服务什么，并承受什么代价。</p></div>
+        <div class="card"><div class="tag">04</div><h3>生命经验</h3><p>我被哪些经历不可逆地塑形。</p></div>
+        <div class="card"><div class="tag">05</div><h3>长期承诺</h3><p>我愿意用十年持续服务什么。</p></div>
       </div>
     </div></div>
-
-    <div class="section panel"><div class="pad">
-      <h2>七阶递进结构</h2>
-      <div class="matrix" style="margin-top:18px"><table>
-        <thead><tr><th>阶</th><th>名称</th><th>核心问题</th><th>输出</th><th>接口</th></tr></thead>
-        <tbody>
-          <tr><td>1</td><td>清算</td><td>哪些能力正在被 AI 同质化？</td><td>同质化能力清单</td><td>停止误认资产</td></tr>
-          <tr><td>2</td><td>返源</td><td>我的原力母体是什么？</td><td>原力母体总卡</td><td>建立资产源头</td></tr>
-          <tr><td>3</td><td>成形</td><td>母体的五个部件如何结构化？</td><td>五部件卡组</td><td>可外化输入</td></tr>
-          <tr><td>4</td><td>外化</td><td>AI 如何把母体变成可见资产？</td><td>表达、模型、产品、方法、系统</td><td>OS文脉种子</td></tr>
-          <tr><td>5</td><td>验证</td><td>世界是否真的需要这个母体？</td><td>天选用户、贵问题、市场验证记录</td><td>进入原力创业</td></tr>
-          <tr><td>6</td><td>回写</td><td>反馈如何反过来升级母体？</td><td>回写记录、母体更新</td><td>进入原力OS</td></tr>
-          <tr><td>7</td><td>复利</td><td>母体如何越用越清楚、越值钱？</td><td>可进化身份</td><td>ʸx</td></tr>
-        </tbody>
-      </table></div>
-    </div></div>
   </section>
+
+  <section class="section panel"><div class="pad">
+    <h2>七阶递进结构</h2>
+    <div class="matrix" style="margin-top:18px"><table>
+      <thead><tr><th>阶</th><th>名称</th><th>核心问题</th><th>输出</th><th>接口</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>清算</td><td>哪些能力正在被 AI 同质化？</td><td>同质化能力清单</td><td>停止误认资产</td></tr>
+        <tr><td>2</td><td>返源</td><td>我的原力母体是什么？</td><td>原力母体总卡</td><td>建立资产源头</td></tr>
+        <tr><td>3</td><td>成形</td><td>母体的五个部件如何结构化？</td><td>五部件卡组</td><td>可外化输入</td></tr>
+        <tr><td>4</td><td>外化</td><td>AI 如何把母体变成可见资产？</td><td>表达、模型、产品、方法、系统</td><td>OS文脉种子</td></tr>
+        <tr><td>5</td><td>验证</td><td>世界是否真的需要这个母体？</td><td>天选用户、贵问题、市场验证记录</td><td>进入原力创业</td></tr>
+        <tr><td>6</td><td>回写</td><td>反馈如何反过来升级母体？</td><td>回写记录、母体更新</td><td>进入原力OS</td></tr>
+        <tr><td>7</td><td>复利</td><td>母体如何越用越清楚、越值钱？</td><td>可进化身份</td><td>ʸx</td></tr>
+      </tbody>
+    </table></div>
+  </div></section>
 
   <section id="startup" class="section">
     <div class="section-head"><div><h2>第二部：原力创业 · 借势母体</h2><p class="sub">《原力资产》交给创业的不是自我介绍，而是可验证的母体。</p></div></div>
@@ -116,15 +97,6 @@
     </div>
     <div class="formula" style="margin-top:18px">原力母体 → AI外化 → 市场验证 → OS回写 → 母体升级</div>
   </div></section>
-
-  <section id="next" class="section">
-    <div class="section-head"><div><h2>下一步：模板化</h2><p class="sub">正典已干净化，下一步要把它变成可填写、可执行、可回写的模板。</p></div></div>
-    <div class="grid3">
-      <div class="card"><h3>原力母体总卡</h3><p>定义一个人持续生成判断、作品、关系和意义的源头。</p></div>
-      <div class="card"><h3>五部件卡组</h3><p>注意力雷达、品味函数、身体化能力、生命经验、长期承诺。</p></div>
-      <div class="card"><h3>外化-验证-回写卡</h3><p>AI外化、市场验证、OS回写，形成递归资产闭环。</p></div>
-    </div>
-  </section>
 
   <footer class="footer"><div>原力战略三部曲 · Yuanli Matrix Canon Map</div><div>原力母体 → AI外化 → 市场验证 → OS回写 → 母体升级 → 复利人生</div></footer>
 </main>
