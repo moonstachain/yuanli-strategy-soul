@@ -11,78 +11,31 @@
 </head>
 <body>
 <main class="shell">
-  <header class="topbar">
-    <div class="brand"><div class="sigil">A</div><div>Asset Tool · 原力资产</div></div>
-    <div class="nav">
-      <a href="index.html">Home</a>
-      <a href="trilogy-concept-map.html">Canon Map</a>
-      <a href="asset.html">Asset Tool</a>
-      <a href="https://github.com/moonstachain/yuanli-strategy-soul">GitHub</a>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="hero-card"><div class="pad">
-      <div class="eyebrow">Interactive Worksheet · Local-first</div>
-      <h1>原力资产工具<br/><span>发现母体，显化原力</span></h1>
-      <p class="lead">这是原力战略三部曲的第一部交互工具。它帮助你完成：发现母体、回到母体、获得原力、显化原力。所有填写内容保存在本地浏览器，可导出 Markdown 回写到你的个人 OS。</p>
-      <div class="formula">原力资产四步：发现母体 → 回到母体 → 获得原力 → 显化原力
-显化原力 = 市场验证 / 创业接口，不等于完整商业化。</div>
-    </div></div>
-    <aside class="hero-card"><div class="pad metrics">
-      <div class="metric"><b id="filledCount">0%</b><span>填写完成度。本地自动保存，不上传服务器。</span></div>
-      <div class="metric"><b id="maturity">未评分</b><span>成熟度基于每张卡的勾选项。</span></div>
-      <div class="metric"><b>输出</b><span>Markdown 导出，可回写到文脉、大脑、地图与创业输入包。</span></div>
-      <div class="actions"><button class="btn" id="saveBtn">保存草稿</button><button class="btn primary" id="exportBtn">生成 Markdown</button><button class="btn" id="copyBtn">复制导出</button><button class="btn danger" id="clearBtn">清空</button></div>
-    </div></aside>
-  </section>
-
-  <section class="section panel"><div class="pad">
-    <h2>四步路径</h2>
-    <div class="stage" style="margin-top:16px">
-      <div class="step"><strong>01 发现母体</strong><span>识别不可复制的源头。</span></div>
-      <div class="step"><strong>02 回到母体</strong><span>重组选择、边界和承诺。</span></div>
-      <div class="step"><strong>03 获得原力</strong><span>外化为可调用能力。</span></div>
-      <div class="step"><strong>04 显化原力</strong><span>验证是否被世界需要。</span></div>
-    </div>
-  </div></section>
-
-  <section class="section grid">
-    <aside class="side panel"><div class="pad">
-      <h2 style="font-size:28px">六张核心卡</h2>
-      <p class="subtitle">六张卡服务第一部四步：母体总卡、注意力、品味、身体、经验、承诺验证。</p>
-      <div class="progressbar"><div id="bar"></div></div>
-      <div class="navcards" id="nav" style="margin-top:16px"></div>
-    </div></aside>
-    <div class="worksheet" id="cards"></div>
-  </section>
-
-  <section class="section panel" id="exportSection"><div class="pad">
-    <div class="workhead"><div><h2>Markdown 导出</h2><p class="subtitle">生成后复制到 GitHub、Obsidian、飞书或个人 OS。</p></div><span class="tag">OS Writeback</span></div>
-    <textarea class="exportbox" id="exportBox" placeholder="导出内容会显示在这里。"></textarea>
-  </div></section>
-  <footer class="footer"><div>Asset Tool · 原力资产</div><div>下一步：把导出内容交给《原力创业》的“原力借势”。</div></footer>
+  <header class="topbar"><div class="brand"><div class="sigil">A</div><div>Asset Tool · 原力资产</div></div><div class="nav"><a href="index.html">Home</a><a href="trilogy-concept-map.html">Canon Map</a><a href="asset.html">Asset Tool</a><a href="startup.html">Startup Tool</a><a href="https://github.com/moonstachain/yuanli-strategy-soul">GitHub</a></div></header>
+  <section class="hero"><div class="hero-card"><div class="pad"><div class="eyebrow">Interactive Worksheet · Local-first</div><h1>原力资产工具<br/><span>发现母体，显化原力</span></h1><p class="lead">这是原力战略三部曲的第一部交互工具。它帮助你完成：发现母体、回到母体、获得原力、显化原力。所有填写内容保存在本地浏览器，可导出 Markdown，并继续进入 Startup Tool。</p><div class="formula">原力资产四步：发现母体 → 回到母体 → 获得原力 → 显化原力
+输出：创业输入包 → Startup Tool</div></div></div><aside class="hero-card"><div class="pad metrics"><div class="metric"><b id="filledCount">0%</b><span>填写完成度。本地自动保存，不上传服务器。</span></div><div class="metric"><b id="maturity">未评分</b><span>成熟度基于每张卡的勾选项。</span></div><div class="metric"><b>下一步</b><span>导出后进入 Startup Tool：原力借势、品类独创、模式升维、壁垒锁定。</span></div><div class="actions"><button class="btn" id="saveBtn">保存草稿</button><button class="btn primary" id="exportBtn">生成 Markdown</button><button class="btn" id="copyBtn">复制导出</button><button class="btn danger" id="clearBtn">清空</button><a class="btn primary" href="startup.html">进入 Startup Tool</a></div></div></aside></section>
+  <section class="section panel"><div class="pad"><h2>四步路径</h2><div class="stage" style="margin-top:16px"><div class="step"><strong>01 发现母体</strong><span>识别不可复制的源头。</span></div><div class="step"><strong>02 回到母体</strong><span>重组选择、边界和承诺。</span></div><div class="step"><strong>03 获得原力</strong><span>外化为可调用能力。</span></div><div class="step"><strong>04 显化原力</strong><span>验证是否被世界需要。</span></div></div></div></section>
+  <section class="section grid"><aside class="side panel"><div class="pad"><h2 style="font-size:28px">六张核心卡</h2><p class="subtitle">生成“创业输入包”，交给 Startup Tool 继续通关。</p><div class="progressbar"><div id="bar"></div></div><div class="navcards" id="nav" style="margin-top:16px"></div></div></aside><div class="worksheet" id="cards"></div></section>
+  <section class="section panel" id="exportSection"><div class="pad"><div class="workhead"><div><h2>Markdown 导出</h2><p class="subtitle">生成后复制到 GitHub、Obsidian、飞书或个人 OS。下一步进入 Startup Tool。</p></div><span class="tag">Startup Input</span></div><textarea class="exportbox" id="exportBox" placeholder="导出内容会显示在这里。"></textarea></div></section>
+  <footer class="footer"><div>Asset Tool · 原力资产</div><div>下一步：Startup Tool · 原力创业四步通关页</div></footer>
 </main>
 <div class="toast" id="toast">已保存</div>
 <script>
-const STORAGE_KEY='yuanli_asset_tool_public_v2';
+const STORAGE_KEY='yuanli_asset_tool_public_v3';
 const cards=[
-{id:'matrix',no:'01',title:'原力母体总卡',tag:'Matrix',desc:'定义你持续生成判断、作品、关系和意义的底层生命结构。',fields:[['持续关注的问题','我长期反复关注、无法放下的问题是什么？'],['天然生成的判断 / 作品 / 关系 / 意义','我天然会生成什么？别人常从我这里获得什么？'],['别人为什么找我','别人为什么不去找别人，而是找我？'],['越做越清楚的事情','我越做越清楚的领域、人群、问题、表达方式。'],['原力母体一句话','我的原力母体，是我持续围绕____，为____，生成____的底层生命结构。']],score:['长期稳定，不是一时兴趣','能持续生成判断、作品、关系或意义','能被 AI 外化，而不只停留在感觉里','已经被真实世界初步需要或验证']},
-{id:'attention',no:'02',title:'注意力雷达卡',tag:'Attention',desc:'识别你天然会看见什么、被什么反复吸引、对哪些信号有高分辨率。',fields:[['天然会看见什么','结构、机会、风险、情绪、审美失真、系统漏洞等。'],['高分辨率信号','我比别人更早看见什么？这个信号通常意味着什么？'],['反复吸引的问题','什么问题反复进入我的注意力？背后的更大问题是什么？'],['我最常说“这里不对”的地方','在产品、商业、关系、表达、战略上，我最常看见哪里不对？'],['注意力雷达一句话','我的注意力雷达，最容易捕捉到____中的____信号。']],score:['长期反复出现，不是短期热点','有高分辨率，而不只是泛泛兴趣','能看见背后结构','能转化为判断、表达、产品或创业入口']},
-{id:'taste',no:'03',title:'品味函数卡',tag:'Taste',desc:'识别你如何判断什么值得做、什么不值得做。',fields:[['什么值得做','值得做的事情通常具备哪些特征？'],['什么不值得做','不值得做的事情通常具备哪些特征？'],['高级 / 伪高级','我如何区分高级和伪高级？'],['真问题 / 伪需求','我如何判断一个问题是否值得下注？'],['绝不降低的标准','我宁可慢一点、少赚一点、不做，也不愿降低什么标准？'],['品味函数一句话','我的品味函数，是我在____场景中，用____标准判断____是否值得长期投入的价值排序系统。']],score:['能判断取舍，而不是只表达偏好','能解释为什么高级，而不是只说喜欢','能稳定用于不同场景','能帮助 AI 过滤普通答案']},
-{id:'embodied',no:'04',title:'身体化能力卡',tag:'Embodied',desc:'识别你长期训练出的手感、嗅觉、判断和行动回路。',fields:[['长期训练出的手感','哪些能力来自长期训练，而不是短期学习？'],['能快速识别的结构','用户、商业、内容、组织、人性等方面，我能快速识别什么？'],['不用从零思考的判断','哪些场景下我能快速做出判断？背后的经验来源是什么？'],['身体记忆','我身体会先于语言知道什么？哪些场景高能或消耗？'],['身体化能力一句话','我的身体化能力，是我在____场景中，经过长期反馈训练出的____判断/手感/行动回路。']],score:['来自长期反馈，而不是短期学习','能在真实场景中稳定出现','能帮助我更快、更准、更深地判断','能被 AI 外化成模型、流程、清单或案例']},
-{id:'life',no:'05',title:'生命经验炼金卡',tag:'Alchemy',desc:'识别你被哪些经历不可逆地塑形，并把经历炼成判断、作品、关系和意义。',fields:[['关键经历清单','列出 3-5 个塑形我的关键经历，以及它们如何塑形我。'],['经历炼成判断力','这些经历让我形成了什么不同于大众共识的判断？'],['经历炼成共情力','我因此更能理解哪类人？他们正在承受什么？'],['经历炼成作品源头','这些经历可以生成哪些内容、产品、方法论、关系或社群？'],['生命经验一句话','我的生命经验，让我特别能看见____，并愿意长期为____生成____。']],score:['不只是故事，而能产生判断','不只是情绪，而能产生共情','不只是伤口，而能产生作品','不只是个人经历，而能服务一群人']},
-{id:'commitment',no:'06',title:'长期承诺与市场验证卡',tag:'Validation',desc:'识别你愿意用十年持续服务什么，并验证这个母体是否真的被世界需要。',fields:[['十年承诺','我愿意长期服务的问题、人群、作品/产品/系统是什么？'],['天选用户线索','谁最自然被我的母体吸引？谁从我这里获得过真实改变？'],['贵问题判断','这群人的贵问题是什么？旧方案为什么失效？我的母体为什么刚好能切入？'],['市场验证六问','是否有人愿意靠近、相信、付费、复用、改变行动、共同建设？证据是什么？'],['下一轮验证动作','我要验证的假设、对象、方式、周期、指标、失败后的回写方式。'],['长期承诺一句话','我愿意用未来十年，围绕____，服务____，持续生成____，并通过____完成市场验证与系统回写。']],score:['愿意长期承受代价，而不只是兴趣','能服务一群人，而不只是自我表达','能设计真实验证动作','验证结果能被 OS 回写并长期复利']}
+{id:'matrix',no:'01',title:'原力母体总卡',tag:'Matrix',desc:'定义你持续生成判断、作品、关系和意义的底层生命结构。',fields:[['原力母体一句话','我的原力母体，是我持续围绕____，为____，生成____的底层生命结构。'],['长期关注的问题','我长期反复关注、无法放下的问题是什么？'],['别人为什么找我','别人为什么不去找别人，而是找我？'],['同质化清算','哪些能力已被 AI 平权、复制或自动化？']],score:['长期稳定，不是一时兴趣','能持续生成判断、作品、关系或意义','能被 AI 外化','已有真实世界线索']},
+{id:'attention',no:'02',title:'注意力雷达卡',tag:'Attention',desc:'识别你天然会看见什么。',fields:[['天然会看见什么','结构、机会、风险、系统漏洞、审美失真等。'],['高分辨率信号','我比别人更早看见什么？'],['最常说“这里不对”的地方','我经常在哪里发现问题？']],score:['长期反复出现','有高分辨率','能看见背后结构','能转化为行动入口']},
+{id:'taste',no:'03',title:'品味函数卡',tag:'Taste',desc:'识别你如何判断什么值得做。',fields:[['什么值得做','值得长期投入的事情具备什么特征？'],['什么不值得做','哪些机会我不该做？'],['绝不降低的标准','我宁可少赚也不降低什么标准？']],score:['能判断取舍','能解释为什么高级','能稳定迁移','能帮助 AI 过滤普通答案']},
+{id:'embodied',no:'04',title:'身体化能力卡',tag:'Embodied',desc:'识别长期训练出的手感、嗅觉和行动回路。',fields:[['长期训练出的手感','哪些能力来自长期反馈？'],['快速判断场景','哪些场景我能快速判断？'],['身体高能/消耗','什么让我高能？什么让我消耗？']],score:['来自长期反馈','真实场景稳定出现','帮助判断更快更准','能外化为模型或流程']},
+{id:'life',no:'05',title:'生命经验炼金卡',tag:'Alchemy',desc:'把关键经历炼成判断、共情、作品和意义。',fields:[['关键经历','哪些经历不可逆地塑形了我？'],['炼成判断','这些经历让我形成了什么不同判断？'],['炼成服务对象','我因此更理解哪类人？']],score:['不只是故事','能产生判断','能产生共情','能服务一群人']},
+{id:'commitment',no:'06',title:'长期承诺与市场验证卡',tag:'Validation',desc:'识别十年承诺，并验证母体是否被世界需要。',fields:[['十年承诺','我愿意长期服务什么问题、人群或系统？'],['天选用户线索','谁最自然被我的母体吸引？'],['贵问题判断','他们有什么不解决代价很高的问题？'],['市场验证证据','靠近、相信、付费、复用、行动、共建的证据是什么？'],['创业输入包','给 Startup Tool 的输入：母体、用户、贵问题、验证证据、机会假设。']],score:['愿意长期承受代价','能服务一群人','有真实验证动作','能进入 Startup Tool']}
 ];
 let state=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
-function $(id){return document.getElementById(id)}
-function toast(t='已保存'){const el=$('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1600)}
-function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));updateStats()}
-function key(card,field){return card+'__'+field.replace(/\s+/g,'_')}
-function render(){const nav=$('nav'),wrap=$('cards');cards.forEach((c,i)=>{const n=document.createElement('div');n.className='navitem'+(i===0?' active':'');n.dataset.target=c.id;n.innerHTML=`<b>${c.no} · ${c.title}</b><span>${c.desc}</span>`;n.onclick=()=>activate(c.id);nav.appendChild(n);const panel=document.createElement('article');panel.className='panel workcard'+(i===0?' active':'');panel.id='card-'+c.id;let html=`<div class="pad"><div class="workhead"><div><span class="tag">${c.tag}</span><h2 style="margin-top:12px">${c.no} · ${c.title}</h2><p class="subtitle">${c.desc}</p></div></div><div class="fields">`;c.fields.forEach((f,idx)=>{const k=key(c.id,f[0]);html+=`<div class="field ${idx===c.fields.length-1?'full':''}"><label>${f[0]}</label><div class="hint">${f[1]}</div><textarea data-k="${k}" placeholder="在这里填写……">${state[k]||''}</textarea></div>`});html+=`</div><div class="field full" style="margin-top:14px"><label>成熟度判断</label><div class="hint">勾选已经成立的判断。用于计算当前卡片成熟度。</div><div class="score">`;c.score.forEach((s,idx)=>{const k=key(c.id,'score_'+idx);html+=`<label><input type="checkbox" data-k="${k}" ${state[k]?'checked':''}/> ${s}</label>`});html+=`</div></div></div>`;panel.innerHTML=html;wrap.appendChild(panel)});document.querySelectorAll('textarea').forEach(t=>{t.addEventListener('input',e=>{state[e.target.dataset.k]=e.target.value;save()})});document.querySelectorAll('input[type=checkbox]').forEach(ch=>{ch.addEventListener('change',e=>{state[e.target.dataset.k]=e.target.checked;save()})});updateStats()}
+function $(id){return document.getElementById(id)}function toast(t='已保存'){const el=$('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1600)}function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));updateStats()}function key(card,field){return card+'__'+field.replace(/\s+/g,'_')}
+function render(){const nav=$('nav'),wrap=$('cards');cards.forEach((c,i)=>{const n=document.createElement('div');n.className='navitem'+(i===0?' active':'');n.dataset.target=c.id;n.innerHTML=`<b>${c.no} · ${c.title}</b><span>${c.desc}</span>`;n.onclick=()=>activate(c.id);nav.appendChild(n);const panel=document.createElement('article');panel.className='panel workcard'+(i===0?' active':'');panel.id='card-'+c.id;let html=`<div class="pad"><div class="workhead"><div><span class="tag">${c.tag}</span><h2 style="margin-top:12px">${c.no} · ${c.title}</h2><p class="subtitle">${c.desc}</p></div></div><div class="fields">`;c.fields.forEach((f,idx)=>{const k=key(c.id,f[0]);html+=`<div class="field ${idx===c.fields.length-1?'full':''}"><label>${f[0]}</label><div class="hint">${f[1]}</div><textarea data-k="${k}" placeholder="在这里填写……">${state[k]||''}</textarea></div>`});html+=`</div><div class="field full" style="margin-top:14px"><label>成熟度判断</label><div class="hint">勾选已经成立的判断。</div><div class="score">`;c.score.forEach((s,idx)=>{const k=key(c.id,'score_'+idx);html+=`<label><input type="checkbox" data-k="${k}" ${state[k]?'checked':''}/> ${s}</label>`});html+=`</div></div></div>`;panel.innerHTML=html;wrap.appendChild(panel)});document.querySelectorAll('textarea').forEach(t=>{t.addEventListener('input',e=>{state[e.target.dataset.k]=e.target.value;save()})});document.querySelectorAll('input[type=checkbox]').forEach(ch=>{ch.addEventListener('change',e=>{state[e.target.dataset.k]=e.target.checked;save()})});updateStats()}
 function activate(id){document.querySelectorAll('.navitem').forEach(n=>n.classList.toggle('active',n.dataset.target===id));document.querySelectorAll('.workcard').forEach(p=>p.classList.toggle('active',p.id==='card-'+id));window.scrollTo({top:document.querySelector('.grid').offsetTop-90,behavior:'smooth'})}
 function updateStats(){let total=0,filled=0,score=0,scoreTotal=0;cards.forEach(c=>{c.fields.forEach(f=>{total++;if((state[key(c.id,f[0])]||'').trim())filled++});c.score.forEach((s,i)=>{scoreTotal++;if(state[key(c.id,'score_'+i)])score++})});const pct=total?Math.round(filled/total*100):0;$('filledCount').textContent=pct+'%';$('bar').style.width=pct+'%';const ratio=scoreTotal?score/scoreTotal:0;$('maturity').textContent=ratio>=.85?'A · 核心母体':ratio>=.65?'B · 高潜母体':ratio>=.4?'C · 候选母体':'D · 待返源'}
-function exportMarkdown(){let md='# 原力资产 · Asset Tool 填写稿\n\n';md+='> 路径：发现母体 → 回到母体 → 获得原力 → 显化原力\n\n';cards.forEach(c=>{md+=`## ${c.no} · ${c.title}\n\n`;c.fields.forEach(f=>{md+=`### ${f[0]}\n\n${(state[key(c.id,f[0])]||'').trim()||'（未填写）'}\n\n`});let checked=c.score.filter((s,i)=>state[key(c.id,'score_'+i)]);md+=`### 成熟度判断\n\n${checked.length?checked.map(x=>'- '+x).join('\n'):'（未勾选）'}\n\n`});md+='## 下一步接口\n\n### 交给《原力创业》\n\n- 原力母体定义\n- 天选用户线索\n- 贵问题线索\n- 市场验证记录\n- 创业输入包\n\n### 交给《原力OS》\n\n- 一纸文脉\n- 一个大脑\n- 一张地图\n- 一条链路\n';$('exportBox').value=md;toast('Markdown 已生成');return md}
+function exportMarkdown(){let md='# 原力资产 · Asset Tool 填写稿\n\n> 路径：发现母体 → 回到母体 → 获得原力 → 显化原力\n\n';cards.forEach(c=>{md+=`## ${c.no} · ${c.title}\n\n`;c.fields.forEach(f=>{md+=`### ${f[0]}\n\n${(state[key(c.id,f[0])]||'').trim()||'（未填写）'}\n\n`});let checked=c.score.filter((s,i)=>state[key(c.id,'score_'+i)]);md+=`### 成熟度判断\n\n${checked.length?checked.map(x=>'- '+x).join('\n'):'（未勾选）'}\n\n`});md+='## 下一步：进入 Startup Tool\n\n- 打开 startup.html\n- 将本稿作为“创业输入包”\n- 继续完成：原力借势、品类独创、模式升维、壁垒锁定\n';$('exportBox').value=md;toast('Markdown 已生成');return md}
 $('saveBtn').onclick=()=>{save();toast('草稿已保存')};$('exportBtn').onclick=exportMarkdown;$('copyBtn').onclick=async()=>{const txt=$('exportBox').value||exportMarkdown();try{await navigator.clipboard.writeText(txt);toast('已复制到剪贴板')}catch(e){toast('复制失败，请手动复制')}};$('clearBtn').onclick=()=>{if(confirm('确定清空本页所有本地草稿？')){state={};localStorage.removeItem(STORAGE_KEY);document.querySelectorAll('textarea').forEach(t=>t.value='');document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);updateStats();toast('已清空')}};render();
 </script>
 </body>
