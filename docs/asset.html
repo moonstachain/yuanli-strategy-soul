@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>原力资产 · 原力母体交互式填写页</title>
+  <meta name="description" content="原力资产 · 原力母体交互式填写页：原力母体、注意力雷达、品味函数、身体化能力、生命经验炼金、长期承诺与市场验证。" />
+  <style>
+    :root{--bg:#07100d;--panel:rgba(14,32,26,.80);--panel2:rgba(18,42,34,.90);--line:rgba(201,169,97,.30);--line2:rgba(201,169,97,.50);--gold:#c9a961;--gold2:#f3d58a;--text:#f3efe4;--muted:#9fb3a7;--green:#63e6be;--red:#ff9a7b;--shadow:0 28px 90px rgba(0,0,0,.42);--r:26px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;background:radial-gradient(circle at 8% 0%,rgba(201,169,97,.20),transparent 30%),radial-gradient(circle at 92% 10%,rgba(99,230,190,.12),transparent 28%),linear-gradient(135deg,#050807 0%,#0b1713 48%,#08110f 100%);min-height:100vh}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at center,black,transparent 78%)}.shell{width:min(1500px,calc(100vw - 36px));margin:0 auto;padding:26px 0 80px}.topbar{position:sticky;top:14px;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(8,17,15,.72);backdrop-filter:blur(18px);box-shadow:0 14px 50px rgba(0,0,0,.28)}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}.sigil{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#07100d;font-weight:950;box-shadow:0 0 28px rgba(201,169,97,.35)}.actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.btn{appearance:none;border:1px solid var(--line);background:rgba(201,169,97,.08);color:var(--text);border-radius:999px;padding:9px 12px;font-weight:750;cursor:pointer}.btn:hover{background:rgba(201,169,97,.16)}.btn.primary{background:linear-gradient(135deg,rgba(201,169,97,.28),rgba(243,213,138,.18));color:var(--gold2)}.btn.danger{border-color:rgba(255,154,123,.35);color:#ffb29c}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;padding:58px 0 26px}.card,.panel,.hero-card{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(18,42,34,.88),rgba(8,17,15,.76));box-shadow:var(--shadow);position:relative;overflow:hidden}.card:after,.panel:after,.hero-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 0%,rgba(201,169,97,.16),transparent 42%)}.pad{position:relative;z-index:1;padding:32px}.eyebrow{display:inline-flex;color:var(--gold2);border:1px solid var(--line);background:rgba(201,169,97,.08);padding:8px 12px;border-radius:999px;font-size:13px;margin-bottom:20px}h1{font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px}h1 span,h2 span{color:var(--gold2)}h2{font-size:clamp(28px,3.6vw,48px);line-height:1.05;letter-spacing:-.045em;margin:0}.lead{font-size:20px;line-height:1.82;color:#d9e1d8;margin:0;max-width:880px}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;border:1px solid var(--line);background:rgba(0,0,0,.22);border-radius:20px;padding:16px 18px;color:var(--gold2);line-height:1.72;font-size:14px;white-space:pre-wrap}.metrics{display:grid;gap:14px}.metric{border:1px solid rgba(201,169,97,.20);border-radius:22px;background:rgba(255,255,255,.04);padding:18px}.metric b{display:block;color:var(--gold2);font-size:25px;margin-bottom:6px}.metric span{color:var(--muted);line-height:1.65}.section{margin-top:24px;scroll-margin-top:116px}.stage{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}.step{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:18px;padding:13px;min-height:94px}.step strong{display:block;color:var(--gold2);margin-bottom:7px}.step span{color:var(--muted);font-size:13px;line-height:1.48}.grid{display:grid;grid-template-columns:310px 1fr;gap:18px}.side{position:sticky;top:92px;align-self:start}.navcards{display:grid;gap:9px}.navitem{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.04);border-radius:18px;padding:12px;cursor:pointer;color:var(--muted)}.navitem.active{border-color:var(--line2);background:rgba(201,169,97,.12);color:var(--text)}.navitem b{display:block;color:var(--gold2);margin-bottom:5px}.progressbar{height:10px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin-top:12px}.progressbar div{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--green));border-radius:999px}.worksheet{display:grid;gap:16px}.workcard{display:none}.workcard.active{display:block}.workhead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:14px}.tag{display:inline-flex;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(201,169,97,.08)}.subtitle{color:var(--muted);line-height:1.7;margin:8px 0 0}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.field{border:1px solid rgba(201,169,97,.15);background:rgba(0,0,0,.14);border-radius:18px;padding:13px}.field.full{grid-column:1/-1}.field label{display:block;color:var(--gold2);font-weight:800;margin-bottom:8px}.hint{color:var(--muted);font-size:13px;line-height:1.5;margin-bottom:8px}.field textarea{width:100%;min-height:108px;resize:vertical;border:1px solid rgba(201,169,97,.18);background:rgba(3,8,7,.62);color:var(--text);border-radius:14px;padding:12px;font:15px/1.65 inherit;outline:none}.field textarea:focus{border-color:var(--line2);box-shadow:0 0 0 3px rgba(201,169,97,.10)}.score{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:8px}.score label{display:flex;gap:7px;align-items:flex-start;color:#d8e0d7;border:1px solid rgba(201,169,97,.16);background:rgba(255,255,255,.035);border-radius:14px;padding:10px;font-size:13px;line-height:1.45;cursor:pointer}.score input{margin-top:2px}.exportbox{width:100%;min-height:320px;border:1px solid rgba(201,169,97,.18);background:rgba(3,8,7,.70);color:var(--text);border-radius:20px;padding:16px;font:14px/1.65 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap}.toast{position:fixed;right:22px;bottom:22px;z-index:50;background:rgba(18,42,34,.96);border:1px solid var(--line2);border-radius:18px;padding:12px 14px;color:var(--gold2);box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:.25s}.toast.show{opacity:1;transform:translateY(0)}@media(max-width:1100px){.hero,.grid{grid-template-columns:1fr}.side{position:static}.stage,.fields,.score{grid-template-columns:1fr}.topbar{position:static;border-radius:24px;align-items:flex-start;flex-direction:column}.actions{justify-content:flex-start}.pad{padding:24px}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <header class="topbar">
+    <div class="brand"><div class="sigil">母</div><div>原力资产 · 原力母体交互式填写页</div></div>
+    <div class="actions">
+      <button class="btn" id="saveBtn">保存草稿</button>
+      <button class="btn primary" id="exportBtn">生成 Markdown</button>
+      <button class="btn" id="copyBtn">复制导出</button>
+      <button class="btn danger" id="clearBtn">清空</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card"><div class="pad">
+      <div class="eyebrow">Yuanli Asset · Interactive Worksheet</div>
+      <h1>原力资产 = <span>会复利的原力母体</span></h1>
+      <p class="lead">这不是测评页，也不是课程作业。它是一套资产识别流程：从原力母体出发，经由 AI 外化、市场验证与 OS 回写，把“我是谁”升级为“我如何持续生成不可替代的差异”。</p>
+      <div class="formula" style="margin-top:20px">原力资产 = 原力母体 × AI外化 × 市场验证 × OS回写
+原力母体 = 注意力雷达 × 品味函数 × 身体化能力 × 生命经验 × 长期承诺</div>
+    </div></div>
+    <aside class="hero-card"><div class="pad metrics">
+      <div class="metric"><b id="filledCount">0%</b><span>填写完成度。自动保存在本地浏览器。</span></div>
+      <div class="metric"><b id="maturity">未评分</b><span>成熟度评分基于每张卡的 A/B/C/D 判断。</span></div>
+      <div class="metric"><b>下一步</b><span>完成后导出 Markdown，回写到个人 OS 文脉，并交给《原力创业》做借势判断。</span></div>
+    </div></aside>
+  </section>
+
+  <section class="section panel"><div class="pad">
+    <h2>七阶递进结构</h2>
+    <p class="subtitle">清算不是否定能力，而是停止把同质化能力误认为长期资产。</p>
+    <div class="stage" style="margin-top:16px">
+      <div class="step"><strong>01 清算</strong><span>识别哪些能力正在被 AI 同质化。</span></div>
+      <div class="step"><strong>02 返源</strong><span>回到不可复制的原力母体。</span></div>
+      <div class="step"><strong>03 成形</strong><span>拆出母体五个部件。</span></div>
+      <div class="step"><strong>04 外化</strong><span>用 AI 把母体变成可见资产。</span></div>
+      <div class="step"><strong>05 验证</strong><span>用真实世界验证是否被需要。</span></div>
+      <div class="step"><strong>06 回写</strong><span>把反馈写回文脉、大脑、地图、链路。</span></div>
+      <div class="step"><strong>07 复利</strong><span>母体越用越清楚，越用越值钱。</span></div>
+    </div>
+  </div></section>
+
+  <section class="section grid">
+    <aside class="side panel"><div class="pad">
+      <h2 style="font-size:28px">六张核心卡</h2>
+      <p class="subtitle">按顺序填写，也可以任意切换。内容会自动保存。</p>
+      <div class="progressbar"><div id="bar"></div></div>
+      <div class="navcards" id="nav" style="margin-top:16px"></div>
+    </div></aside>
+    <div class="worksheet" id="cards"></div>
+  </section>
+
+  <section class="section panel" id="exportSection"><div class="pad">
+    <div class="workhead">
+      <div><h2>Markdown 导出</h2><p class="subtitle">点击“生成 Markdown”后，可复制到 GitHub、Obsidian、飞书或个人 OS。</p></div>
+      <span class="tag">OS Writeback</span>
+    </div>
+    <textarea class="exportbox" id="exportBox" placeholder="导出内容会显示在这里。"></textarea>
+  </div></section>
+</main>
+<div class="toast" id="toast">已保存</div>
+<script>
+const STORAGE_KEY='yuanli_asset_matrix_v1';
+const cards=[
+{id:'matrix',no:'01',title:'原力母体总卡',tag:'Master',desc:'定义你持续生成判断、作品、关系和意义的底层生命结构。',fields:[
+['持续关注的问题','我长期反复关注、无法放下的问题是什么？'],['天然生成的判断 / 作品 / 关系 / 意义','我天然会生成什么？别人常从我这里获得什么？'],['别人为什么找我','别人为什么不去找别人，而是找我？'],['越做越清楚的事情','我越做越清楚的领域、人群、问题、表达方式。'],['原力母体一句话','我的原力母体，是我持续围绕____，为____，生成____的底层生命结构。'] ],score:['长期稳定，不是一时兴趣','能持续生成判断、作品、关系或意义','能被 AI 外化，而不只停留在感觉里','已经被真实世界初步需要或验证']},
+{id:'attention',no:'02',title:'注意力雷达卡',tag:'Attention',desc:'识别你天然会看见什么、被什么反复吸引、对哪些信号有高分辨率。',fields:[
+['天然会看见什么','结构、机会、风险、情绪、审美失真、系统漏洞等。'],['高分辨率信号','我比别人更早看见什么？这个信号通常意味着什么？'],['反复吸引的问题','什么问题反复进入我的注意力？背后的更大问题是什么？'],['我最常说“这里不对”的地方','在产品、商业、关系、表达、战略上，我最常看见哪里不对？'],['注意力雷达一句话','我的注意力雷达，最容易捕捉到____中的____信号。'] ],score:['长期反复出现，不是短期热点','有高分辨率，而不只是泛泛兴趣','能看见背后结构','能转化为判断、表达、产品或创业入口']},
+{id:'taste',no:'03',title:'品味函数卡',tag:'Taste',desc:'识别你如何判断什么值得做、什么不值得做。',fields:[
+['什么值得做','值得做的事情通常具备哪些特征？'],['什么不值得做','不值得做的事情通常具备哪些特征？'],['高级 / 伪高级','我如何区分高级和伪高级？'],['真问题 / 伪需求','我如何判断一个问题是否值得下注？'],['绝不降低的标准','我宁可慢一点、少赚一点、不做，也不愿降低什么标准？'],['品味函数一句话','我的品味函数，是我在____场景中，用____标准判断____是否值得长期投入的价值排序系统。'] ],score:['能判断取舍，而不是只表达偏好','能解释为什么高级，而不是只说喜欢','能稳定用于不同场景','能帮助 AI 过滤普通答案']},
+{id:'embodied',no:'04',title:'身体化能力卡',tag:'Embodied',desc:'识别你长期训练出的手感、嗅觉、判断和行动回路。',fields:[
+['长期训练出的手感','哪些能力来自长期训练，而不是短期学习？'],['能快速识别的结构','用户、商业、内容、组织、人性等方面，我能快速识别什么？'],['不用从零思考的判断','哪些场景下我能快速做出判断？背后的经验来源是什么？'],['身体记忆','我身体会先于语言知道什么？哪些场景高能或消耗？'],['身体化能力一句话','我的身体化能力，是我在____场景中，经过长期反馈训练出的____判断/手感/行动回路。'] ],score:['来自长期反馈，而不是短期学习','能在真实场景中稳定出现','能帮助我更快、更准、更深地判断','能被 AI 外化成模型、流程、清单或案例']},
+{id:'life',no:'05',title:'生命经验炼金卡',tag:'Alchemy',desc:'识别你被哪些经历不可逆地塑形，并把经历炼成判断、作品、关系和意义。',fields:[
+['关键经历清单','列出 3-5 个塑形我的关键经历，以及它们如何塑形我。'],['经历炼成判断力','这些经历让我形成了什么不同于大众共识的判断？'],['经历炼成共情力','我因此更能理解哪类人？他们正在承受什么？'],['经历炼成作品源头','这些经历可以生成哪些内容、产品、方法论、关系或社群？'],['生命经验一句话','我的生命经验，让我特别能看见____，并愿意长期为____生成____。'] ],score:['不只是故事，而能产生判断','不只是情绪，而能产生共情','不只是伤口，而能产生作品','不只是个人经历，而能服务一群人']},
+{id:'commitment',no:'06',title:'长期承诺与市场验证卡',tag:'Validation',desc:'识别你愿意用十年持续服务什么，并验证这个母体是否真的被世界需要。',fields:[
+['十年承诺','我愿意长期服务的问题、人群、作品/产品/系统是什么？'],['天选用户线索','谁最自然被我的母体吸引？谁从我这里获得过真实改变？'],['贵问题判断','这群人的贵问题是什么？旧方案为什么失效？我的母体为什么刚好能切入？'],['市场验证六问','是否有人愿意靠近、相信、付费、复用、改变行动、共同建设？证据是什么？'],['下一轮验证动作','我要验证的假设、对象、方式、周期、指标、失败后的回写方式。'],['长期承诺一句话','我愿意用未来十年，围绕____，服务____，持续生成____，并通过____完成市场验证与系统回写。'] ],score:['愿意长期承受代价，而不只是兴趣','能服务一群人，而不只是自我表达','能设计真实验证动作','验证结果能被 OS 回写并长期复利']}
+];
+let state=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
+function $(id){return document.getElementById(id)}
+function toast(t='已保存'){const el=$('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1600)}
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));updateStats()}
+function key(card,field){return card+'__'+field.replace(/\s+/g,'_')}
+function render(){const nav=$('nav'),wrap=$('cards');cards.forEach((c,i)=>{const n=document.createElement('div');n.className='navitem'+(i===0?' active':'');n.dataset.target=c.id;n.innerHTML=`<b>${c.no} · ${c.title}</b><span>${c.desc}</span>`;n.onclick=()=>activate(c.id);nav.appendChild(n);const panel=document.createElement('article');panel.className='panel workcard'+(i===0?' active':'');panel.id='card-'+c.id;let html=`<div class="pad"><div class="workhead"><div><span class="tag">${c.tag}</span><h2 style="margin-top:12px">${c.no} · ${c.title}</h2><p class="subtitle">${c.desc}</p></div></div><div class="fields">`;c.fields.forEach((f,idx)=>{const k=key(c.id,f[0]);html+=`<div class="field ${idx===c.fields.length-1?'full':''}"><label>${f[0]}</label><div class="hint">${f[1]}</div><textarea data-k="${k}" placeholder="在这里填写……">${state[k]||''}</textarea></div>`});html+=`</div><div class="field full" style="margin-top:14px"><label>成熟度判断</label><div class="hint">勾选已经成立的判断。用于计算当前卡片成熟度。</div><div class="score">`;c.score.forEach((s,idx)=>{const k=key(c.id,'score_'+idx);html+=`<label><input type="checkbox" data-k="${k}" ${state[k]?'checked':''}/> ${s}</label>`});html+=`</div></div></div>`;panel.innerHTML=html;wrap.appendChild(panel)});document.querySelectorAll('textarea').forEach(t=>{t.addEventListener('input',e=>{state[e.target.dataset.k]=e.target.value;save()})});document.querySelectorAll('input[type=checkbox]').forEach(ch=>{ch.addEventListener('change',e=>{state[e.target.dataset.k]=e.target.checked;save()})});updateStats()}
+function activate(id){document.querySelectorAll('.navitem').forEach(n=>n.classList.toggle('active',n.dataset.target===id));document.querySelectorAll('.workcard').forEach(p=>p.classList.toggle('active',p.id==='card-'+id));window.scrollTo({top:document.querySelector('.grid').offsetTop-90,behavior:'smooth'})}
+function updateStats(){let total=0,filled=0,score=0,scoreTotal=0;cards.forEach(c=>{c.fields.forEach(f=>{total++;if((state[key(c.id,f[0])]||'').trim())filled++});c.score.forEach((s,i)=>{scoreTotal++;if(state[key(c.id,'score_'+i)])score++})});const pct=total?Math.round(filled/total*100):0;$('filledCount').textContent=pct+'%';$('bar').style.width=pct+'%';const ratio=scoreTotal?score/scoreTotal:0;$('maturity').textContent=ratio>=.85?'A · 核心母体':ratio>=.65?'B · 高潜母体':ratio>=.4?'C · 候选母体':'D · 待返源'}
+function exportMarkdown(){let md='# 原力资产 · 原力母体填写稿\n\n';md+='> 公式：原力资产 = 原力母体 × AI外化 × 市场验证 × OS回写\n\n';cards.forEach(c=>{md+=`## ${c.no} · ${c.title}\n\n`;c.fields.forEach(f=>{md+=`### ${f[0]}\n\n${(state[key(c.id,f[0])]||'').trim()||'（未填写）'}\n\n`});let checked=c.score.filter((s,i)=>state[key(c.id,'score_'+i)]);md+=`### 成熟度判断\n\n${checked.length?checked.map(x=>'- '+x).join('\n'):'（未勾选）'}\n\n`});md+='## 下一步接口\n\n### 交给《原力创业》\n\n- 原力母体定义\n- 天选用户线索\n- 贵问题线索\n- 市场验证记录\n\n### 交给《原力OS》\n\n- 文脉回写\n- 大脑资料\n- 判断地图\n- 行动链路\n';$('exportBox').value=md;toast('Markdown 已生成');return md}
+$('saveBtn').onclick=()=>{save();toast('草稿已保存')};$('exportBtn').onclick=exportMarkdown;$('copyBtn').onclick=async()=>{const txt=$('exportBox').value||exportMarkdown();try{await navigator.clipboard.writeText(txt);toast('已复制到剪贴板')}catch(e){toast('复制失败，请手动复制')}};$('clearBtn').onclick=()=>{if(confirm('确定清空本页所有本地草稿？')){state={};localStorage.removeItem(STORAGE_KEY);document.querySelectorAll('textarea').forEach(t=>t.value='');document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);updateStats();toast('已清空')}};render();
+</script>
+</body>
+</html>
