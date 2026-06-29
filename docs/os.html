@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OS Tool · 原力OS四步系统搭建页</title>
+  <meta name="description" content="原力OS四步交互式系统搭建页：一纸文脉、一个大脑、一张地图、一条链路。特别校准：一张地图 = 战略地图 / 能力组件地图 / 事业系统地图。" />
+  <style>
+    :root{--bg:#07100d;--panel:rgba(14,32,26,.82);--line:rgba(201,169,97,.30);--line2:rgba(201,169,97,.54);--gold:#c9a961;--gold2:#f3d58a;--text:#f3efe4;--muted:#9fb3a7;--green:#63e6be;--red:#ff9a7b;--shadow:0 28px 90px rgba(0,0,0,.42);--r:26px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;background:radial-gradient(circle at 8% 0%,rgba(201,169,97,.20),transparent 30%),radial-gradient(circle at 92% 10%,rgba(99,230,190,.12),transparent 28%),linear-gradient(135deg,#050807 0%,#0b1713 48%,#08110f 100%);min-height:100vh}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at center,black,transparent 78%)}.shell{width:min(1500px,calc(100vw - 36px));margin:0 auto;padding:26px 0 80px}.topbar{position:sticky;top:14px;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(8,17,15,.74);backdrop-filter:blur(18px);box-shadow:0 14px 50px rgba(0,0,0,.28)}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}.sigil{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#07100d;font-weight:950}.nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a,.btn{appearance:none;border:1px solid var(--line);background:rgba(201,169,97,.08);color:var(--text);border-radius:999px;padding:9px 12px;font-weight:750;cursor:pointer;text-decoration:none;font-size:13px}.nav a:hover,.btn:hover{background:rgba(201,169,97,.16)}.btn.primary{background:linear-gradient(135deg,rgba(201,169,97,.28),rgba(243,213,138,.18));color:var(--gold2)}.btn.danger{border-color:rgba(255,154,123,.35);color:#ffb29c}.actions{display:flex;gap:8px;flex-wrap:wrap}.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;padding:58px 0 26px}.card,.panel,.hero-card{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(18,42,34,.90),rgba(8,17,15,.76));box-shadow:var(--shadow);position:relative;overflow:hidden}.card:after,.panel:after,.hero-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 0%,rgba(201,169,97,.16),transparent 42%)}.pad{position:relative;z-index:1;padding:32px}.eyebrow{display:inline-flex;color:var(--gold2);border:1px solid var(--line);background:rgba(201,169,97,.08);padding:8px 12px;border-radius:999px;font-size:13px;margin-bottom:20px}h1{font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px}h1 span,h2 span{color:var(--gold2)}h2{font-size:clamp(28px,3.6vw,48px);line-height:1.05;letter-spacing:-.045em;margin:0}.lead{font-size:20px;line-height:1.82;color:#d9e1d8;margin:0;max-width:920px}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;border:1px solid var(--line);background:rgba(0,0,0,.22);border-radius:20px;padding:16px 18px;color:var(--gold2);line-height:1.72;font-size:14px;white-space:pre-wrap}.metrics{display:grid;gap:14px}.metric{border:1px solid rgba(201,169,97,.20);border-radius:22px;background:rgba(255,255,255,.04);padding:18px}.metric b{display:block;color:var(--gold2);font-size:25px;margin-bottom:6px}.metric span{color:var(--muted);line-height:1.65}.section{margin-top:24px;scroll-margin-top:116px}.stage{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.step{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:18px;padding:13px;min-height:106px}.step strong{display:block;color:var(--gold2);margin-bottom:7px}.step span{color:var(--muted);font-size:13px;line-height:1.48}.grid{display:grid;grid-template-columns:320px 1fr;gap:18px}.side{position:sticky;top:92px;align-self:start}.navcards{display:grid;gap:9px}.navitem{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.04);border-radius:18px;padding:12px;cursor:pointer;color:var(--muted)}.navitem.active{border-color:var(--line2);background:rgba(201,169,97,.12);color:var(--text)}.navitem b{display:block;color:var(--gold2);margin-bottom:5px}.progressbar{height:10px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin-top:12px}.progressbar div{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--green));border-radius:999px}.worksheet{display:grid;gap:16px}.workcard{display:none}.workcard.active{display:block}.workhead{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:14px}.tag{display:inline-flex;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(201,169,97,.08)}.subtitle{color:var(--muted);line-height:1.7;margin:8px 0 0}.fields{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.field{border:1px solid rgba(201,169,97,.15);background:rgba(0,0,0,.14);border-radius:18px;padding:13px}.field.full{grid-column:1/-1}.field label{display:block;color:var(--gold2);font-weight:800;margin-bottom:8px}.hint{color:var(--muted);font-size:13px;line-height:1.5;margin-bottom:8px}.field textarea{width:100%;min-height:108px;resize:vertical;border:1px solid rgba(201,169,97,.18);background:rgba(3,8,7,.62);color:var(--text);border-radius:14px;padding:12px;font:15px/1.65 inherit;outline:none}.field textarea:focus{border-color:var(--line2);box-shadow:0 0 0 3px rgba(201,169,97,.10)}.score{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:8px}.score label{display:flex;gap:7px;align-items:flex-start;color:#d8e0d7;border:1px solid rgba(201,169,97,.16);background:rgba(255,255,255,.035);border-radius:14px;padding:10px;font-size:13px;line-height:1.45;cursor:pointer}.score input{margin-top:2px}.exportbox{width:100%;min-height:320px;border:1px solid rgba(201,169,97,.18);background:rgba(3,8,7,.70);color:var(--text);border-radius:20px;padding:16px;font:14px/1.65 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap}.toast{position:fixed;right:22px;bottom:22px;z-index:50;background:rgba(18,42,34,.96);border:1px solid var(--line2);border-radius:18px;padding:12px 14px;color:var(--gold2);box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:.25s}.toast.show{opacity:1;transform:translateY(0)}.footer{margin-top:34px;text-align:center;color:var(--muted);line-height:1.8;font-size:14px}@media(max-width:1100px){.hero,.grid{grid-template-columns:1fr}.side{position:static}.stage,.fields,.score{grid-template-columns:1fr}.topbar{position:static;border-radius:24px;align-items:flex-start;flex-direction:column}.nav,.actions{justify-content:flex-start}.pad{padding:24px}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <header class="topbar">
+    <div class="brand"><div class="sigil">OS</div><div>OS Tool · 原力OS</div></div>
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="trilogy-concept-map.html">Canon Map</a>
+      <a href="asset.html">Asset Tool</a>
+      <a href="startup.html">Startup Tool</a>
+      <a href="os.html">OS Tool</a>
+      <a href="https://github.com/moonstachain/yuanli-strategy-soul">GitHub</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card"><div class="pad">
+      <div class="eyebrow">Interactive Operating System · Local-first</div>
+      <h1>原力OS工具<br/><span>写成系统，递归回写</span></h1>
+      <p class="lead">这是原力战略三部曲的第三部交互工具。它承接 Startup Tool 的 OS 回写包，帮助你搭建：一纸文脉、一个大脑、一张地图、一条链路。特别校准：这里的“一张地图”是战略地图 / 能力组件地图 / 事业系统地图，不是普通思维导图。</p>
+      <div class="formula">原力OS四步：一纸文脉 → 一个大脑 → 一张地图 → 一条链路
+一张地图 = 战略地图 / 能力组件地图 / 事业系统地图
+递归回写不是第五步，而是贯穿四步的底层机制。</div>
+    </div></div>
+    <aside class="hero-card"><div class="pad metrics">
+      <div class="metric"><b id="filledCount">0%</b><span>填写完成度。本地自动保存，不上传服务器。</span></div>
+      <div class="metric"><b id="maturity">未评分</b><span>成熟度基于每张系统卡的勾选项。</span></div>
+      <div class="metric"><b>输出</b><span>Markdown 导出，可回写到 CONSTITUTION、大脑库、战略地图、链路与项目看板。</span></div>
+      <div class="actions"><button class="btn" id="saveBtn">保存草稿</button><button class="btn primary" id="exportBtn">生成 Markdown</button><button class="btn" id="copyBtn">复制导出</button><button class="btn danger" id="clearBtn">清空</button></div>
+    </div></aside>
+  </section>
+
+  <section class="section panel"><div class="pad">
+    <h2>四步系统路径</h2>
+    <div class="stage" style="margin-top:16px">
+      <div class="step"><strong>01 一纸文脉</strong><span>把我是谁、为什么做、边界与风格写成最小正典。</span></div>
+      <div class="step"><strong>02 一个大脑</strong><span>把知识、案例、术语、样例、数据沉淀为记忆系统。</span></div>
+      <div class="step"><strong>03 一张地图</strong><span>战略地图 / 能力组件地图，决定方向、取舍、优先级与路径。</span></div>
+      <div class="step"><strong>04 一条链路</strong><span>把战略判断变成可重复执行、可验收、可回写的行动流程。</span></div>
+    </div>
+  </div></section>
+
+  <section class="section grid">
+    <aside class="side panel"><div class="pad">
+      <h2 style="font-size:28px">四张系统卡</h2>
+      <p class="subtitle">先从 Startup Tool 导出的 OS 回写包开始，再生成可长期递归进化的原力OS。</p>
+      <div class="progressbar"><div id="bar"></div></div>
+      <div class="navcards" id="nav" style="margin-top:16px"></div>
+    </div></aside>
+    <div class="worksheet" id="cards"></div>
+  </section>
+
+  <section class="section panel" id="exportSection"><div class="pad">
+    <div class="workhead"><div><h2>Markdown 导出</h2><p class="subtitle">生成后复制到 GitHub、Obsidian、飞书或原力OS仓库。</p></div><span class="tag">Recursive Writeback</span></div>
+    <textarea class="exportbox" id="exportBox" placeholder="导出内容会显示在这里。"></textarea>
+  </div></section>
+  <footer class="footer"><div>OS Tool · 原力OS</div><div>下一步：把本页导出内容回写到 CONSTITUTION / source / project / codex / templates。</div></footer>
+</main>
+<div class="toast" id="toast">已保存</div>
+<script>
+const STORAGE_KEY='yuanli_os_tool_public_v1';
+const cards=[
+{id:'context',no:'01',title:'一纸文脉卡',tag:'Context',desc:'把我是谁、为什么做、原力母体、长期边界和表达风格，写成 AI 与团队都能理解和调用的最小正典文件。',fields:[['定义','一纸文脉是什么？它如何让 AI 和团队真正懂我？'],['不是它','不是个人简介、品牌文案、愿景口号、提示词集合。我的边界是什么？'],['第一性问题','AI 如何真正懂我？'],['原子模块','母体说明、长期承诺、品味函数、战略边界、语言风格、禁止事项。'],['输入','来自 Asset Tool 与 Startup Tool 的哪些材料？'],['判断标准','AI 是否能基于它稳定判断？是否知道什么不该做？是否保持口径一致？'],['输出','一纸文脉、我的说明书V3、AI使用协议、战略边界清单。'],['回写','CONSTITUTION.md / OS文脉卡 / 元AI上下文 / docs / templates / skills。']],score:['足够短，能长期维护','AI 能稳定判断像我/不像我','明确知道不做什么','能被团队和工具复用']},
+{id:'brain',no:'02',title:'一个大脑卡',tag:'Brain',desc:'把知识、案例、术语、样例、数据和经验沉淀成可检索、可调用、可更新的记忆系统。',fields:[['定义','一个大脑是什么？它如何避免每次从零开始？'],['不是它','不是文件夹堆积、资料收藏、知识库幻觉、没有版本的杂物箱。'],['第一性问题','系统应该记住什么，才能让下一次不从零开始？'],['原子模块','知识库、案例库、术语库、样例库、数据库、索引层。'],['输入','书稿、源稿、项目案例、客户反馈、模板填写稿、市场数据、任务输出。'],['判断标准','是否可检索、可信、有版本、可被下一次任务调用、与文脉一致？'],['输出','一个大脑、知识索引、案例索引、术语表、样例库、数据记录。'],['回写','source/indexes / source/extracts / 案例库 / 术语库 / 样例库。']],score:['资料可检索','有版本与来源','能被下一次任务调用','与一纸文脉一致']},
+{id:'map',no:'03',title:'一张地图卡',tag:'Strategic Map',desc:'把文脉和大脑组织成能判断方向、取舍、优先级和路径的战略地图 / 能力组件地图 / 事业系统地图。',fields:[['定义','一张地图不是普通图，而是战略地图：它如何组织目标、用户、机会、能力、链路、壁垒和决策阈值？'],['不是它','不是思维导图，不是信息可视化，不是漂亮但不能决策的图，不是漂亮信息图。'],['第一性问题','系统如何知道什么更重要、先做什么、怎么判断？'],['IBM CBM式理解','把事业系统拆成能力组件：哪些是战略控制点？哪些是支撑能力？哪些是可外包能力？哪些是瓶颈能力？'],['原子模块','目标地图、用户地图、机会地图、能力组件地图、商业地图、因果地图、决策阈值。'],['输入','一纸文脉、一个大脑、创业四关结果、市场验证记录、客户成功案例、战略目标。'],['判断标准','是否能帮助取舍？是否能解释因果？是否能识别能力缺口？是否能指导下一步行动？是否能被验证和更新？'],['输出','一张战略地图、能力组件地图、机会地图、商业地图、变量因果图、行动阈值。'],['回写','OS地图 / 项目看板 / Codex任务树 / 战略路径图 / docs/trilogy-concept-map.html。']],score:['不是普通思维导图','能支撑战略取舍','能识别能力组件与瓶颈','能生成下一步链路']},
+{id:'chain',no:'04',title:'一条链路卡',tag:'Chain',desc:'把地图中的战略判断转化为可重复执行、可交给人或AI、可验收、可回写的行动流程。',fields:[['定义','一条链路是什么？它如何把战略判断变成行动？'],['不是它','不是待办事项、临时任务、一次性交付、没有验收标准的流程。'],['第一性问题','如何把判断变成可复用、可执行、可自动化的行动？'],['原子模块','OSA任务链、SOP链、Agent链、Codex链、内容链、交付链、回写链。'],['输入','一张战略地图、任务目标、工具能力、模板、验收标准、历史流程。'],['判断标准','是否能重复执行？是否能交给别人或AI？是否有明确输入输出？是否有验收标准？是否有回写位置？'],['输出','一条链路、SOP、Agent workflow、Codex-ready task、自动化流程、Evolution Note、Skill蒸馏卡。'],['回写','codex / project / templates / skills / 原力母体升级记录。']],score:['可重复执行','可交给人或AI','有输入输出与验收','有明确回写位置']}
+];
+let state=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');
+function $(id){return document.getElementById(id)}
+function toast(t='已保存'){const el=$('toast');el.textContent=t;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),1600)}
+function save(){localStorage.setItem(STORAGE_KEY,JSON.stringify(state));updateStats()}
+function key(card,field){return card+'__'+field.replace(/\s+/g,'_')}
+function render(){const nav=$('nav'),wrap=$('cards');cards.forEach((c,i)=>{const n=document.createElement('div');n.className='navitem'+(i===0?' active':'');n.dataset.target=c.id;n.innerHTML=`<b>${c.no} · ${c.title}</b><span>${c.desc}</span>`;n.onclick=()=>activate(c.id);nav.appendChild(n);const panel=document.createElement('article');panel.className='panel workcard'+(i===0?' active':'');panel.id='card-'+c.id;let html=`<div class="pad"><div class="workhead"><div><span class="tag">${c.tag}</span><h2 style="margin-top:12px">${c.no} · ${c.title}</h2><p class="subtitle">${c.desc}</p></div></div><div class="fields">`;c.fields.forEach((f,idx)=>{const k=key(c.id,f[0]);html+=`<div class="field ${idx===c.fields.length-1?'full':''}"><label>${f[0]}</label><div class="hint">${f[1]}</div><textarea data-k="${k}" placeholder="在这里填写……">${state[k]||''}</textarea></div>`});html+=`</div><div class="field full" style="margin-top:14px"><label>系统成熟度判断</label><div class="hint">勾选已经成立的判断。</div><div class="score">`;c.score.forEach((s,idx)=>{const k=key(c.id,'score_'+idx);html+=`<label><input type="checkbox" data-k="${k}" ${state[k]?'checked':''}/> ${s}</label>`});html+=`</div></div></div>`;panel.innerHTML=html;wrap.appendChild(panel)});document.querySelectorAll('textarea').forEach(t=>{t.addEventListener('input',e=>{state[e.target.dataset.k]=e.target.value;save()})});document.querySelectorAll('input[type=checkbox]').forEach(ch=>{ch.addEventListener('change',e=>{state[e.target.dataset.k]=e.target.checked;save()})});updateStats()}
+function activate(id){document.querySelectorAll('.navitem').forEach(n=>n.classList.toggle('active',n.dataset.target===id));document.querySelectorAll('.workcard').forEach(p=>p.classList.toggle('active',p.id==='card-'+id));window.scrollTo({top:document.querySelector('.grid').offsetTop-90,behavior:'smooth'})}
+function updateStats(){let total=0,filled=0,score=0,scoreTotal=0;cards.forEach(c=>{c.fields.forEach(f=>{total++;if((state[key(c.id,f[0])]||'').trim())filled++});c.score.forEach((s,i)=>{scoreTotal++;if(state[key(c.id,'score_'+i)])score++})});const pct=total?Math.round(filled/total*100):0;$('filledCount').textContent=pct+'%';$('bar').style.width=pct+'%';const ratio=scoreTotal?score/scoreTotal:0;$('maturity').textContent=ratio>=.85?'A · 可递归OS':ratio>=.65?'B · 可运行OS':ratio>=.4?'C · OS雏形':'D · 待搭建'}
+function exportMarkdown(){let md='# 原力OS · OS Tool 系统搭建稿\n\n';md+='> 路径：一纸文脉 → 一个大脑 → 一张战略地图 → 一条链路\n\n';md+='> 关键裁决：一张地图 = 战略地图 / 能力组件地图 / 事业系统地图，不是普通思维导图。\n\n';cards.forEach(c=>{md+=`## ${c.no} · ${c.title}\n\n`;c.fields.forEach(f=>{md+=`### ${f[0]}\n\n${(state[key(c.id,f[0])]||'').trim()||'（未填写）'}\n\n`});let checked=c.score.filter((s,i)=>state[key(c.id,'score_'+i)]);md+=`### 成熟度判断\n\n${checked.length?checked.map(x=>'- '+x).join('\n'):'（未勾选）'}\n\n`});md+='## 回写位置\n\n- CONSTITUTION.md：更新正典口径\n- source/indexes 与 source/extracts：更新大脑与知识索引\n- project：更新项目看板与战略地图\n- codex：更新 Codex-ready task 链路\n- templates / skills：沉淀可复用模板与技能\n- 原力母体：把任务结果回写到下一轮资产升级\n';$('exportBox').value=md;toast('Markdown 已生成');return md}
+$('saveBtn').onclick=()=>{save();toast('草稿已保存')};$('exportBtn').onclick=exportMarkdown;$('copyBtn').onclick=async()=>{const txt=$('exportBox').value||exportMarkdown();try{await navigator.clipboard.writeText(txt);toast('已复制到剪贴板')}catch(e){toast('复制失败，请手动复制')}};$('clearBtn').onclick=()=>{if(confirm('确定清空本页所有本地草稿？')){state={};localStorage.removeItem(STORAGE_KEY);document.querySelectorAll('textarea').forEach(t=>t.value='');document.querySelectorAll('input[type=checkbox]').forEach(c=>c.checked=false);updateStats();toast('已清空')}};render();
+</script>
+</body>
+</html>
