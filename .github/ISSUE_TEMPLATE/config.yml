@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 原力战略三部曲 · Soul Cockpit
+    url: https://github.com/moonstachain/yuanli-strategy-soul/blob/main/docs/index.html
+    about: 先阅读外显网站与入口仓制度，再创建 Issue。
+  - name: 入口仓规则 INTAKE
+    url: https://github.com/moonstachain/yuanli-strategy-soul/blob/main/INTAKE.md
+    about: 查看任务如何进入、裁决、分发与回写。
