@@ -3,153 +3,130 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>原力战略三部曲 · 正典概念地图</title>
-  <meta name="description" content="原力战略三部曲正典概念地图：母公理、原力资产正典合并、原力创业、原力OS、三部递归飞轮。" />
+  <title>原力战略三部曲 · 原力母体正典地图</title>
+  <meta name="description" content="原力战略三部曲正典概念地图：原力母体、AI外化、市场验证、OS回写、原力创业与原力OS。" />
   <style>
     :root{--bg:#07100d;--panel:rgba(14,32,26,.78);--panel2:rgba(18,42,34,.88);--line:rgba(201,169,97,.30);--line2:rgba(201,169,97,.48);--gold:#c9a961;--gold2:#f3d58a;--text:#f3efe4;--muted:#9fb3a7;--green:#63e6be;--red:#ff9a7b;--shadow:0 28px 90px rgba(0,0,0,.42);--r:26px}
     *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;color:var(--text);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC","Microsoft YaHei",sans-serif;background:radial-gradient(circle at 8% 0%,rgba(201,169,97,.20),transparent 30%),radial-gradient(circle at 92% 10%,rgba(99,230,190,.12),transparent 28%),linear-gradient(135deg,#050807 0%,#0b1713 48%,#08110f 100%);min-height:100vh} body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle at center,black,transparent 78%)}
     .shell{width:min(1560px,calc(100vw - 36px));margin:0 auto;padding:26px 0 72px}.topbar{position:sticky;top:14px;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:14px 18px;border:1px solid var(--line);border-radius:999px;background:rgba(8,17,15,.72);backdrop-filter:blur(18px);box-shadow:0 14px 50px rgba(0,0,0,.28)}.brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.04em}.sigil{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold),var(--gold2));color:#07100d;font-weight:950;box-shadow:0 0 28px rgba(201,169,97,.35)}nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}nav a{color:var(--muted);text-decoration:none;font-size:13px;padding:8px 11px;border-radius:999px;border:1px solid transparent}nav a:hover{color:var(--text);border-color:var(--line);background:rgba(201,169,97,.08)}
     .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:22px;padding:58px 0 28px}.card,.panel,.hero-card{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(18,42,34,.88),rgba(8,17,15,.76));box-shadow:var(--shadow);position:relative;overflow:hidden}.card:after,.panel:after,.hero-card:after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 18% 0%,rgba(201,169,97,.18),transparent 40%)}.pad{position:relative;z-index:1;padding:32px}.eyebrow{display:inline-flex;color:var(--gold2);border:1px solid var(--line);background:rgba(201,169,97,.08);padding:8px 12px;border-radius:999px;font-size:13px;margin-bottom:20px}h1{font-size:clamp(42px,6vw,84px);line-height:.95;letter-spacing:-.06em;margin:0 0 22px}h1 span,h2 span{color:var(--gold2)}.lead{font-size:20px;line-height:1.82;color:#d9e1d8;margin:0;max-width:900px}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;border:1px solid var(--line);background:rgba(0,0,0,.22);border-radius:20px;padding:16px 18px;color:var(--gold2);line-height:1.72;font-size:14px;white-space:pre-wrap}.metrics{display:grid;gap:14px}.metric{border:1px solid rgba(201,169,97,.20);border-radius:22px;background:rgba(255,255,255,.04);padding:18px}.metric b{display:block;color:var(--gold2);font-size:25px;margin-bottom:6px}.metric span{color:var(--muted);line-height:1.65}
-    .section{margin-top:32px;scroll-margin-top:112px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:17px}h2{font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.045em;margin:0}.sub{color:var(--muted);line-height:1.75;max-width:980px;margin:8px 0 0}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.card{padding:20px;min-height:160px}.tag{display:inline-flex;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:13px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(201,169,97,.08)}.card h3{font-size:23px;margin:0 0 10px;letter-spacing:-.02em}.card p,.card li{color:var(--muted);line-height:1.67}.card p{margin:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;color:var(--gold2)}
-    .big-map{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1.06fr 1fr;gap:18px;align-items:stretch}.pillar{display:grid;gap:14px}.node{border:1px solid rgba(201,169,97,.22);background:rgba(255,255,255,.04);border-radius:22px;padding:16px}.node h3{margin:0 0 8px;color:var(--gold2);font-size:21px}.node p{margin:0;color:var(--muted);line-height:1.62}.center-stack{display:grid;gap:14px}.axiom{min-height:140px;display:grid;place-items:center;text-align:center;border:1px solid var(--line2);border-radius:26px;background:radial-gradient(circle at 50% 0%,rgba(201,169,97,.18),rgba(255,255,255,.04));padding:24px}.axiom strong{display:block;font-size:38px;color:var(--gold2);margin-bottom:8px}.axiom span{color:#dbe5db;line-height:1.65}.flowline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:20px;padding:16px;min-height:112px}.step strong{display:block;color:var(--gold2);margin-bottom:8px}.step span{color:var(--muted);font-size:14px;line-height:1.55}.matrix{overflow-x:auto;position:relative;z-index:1}table{width:100%;border-collapse:collapse;min-width:1080px}th,td{padding:14px 13px;text-align:left;border-bottom:1px solid rgba(201,169,97,.16);vertical-align:top}th{color:var(--gold2);font-weight:800;background:rgba(201,169,97,.06)}td{color:#d8e0d7;line-height:1.58}td small{color:var(--muted)}
-    .pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.pill{display:inline-flex;color:#d8e0d7;border:1px solid rgba(201,169,97,.18);background:rgba(201,169,97,.06);border-radius:999px;padding:6px 9px;font-size:12.5px}.quote{font-size:clamp(24px,3.4vw,44px);line-height:1.35;letter-spacing:-.04em;color:var(--gold2);margin:0}.footer{margin-top:34px;text-align:center;color:var(--muted);line-height:1.8;font-size:14px}.deep{display:grid;gap:12px}.deep details{border:1px solid rgba(201,169,97,.20);background:rgba(255,255,255,.035);border-radius:20px;padding:14px}.deep summary{cursor:pointer;color:var(--gold2);font-weight:800;letter-spacing:.01em}.deep .content{margin-top:12px}.list{display:grid;gap:8px;margin:0;padding:0;list-style:none}.list li{border:1px solid rgba(201,169,97,.14);background:rgba(0,0,0,.12);border-radius:14px;padding:10px 12px;color:#d8e0d7;line-height:1.56}.list b{color:var(--gold2)}.subgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}.micro{border:1px solid rgba(201,169,97,.16);border-radius:16px;background:rgba(0,0,0,.12);padding:12px}.micro h4{margin:0 0 8px;color:var(--gold2);font-size:16px}.micro p{margin:0;color:var(--muted);line-height:1.55}.warn{border-color:rgba(255,154,123,.35)!important;background:rgba(255,154,123,.06)!important}.warn h3,.warn h4,.warn summary{color:#ffb29c!important}.sourcebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.sourcebar span{border:1px solid rgba(201,169,97,.20);border-radius:999px;background:rgba(255,255,255,.04);padding:7px 10px;color:var(--muted);font-size:12.5px}.toc{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.toc a{text-decoration:none;color:#d8e0d7;border:1px solid rgba(201,169,97,.20);border-radius:18px;background:rgba(255,255,255,.04);padding:13px;line-height:1.45}.toc a b{display:block;color:var(--gold2);margin-bottom:5px}
-    @media(max-width:1180px){.hero,.big-map,.grid2,.grid3,.grid4,.grid6,.subgrid,.toc{grid-template-columns:1fr}.flowline{grid-template-columns:1fr}.topbar{position:static;border-radius:24px;align-items:flex-start;flex-direction:column}nav{justify-content:flex-start}.pad{padding:24px}table{min-width:860px}}
+    .section{margin-top:32px;scroll-margin-top:112px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:17px}h2{font-size:clamp(30px,4vw,52px);line-height:1.05;letter-spacing:-.045em;margin:0}.sub{color:var(--muted);line-height:1.75;max-width:980px;margin:8px 0 0}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{padding:20px;min-height:160px}.tag{display:inline-flex;color:var(--gold2);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:13px;border:1px solid var(--line);border-radius:999px;padding:6px 10px;background:rgba(201,169,97,.08)}.card h3{font-size:23px;margin:0 0 10px;letter-spacing:-.02em}.card p,.card li{color:var(--muted);line-height:1.67}.card p{margin:0}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;color:var(--gold2)}
+    .flowline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.step{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:20px;padding:16px;min-height:112px}.step strong{display:block;color:var(--gold2);margin-bottom:8px}.step span{color:var(--muted);font-size:14px;line-height:1.55}.matrix{overflow-x:auto;position:relative;z-index:1}table{width:100%;border-collapse:collapse;min-width:1080px}th,td{padding:14px 13px;text-align:left;border-bottom:1px solid rgba(201,169,97,.16);vertical-align:top}th{color:var(--gold2);font-weight:800;background:rgba(201,169,97,.06)}td{color:#d8e0d7;line-height:1.58}.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px}.pill{display:inline-flex;color:#d8e0d7;border:1px solid rgba(201,169,97,.18);background:rgba(201,169,97,.06);border-radius:999px;padding:6px 9px;font-size:12.5px}.quote{font-size:clamp(24px,3.4vw,44px);line-height:1.35;letter-spacing:-.04em;color:var(--gold2);margin:0}.footer{margin-top:34px;text-align:center;color:var(--muted);line-height:1.8;font-size:14px}.warn{border-color:rgba(255,154,123,.35)!important;background:rgba(255,154,123,.06)!important}.sourcebar{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.sourcebar span{border:1px solid rgba(201,169,97,.20);border-radius:999px;background:rgba(255,255,255,.04);padding:7px 10px;color:var(--muted);font-size:12.5px}.toc{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.toc a{text-decoration:none;color:#d8e0d7;border:1px solid rgba(201,169,97,.20);border-radius:18px;background:rgba(255,255,255,.04);padding:13px;line-height:1.45}.toc a b{display:block;color:var(--gold2);margin-bottom:5px}
+    @media(max-width:1180px){.hero,.grid2,.grid3,.grid4,.grid5,.toc,.flowline{grid-template-columns:1fr}.topbar{position:static;border-radius:24px;align-items:flex-start;flex-direction:column}nav{justify-content:flex-start}.pad{padding:24px}table{min-width:860px}}
   </style>
 </head>
 <body>
 <main class="shell">
   <header class="topbar">
-    <div class="brand"><div class="sigil">ʸx</div><div>原力战略三部曲 · 正典概念地图</div></div>
-    <nav><a href="#map">全貌</a><a href="#asset">资产</a><a href="#startup">创业</a><a href="#os">OS</a><a href="#flywheel">飞轮</a><a href="#open">待裁决</a></nav>
+    <div class="brand"><div class="sigil">ʸx</div><div>原力战略三部曲 · 原力母体正典地图</div></div>
+    <nav><a href="#map">全貌</a><a href="#asset">资产</a><a href="#startup">创业</a><a href="#os">OS</a><a href="#flywheel">飞轮</a><a href="#next">下一步</a></nav>
   </header>
 
   <section class="hero">
     <div class="hero-card"><div class="pad">
-      <div class="eyebrow">Canonical Map · v0.3 Asset Merge</div>
-      <h1>旧稿提供矿石，正典负责 <span>炼金</span></h1>
-      <p class="lead">本版已把《原力觉醒》30节课补源纳入 GitHub，但不机械照搬。它被重新正典化为《原力资产》的六阶路径：认清、解码、炼金、共生、显形、确定；并与《原力创业》《原力OS》建立清晰接口。</p>
-      <div class="sourcebar"><span>source/raw/原力觉醒30节课源稿.md</span><span>source/extracts/01a 逐课萃取</span><span>source/extracts/01b 正典合并裁决</span><span>manuscript/01 v0.2</span></div>
+      <div class="eyebrow">Canonical Map · v0.4 Yuanli Matrix</div>
+      <h1>原力资产 = <span>会复利的原力母体</span></h1>
+      <p class="lead">本版将《原力资产》的第一性概念确定为“原力母体”：一个人持续生成判断、作品、关系和意义的底层生命结构。生成函数保留为内部硬定义；对外传播和正典主概念统一为“原力母体”。</p>
+      <div class="sourcebar"><span>source/extracts/01c-原力母体正典重构.md</span><span>manuscript/01 v0.3</span><span>原力母体 × AI外化 × 市场验证 × OS回写</span></div>
     </div></div>
     <aside class="hero-card"><div class="pad metrics">
       <div class="metric"><b>母公理</b><span>ʸx：做会自我繁殖的事，不做一次性的事。</span></div>
-      <div class="metric"><b>三部曲</b><span>原力资产生成合力；原力创业借势变现；原力OS递归回写。</span></div>
-      <div class="metric"><b>资产新版</b><span>原力资产 = 你 × AI × 上下文 × 确定键 × 复利回写。</span></div>
+      <div class="metric"><b>资产公式</b><span>原力资产 = 原力母体 × AI外化 × 市场验证 × OS回写。</span></div>
+      <div class="metric"><b>母体结构</b><span>注意力雷达 × 品味函数 × 身体化能力 × 生命经验 × 长期承诺。</span></div>
     </div></aside>
   </section>
 
   <section id="map" class="section panel"><div class="pad">
-    <div class="section-head"><div><h2>一张图看全貌：公理 → 三部 → 飞轮</h2><p class="sub">所有复杂结构都必须回到这条链路。</p></div></div>
-    <div class="big-map">
-      <div class="pillar">
-        <div class="node"><h3>L0 母公理</h3><p class="mono">ʸx</p><p>完成一次之后，是否让下一次更容易；完成一轮之后，是否回写为资产、能力、系统或判断。</p></div>
-        <div class="node"><h3>L1 白皮书层</h3><p>原力战略白皮书是公理层 umbrella，坐在三本书之上，不作为三本之一。</p></div>
-        <div class="node"><h3>L2 三部曲</h3><p>原力资产 / 原力创业 / 原力OS = 人 / 事 / 法。</p></div>
-      </div>
-      <div class="center-stack">
-        <div class="axiom"><div><strong>ʸx</strong><span>做会自我繁殖的事<br/>不做一次性的事</span></div></div>
-        <div class="axiom"><div><strong>递归飞轮</strong><span>资产生成合力 → 创业借势变现 → OS递归回写 → 资产升级</span></div></div>
-      </div>
-      <div class="pillar">
-        <div class="node"><h3>原力资产</h3><p class="mono">你 × AI × 上下文 × 确定键 × 回写</p><p>找到你，生成合力。</p></div>
-        <div class="node"><h3>原力创业</h3><p class="mono">财富 = 借势 × 合力</p><p>借势你，变现你。</p></div>
-        <div class="node"><h3>原力OS</h3><p class="mono">文脉 × 大脑 × 地图 × 链路 × 回写</p><p>系统你，复利你。</p></div>
-      </div>
+    <div class="section-head"><div><h2>一张图看全貌</h2><p class="sub">《原力资产》不再是自我探索课，而是一套资产生成机制。</p></div></div>
+    <div class="flowline">
+      <div class="step"><strong>01 清算</strong><span>AI 清算可学习、可表达、可执行、可流程化、可模仿的同质化能力。</span></div>
+      <div class="step"><strong>02 返源</strong><span>回到不可复制的原力母体：持续生成差异的底层生命结构。</span></div>
+      <div class="step"><strong>03 外化</strong><span>AI 不是替代器，而是把母体外化成表达、模型、产品和系统。</span></div>
+      <div class="step"><strong>04 验证</strong><span>市场验证这个母体是否被人相信、靠近、付费、复用和传播。</span></div>
+      <div class="step"><strong>05 回写</strong><span>OS 把反馈回写到文脉、大脑、地图、链路与下一轮母体认知。</span></div>
     </div>
+    <div class="formula" style="margin-top:18px">原力资产 = 原力母体 × AI外化 × 市场验证 × OS回写</div>
   </div></section>
 
   <section id="asset" class="section">
-    <div class="section-head"><div><h2>第一部：原力资产 · 正典合并版</h2><p class="sub">30节旧课不是最终结构，而是被炼成六阶正典路径。原力觉醒归入原力资产，创业从原力借势开始。</p></div></div>
+    <div class="section-head"><div><h2>第一部：原力资产 · 原力母体</h2><p class="sub">原力母体不是兴趣、优势、性格或人设；它是一个人持续生成判断、作品、关系和意义的底层结构。</p></div></div>
     <div class="grid3">
-      <div class="card"><div class="tag">Canon Formula</div><h3>新版公式</h3><p class="mono">原力资产 = 你 × AI × 上下文 × 确定键 × 复利回写</p></div>
-      <div class="card"><div class="tag">Core Decision</div><h3>关键裁决</h3><p>旧30课提供真源与能量；正典不照搬，而是重构为认清、解码、炼金、共生、显形、确定。</p></div>
-      <div class="card"><div class="tag">Endpoint</div><h3>终点</h3><p>AI 已经知道如何放大我；我知道服务谁；我已按下确定键；我可以交给创业、OS和十年复利回写。</p></div>
+      <div class="card"><div class="tag">Definition</div><h3>一句话定义</h3><p>原力资产，是一个人以原力母体为源头，经由 AI 外化、市场验证与 OS 回写，形成的可复利、不可复制、可进入时代与市场的生命资产。</p></div>
+      <div class="card"><div class="tag">Short</div><h3>短定义</h3><p class="mono">原力资产 = 被 AI 外化、被市场验证、被 OS 回写的原力母体。</p></div>
+      <div class="card"><div class="tag">Shortest</div><h3>最短定义</h3><p class="mono">原力资产 = 会复利的原力母体。</p></div>
     </div>
 
-    <div class="section deep">
-      <details open><summary>六阶正典路径：旧30课 → 新原力资产</summary><div class="content"><div class="matrix"><table>
-        <thead><tr><th>新正典阶</th><th>原力U</th><th>30课来源</th><th>核心任务</th><th>关键输出</th></tr></thead>
+    <div class="section panel"><div class="pad">
+      <h2>原力母体的五个组成</h2>
+      <p class="sub">母体必须可描述、可识别、可训练、可外化、可验证、可回写。</p>
+      <div class="grid5" style="margin-top:18px">
+        <div class="card"><div class="tag">01</div><h3>注意力雷达</h3><p>我天然会看见什么，别人看不见什么；我对哪些信号有高分辨率。</p></div>
+        <div class="card"><div class="tag">02</div><h3>品味函数</h3><p>我如何判断什么值得做、什么不值得做；什么是高级，什么是伪高级。</p></div>
+        <div class="card"><div class="tag">03</div><h3>身体化能力</h3><p>我长期训练出的手感、嗅觉、判断和行动回路。</p></div>
+        <div class="card"><div class="tag">04</div><h3>生命经验</h3><p>我被哪些经历不可逆地塑形；为何对某些问题有执念与共情。</p></div>
+        <div class="card"><div class="tag">05</div><h3>长期承诺</h3><p>我愿意用十年持续服务什么，并承受什么代价。</p></div>
+      </div>
+    </div></div>
+
+    <div class="section panel"><div class="pad">
+      <h2>七阶递进结构</h2>
+      <div class="matrix" style="margin-top:18px"><table>
+        <thead><tr><th>阶</th><th>名称</th><th>核心问题</th><th>输出</th><th>接口</th></tr></thead>
         <tbody>
-          <tr><td>认清</td><td>觉察</td><td>L01-L05</td><td>承认算力鸿沟，完成路径反转：不是你学AI，而是AI学你。</td><td>算力鸿沟自检、我的说明书V1、行业关窍扫描</td></tr>
-          <tr><td>解码</td><td>高能</td><td>L06-L10</td><td>把原型、天才区、三圈交集从标签变成操作变量。</td><td>原型能量图、天才区雷达、三圈交集卡</td></tr>
-          <tr><td>炼金</td><td>阴影</td><td>L07/L10/L16-L20</td><td>把缺点、情绪、关系和敏感性转化为资产材料。</td><td>阴影炼金卡、情绪触发器、关系原型诊断</td></tr>
-          <tr><td>共生</td><td>整合</td><td>L11-L15</td><td>让AI真正理解你，形成元AI上下文和说明书V3。</td><td>我的说明书V3、原力知识库、原力日志</td></tr>
-          <tr><td>显形</td><td>资产</td><td>L21-L25</td><td>让“我”找到天选用户、贵问题、心理账户和非线性回报假设。</td><td>天选用户画像、贵问题卡、非线性回报检验</td></tr>
-          <tr><td>确定</td><td>复利</td><td>L26-L30</td><td>形成借势意识、复利意识，按下确定键。</td><td>确定键宣言、母体定义卡、创业接口包</td></tr>
+          <tr><td>1</td><td>清算</td><td>哪些能力正在被 AI 同质化？</td><td>同质化能力清单</td><td>停止误认资产</td></tr>
+          <tr><td>2</td><td>返源</td><td>我的原力母体是什么？</td><td>原力母体总卡</td><td>建立资产源头</td></tr>
+          <tr><td>3</td><td>成形</td><td>母体的五个部件如何结构化？</td><td>五部件卡组</td><td>可外化输入</td></tr>
+          <tr><td>4</td><td>外化</td><td>AI 如何把母体变成可见资产？</td><td>表达、模型、产品、方法、系统</td><td>OS文脉种子</td></tr>
+          <tr><td>5</td><td>验证</td><td>世界是否真的需要这个母体？</td><td>天选用户、贵问题、市场验证记录</td><td>进入原力创业</td></tr>
+          <tr><td>6</td><td>回写</td><td>反馈如何反过来升级母体？</td><td>回写记录、母体更新</td><td>进入原力OS</td></tr>
+          <tr><td>7</td><td>复利</td><td>母体如何越用越清楚、越值钱？</td><td>可进化身份</td><td>ʸx</td></tr>
         </tbody>
-      </table></div></div></details>
-
-      <details open><summary>三层资产结构</summary><div class="content"><div class="grid3">
-        <div class="card"><h3>内在资产</h3><p>原型力、天才区、非理性痴迷、阴影能量、能量结构、关系模式、情绪规律。</p></div>
-        <div class="card"><h3>AI资产</h3><p>我的说明书V3、元AI上下文、原力知识库、原力日志、AI共生协议、AI辅助内观系统。</p></div>
-        <div class="card"><h3>市场接口资产</h3><p>天选用户、贵问题、心理账户、一句话母体表达、非线性回报检验、确定键宣言。</p></div>
-      </div></div></details>
-
-      <details open><summary>必须保留并升级的旧稿真源</summary><div class="content"><ul class="list">
-        <li><b>关窍：</b>任一领域的全局最优解；关窍五步法接入 OS 信息五层。</li>
-        <li><b>算力鸿沟：</b>承认机器在纯信息处理上胜出，是觉醒第一步。</li>
-        <li><b>路径反转：</b>不是你学习 AI，而是 AI 学习你。</li>
-        <li><b>双螺旋：</b>自我理解越深，AI理解越准；AI反馈越准，自我理解更深。</li>
-        <li><b>元AI：</b>在资产中生成文脉种子，在OS中工程化为文脉、大脑、地图、链路。</li>
-        <li><b>确定键：</b>我就是这个人，我这辈子就做这件事；与母体定义卡绑定。</li>
-      </ul></div></details>
-
-      <details><summary>边界：哪些留在资产，哪些交给创业 / OS / 财富</summary><div class="content"><div class="grid4">
-        <div class="card"><h3>留在资产</h3><p>关窍、算力鸿沟、路径反转、12原型、阴影炼金、天才区、说明书V1-V3、天选用户、确定键。</p></div>
-        <div class="card"><h3>交给创业</h3><p>心理账户细分、品类创新、贝叶斯创业、漏斗模型、MVP测试、商业模式。</p></div>
-        <div class="card"><h3>交给OS</h3><p>元AI工程化、知识库工程、agent workflow、任务链路、skill蒸馏、递归回写。</p></div>
-        <div class="card"><h3>财富接口</h3><p>法币无下限、资产无上限、现金流、滚雪球、裸奔指数暂不展开。</p></div>
-      </div></div></details>
-    </div>
+      </table></div>
+    </div></div>
   </section>
 
   <section id="startup" class="section">
-    <div class="section-head"><div><h2>第二部：原力创业 · 借势你 / 变现你</h2><p class="sub">资产完成觉醒，创业从借势开始。</p></div></div>
+    <div class="section-head"><div><h2>第二部：原力创业 · 借势母体</h2><p class="sub">《原力资产》交给创业的不是自我介绍，而是可验证的母体。</p></div></div>
     <div class="grid4">
-      <div class="card"><div class="tag">Gate 1</div><h3>原力借势</h3><p>宏周期势 × 中结构势 × 微入口势 × 合力匹配。</p><div class="pills"><span class="pill">势能地图</span><span class="pill">PEST</span><span class="pill">康波窗口</span></div></div>
-      <div class="card"><div class="tag">Gate 2</div><h3>品类独创</h3><p>甜用户 × 贵任务 × 入脑表达；进入心理账户。</p><div class="pills"><span class="pill">心理账户</span><span class="pill">一句入脑</span></div></div>
-      <div class="card"><div class="tag">Gate 3</div><h3>模式升维</h3><p>前链路 × 后链路 × 财链路；从个人能干到系统能跑。</p><div class="pills"><span class="pill">三链路</span><span class="pill">利润容器</span></div></div>
-      <div class="card"><div class="tag">Gate 4</div><h3>壁垒锁定</h3><p>虚 × 实 × 入 × 出；构建进不来、追不上、拿不走、离不开。</p><div class="pills"><span class="pill">16控制点</span><span class="pill">财富飞轮</span></div></div>
+      <div class="card"><div class="tag">Gate 1</div><h3>原力借势</h3><p>这个母体该借哪股势？宏周期势 × 中结构势 × 微入口势 × 合力匹配。</p></div>
+      <div class="card"><div class="tag">Gate 2</div><h3>品类独创</h3><p>这个母体该进入哪个心理账户，并创造什么独创品类？</p></div>
+      <div class="card"><div class="tag">Gate 3</div><h3>模式升维</h3><p>这个母体如何形成利润容器，而不是继续人肉输出？</p></div>
+      <div class="card"><div class="tag">Gate 4</div><h3>壁垒锁定</h3><p>这个母体如何形成财富飞轮，守住长期价值？</p></div>
     </div>
   </section>
 
   <section id="os" class="section">
-    <div class="section-head"><div><h2>第三部：原力OS · 系统你</h2><p class="sub">OS 不是工具箱，而是把资产和创业经验递归回写成会自我进化的工作生命体。</p></div></div>
+    <div class="section-head"><div><h2>第三部：原力OS · 回写母体</h2><p class="sub">OS 的核心不是自动化，而是让每一次任务反过来升级原力母体。</p></div></div>
     <div class="grid4">
-      <div class="card"><div class="tag">Soul</div><h3>文脉</h3><p>灵魂：我是谁、为什么做、边界是什么。</p></div>
-      <div class="card"><div class="tag">Memory</div><h3>大脑</h3><p>记忆：知识、案例、经验、判断沉淀。</p></div>
-      <div class="card"><div class="tag">Judgment</div><h3>地图</h3><p>判断：因果图、战略图、关键战役、决策结构。</p></div>
-      <div class="card"><div class="tag">Action</div><h3>链路</h3><p>手脚：OSA、agent、workflow、自动化执行。</p></div>
-    </div>
-    <div class="grid3" style="margin-top:16px">
-      <div class="card"><h3>三法印</h3><p>递归进化 / 技能统帅 / 人类友好。</p></div>
-      <div class="card"><h3>OSA + 信息五层</h3><p>任务先目标、再策略、后行动；产出从碎片升到框架。</p></div>
-      <div class="card"><h3>case → pattern → skill</h3><p>把一次成功蒸馏成可复用能力。</p></div>
+      <div class="card"><div class="tag">Soul</div><h3>文脉</h3><p>把原力母体写成 AI 能理解、能持续调用的上下文。</p></div>
+      <div class="card"><div class="tag">Memory</div><h3>大脑</h3><p>把母体相关知识、案例、表达、判断沉淀成可检索记忆。</p></div>
+      <div class="card"><div class="tag">Judgment</div><h3>地图</h3><p>把母体如何进入市场、关系和系统的因果链画出来。</p></div>
+      <div class="card"><div class="tag">Action</div><h3>链路</h3><p>把母体外化、验证、回写变成可重复执行的工作流。</p></div>
     </div>
   </section>
 
   <section id="flywheel" class="section panel"><div class="pad">
-    <div class="section-head"><div><h2>三部接口与递归飞轮</h2><p class="sub">三部曲不是线性阅读，而是接口传递和递归回写。</p></div></div>
+    <div class="section-head"><div><h2>三部递归飞轮</h2><p class="sub">母体不是固定身份，而是可递归升级的生命资产。</p></div></div>
     <div class="flowline">
-      <div class="step"><strong>01 资产 → 创业</strong><span>说明书V3、母体定义卡、天才区、天选用户、确定键宣言。</span></div>
-      <div class="step"><strong>02 创业 → OS</strong><span>势能地图、心理账户、利润容器、财富飞轮、关键战役、SOP。</span></div>
-      <div class="step"><strong>03 OS → 资产</strong><span>市场反馈、高能任务、阴影模式、能力边界、关系反馈。</span></div>
-      <div class="step"><strong>04 OS → 创业</strong><span>新地图、新链路、新skill、新案例、新数据。</span></div>
-      <div class="step"><strong>05 更高阶的你</strong><span>下一轮以更清晰、更被验证、更系统化的自己出发。</span></div>
+      <div class="step"><strong>01 原力资产</strong><span>看见母体，完成外化与初步验证。</span></div>
+      <div class="step"><strong>02 原力创业</strong><span>借势母体，让它进入心理账户、利润容器和财富飞轮。</span></div>
+      <div class="step"><strong>03 原力OS</strong><span>把任务、交付、市场与关系经验递归回写。</span></div>
+      <div class="step"><strong>04 母体升级</strong><span>注意力、品味、能力、经验、承诺变得更清楚。</span></div>
+      <div class="step"><strong>05 更高阶的你</strong><span>下一轮以更强母体重新进入市场与系统。</span></div>
     </div>
-    <div class="formula" style="margin-top:18px">原力资产生成合力 → 原力创业借势变现 → 原力OS递归回写 → 最终反哺资产升级</div>
+    <div class="formula" style="margin-top:18px">原力母体 → AI外化 → 市场验证 → OS回写 → 母体升级</div>
   </div></section>
 
-  <section id="open" class="section">
-    <div class="section-head"><div><h2>待裁决 / 待补强区</h2><p class="sub">显性保留不确定项，避免伪正典。</p></div></div>
-    <div class="grid2">
-      <div class="card warn"><div class="tag">Boundary</div><h3>L21-L25 的边界</h3><p>目前裁决为“资产显形 / 创业接口”。下一步可单独讨论它在主稿、课程和创业书之间的呈现比例。</p></div>
-      <div class="card warn"><div class="tag">Wealth</div><h3>L26-L27 的财富接口</h3><p>复利意识保留在资产中；资产配置、法币、现金流与滚雪球是否单列《原力财富》仍需裁决。</p></div>
-      <div class="card warn"><div class="tag">Templates</div><h3>模板化待执行</h3><p>我的说明书V1-V3、三圈交集、阴影炼金、天选用户、确定键宣言需要拆成可填写模板。</p></div>
-      <div class="card warn"><div class="tag">Visualization</div><h3>可视化待深化</h3><p>原力资产可单独做成 U 型雷达页面，展示六阶路径与模板接口。</p></div>
+  <section id="next" class="section">
+    <div class="section-head"><div><h2>下一步：模板化</h2><p class="sub">正典已干净化，下一步要把它变成可填写、可执行、可回写的模板。</p></div></div>
+    <div class="grid3">
+      <div class="card"><h3>原力母体总卡</h3><p>定义一个人持续生成判断、作品、关系和意义的源头。</p></div>
+      <div class="card"><h3>五部件卡组</h3><p>注意力雷达、品味函数、身体化能力、生命经验、长期承诺。</p></div>
+      <div class="card"><h3>外化-验证-回写卡</h3><p>AI外化、市场验证、OS回写，形成递归资产闭环。</p></div>
     </div>
   </section>
 
-  <footer class="footer"><div>原力战略三部曲 · Canon Concept Map</div><div>找到你 → 借势你 → 变现你 → 系统你 → 复利你 → 回到更高阶的你</div></footer>
+  <footer class="footer"><div>原力战略三部曲 · Yuanli Matrix Canon Map</div><div>原力母体 → AI外化 → 市场验证 → OS回写 → 母体升级 → 复利人生</div></footer>
 </main>
 </body>
 </html>
