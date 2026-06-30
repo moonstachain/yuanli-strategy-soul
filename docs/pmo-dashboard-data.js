@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T11:24:52.001Z"
+    "updated_at": "2026-06-30T11:25:18.823Z"
   },
   "fields": [
     "Canon Node",
@@ -387,6 +387,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#140",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "把“安全价值证明”真实客户项目输入，转化为可复用的项目驾驶舱 / 通关地图 / 证据链路，使 C2 能检索、C3 能判断、C4 能执行。"
     },
     {
       "issue": "#103",
