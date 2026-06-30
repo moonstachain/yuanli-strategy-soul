@@ -37,7 +37,7 @@ candidate: workflow identified
 sampled: at least 3 examples exist
 review-ready: review checklist, review results scaffold, and AI pre-review exist; Ming human review pending
 real-case-draft: Ming selected real cases and draft transformations exist; user language test pending
-user-language-test-ready: user language test protocol, transcript extraction results, higher-tier source candidates, and results scaffold exist; interviews pending
+user-language-test-ready: user language test protocol, transcript extraction results, higher-tier extraction results, and results scaffold exist; interviews pending
 user-tested: target user language results recorded
 reviewed: Ming human review completed
 active: converted into reusable SKILL.md or equivalent playbook with approval
@@ -80,6 +80,7 @@ user_language_test_results: skills/yuanli-category-two-sentence/USER-LANGUAGE-TE
 transcript_evidence_extraction: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
 transcript_evidence_extraction_results: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md
 higher_tier_source_candidates: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-CANDIDATES-v1.md
+higher_tier_source_extraction_results: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md
 related_nodes:
   - A1 发现母体
   - B2 品类独创
@@ -150,6 +151,7 @@ TRANSCRIPT-EVIDENCE-EXTRACTION-v1 created extraction protocol to turn private ll
 TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1 completed first-pass extraction from three T3 case writeups.
 USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold; interviews are still pending.
 HIGHER-TIER-SOURCE-CANDIDATES-v1 indexed Get 笔记, transcripts, digests, minutes, and entity sources for deeper extraction.
+HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1 completed higher-tier first-pass extraction and recommended test refinements.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -218,24 +220,29 @@ boundary: T3 extraction supports test design, not user-tested status
 next_output: target user interview data in USER-LANGUAGE-TEST-RESULTS-v1.md
 ```
 
-### 3.10 Higher-Tier Source Candidates
+### 3.10 Higher-Tier Source Extraction Results
 
 ```yaml
 source_index: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-CANDIDATES-v1.md
-status: candidates_indexed
-source_types_found:
+results: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md
+status: higher_tier_first_pass_completed
+source_types_used:
   - sources/get-biji
   - sources/transcripts
-  - operations/digests
-  - minutes/transcript.txt
   - entities/people
-priority_order:
-  - P0-1 达哥张姐 Get 笔记 source
-  - P0-2 原力创业 day2 transcripts
-  - P0-3 卷卷 entity/source links
-  - P0-4 水月 related course transcripts and digests
-boundary: source index only; no raw transcript copied; no validation upgrade
-next_output: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md
+  - strategic four-gate report
+extracted_cases:
+  CASE-01:
+    tier: T2 / partial T1-like live course segment
+    strengthened: 随身寺庙 as public category, 随身精神资产 as business explanation
+  CASE-05:
+    tier: T1/T2 Get 笔记
+    strengthened: 养成系稀缺美学 as public category, 双奢结合 as mechanism, 高净值姐姐专属高端皮草 as control phrase
+  CASE-08:
+    tier: T3+ source-linked strategic report
+    strengthened: 归国首秀导演 as premium positioning, 人生主权宣言 as narrative line, 人生叙事的空间翻译 as diagnostic phrase
+boundary: not T0 target-user testing; no validation upgrade
+next_recommendation: refine USER-LANGUAGE-TEST-v1 before collecting T0 responses
 ```
 
 ### 3.11 Current Gaps
@@ -244,8 +251,8 @@ next_output: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-R
 human_review_gap: Ming has not yet reviewed and approved the three real-case outputs.
 validation_gap: no controlled naming test with 5-10 target users yet.
 user_language_gap: USER-LANGUAGE-TEST-RESULTS-v1 exists, but target user responses have not been recorded.
-source_tier_gap: extraction results are from T3 case writeups, not T0 target-user test transcripts.
-higher_tier_extraction_gap: higher-tier source candidates are indexed, but not yet extracted into results.
+source_tier_gap: higher-tier extraction improved evidence, but it is still not T0 target-user test evidence.
+user_language_test_refinement_gap: USER-LANGUAGE-TEST-v1 has not yet been updated with the new control / diagnostic / bridge phrases.
 resolver_gap: route exists as seed and draft, but not repeated in live workflow.
 writeback_gap: skill evidence has not yet been tested in live user workflow.
 ```
@@ -259,7 +266,7 @@ Private llm-wiki learner/client cases are valuable for real case testing, but ra
 ### 3.13 Next C4 Task
 
 ```text
-Run higher-tier source extraction and create HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md; then collect real target-user responses and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
+Refine USER-LANGUAGE-TEST-v1 with higher-tier extraction outputs, then collect real target-user responses and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
 ```
 
 ---
@@ -329,8 +336,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: run higher-tier source extraction using HIGHER-TIER-SOURCE-CANDIDATES-v1.md.
-P0 next: create HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md.
-P0 after that: collect real target-user responses for USER-LANGUAGE-TEST-RESULTS-v1.md.
+P0 current: refine USER-LANGUAGE-TEST-v1 with higher-tier extraction outputs.
+P0 next: collect real target-user responses for USER-LANGUAGE-TEST-RESULTS-v1.md.
 P1: Candidate 003 after first skill review/writeback.
 ```
