@@ -3,7 +3,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T04:30:49.932Z"
+    "updated_at": "2026-06-30T04:31:05.972Z"
   },
   "fields": [
     "Canon Node",
@@ -164,6 +164,19 @@ window.YUANLI_PMO_V22={
       "next": "Create PMO v2.8 interactive six-view drilldown page."
     },
     {
+      "issue": "#77",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0",
+      "gap_score": 72,
+      "evidence": "medium",
+      "next": "execute selected-gap handoff"
+    },
+    {
       "issue": "#74",
       "node": "C4",
       "type": "task",
@@ -229,6 +242,19 @@ window.YUANLI_PMO_V22={
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
+      "issue": "#78",
+      "node": "C2",
+      "type": "evidence",
+      "domain": "data",
+      "layer": "validation",
+      "status": "qa",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "review evidence"
+    },
+    {
       "issue": "#75",
       "node": "C2",
       "type": "evidence",
@@ -276,7 +302,7 @@ window.YUANLI_PMO_V22={
       "score": 88,
       "formula": "parsed from issue body",
       "selected": true,
-      "next_issue": "#74"
+      "next_issue": "#77"
     }
   ]
 };
