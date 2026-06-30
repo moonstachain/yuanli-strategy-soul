@@ -12,7 +12,7 @@ Date: 2026-06-30
 
 ```text
 Validation: 1 / 5
-State: historical source preloaded + workshop execution package ready
+State: pre-fieldwork ready
 Boundary: no external user trial has been completed yet.
 ```
 
@@ -39,6 +39,24 @@ card note logic
 
 This preload reduces workshop preparation risk, but it does not count as external validation.
 
+## Candidate Naming Set
+
+Source:
+
+```text
+assets/B2-品类独创/candidate-names.md
+```
+
+Current candidate names:
+
+```text
+原力品类卡
+独创品类工作坊
+无法分类实验室
+```
+
+These are testing candidates only, not final names.
+
 ## Why B2 First
 
 C2 Trial 1 判断：B2 可以进入小范围产品化验证，但不应直接规模化售卖。
@@ -54,6 +72,7 @@ participant-screening.md
 workshop-scorecard.md
 live-validation-checklist.md
 llm-wiki-b2-extraction-v1.md
+candidate-names.md
 ```
 
 ## Validation Goal
@@ -82,6 +101,7 @@ External Validation Started / Validation 2/5 or higher
 | workshop-scorecard.md | 判断是否通过验证并是否提升 B2 Validation |
 | live-validation-checklist.md | 现场执行前中后检查 |
 | llm-wiki-b2-extraction-v1.md | 历史语料候选 |
+| candidate-names.md | 现场测试候选命名 |
 
 ## Minimum Validation Design
 
@@ -109,13 +129,13 @@ External Validation Started / Validation 2/5 or higher
 Status:
 
 ```text
-ready to run with historical source preload
+ready to run after fieldwork scheduling
 ```
 
 Next:
 
 ```text
-Recruit 5-10 participants and run B2 small validation workshop.
+When fieldwork is available, recruit 5-10 participants and run B2 small validation workshop.
 ```
 
 ## Writeback Rule
