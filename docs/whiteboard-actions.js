@@ -29,8 +29,8 @@ function yuanliOutputText(kind,node,info){
   if(kind==='strategy') return 'AI Strategy Draft\n\n'+base+'\n\nOptions:\nEvidence:\nUncertainty:\nRecommendation:';
   if(kind==='approval') return 'Human Approval Request\n\n'+base+'\n\nDecision needed:\nOptions:\nRisk:\nApproval boundary:';
   if(kind==='dryrun') return 'Dry-run Plan\n\n'+base+'\n\nSteps:\nExpected output:\nRisk check:\nNo external write.';
-  if(kind==='feedback') return 'Feedback Note\n\n'+base+'\n\nWhat happened:\nEvidence:\nGap:\nNext:';
-  if(kind==='evolution') return 'Evolution Note\n\n'+base+'\n\nInput:\nOutput:\nAcceptance:\nWriteback:\nNext reuse:';
+  if(kind==='feedback') return 'Feedback Note\n\n'+base+'\n\nWhat happened:\nEvidence path: brain/evidence/\nGap:\nNext action:\nState proposal:';
+  if(kind==='evolution') return 'Evolution Note\n\n'+base+'\n\nInput:\nOutput:\nAcceptance:\nEvidence path: brain/evidence/\nWriteback: '+yuanliJoin(c.writeback)+'\nNext reuse:\nBrain target: brain/evolution-notes/';
   if(kind==='task') return 'Issue Task\n\n'+base+'\n\nObjective:\nSteps:\nAcceptance: '+yuanliJoin(c.acceptance_criteria)+'\nEvidence: '+yuanliJoin(c.evidence_required)+'\nRisk: '+c.risk_policy+'\nWriteback: '+yuanliJoin(c.writeback);
   return '# '+node+'\n\n'+base+'\nWriteback:';
 }
@@ -49,7 +49,7 @@ function yuanliRenderContract(){
   const panel=box.closest('section');
   if(!panel) return;
   const h2=panel.querySelector('h2');
-  if(h2) h2.textContent='Human-Agent Negotiation Panel · v2.0';
+  if(h2) h2.textContent='Human-Agent Negotiation Panel · v2.1';
   let card=document.getElementById('agent-contract-card');
   if(!card){card=document.createElement('div');card.id='agent-contract-card';card.className='task';panel.insertBefore(card,box);}
   const node=yuanliCurrentNode();
@@ -73,9 +73,9 @@ function yuanliRenderMatrix(){
 }
 
 function yuanliEnsureUI(){
-  document.title='Yuanli Whiteboard OS v2.0';
+  document.title='Yuanli Whiteboard OS v2.1';
   const brand=document.querySelector('.brand div:last-child');
-  if(brand) brand.textContent='原力战略白板 OS · v2.0';
+  if(brand) brand.textContent='原力战略白板 OS · v2.1';
   const bar=document.querySelector('.actionbar');
   if(bar) bar.innerHTML='<button onclick="yuanliWriteOutput(\'strategy\')">AI Strategy Draft</button><button onclick="yuanliWriteOutput(\'approval\')">Approval Request</button><button onclick="yuanliWriteOutput(\'task\')">Issue Task</button><button onclick="yuanliWriteOutput(\'dryrun\')">Dry-run Plan</button><button onclick="yuanliWriteOutput(\'feedback\')">Feedback Note</button><button onclick="yuanliWriteOutput(\'evolution\')">Evolution Note</button>';
 }
