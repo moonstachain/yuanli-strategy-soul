@@ -1,0 +1,28 @@
+name: C4 Task
+about: Execution task generated from C3 or Whiteboard
+labels: c4-task
+body:
+  - type: input
+    id: source_gap
+    attributes:
+      label: Source Gap
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence Required
+  - type: textarea
+    id: writeback
+    attributes:
+      label: Writeback Target
