@@ -3,7 +3,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T04:31:41.141Z"
+    "updated_at": "2026-06-30T04:32:05.912Z"
   },
   "fields": [
     "Canon Node",
@@ -190,6 +190,19 @@ window.YUANLI_PMO_V22={
       "next": "Create PMO Metrics Engine for Evidence Coverage, Backwrite Rate, C3 Gap Close Rate, and Blocked Age."
     },
     {
+      "issue": "#83",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0",
+      "gap_score": 72,
+      "evidence": "medium",
+      "next": "execute selected-gap handoff"
+    },
+    {
       "issue": "#80",
       "node": "C4",
       "type": "task",
@@ -281,6 +294,19 @@ window.YUANLI_PMO_V22={
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
+      "issue": "#84",
+      "node": "C2",
+      "type": "evidence",
+      "domain": "data",
+      "layer": "validation",
+      "status": "qa",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "review evidence"
+    },
+    {
       "issue": "#81",
       "node": "C2",
       "type": "evidence",
@@ -354,7 +380,7 @@ window.YUANLI_PMO_V22={
       "score": 88,
       "formula": "parsed from issue body",
       "selected": true,
-      "next_issue": "#80"
+      "next_issue": "#83"
     }
   ]
 };
