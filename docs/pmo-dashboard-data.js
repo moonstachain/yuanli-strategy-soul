@@ -3,7 +3,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T04:30:05.876Z"
+    "updated_at": "2026-06-30T04:30:19.254Z"
   },
   "fields": [
     "Canon Node",
@@ -149,6 +149,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 88,
       "evidence": "weak",
       "next": "Patch PMO dashboard data, sync script version, roadmap, and automation labels so UI and data source are aligned."
+    },
+    {
+      "issue": "#73",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 76,
+      "evidence": "weak",
+      "next": "Create PMO v2.8 interactive six-view drilldown page."
     },
     {
       "issue": "#71",
