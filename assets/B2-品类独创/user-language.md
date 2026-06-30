@@ -24,6 +24,26 @@ brain/sources/llm-wiki-b2-extraction-v1.md
 
 This preload is not external validation completion. It is historical source preparation for #130.
 
+## External Fieldwork Source
+
+Source:
+
+```text
+brain/sources/llm-wiki-b2-external-evidence-v1.md
+```
+
+Decision:
+
+```text
+llm-wiki June 2026 transcripts can be used as external user-language source candidates for B2.
+```
+
+Boundary:
+
+```text
+The source is valid, but raw transcripts must be coded into structured records before B2 validation can be upgraded.
+```
+
 ## Preloaded Language / Criteria
 
 ### 1. 品类核心命题
@@ -102,6 +122,18 @@ Use:
 validation-records.md
 C4 action chain
 ```
+
+## June 2026 External Language Candidates
+
+These are preliminary coded patterns from `moonstachain/llm-wiki`. They must be reviewed against the raw source before being counted as #130 pass evidence.
+
+| Pattern | User Language Cluster | B2 Interpretation | Candidate Repeatable Sentence | Status |
+|---|---|---|---|---|
+| 人工项目 → 人机协同系统 | 人工为主、技术融合、一部分工作自动化、爆款技能加自动化流程 | 用户不是只想学 AI 工具，而是想把有效工作模块变成可运行系统 | 把爆款技能变成可复用的人机协同系统 | needs verification |
+| 零散 demo → 精准建模路径 | demo 后续难调、地基没打好、每调一个部分都累、All in one、人类友好 | 用户要的是业务底层模型，而不是更多临时 demo | 不是做更多 demo，而是把业务打成一套可持续调优的精准模型 | needs verification |
+| 数据分析 → CEO 秒懂战略信号 | 经营表盘、指导未来 2-3 年、业务决策者秒懂、不看数据只看结果、半自动化 | 用户要的是经营决策信号，不是普通数据报表 | 把复杂经营数据变成 CEO 秒懂的战略信号 | needs verification |
+| 个人经验 → 可持续 IP / 组织技能 | 回溯项目资源经验、把过往自己理出来、AI 重构自己、可持续 IP、无限放大 | 用户要把自身经验转成可复制的 IP 与组织能力 | 把个人爆点技能升级成可持续放大的组织技能 | needs verification |
+| 复杂行业知识 → 行业 AI/IP 框架 | 行业规则复杂、多年积累但不够准确、集成好东西服务世界、AIP 框架、跑路径 | 用户要的是行业知识、客户数据与规则的可复用框架 | 把复杂行业知识沉淀成可复用的行业 AI/IP 框架 | needs verification |
 
 ## Interview Target
 
