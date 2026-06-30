@@ -1,7 +1,7 @@
 # Yuanli Brain · SKILL CANDIDATES
 
 > Module: C2 一个大脑  
-> Issue: #141  
+> Issue: #141 / #142  
 > Date: 2026-06-30
 
 ---
@@ -12,7 +12,7 @@
 Skill Candidates are repeated Yuanli workflows that may become reusable Agent / Codex / Operator skills.
 ```
 
-A skill candidate is not yet an active skill. It is a workflow under evaluation.
+A skill candidate is not yet a fully active or canonical skill. It is a workflow under evaluation.
 
 ---
 
@@ -32,7 +32,7 @@ Rules:
 candidate: workflow identified
 sampled: at least 3 examples exist
 reviewed: human review completed
-active: converted into SKILL.md or equivalent playbook
+active: converted into reusable SKILL.md or equivalent playbook with approval
 retired: replaced or merged
 ```
 
@@ -58,7 +58,10 @@ A candidate can become active only if:
 
 ```yaml
 skill_candidate_id: yuanli-category-two-sentence
-state: candidate
+state: sampled
+related_issue: "#142"
+skill_file: skills/yuanli-category-two-sentence/SKILL.md
+sample_pack: assets/C2-一个大脑/skillify-examples.md
 related_nodes:
   - A1 发现母体
   - B2 品类独创
@@ -118,27 +121,29 @@ next_test:
 
 ```text
 B2 has 7 coded category sentence candidates from June 2026 external fieldwork, but they are uncontrolled field signals and not yet controlled naming test results.
+
+#142 created a v0 SKILL.md and 3 before/after samples.
 ```
 
 ### 3.6 Current Gaps
 
 ```text
-sample_gap: no 3 completed before/after examples yet.
+human_review_gap: 3 samples exist, but Ming has not yet reviewed and approved them.
 validation_gap: no controlled naming test with 5-10 target users yet.
-resolver_gap: active resolver route exists only as seed.
-writeback_gap: no Skill.md or skill evidence file yet.
+resolver_gap: route exists as seed, not repeated.
+writeback_gap: skill evidence has not yet been tested in live user workflow.
 ```
 
 ### 3.7 Next C4 Task
 
 ```text
-Create v0 skill file or run controlled B2 naming test first.
+Run human review on the 3 samples, then test with 3-5 real founder/client cases.
 ```
 
 Recommended next:
 
 ```text
-Run 3 sample transformations before promoting to active SKILL.md.
+Create a review checklist and score the 3 samples before promoting to active skill.
 ```
 
 ---
@@ -200,7 +205,7 @@ YC / GBrain / OpenClaw all converge on dream cycle as the self-improvement loop.
 ### Next
 
 ```text
-Do not build until Query Pack + Resolver Seed produces at least one live query result.
+Do not build until Query Pack + Resolver Seed produces at least one live query result and one skill sample set.
 ```
 
 ---
@@ -208,6 +213,9 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0: Candidate 001 and Candidate 002 as part of Yuanli Brain Query Pack + Resolver Seed v1.
-P1: Candidate 003 after first live query and writeback.
+P0 completed: Candidate 001 moved to sampled through #142.
+P0 next options:
+  A. human review + 3-5 real cases for Candidate 001
+  B. controlled B2 naming and repeatability test
+P1: Candidate 003 after first skill review/writeback.
 ```
