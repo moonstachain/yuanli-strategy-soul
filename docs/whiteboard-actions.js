@@ -32,8 +32,18 @@ function yuanliWriteOutput(kind){
   box.value=yuanliOutputText(kind,node,info);
 }
 
+function yuanliPanelV12(){
+  const box=document.getElementById('whiteboard-output');
+  if(!box) return;
+  const panel=box.closest('section');
+  if(!panel) return;
+  const h2=panel.querySelector('h2');
+  if(h2) h2.textContent='Human-Agent Negotiation Panel';
+}
+
 (function(){
   const s=document.createElement('script');
   s.src='whiteboard-map-v1.1.js';
   document.head.appendChild(s);
+  setTimeout(yuanliPanelV12,0);
 })();
