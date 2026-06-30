@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T13:12:05.705Z"
+    "updated_at": "2026-06-30T13:12:22.384Z"
   },
   "fields": [
     "Canon Node",
@@ -387,6 +387,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#147",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行项目：建立内容工程驾驶舱、30 天内容日历、渠��生产链、Evidence / Evolution / Backwrite 规则，并将其接入 growth CBM cells。"
     },
     {
       "issue": "#140",
