@@ -1,0 +1,21 @@
+# GitHub Projects v2 GraphQL skeleton for Yuanli PMO OS.
+# Fill in owner login, repository id, and project id before running.
+
+query FindRepo($owner:String!, $name:String!) {
+  repository(owner:$owner, name:$name) { id name url }
+}
+
+mutation CreateProject($ownerId:ID!) {
+  createProjectV2(input:{ownerId:$ownerId, title:"Yuanli PMO OS"}) {
+    projectV2 { id title url }
+  }
+}
+
+# Field creation uses createProjectV2Field and createProjectV2SingleSelectField.
+# Required fields:
+# Canon Node, Work Type, Strategic Layer, Capability Domain, Status,
+# PMO Health, Priority, Gap Score, Evidence Strength, Agent Level,
+# Approval Gate, Writeback Target, Acceptance State, Canonical State.
+
+# Add issue items with addProjectV2ItemById after collecting issue node IDs.
+# Create views manually in GitHub UI if GraphQL view mutation access is not available.
