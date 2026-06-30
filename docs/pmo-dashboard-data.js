@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T05:40:09.145Z"
+    "updated_at": "2026-06-30T05:40:26.722Z"
   },
   "fields": [
     "Canon Node",
@@ -218,6 +218,32 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#102",
+      "node": "C2",
+      "type": "evidence",
+      "domain": "data",
+      "layer": "validation",
+      "status": "qa",
+      "health": "green",
+      "priority": "P2",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "review evidence"
+    },
+    {
+      "issue": "#101",
+      "node": "C2",
+      "type": "evidence",
+      "domain": "data",
+      "layer": "validation",
+      "status": "qa",
+      "health": "green",
+      "priority": "P2",
+      "gap_score": 50,
+      "evidence": "strong",
+      "next": "review evidence"
     },
     {
       "issue": "#100",
