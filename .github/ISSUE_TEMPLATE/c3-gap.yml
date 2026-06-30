@@ -1,0 +1,33 @@
+name: C3 Gap
+about: Strategic map and capability gap item
+labels: c3-gap
+body:
+  - type: input
+    id: canon_node
+    attributes:
+      label: Canon Node
+      placeholder: C3
+  - type: dropdown
+    id: capability_domain
+    attributes:
+      label: Capability Domain
+      options: [matrix,user,content,product,delivery,growth,data,moat]
+  - type: dropdown
+    id: strategic_layer
+    attributes:
+      label: Strategic Layer
+      options: [strategy,design,execution,validation,recursive]
+  - type: textarea
+    id: gap
+    attributes:
+      label: Gap
+      description: What is missing or risky?
+  - type: input
+    id: gap_score
+    attributes:
+      label: Gap Score
+      placeholder: importance x urgency x evidence strength x reversibility x writeback value
+  - type: textarea
+    id: next_c4_task
+    attributes:
+      label: Next C4 Task
