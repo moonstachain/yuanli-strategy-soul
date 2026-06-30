@@ -4,109 +4,85 @@ PMO Issue: #95
 Asset Type: evolution
 Date: 2026-06-30
 
-## Input
+## Strategic State
 
-C2 原本是原力 OS 的 seed 内容资产包，定义为记忆层，包含 outline、cases、assignments、scripts、evidence、evolution。
-
-## New Input
-
-参考 GBrain 和 YC Company Brain / AI Playbook 思路后，C2 的战略定位被重新升级：
+C2 has been upgraded from a seed memory module to the memory hub of 原力OS.
 
 ```text
-C2 不只是知识管理模块，而是整个原力战略三部曲的记忆中枢。
+C2 = 长期记忆 × 证据综合 × 缺口判断 × 回写学习
 ```
 
-## Output
+## Trial 1
 
-新增 C2 战略包：
-
-- docs/C2-ONE-BRAIN-STRATEGY-v1.md
-- docs/C2-YUANLI-BRAIN-SCHEMA-v1.md
-- docs/C2-BRAIN-QUERY-PROTOCOL-v1.md
-- docs/C2-BRAIN-WRITEBACK-PROTOCOL-v1.md
-- docs/C2-GBRAIN-REFERENCE-STUDY-v1.md
-- docs/C2-ONE-BRAIN-ROADMAP-v1.md
-
-并升级：
-
-- assets/C2-一个大脑/teaching-outline.md
-- docs/TRILOGY-ASSET-MATURITY-SCORECARD-v1.md
-
-## What Changed
-
-C2 从“可检索、可调用、可更新的记忆系统”，升级为：
-
-```text
-可调用的长期记忆 × 有证据的综合判断 × 能回写的战略学习
-```
-
-## New Architecture
-
-C2 现在采用七层原力大脑：
-
-```text
-Capture
-Schema
-Retrieval
-Synthesis
-Graph
-Gap
-Writeback
-```
-
-## Strategic Priority Change
-
-C2 从 P1 提升为 P0.5。
-
-理由：
-
-1. 没有 C2，大量内容资产无法持续复利。
-2. 没有 C2，C3/C4/PMO 会变成机械看板。
-3. 没有 C2，原力 OS 没有长期记忆和判断来源。
-
-## Trial 1 Writeback
-
-### Query
+Query:
 
 ```text
 B2 品类独创现在是否可以产品化？
 ```
 
-### Result
+Result:
 
 ```text
 PASS
 ```
 
-### Learning
+Learning:
 
-C2 已经可以用现有 GitHub 仓库材料完成一次内部 Markdown Brain 查询：
+C2 can use repository evidence to answer a productization question, identify gaps, recommend a C4 action, and suggest writeback.
+
+## Trial 2
+
+Query:
 
 ```text
-检索证据 -> 形成判断 -> 识别缺口 -> 生成下一步 C4 行动 -> 给出回写建议
+C2 一个大脑当前距离产品化还缺什么？
 ```
 
-### Strategic Judgment
-
-B2 可以进入小范围产品化验证，但不能直接规模化售卖。B2 当前具备 seed asset package、27/40 成熟度和 P0 优先级，但真实验证仍弱，需要 naming-test、user-language、validation-records 和真实用户命名测试。
-
-### Score Impact
+Result:
 
 ```text
-C2 Validation: 1/5 -> 2/5
-C2 Total Score: 31/40 -> 32/40
+PASS
+```
+
+Learning:
+
+C2 can now diagnose its own productization gap. It has strategy and internal validation, but still needs external learner, client, or project validation.
+
+## Trial 3
+
+Query:
+
+```text
+一个真实学员案例应该如何写回原力大脑？
+```
+
+Result:
+
+```text
+PASS
+```
+
+Learning:
+
+C2 can distinguish case, evidence, evolution note, and canonical candidate boundaries. A case should not enter canon directly.
+
+## Score Impact
+
+```text
+C2 Validation: 2/5 -> 3/5
+C2 Total Score: 32/40 -> 33/40
+Stage: Validated Strategy+ -> Validated Brain Seed
 ```
 
 ## Remaining Gap
 
-C2 仍需要继续真实验证：
+C2 still needs external validation:
 
-- Trial 2：C2 一个大脑当前距离产品化还缺什么？
-- Trial 3：一个真实学员案例应该如何写回原力大脑？
-- 至少 3 个真实使用场景
-- 至少 5 个查询样例
-- 至少 3 个回写样例
+- real learner / client / project scenarios
+- more query examples
+- real writeback examples
+- one full external validation loop
 
 ## Next Reuse
 
-把 Trial 1 作为 C2 Brain Validation Issue 的第一条证据，并创建 B2 Deepening Task。
+Use Trial 1-3 as completion evidence for #128, and use B2 as the first external validation scenario through #129.
