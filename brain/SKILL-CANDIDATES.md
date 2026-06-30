@@ -24,6 +24,7 @@ sampled
 review-ready
 real-case-draft
 user-language-test-ready
+field-tested-provisional
 user-tested
 reviewed
 active
@@ -37,8 +38,9 @@ candidate: workflow identified
 sampled: at least 3 examples exist
 review-ready: review checklist, review results scaffold, and AI pre-review exist; Ming human review pending
 real-case-draft: Ming selected real cases and draft transformations exist; user language test pending
-user-language-test-ready: user language test protocol, transcript extraction results, higher-tier extraction results, results scaffold, and open C4 collection issue exist; interviews pending
-user-tested: target user language results recorded
+user-language-test-ready: user language test protocol, transcript extraction results, higher-tier extraction results, results scaffold, transcript import protocol, and open C4 collection issue exist; interviews pending
+field-tested-provisional: Ming qualitative field feedback exists across selected cases; role-stack recommendation and decision file exist; usable for next iteration but not formal user-tested
+user-tested: target user language results recorded in structured or approved evidence standard
 reviewed: Ming human review completed
 active: converted into reusable SKILL.md or equivalent playbook with approval
 retired: replaced or merged
@@ -67,7 +69,7 @@ A candidate can become active only if:
 
 ```yaml
 skill_candidate_id: yuanli-category-two-sentence
-state: user-language-test-ready
+state: field-tested-provisional
 related_issue: "#142 / #143 / #145 / #159"
 skill_file: skills/yuanli-category-two-sentence/SKILL.md
 sample_pack: assets/C2-一个大脑/skillify-examples.md
@@ -77,6 +79,11 @@ real_case_candidates: skills/yuanli-category-two-sentence/REAL-CASE-CANDIDATES-v
 real_case_test: skills/yuanli-category-two-sentence/REAL-CASE-TEST-v1.md
 user_language_test: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
 user_language_test_results: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
+user_language_test_field_feedback: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1.md
+user_language_test_decision: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-DECISION-v1.md
+role_stack_recommendation: skills/yuanli-category-two-sentence/ROLE-STACK-RECOMMENDATION-v1.md
+user_language_test_transcript_import: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-v1.md
+user_language_test_transcript_import_results: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-RESULTS-v1.md
 transcript_evidence_extraction: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
 transcript_evidence_extraction_results: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md
 higher_tier_source_candidates: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-CANDIDATES-v1.md
@@ -150,11 +157,16 @@ REAL-CASE-TEST-v1 created draft transformations for the three selected cases.
 USER-LANGUAGE-TEST-v1 created test protocol for target user repeatability, emotional pull, and budget shift.
 TRANSCRIPT-EVIDENCE-EXTRACTION-v1 created extraction protocol to turn private llm-wiki transcripts into anonymized B2/C2 evidence.
 TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1 completed first-pass extraction from three T3 case writeups.
-USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold and was upgraded into a lightweight 9-interview fieldwork run; interviews are still pending.
+USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold and was upgraded into a lightweight 9-interview fieldwork run.
 HIGHER-TIER-SOURCE-CANDIDATES-v1 indexed Get 笔记, transcripts, digests, minutes, and entity sources for deeper extraction.
 HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1 completed higher-tier first-pass extraction and recommended test refinements.
 USER-LANGUAGE-TEST-v1 was refined with bridge/control/diagnostic phrases and role-classification questions.
-#159 created an open C4 issue to collect 9 target-user interviews.
+USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-v1 created a protocol to import anonymized llm-wiki transcript signals into #159.
+USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-RESULTS-v1 completed first import batch.
+USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1 recorded Ming qualitative field feedback after asking users.
+ROLE-STACK-RECOMMENDATION-v1 created recommended naming stacks.
+USER-LANGUAGE-TEST-DECISION-v1 approved field-tested-provisional state with explicit boundaries.
+#159 remains open for optional structured scorecards.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -182,82 +194,72 @@ controlled_user_test: pending
 state_change: review-ready -> real-case-draft, not reviewed
 ```
 
-### 3.8 User Language Test Protocol
+### 3.8 User Language Test Decision
+
+```yaml
+decision_file: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-DECISION-v1.md
+decision: approve_field_tested_provisional
+candidate_state_before: user-language-test-ready
+candidate_state_after: field-tested-provisional
+evidence_standard: Ming qualitative field feedback + transcript imports + role-stack recommendation
+formal_user_tested: false
+structured_scorecards_completed: false
+issue_159_close: false
+b2_validation_upgrade: false
+constitution_update: false
+```
+
+### 3.9 Role Stack Recommendation
+
+```yaml
+recommendation_file: skills/yuanli-category-two-sentence/ROLE-STACK-RECOMMENDATION-v1.md
+status: usable_for_next_iteration
+CASE-01:
+  public_category: 随身寺庙
+  business_explanation: 随身精神资产
+  bridge_explanation: 可带走的东方精神器物
+  confidence: medium_positive
+CASE-05:
+  public_category_candidate: 养成系稀缺美学
+  plain_language_anchor: 高净值姐姐专属高端皮草
+  budget_context: 轻奢复购 / 高净值朋友赠礼
+  community_narrative_candidate: 养成系社交货币
+  product_mechanism_candidate: 双奢结合
+  confidence: mixed_positive
+CASE-08:
+  public_category: 游戏化社交婚礼
+  premium_positioning_candidate: 归国首秀导演
+  bridge_explanation: 让自己的故事被看见
+  deep_narrative: 人生主权宣言
+  diagnostic_internal_phrase: 人生叙事的空间翻译
+  confidence: strong_positive
+```
+
+### 3.10 User Language Test Protocol
 
 ```yaml
 test_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
 results_file: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
+transcript_import_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-v1.md
 c4_collection_issue: "#159"
-status: protocol_refined_and_fieldwork_prepared
+status: field_feedback_recorded_and_decision_made
 participant_target:
   CASE-01: 3 high-net-worth women / overseas Chinese / oriental aesthetics collectors / premium gift buyers
   CASE-05: 3 high-net-worth women / high-repeat private-domain customers / female consumer founders
   CASE-08: 3 overseas returnees / high-net-worth young adults / wedding-service potential customers
-candidate_names:
-  CASE-01: [随身寺庙, 随身精神资产, 可带走的东方精神器物]
-  CASE-05: [养成系社交货币, 养成系稀缺美学, 双奢结合, 高净值姐姐专属高端皮草]
-  CASE-08: [游戏化社交婚礼, 归国首秀导演, 人生主权宣言, 人生叙事的空间翻译]
-interviews_completed: 0
-state_change: no state upgrade; still user-language-test-ready
-```
-
-### 3.9 Transcript Evidence Extraction Results
-
-```yaml
-protocol: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
-results: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md
-status: first_pass_extraction_completed
-source_tier: T3 case writeups
-extracted_cases:
-  - CASE-01 水月老师随身寺庙
-  - CASE-05 达哥张姐低奢皮草
-  - CASE-08 高净值留学生游戏化婚礼
-extracted_objects:
-  - old_category_signal
-  - expensive_problem_signal
-  - new_category_signal
-  - budget_pull_signal
-  - emotional_pull_signal
-  - objection_signal
-  - repeatable_phrase
-boundary: T3 extraction supports test design, not user-tested status
-next_output: target user interview data in USER-LANGUAGE-TEST-RESULTS-v1.md
-```
-
-### 3.10 Higher-Tier Source Extraction Results
-
-```yaml
-source_index: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-CANDIDATES-v1.md
-results: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md
-status: higher_tier_first_pass_completed
-source_types_used:
-  - sources/get-biji
-  - sources/transcripts
-  - entities/people
-  - strategic four-gate report
-extracted_cases:
-  CASE-01:
-    tier: T2 / partial T1-like live course segment
-    strengthened: 随身寺庙 as public category, 随身精神资产 as business explanation, 可带走的东方精神器物 as bridge phrase
-  CASE-05:
-    tier: T1/T2 Get 笔记
-    strengthened: 养成系稀缺美学 as public category, 双奢结合 as mechanism, 高净值姐姐专属高端皮草 as control phrase
-  CASE-08:
-    tier: T3+ source-linked strategic report
-    strengthened: 归国首秀导演 as premium positioning, 人生主权宣言 as narrative line, 人生叙事的空间翻译 as diagnostic phrase
-boundary: not T0 target-user testing; no validation upgrade
-next_recommendation: collect real T0 responses
+structured_scorecards_completed: 0
+state_change: user-language-test-ready -> field-tested-provisional
 ```
 
 ### 3.11 Current Gaps
 
 ```text
-human_review_gap: Ming has not yet reviewed and approved the three real-case outputs.
+formal_validation_gap: structured participant scorecards have not been completed.
+review_gap: Ming has approved provisional field-tested use, but not reviewed/active/canonical status.
 validation_gap: no controlled naming test with 5-10 target users yet.
-user_language_gap: USER-LANGUAGE-TEST-RESULTS-v1 exists and fieldwork is prepared, but target user responses have not been recorded.
-source_tier_gap: higher-tier extraction improved evidence, but it is still not T0 target-user test evidence.
-resolver_gap: route exists as seed and draft, but not repeated in live workflow.
-writeback_gap: skill evidence has not yet been tested in live user workflow.
+source_tier_gap: higher-tier extraction and Ming feedback improved evidence, but this is not formal T0 scorecard evidence.
+resolver_gap: route exists as seed and draft, but not repeated in broader live workflow.
+writeback_gap: B2 module assets have not yet been updated from this decision.
 ```
 
 ### 3.12 Private Case Pool Policy
@@ -269,7 +271,7 @@ Private llm-wiki learner/client cases are valuable for real case testing, but ra
 ### 3.13 Next C4 Task
 
 ```text
-Collect real target-user responses for issue #159 and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
+Use ROLE-STACK-RECOMMENDATION-v1 in next-round real case work, or collect structured participant scorecards if formal user-tested upgrade is desired.
 ```
 
 ---
@@ -339,7 +341,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: collect real target-user responses for issue #159.
-P0 next: fill USER-LANGUAGE-TEST-RESULTS-v1.md with interview evidence.
-P1: analyze interview results and decide whether Candidate 001 can move to user-tested / reviewed.
+P0 current: use ROLE-STACK-RECOMMENDATION-v1 in next-round real case work.
+P0 optional: collect structured participant scorecards if formal user-tested upgrade is desired.
+P1: write provisional user-language learnings into B2 assets after Ming approval.
 ```
