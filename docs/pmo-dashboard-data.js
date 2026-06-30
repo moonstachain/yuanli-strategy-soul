@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T16:05:00.309Z"
+    "updated_at": "2026-06-30T16:05:18.677Z"
   },
   "fields": [
     "Canon Node",
