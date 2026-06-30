@@ -1,11 +1,11 @@
 window.YUANLI_PMO_V22={
-  "version": "v3.6-c2-trial1-validated",
+  "version": "v3.7-validation-task-sync",
   "ui_version": "v2.9-content-assets",
-  "data_patch": "c2-trial1-validation-sync",
+  "data_patch": "validation-task-type-sync",
   "sync": {
     "mode": "github_actions",
-    "source": "issues+content_assets+c2_brain",
-    "updated_at": "2026-06-30T08:52:27.170Z"
+    "source": "issues+content_assets+c2_brain+validation_tasks",
+    "updated_at": "2026-06-30T09:03:28.153Z"
   },
   "fields": [
     "Canon Node",
@@ -39,6 +39,12 @@ window.YUANLI_PMO_V22={
       "name": "C2 Brain Center",
       "layout": "table",
       "purpose": "track the strategic memory hub and Markdown Brain rollout"
+    },
+    {
+      "id": "validation_tasks",
+      "name": "Validation Tasks",
+      "layout": "table",
+      "purpose": "track brain validation and deepening tasks"
     },
     {
       "id": "c3_gap_ranking",
@@ -77,7 +83,7 @@ window.YUANLI_PMO_V22={
     "Validation Gap",
     "P0 Deepening Count",
     "P0.5 Brain Count",
-    "C2 Brain Phase"
+    "Open Validation Tasks"
   ],
   "metric_values": {
     "trilogy_seed_coverage": {
@@ -105,16 +111,16 @@ window.YUANLI_PMO_V22={
       "unit": "module",
       "note": "C2 一个大脑"
     },
-    "c2_brain_phase": {
+    "open_validation_tasks": {
       "value": 2,
-      "unit": "phase",
-      "note": "Markdown Brain Trial 1 passed"
+      "unit": "tasks",
+      "note": "open brain validation and deepening tasks"
     }
   },
   "content_sync": {
-    "name": "PMO Content Asset Sync v1",
+    "name": "PMO Validation Task Sync v1",
     "status": "completed",
-    "current_state": "PMO covers engineering governance, trilogy content asset governance, and C2 brain validation governance"
+    "current_state": "PMO recognizes brain_validation and deepening_task types"
   },
   "trilogy_summary": {
     "parts": 3,
@@ -438,32 +444,6 @@ window.YUANLI_PMO_V22={
       "next": "选择一个低风险 Operator Skill 场景，完成跨工具复用 dry-run，验证 C4 工程自动化能力是否能被结构化、审批化、证据化、回写化。"
     },
     {
-      "issue": "#116",
-      "node": "C4",
-      "type": "task",
-      "domain": "delivery",
-      "layer": "execution",
-      "status": "ready",
-      "health": "green",
-      "priority": "P1",
-      "gap_score": 50,
-      "evidence": "medium",
-      "next": "选择一个真实���户项目或匿名样本，跑通客户项目组合治理试点，证明 CBM-PMO 能把真实项目瓶颈转成可执行、可验收、可回写的任务链。"
-    },
-    {
-      "issue": "#115",
-      "node": "C4",
-      "type": "task",
-      "domain": "delivery",
-      "layer": "execution",
-      "status": "ready",
-      "health": "green",
-      "priority": "P1",
-      "gap_score": 50,
-      "evidence": "medium",
-      "next": "把 OS 治理内核从 seed 推进为可审查、可执行、可证据化的 control loop，防止 CBM-PMO 后续任务滑回普通页面优化或 Issue 堆积。"
-    },
-    {
       "issue": "#103",
       "node": "C2",
       "type": "evidence",
@@ -685,6 +665,19 @@ window.YUANLI_PMO_V22={
       "next": "Trial 2 + Trial 3 + real learner/client validation"
     },
     {
+      "issue": "#128",
+      "node": "C2",
+      "type": "brain_validation",
+      "domain": "brain",
+      "layer": "validation",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0.5",
+      "gap_score": 32,
+      "evidence": "medium",
+      "next": "Run Trial 2 and Trial 3, then update validation records and scorecard."
+    },
+    {
       "issue": "#90",
       "node": "B1",
       "type": "content_asset",
@@ -735,6 +728,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 27,
       "evidence": "medium",
       "next": "moat-diagnostic.md + metric-template.md"
+    },
+    {
+      "issue": "#129",
+      "node": "B2",
+      "type": "deepening_task",
+      "domain": "productization",
+      "layer": "deepening",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0",
+      "gap_score": 27,
+      "evidence": "medium",
+      "next": "Create validation assets and run small-scale productization validation."
     },
     {
       "issue": "#86",
@@ -888,39 +894,33 @@ window.YUANLI_PMO_V22={
       "next": "Trial 2 and Trial 3"
     },
     {
-      "layer": "Writeback",
-      "artifact": "brain/WRITEBACK-LOG.md",
-      "status": "updated",
-      "next": "continue writeback after real trials"
+      "layer": "Issue",
+      "artifact": "#128 C2 Brain Validation",
+      "status": "open",
+      "next": "complete Trial 2 and Trial 3"
     },
     {
-      "layer": "Evolution",
-      "artifact": "assets/C2-一个大脑/evolution.md",
-      "status": "updated",
-      "next": "use Trial 1 as C2 validation evidence"
-    },
-    {
-      "layer": "B2 Deepening",
-      "artifact": "B2 Deepening Task",
-      "status": "to create issue",
-      "next": "naming-test + user-language + validation-records"
+      "layer": "Issue",
+      "artifact": "#129 B2 Deepening Task",
+      "status": "open",
+      "next": "create naming-test, user-language, validation-records"
     }
   ],
   "gap_ranking": [
     {
       "rank": 1,
-      "issue": "#91",
-      "gap": "B2 can enter small-scale productization validation but lacks naming-test, user-language, and validation records.",
+      "issue": "#129",
+      "gap": "Create validation assets and run small-scale productization validation.",
       "score": 27,
-      "formula": "C2 Trial 1 gap analysis",
+      "formula": "validation/deepening task priority",
       "selected": true,
-      "next_issue": "#117"
+      "next_issue": "#129"
     }
   ],
   "roadmap_current": [
     "v2.9-content-assets",
     "v3.4-content-asset-sync-v1",
-    "v3.5-c2-brain-phase2",
-    "v3.6-c2-trial1-validated"
+    "v3.6-c2-trial1-validated",
+    "v3.7-validation-task-sync"
   ]
 };
