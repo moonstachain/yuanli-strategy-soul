@@ -6,8 +6,17 @@ window.YUANLI_AGENT_CBM_V12={
   feedback_signals:['covered','missing','risk','next'],
   writeback_targets:['whiteboard','brain','project','codex','docs'],
   agent_contracts:[
-    {id:'c3_design',node:'C3',domain:'matrix',layer:'design',status:'draft',level:'L2',control:'capability_config',blocker:'missing_evidence'},
-    {id:'c4_execution',node:'C4',domain:'delivery',layer:'execution',status:'draft',level:'L3',control:'task_chain',blocker:'acceptance'},
-    {id:'c2_recursive',node:'C2',domain:'data',layer:'recursive',status:'operating',level:'L2',control:'memory_index',blocker:'freshness'}
+    {id:'a1',node:'A1',domain:'matrix',layer:'strategy',status:'draft',level:'L1',control:'origin_scan',blocker:'weak_evidence',gates:['priority_change'],signals:['missing','next'],writeback:['brain','docs']},
+    {id:'a2',node:'A2',domain:'matrix',layer:'design',status:'draft',level:'L1',control:'boundary_design',blocker:'focus_drift',gates:['status_change'],signals:['missing','risk'],writeback:['brain','docs']},
+    {id:'a3',node:'A3',domain:'content',layer:'execution',status:'draft',level:'L2',control:'capability_pack',blocker:'sample_gap',gates:['publish'],signals:['next','covered'],writeback:['brain','codex']},
+    {id:'a4',node:'A4',domain:'user',layer:'validation',status:'draft',level:'L2',control:'market_signal',blocker:'proof_gap',gates:['priority_change'],signals:['missing','covered'],writeback:['project','brain']},
+    {id:'b1',node:'B1',domain:'growth',layer:'strategy',status:'draft',level:'L1',control:'timing_window',blocker:'trend_fit',gates:['priority_change'],signals:['risk','next'],writeback:['whiteboard','project']},
+    {id:'b2',node:'B2',domain:'content',layer:'design',status:'draft',level:'L2',control:'category_language',blocker:'naming_gap',gates:['publish'],signals:['missing','next'],writeback:['docs','brain']},
+    {id:'b3',node:'B3',domain:'product',layer:'execution',status:'draft',level:'L2',control:'offer_system',blocker:'repeatability',gates:['status_change'],signals:['next','covered'],writeback:['project','codex']},
+    {id:'b4',node:'B4',domain:'moat',layer:'validation',status:'draft',level:'L2',control:'moat_points',blocker:'lock_in_gap',gates:['priority_change'],signals:['risk','next'],writeback:['whiteboard','brain']},
+    {id:'c1',node:'C1',domain:'matrix',layer:'recursive',status:'operating',level:'L2',control:'context_rule',blocker:'drift',gates:['status_change'],signals:['covered','risk'],writeback:['docs','brain']},
+    {id:'c2',node:'C2',domain:'data',layer:'recursive',status:'operating',level:'L2',control:'memory_index',blocker:'freshness',gates:['status_change'],signals:['covered','risk'],writeback:['brain','docs']},
+    {id:'c3',node:'C3',domain:'matrix',layer:'design',status:'draft',level:'L2',control:'capability_config',blocker:'missing_evidence',gates:['priority_change'],signals:['missing','next'],writeback:['whiteboard','project']},
+    {id:'c4',node:'C4',domain:'delivery',layer:'execution',status:'draft',level:'L3',control:'task_chain',blocker:'acceptance',gates:['publish'],signals:['covered','next'],writeback:['codex','project']}
   ]
 };
