@@ -37,7 +37,7 @@ candidate: workflow identified
 sampled: at least 3 examples exist
 review-ready: review checklist, review results scaffold, and AI pre-review exist; Ming human review pending
 real-case-draft: Ming selected real cases and draft transformations exist; user language test pending
-user-language-test-ready: user language test protocol and transcript extraction results exist; interviews pending
+user-language-test-ready: user language test protocol, transcript extraction results, and results scaffold exist; interviews pending
 user-tested: target user language results recorded
 reviewed: Ming human review completed
 active: converted into reusable SKILL.md or equivalent playbook with approval
@@ -76,6 +76,7 @@ review_results: skills/yuanli-category-two-sentence/REVIEW-RESULTS-v1.md
 real_case_candidates: skills/yuanli-category-two-sentence/REAL-CASE-CANDIDATES-v1.md
 real_case_test: skills/yuanli-category-two-sentence/REAL-CASE-TEST-v1.md
 user_language_test: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
+user_language_test_results: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
 transcript_evidence_extraction: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
 transcript_evidence_extraction_results: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md
 related_nodes:
@@ -146,6 +147,7 @@ REAL-CASE-TEST-v1 created draft transformations for the three selected cases.
 USER-LANGUAGE-TEST-v1 created test protocol for target user repeatability, emotional pull, and budget shift.
 TRANSCRIPT-EVIDENCE-EXTRACTION-v1 created extraction protocol to turn private llm-wiki transcripts into anonymized B2/C2 evidence.
 TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1 completed first-pass extraction from three T3 case writeups.
+USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold; interviews are still pending.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -177,7 +179,8 @@ state_change: review-ready -> real-case-draft, not reviewed
 
 ```yaml
 test_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
-status: protocol_created
+results_scaffold: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
+status: protocol_and_results_scaffold_created
 participant_target:
   CASE-01: 5 high-net-worth women / overseas Chinese / oriental aesthetics collectors
   CASE-05: 5 high-net-worth women / high-repeat private-domain customers / female consumer founders
@@ -186,7 +189,8 @@ candidate_names:
   CASE-01: [随身寺庙, 随身精神资产]
   CASE-05: [养成系社交货币, 养成系稀缺美学, 双奢结合]
   CASE-08: [游戏化社交婚礼, 归国首秀导演, 人生主权宣言]
-state_change: real-case-draft -> user-language-test-ready, not user-tested
+interviews_completed: 0
+state_change: no state upgrade; still user-language-test-ready
 ```
 
 ### 3.9 Transcript Evidence Extraction Results
@@ -209,7 +213,7 @@ extracted_objects:
   - objection_signal
   - repeatable_phrase
 boundary: T3 extraction supports test design, not user-tested status
-next_output: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
+next_output: target user interview data in USER-LANGUAGE-TEST-RESULTS-v1.md
 ```
 
 ### 3.10 Current Gaps
@@ -217,7 +221,7 @@ next_output: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.m
 ```text
 human_review_gap: Ming has not yet reviewed and approved the three real-case outputs.
 validation_gap: no controlled naming test with 5-10 target users yet.
-user_language_gap: USER-LANGUAGE-TEST-v1 exists, but target users have not yet selected or repeated preferred category names.
+user_language_gap: USER-LANGUAGE-TEST-RESULTS-v1 exists, but target user responses have not been recorded.
 source_tier_gap: extraction results are from T3 case writeups, not T0 target-user test transcripts.
 resolver_gap: route exists as seed and draft, but not repeated in live workflow.
 writeback_gap: skill evidence has not yet been tested in live user workflow.
@@ -232,7 +236,7 @@ Private llm-wiki learner/client cases are valuable for real case testing, but ra
 ### 3.12 Next C4 Task
 
 ```text
-Run USER-LANGUAGE-TEST-v1 with target participants and create USER-LANGUAGE-TEST-RESULTS-v1.md.
+Collect real target-user responses and fill USER-LANGUAGE-TEST-RESULTS-v1.md; after evidence exists, decide whether the skill can move to user-tested / reviewed.
 ```
 
 ---
@@ -302,7 +306,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: run USER-LANGUAGE-TEST-v1 with target users.
-P0 next: create USER-LANGUAGE-TEST-RESULTS-v1.md after interviews.
+P0 current: collect real target-user responses for USER-LANGUAGE-TEST-RESULTS-v1.md.
+P0 next: analyze interview results and decide whether Candidate 001 can move to user-tested / reviewed.
 P1: Candidate 003 after first skill review/writeback.
 ```
