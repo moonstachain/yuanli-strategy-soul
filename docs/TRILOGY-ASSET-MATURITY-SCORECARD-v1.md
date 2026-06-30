@@ -1,7 +1,7 @@
 # 原力战略三部曲 · 内容资产成熟度评估 v1
 
 Date: 2026-06-30
-Updated: C2 Trial 1 passed; C2 Validation updated from 1/5 to 2/5
+Updated: C2 Trial 1-3 passed; C2 Validation updated to 3/5
 
 ## Purpose
 
@@ -45,7 +45,7 @@ Updated: C2 Trial 1 passed; C2 Validation updated from 1/5 to 2/5
 | B3 | 模式升维 | 4 | 4 | 3 | 4 | 4 | 3 | 1 | 4 | 27 | Seed+ | P0 |
 | B4 | 壁垒锁定 | 4 | 4 | 3 | 4 | 4 | 3 | 1 | 4 | 27 | Seed+ | P0 |
 | C1 | 一纸文脉 | 4 | 4 | 3 | 4 | 4 | 3 | 1 | 3 | 26 | Seed+ | P1 |
-| C2 | 一个大脑 | 5 | 5 | 4 | 4 | 4 | 4 | 2 | 4 | 32 | Validated Strategy+ | P0.5 |
+| C2 | 一个大脑 | 5 | 5 | 4 | 4 | 4 | 4 | 3 | 4 | 33 | Validated Brain Seed | P0.5 |
 | C3 | 一张地图 | 4 | 4 | 3 | 3 | 4 | 3 | 1 | 3 | 25 | Seed+ | P1 |
 | C4 | 一条链路 | 3 | 3 | 3 | 3 | 4 | 3 | 1 | 3 | 23 | Seed | P0 |
 
@@ -55,13 +55,13 @@ Updated: C2 Trial 1 passed; C2 Validation updated from 1/5 to 2/5
 |---|---:|
 | Modules assessed | 12 |
 | Total possible score | 480 |
-| Total current score | 315 |
-| Average score | 26.25 / 40 |
+| Total current score | 316 |
+| Average score | 26.33 / 40 |
 | Average maturity | 66% |
-| Modules at Validated Strategy+ | 1 |
+| Modules at Validated Brain Seed | 1 |
 | Modules at Seed+ | 9 |
 | Modules at Seed | 2 |
-| Real validation average | 1.08 / 5 |
+| Validation average | 1.17 / 5 |
 
 ## Key Findings
 
@@ -69,21 +69,21 @@ Updated: C2 Trial 1 passed; C2 Validation updated from 1/5 to 2/5
 
 12 个模块都已经具备标准 seed 包，结构完整度已经进入可治理阶段。
 
-### 2. 最大短板仍是真实验证
+### 2. C2 已达到内部可验证大脑中枢
 
-除 C2 完成一次内部 Markdown Brain 查询试跑外，大部分模块真实验证程度仍然偏低。下一轮必须引入真实学员、客户、项目或市场反馈。
+C2 已完成 Trial 1、Trial 2、Trial 3。它可以检索仓库证据、形成判断、识别缺口、生成下一步 C4 行动，并判断回写路径。
 
-### 3. 商业化优先级集中在 A4 与 B1-B4
+### 3. 最大短板仍是外部真实验证
+
+C2 的 3/5 主要来自内部 Markdown Brain 验证。下一阶段必须引入真实学员、客户或项目反馈。
+
+### 4. 商业化优先级集中在 A4 与 B1-B4
 
 A4 是从原力资产进入市场的桥，B1-B4 是创业商业化主干，应优先进入产品化和真实验证。
 
-### 4. C4 需要优先加厚
+### 5. B2 是第一个外部验证场景
 
-C4 当前是 Seed，且是原力 OS 的行动闭环。它需要更多模板、真实链路案例和验收标准。
-
-### 5. C2 已完成 Trial 1，进入 Validated Strategy+
-
-C2 已经完成第一次内部 Markdown Brain 查询：`B2 品类独创现在是否可以产品化？`。试跑证明 C2 可以检索证据、形成判断、识别缺口、给出下一步 C4 行动并建议回写。C2 Validation 从 1/5 提升到 2/5。
+C2 Trial 1 已判断 B2 可以进入小范围产品化验证，但仍缺 naming-test、user-language 和 validation-records。
 
 ## Deepening Priority
 
@@ -102,17 +102,7 @@ C2 已经完成第一次内部 Markdown Brain 查询：`B2 品类独创现在是
 
 | Node | Module | Reason | Next Deepening |
 |---:|---|---|---|
-| C2 | 一个大脑 | 决定三部曲内容资产、PMO、C3/C4 是否能持续复利 | Trial 2 + Trial 3 + real learner/client validation |
-
-### P1：补齐教学与训练营材料
-
-| Node | Module | Next Deepening |
-|---:|---|---|
-| A1 | 发现母体 | worksheet.md + real-learner-cases.md |
-| A2 | 回到母体 | calibration-examples.md + facilitator-notes.md |
-| A3 | 获得原力 | capability-rubric.md + validation-worksheet.md |
-| C1 | 一纸文脉 | prompt-template.md + before-after-ai-output.md |
-| C3 | 一张地图 | map-template.md + gap-scoring-sheet.md |
+| C2 | 一个大脑 | 决定三部曲内容资产、PMO、C3/C4 是否能持续复利 | external learner/client/project validation |
 
 ## Productization Gate
 
@@ -127,14 +117,13 @@ Commercialization >= 4 / 5
 
 ## C2 Productization Note
 
-C2 当前 Total 已达到 32/40，Evidence 达到 4/5，Commercialization 达到 4/5，但 Validation 仍为 2/5。因此 C2 已具备战略产品化潜力，但仍不能直接进入规模化售卖。下一步必须完成 Trial 2、Trial 3，并引入真实学员、客户或项目验证。
+C2 当前 Total 已达到 33/40，Evidence 达到 4/5，Validation 达到 3/5，Commercialization 达到 4/5。它已经达到内部产品化门槛，但外部市场验证仍不足，因此可以进入小范围试点，不应直接规模化售卖。
 
 ## Next PMO Actions
 
-1. 创建 C2 Brain Validation Issue。
-2. 创建 B2 Deepening Task。
-3. 继续运行 C2 Trial 2 与 Trial 3。
-4. 为 B2 补齐 naming-test.md、user-language.md、validation-records.md。
-5. 为 A4、B1-B4、C4 补齐验证类文件。
-6. 设计第一轮真实学员、客户或项目试跑。
-7. 每周更新本 Scorecard。
+1. 关闭 #128 C2 Brain Validation。
+2. 执行 #129 B2 Deepening Task。
+3. 为 B2 补齐 naming-test.md、user-language.md、validation-records.md。
+4. 设计第一轮 5-10 人 B2 小范围验证。
+5. 将真实反馈写入 B2 validation-records.md。
+6. 每周更新本 Scorecard。
