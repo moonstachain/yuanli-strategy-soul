@@ -3,7 +3,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T04:31:24.751Z"
+    "updated_at": "2026-06-30T04:31:41.141Z"
   },
   "fields": [
     "Canon Node",
@@ -149,6 +149,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 88,
       "evidence": "weak",
       "next": "Patch PMO dashboard data, sync script version, roadmap, and automation labels so UI and data source are aligned."
+    },
+    {
+      "issue": "#82",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 78,
+      "evidence": "weak",
+      "next": "Create Agent Task Bridge script and workflow template for selected C3 gap to C4 task draft."
     },
     {
       "issue": "#73",
