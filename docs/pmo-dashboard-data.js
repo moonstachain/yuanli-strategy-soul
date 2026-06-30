@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T09:13:05.878Z"
+    "updated_at": "2026-06-30T09:13:36.275Z"
   },
   "fields": [
     "Canon Node",
@@ -112,7 +112,7 @@ window.YUANLI_PMO_V22={
       "note": "C2 一个大脑"
     },
     "open_validation_tasks": {
-      "value": 1,
+      "value": 0,
       "unit": "tasks",
       "note": "open brain validation and deepening tasks"
     }
@@ -704,19 +704,6 @@ window.YUANLI_PMO_V22={
       "next": "moat-diagnostic.md + metric-template.md"
     },
     {
-      "issue": "#129",
-      "node": "B2",
-      "type": "deepening_task",
-      "domain": "productization",
-      "layer": "deepening",
-      "status": "ready",
-      "health": "green",
-      "priority": "P0",
-      "gap_score": 27,
-      "evidence": "medium",
-      "next": "Create validation assets and run small-scale productization validation."
-    },
-    {
       "issue": "#86",
       "node": "A1",
       "type": "content_asset",
@@ -870,12 +857,12 @@ window.YUANLI_PMO_V22={
   "gap_ranking": [
     {
       "rank": 1,
-      "issue": "#129",
-      "gap": "Create validation assets and run small-scale productization validation.",
+      "issue": "#91",
+      "gap": "naming-test.md + user-language.md + validation-records.md",
       "score": 27,
       "formula": "validation/deepening task priority",
       "selected": true,
-      "next_issue": "#129"
+      "next_issue": "#83"
     }
   ],
   "roadmap_current": [
