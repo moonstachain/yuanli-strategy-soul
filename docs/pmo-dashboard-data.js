@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T15:57:37.220Z"
+    "updated_at": "2026-06-30T16:00:38.273Z"
   },
   "fields": [
     "Canon Node",
@@ -516,7 +516,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "创建 `docs/REPO-GOVERNANCE-POLICY-v1.md`，定义 GitHub 仓库何时进入 CBM-PMO 主治理、何时进入能力资产池、何��只观察、何时成为归档/合并候选。"
+      "next": "创建 `docs/REPO-GOVERNANCE-POLICY-v1.md`，定义 GitHub 仓库何时进入 CBM-PMO 主治理、何时进入能力资产池、何时只观察、何时成为归档/合并候选。"
     },
     {
       "issue": "#153",
@@ -555,7 +555,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把最近 30 天活跃 GitHub 仓库从“repo 列表”转成 CBM-PMO 可治理的 Portfolio Intake Registry，明确哪些项目进入 P0 / P1 / P2 / Observe，以及它们分别归属哪个 CBM Domain / Cell、需要什么 Evidence、下一步 C3 Gap / C4 Task ��什么。"
+      "next": "把最近 30 天活跃 GitHub 仓库从“repo 列表”转成 CBM-PMO 可治理的 Portfolio Intake Registry，明确哪些项目进入 P0 / P1 / P2 / Observe，以及它们分别归属哪个 CBM Domain / Cell、需要什么 Evidence、下一步 C3 Gap / C4 Task 是什么。"
     },
     {
       "issue": "#147",
