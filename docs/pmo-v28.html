@@ -1,13 +1,13 @@
 <!doctype html>
 <meta charset="utf-8">
-<title>原力 PMO OS v2.8 / Yuanli PMO OS v2.8</title>
+<title>原力 PMO OS v2.9 / Yuanli PMO OS v2.9</title>
 <script src="pmo-dashboard-data.js"></script>
 <style>
-body{margin:0;background:#05070b;color:#f1ece1;font:14px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif}header{padding:26px 32px;border-bottom:1px solid #263036;background:#0d1214}h1{margin:0;color:#c9a96a}.sub,.muted{color:#8a918c}.wrap{padding:22px;display:grid;grid-template-columns:280px 1fr;gap:18px}.card{background:#0d1214;border:1px solid #263036;border-radius:18px;padding:18px}.gold{color:#c9a96a}.tabs{display:flex;flex-direction:column;gap:10px}.tab{cursor:pointer;text-align:left;background:#101820;color:#f1ece1;border:1px solid #263036;border-radius:14px;padding:12px}.tab.active{border-color:#c9a96a;color:#c9a96a}.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:16px}.kpi{background:#101820;border:1px solid #263036;border-radius:14px;padding:12px}.kpi b{display:block;font-size:22px;color:#c9a96a}.link{color:#6eb7a8;text-decoration:none}.pill{display:inline-block;border:1px solid #8b6f2e;border-radius:999px;padding:3px 9px;color:#c9a96a;margin:3px 5px 3px 0}table{width:100%;border-collapse:collapse}td,th{border-top:1px solid #263036;padding:9px;text-align:left}.zh{font-weight:700}.en{display:block;color:#8a918c;font-size:12px;margin-top:2px}@media(max-width:900px){.wrap{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+body{margin:0;background:#05070b;color:#f1ece1;font:14px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif}header{padding:26px 32px;border-bottom:1px solid #263036;background:#0d1214}h1{margin:0;color:#c9a96a}.sub,.muted{color:#8a918c}.wrap{padding:22px;display:grid;grid-template-columns:300px 1fr;gap:18px}.card{background:#0d1214;border:1px solid #263036;border-radius:18px;padding:18px}.gold{color:#c9a96a}.tabs{display:flex;flex-direction:column;gap:10px}.tab{cursor:pointer;text-align:left;background:#101820;color:#f1ece1;border:1px solid #263036;border-radius:14px;padding:12px}.tab.active{border-color:#c9a96a;color:#c9a96a}.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:16px}.kpi{background:#101820;border:1px solid #263036;border-radius:14px;padding:12px}.kpi b{display:block;font-size:22px;color:#c9a96a}.link{color:#6eb7a8;text-decoration:none}.pill{display:inline-block;border:1px solid #8b6f2e;border-radius:999px;padding:3px 9px;color:#c9a96a;margin:3px 5px 3px 0}table{width:100%;border-collapse:collapse}td,th{border-top:1px solid #263036;padding:9px;text-align:left;vertical-align:top}.zh{font-weight:700}.en{display:block;color:#8a918c;font-size:12px;margin-top:2px}.bar{height:8px;background:#263036;border-radius:999px;overflow:hidden}.bar span{display:block;height:100%;background:#c9a96a}.score{white-space:nowrap}.notice{background:#101820;border:1px solid #263036;border-radius:14px;padding:12px;margin:12px 0}@media(max-width:1100px){.wrap{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
 </style>
-<header><h1>原力 PMO OS v2.8 / Yuanli PMO OS v2.8</h1><div class="sub">六视图互动钻取 · Interactive six-view drilldown · data <span id="ver"></span></div></header>
+<header><h1>原力 PMO OS v2.9 / Yuanli PMO OS v2.9</h1><div class="sub">工程治理 + 三部曲内容资产治理 · data <span id="ver"></span></div></header>
 <div class="wrap">
-  <aside class="card"><h2 class="gold">六个视图 / Six Views</h2><div id="tabs" class="tabs"></div></aside>
+  <aside class="card"><h2 class="gold">七个视图 / Seven Views</h2><div id="tabs" class="tabs"></div></aside>
   <main>
     <section class="card"><h2 class="gold">总览 / Overview</h2><div id="overview" class="kpis"></div></section>
     <section class="card" style="margin-top:18px"><h2 class="gold" id="panel-title"></h2><div id="panel"></div></section>
@@ -15,10 +15,11 @@ body{margin:0;background:#05070b;color:#f1ece1;font:14px/1.5 -apple-system,Blink
 </div>
 <script>
 (function(){
- const d=window.YUANLI_PMO_V22||{}; const items=d.seed_items||[]; const repo='https://github.com/moonstachain/yuanli-strategy-soul/issues/';
+ const d=window.YUANLI_PMO_V22||{}; const items=d.seed_items||[]; const modules=d.trilogy_modules||[]; const repo='https://github.com/moonstachain/yuanli-strategy-soul/issues/';
  document.getElementById('ver').textContent=d.version||'unknown';
  const views=[
   ['strategic_cockpit','战略驾驶舱','Strategic Cockpit','all'],
+  ['trilogy_content_assets','三部曲内容资产','Trilogy Content Assets','assets'],
   ['c3_gap_ranking','C3 缺口排序','C3 Gap Ranking','gap'],
   ['c4_execution_board','C4 执行看板','C4 Execution Board','task'],
   ['evidence_ledger','证据账本','Evidence Ledger','evidence'],
@@ -26,23 +27,27 @@ body{margin:0;background:#05070b;color:#f1ece1;font:14px/1.5 -apple-system,Blink
   ['roadmap','路线图','Roadmap / Milestone','roadmap']
  ];
  function issue(id){return '<a class="link" target="_blank" href="'+repo+String(id).replace('#','')+'">'+id+'</a>'}
+ function asset(path){return '<a class="link" target="_blank" href="../'+path+'">asset</a>'}
  function k(label,value,note){return '<div class="kpi"><span class="muted">'+label+'</span><b>'+value+'</b><span class="muted">'+note+'</span></div>'}
- const gaps=items.filter(x=>x.type==='gap'), tasks=items.filter(x=>x.type==='task'), evs=items.filter(x=>x.type==='evidence');
- document.getElementById('overview').innerHTML=k('C3 gaps',gaps.length,'战略缺口')+k('C4 tasks',tasks.length,'执行任务')+k('Evidence',evs.length,'证据验收')+k('Top score',Math.max(...items.map(x=>x.gap_score||0)),'最高缺口分')+k('Data',d.version||'-','当前数据口径');
+ const gaps=items.filter(x=>x.type==='gap'), tasks=items.filter(x=>x.type==='task'), evs=items.filter(x=>x.type==='evidence'), assets=items.filter(x=>x.type==='content_asset');
+ const summary=d.trilogy_summary||{};
+ document.getElementById('overview').innerHTML=k('Content Assets',summary.seed_packages||assets.length,'12 模块 seed 包')+k('Coverage',(summary.coverage_pct||0)+'%','三部曲覆盖率')+k('Maturity',summary.average_maturity_pct?summary.average_maturity_pct+'%':'-','平均成熟度')+k('P0 Deepening',(d.p0_deepening||[]).length,'下一轮加厚')+k('C3 gaps',gaps.length,'战略缺口')+k('Data',d.version||'-','当前数据口径');
  document.getElementById('tabs').innerHTML=views.map((v,i)=>'<button class="tab '+(i===0?'active':'')+'" data-view="'+v[0]+'"><span class="zh">'+v[1]+'</span><span class="en">'+v[2]+'</span></button>').join('');
  function table(rows){return '<table><tr><th>Issue</th><th>Node</th><th>Type</th><th>Status</th><th>Health</th><th>Priority</th><th>Score</th><th>Evidence</th><th>Next</th></tr>'+rows.map(x=>'<tr><td>'+issue(x.issue)+'</td><td>'+x.node+'</td><td>'+x.type+'</td><td>'+x.status+'</td><td>'+x.health+'</td><td>'+x.priority+'</td><td>'+x.gap_score+'</td><td>'+x.evidence+'</td><td>'+x.next+'</td></tr>').join('')+'</table>'}
+ function assetTable(rows){return '<div class="notice"><b class="gold">PMO Content Asset Sync v1</b><br><span class="muted">12 个正典模块已经同步进入 PMO 数据源；下一轮进入 P0/P1 Deepening。</span></div><table><tr><th>Part</th><th>Node</th><th>Module</th><th>Issue</th><th>Asset</th><th>Status</th><th>Maturity</th><th>Priority</th><th>Next Deepening</th></tr>'+rows.map(x=>'<tr><td>'+x.part+'</td><td>'+x.node+'</td><td>'+x.module+'</td><td>'+issue(x.issue)+'</td><td>'+asset(x.asset_path)+'</td><td>'+x.status+'<span class="en">'+x.stage+'</span></td><td class="score">'+x.maturity+'/40<div class="bar"><span style="width:'+(x.maturity/40*100)+'%"></span></div></td><td>'+x.priority+'</td><td>'+x.next_deepening+'</td></tr>').join('')+'</table>'}
  function render(id){
   document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
   const v=views.find(x=>x[0]===id)||views[0]; document.getElementById('panel-title').innerHTML=v[1]+' / '+v[2];
   let html='';
   if(v[3]==='all') html=table(items.slice().sort((a,b)=>(b.gap_score||0)-(a.gap_score||0)));
+  if(v[3]==='assets') html=assetTable(modules)+'<p class="muted">产品化门槛：Total ≥ 30/40，Evidence ≥ 4/5，Validation ≥ 3/5，Commercialization ≥ 4/5。</p>';
   if(v[3]==='gap') html=table(gaps.slice().sort((a,b)=>(b.gap_score||0)-(a.gap_score||0)))+'<p class="muted">用途：决定哪个战略缺口先进入 C4 执行。</p>';
   if(v[3]==='task') html=table(tasks)+'<p class="muted">用途：管理 C4 执行队列、验收标准和回写目标。</p>';
   if(v[3]==='evidence') html=table(evs)+'<p class="muted">用途：检查每个任务是否被证明，而不只是声称完成。</p>';
-  if(v[3]==='learning') html='<p><span class="pill">Weekly Review</span><span class="pill">Evolution Note</span><span class="pill">Canonical Candidate</span></p><p>演化复盘视图用于确认 evidence 是否转化成可复用学习，以及是否进入正典候选。</p>';
-  if(v[3]==='roadmap') html='<ul>'+((d.roadmap_current||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><p class="muted">路线：v2.7.1 → v2.8 → v2.9 → v3.0 → v3.1 → v3.2 → v3.3</p>';
+  if(v[3]==='learning') html='<p><span class="pill">Weekly Review</span><span class="pill">Evolution Note</span><span class="pill">Canonical Candidate</span><span class="pill">Maturity Scorecard</span></p><p>演化复盘视图用于确认 evidence 是否转化成可复用学习，以及是否进入正典候选或加厚任务。</p>';
+  if(v[3]==='roadmap') html='<ul>'+((d.roadmap_current||[]).map(x=>'<li>'+x+'</li>').join(''))+'</ul><p class="muted">当前新增：v3.4 Content Asset Sync v1。PMO 已覆盖工程治理与三部曲内容资产治理。</p>';
   document.getElementById('panel').innerHTML=html;
  }
- document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>render(b.dataset.view)); render('strategic_cockpit');
+ document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>render(b.dataset.view)); render('trilogy_content_assets');
 })();
 </script>
