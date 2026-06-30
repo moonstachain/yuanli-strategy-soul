@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T09:09:39.891Z"
+    "updated_at": "2026-06-30T09:13:05.878Z"
   },
   "fields": [
     "Canon Node",
@@ -112,7 +112,7 @@ window.YUANLI_PMO_V22={
       "note": "C2 一个大脑"
     },
     "open_validation_tasks": {
-      "value": 2,
+      "value": 1,
       "unit": "tasks",
       "note": "open brain validation and deepening tasks"
     }
@@ -650,19 +650,6 @@ window.YUANLI_PMO_V22={
       "gap_score": 32,
       "evidence": "medium",
       "next": "Trial 2 + Trial 3 + real learner/client validation"
-    },
-    {
-      "issue": "#128",
-      "node": "C2",
-      "type": "brain_validation",
-      "domain": "brain",
-      "layer": "validation",
-      "status": "ready",
-      "health": "green",
-      "priority": "P0.5",
-      "gap_score": 32,
-      "evidence": "medium",
-      "next": "Run Trial 2 and Trial 3, then update validation records and scorecard."
     },
     {
       "issue": "#90",
