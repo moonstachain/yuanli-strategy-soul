@@ -3,39 +3,32 @@
 > Skill ID: `yuanli-category-two-sentence`  
 > Date: 2026-06-30  
 > Protocol: `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md`  
-> Evidence Prep: `skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md` / `skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md` / `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-RESULTS-v1.md`  
-> Status: lightweight 9-interview run prepared; imported pre-fieldwork signals added; interviews pending  
+> Evidence Prep: `skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md` / `skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md` / `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-RESULTS-v1.md` / `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1.md`  
+> Related C4 Issue: `#159`  
+> Status: qualitative Ming field feedback recorded; structured participant scorecards pending  
 > Boundary: no fabricated responses; not user-tested / not reviewed / not active / not canonical / not B2 Validation 3/5
 
 ---
 
-## 0. Purpose
-
-```text
-USER-LANGUAGE-TEST-RESULTS-v1 records target-user reactions to candidate category names.
-```
-
-It tests whether target users can:
-
-```text
-1. Understand the name.
-2. Repeat it after delay.
-3. Feel emotional / identity pull.
-4. Justify paying more or reallocating attention.
-5. Escape the old category trap.
-6. Assign each phrase to the right role in the naming stack.
-```
-
-Current status:
+## 0. Current Status
 
 ```yaml
-interviews_completed: 0
+interviews_completed_as_structured_scorecards: 0
+qualitative_field_feedback: recorded
+feedback_source: Ming first-person field summary after asking users
+participant_count_confirmed: unknown
 minimum_lightweight_target: 9
 recommended_target: 15
-imported_pre_fieldwork_signals: added
-result_status: fieldwork_prepared
+result_status: field_feedback_recorded
 skill_state_change: none
 b2_validation_change: none
+```
+
+Interpretation:
+
+```text
+This file now includes real Ming field feedback, but the evidence is not yet in participant-level scorecard form.
+It can guide role-stack recommendations, but it should not yet close #159 or upgrade the skill.
 ```
 
 ---
@@ -44,56 +37,48 @@ b2_validation_change: none
 
 ```text
 Do not invent participant responses.
-Do not mark a name as winner until real participant feedback is recorded.
-Do not upgrade the skill to user-tested without interview evidence.
+Do not invent participant IDs, profiles, scores, quotes, or delayed recall records.
+Do not mark a name as winner until real participant-level evidence or Ming-approved lightweight evidence standard exists.
+Do not upgrade the skill to user-tested without qualifying evidence and Ming approval.
 ```
 
-Allowed before interviews:
+Allowed before full scorecards:
 
 ```text
-1. Prepare intake templates.
-2. Define scoring sheets.
-3. Define decision rules.
-4. Record transcript-evidence-based hypotheses.
-5. Import anonymized pre-fieldwork signals from existing transcripts.
-6. Wait for real participant answers or Ming-approved alternative evidence standard.
+1. Record Ming's qualitative field feedback.
+2. Update role-stack hypotheses.
+3. Identify which phrases look stronger / weaker.
+4. Prepare participant-level follow-up questions.
+5. Create a role-stack recommendation as a recommendation, not final validation.
 ```
 
 ---
 
 ## 2. Lightweight Fieldwork Plan
 
-Run:
+Target run:
 
 ```text
 3 cases × 3 participants = 9 interviews
 ```
 
-Participant allocation:
+Participant allocation remains open:
 
 | Interview ID | Case | Target Participant | Status |
 |---|---|---|---|
-| C01-P1 | CASE-01 水月老师随身寺庙 | 高净值女性 / 海外华人 / 东方美学收藏者 / 高端礼品购买者 | pending |
-| C01-P2 | CASE-01 水月老师随身寺庙 | 高净值女性 / 海外华人 / 东方美学收藏者 / 高端礼品购买者 | pending |
-| C01-P3 | CASE-01 水月老师随身寺庙 | 高净值女性 / 海外华人 / 东方美学收藏者 / 高端礼品购买者 | pending |
-| C05-P1 | CASE-05 达哥张姐低奢皮草 | 高净值女性 / 私域高复购用户 / 女性消费创业者 | pending |
-| C05-P2 | CASE-05 达哥张姐低奢皮草 | 高净值女性 / 私域高复购用户 / 女性消费创业者 | pending |
-| C05-P3 | CASE-05 达哥张姐低奢皮草 | 高净值女性 / 私域高复购用户 / 女性消费创业者 | pending |
-| C08-P1 | CASE-08 高净值留学生游戏化婚礼 | 海归年轻人 / 高净值年轻人 / 婚礼服务潜在客户 / 家族企业二代 | pending |
-| C08-P2 | CASE-08 高净值留学生游戏化婚礼 | 海归年轻人 / 高净值年轻人 / 婚礼服务潜在客户 / 家族企业二代 | pending |
-| C08-P3 | CASE-08 高净值留学生游戏化婚礼 | 海归年轻人 / 高净值年轻人 / 婚礼服务潜在客户 / 家族企业二代 | pending |
+| C01-P1 | CASE-01 水月老师随身寺庙 | 高净值女性 / 海外华人 / 东方美学收藏者 / 高端礼品购买者 | pending structured record |
+| C01-P2 | CASE-01 水月老师随身寺庙 | 高净值女性 / 海外华人 / 东方美学收藏者 / 高端礼品购买者 | pending structured record |
+| C01-P3 | CASE-01 水月老师随身寺庙 | 高净值女性 / 海外华人 / 东方美学收藏者 / 高端礼品购买者 | pending structured record |
+| C05-P1 | CASE-05 达哥张姐低奢皮草 | 高净值女性 / 私域高复购用户 / 女性消费创业者 | pending structured record |
+| C05-P2 | CASE-05 达哥张姐低奢皮草 | 高净值女性 / 私域高复购用户 / 女性消费创业者 | pending structured record |
+| C05-P3 | CASE-05 达哥张姐低奢皮草 | 高净值女性 / 私域高复购用户 / 女性消费创业者 | pending structured record |
+| C08-P1 | CASE-08 高净值留学生游戏化婚礼 | 海归年轻人 / 高净值年轻人 / 婚礼服务潜在客户 / 家族企业二代 | pending structured record |
+| C08-P2 | CASE-08 高净值留学生游戏化婚礼 | 海归年轻人 / 高净值年轻人 / 婚礼服务潜在客户 / 家族企业二代 | pending structured record |
+| C08-P3 | CASE-08 高净值留学生游戏化婚礼 | 海归年轻人 / 高净值年轻人 / 婚礼服务潜在客户 / 家族企业二代 | pending structured record |
 
 ---
 
 ## 3. Test Scope
-
-Selected cases:
-
-```text
-CASE-01 水月老师随身寺庙
-CASE-05 达哥张姐低奢皮草
-CASE-08 高净值留学生游戏化婚礼
-```
 
 Candidate names and refined phrases:
 
@@ -103,111 +88,23 @@ CASE-05: 养成系社交货币 vs 养成系稀缺美学 vs 双奢结合 + contro
 CASE-08: 游戏化社交婚礼 vs 归国首秀导演 vs 人生主权宣言 + diagnostic: 人生叙事的空间翻译
 ```
 
----
-
-## 4. Scoring Dimensions
-
-Each participant scores each candidate phrase 1-5:
-
-| Dimension | Meaning |
-|---|---|
-| First-glance clarity | 不看解释，第一眼是否知道大概是什么 |
-| Target-user fit | 是否知道这是给谁的 |
-| Old-category escape | 是否逃离旧品类比较 |
-| Emotional pull | 是否心动、好奇、被击中、有身份感 |
-| Repeatability | 3-5 分钟后是否还能记住并复述 |
-| Budget pull | 是否愿意重新分配预算或注意力 |
-| Premium feel | 是否足够高级、能支撑溢价 |
-| Yuanli fit | 是否保留原力审美、战略压缩感和非普通文案感 |
-| Role clarity | 是否清楚这个词更适合主品类、定位语、解释语还是叙事语 |
-
-Pass threshold:
+Scoring dimensions for later structured records:
 
 ```text
-Average >= 4.0
-Repeatability >= 4
-Budget pull >= 4
-No dimension below 3
-```
-
-Revise threshold:
-
-```text
-Average 3.2-3.9
-Or repeatability / budget pull below 4
-```
-
-No-go threshold:
-
-```text
-Average < 3.2
-Or users consistently misclassify it as the old category
+First-glance clarity
+Target-user fit
+Old-category escape
+Emotional pull
+Repeatability
+Budget pull
+Premium feel
+Yuanli fit
+Role clarity
 ```
 
 ---
 
-## 5. Interview Intake Format
-
-Use this format for each participant:
-
-```yaml
-participant_id:
-case_id:
-participant_profile:
-privacy_status: anonymized
-interview_date:
-interview_mode: voice/text/in-person/wechat/other
-
-blind_name_reactions:
-  - name:
-    first_glance_meaning:
-    who_is_it_for:
-    old_category_guess:
-    curiosity_level_1_5:
-    raw_or_paraphrased_quote:
-
-two_sentence_reactions:
-  clarity_after_explanation:
-  can_repeat_in_own_words: true/false
-  repeated_phrase:
-  perceived_difference_from_old_category:
-  most_moving_word:
-  confusing_or_off_word:
-
-role_classification:
-  public_category_name:
-  premium_positioning:
-  bridge_explanation:
-  deep_narrative_line:
-  not_recommended:
-  reason:
-
-budget_reaction:
-  would_pay_more_or_shift_attention: true/false/unclear
-  reason:
-  premium_legitimacy_1_5:
-
-repeatability_check_after_3_to_5_minutes:
-  remembered_name:
-  friend_referral_sentence:
-
-scores:
-  first_glance_clarity:
-  target_user_fit:
-  old_category_escape:
-  emotional_pull:
-  repeatability:
-  budget_pull:
-  premium_feel:
-  yuanli_fit:
-  role_clarity:
-
-researcher_notes:
-```
-
----
-
-## 6. Imported Pre-Fieldwork Signals
+## 4. Imported Pre-Fieldwork Signals
 
 Source:
 
@@ -234,7 +131,7 @@ They are not target-user blind-name reactions.
 They do not count toward the 9 interviews for #159.
 ```
 
-### 6.1 CASE-01 · Imported Signals
+### 4.1 CASE-01 Imported Signals
 
 ```yaml
 source_path: sources/transcripts/20260323135813-老郭团队与水月老师-原力os沟通-转写智能优化版-1.md
@@ -242,8 +139,6 @@ source_tier: T1/T2 candidate
 strongest_import_value: business-context framing and explanation-layer design
 count_as_participant_response: false
 ```
-
-Imported signal:
 
 ```yaml
 old_category_signal: insufficient_direct_signal
@@ -254,22 +149,9 @@ role_classification_signal:
   随身寺庙: public_category_candidate, still requires T0 evidence
   随身精神资产: business_explanation / bridge_explanation
   可带走的东方精神器物: bridge_explanation requiring story support
-candidate_phrase_impact:
-  strengthen:
-    - 随身精神资产 as business explanation
-    - 可带走的东方精神器物 as bridge phrase
-  add_probe:
-    - 不听故事，只看名字，你会不会误解它？
-    - 听完出处、材料、用户和供给故事后，你是否更愿意把它当成精神资产？
 ```
 
-Fieldwork implication:
-
-```text
-CASE-01 必须保留严格的 blind-name test，再做出处/故事/证据解释后的 second-round reaction。
-```
-
-### 6.2 CASE-05 · Imported Signals
+### 4.2 CASE-05 Imported Signals
 
 ```yaml
 source_path: sources/get-biji/entrepreneurship/ai-龙虾方法论赋能轻奢皮草品牌商业操盘与战略规划研讨会议.md
@@ -277,8 +159,6 @@ source_tier: T1/T2
 strongest_import_value: gift-account / repeat-purchase / referral / high-net-worth sister-user logic
 count_as_participant_response: false
 ```
-
-Imported signal:
 
 ```yaml
 old_category_signal: 高端皮草 / 私域服饰 / 淘宝电商 / 产品创意库
@@ -290,24 +170,9 @@ role_classification_signal:
   养成系社交货币: community_narrative / deep_narrative
   双奢结合: bridge_explanation / product_mechanism
   高净值姐姐专属高端皮草: control / plain_language_title
-candidate_phrase_impact:
-  strengthen:
-    - 养成系稀缺美学
-    - 高净值姐姐专属高端皮草 as control phrase
-    - 双奢结合 as product mechanism
-  add_probe:
-    - 这个词会不会让你想送给闺蜜？
-    - 哪个词最能解释为什么会复购？
-    - 哪个词听起来最像高净值姐姐而不是普通皮草用户？
 ```
 
-Fieldwork implication:
-
-```text
-CASE-05 必须强制追问礼品心理账户、复购、转介绍、闺蜜推荐和“姐姐”语言是否自然出现。
-```
-
-### 6.3 CASE-08 · Imported Signals
+### 4.3 CASE-08 Imported Signals
 
 ```yaml
 source_paths:
@@ -317,8 +182,6 @@ source_tier: T3+ / source-linked strategic report
 strongest_import_value: founder essence, sweet user, old-category escape, role-stack design
 count_as_participant_response: false
 ```
-
-Imported signal:
 
 ```yaml
 old_category_signal: 婚庆套餐 / 婚礼布置 / 设计方案 / 独立策划师 / 流程统筹
@@ -330,386 +193,282 @@ role_classification_signal:
   归国首秀导演: premium_positioning
   人生主权宣言: deep_narrative
   人生叙事的空间翻译: diagnostic / founder_essence
-candidate_phrase_impact:
-  strengthen:
-    - 归国首秀导演 as premium positioning
-    - 人生主权宣言 as deep narrative line
-    - 人生叙事的空间翻译 as diagnostic phrase
-  add_probe:
-    - 你是在为婚礼布置付费，还是为自己的故事被看见付费？
-    - 归国首秀导演是否比游戏化社交婚礼更像高端服务？
-    - 人生叙事的空间翻译准确吗？你会转述给朋友吗？
 ```
 
-Fieldwork implication:
+---
+
+## 5. Ming Field Feedback Summary
+
+Source:
 
 ```text
-CASE-08 必须强制角色归类，而不是只问一个赢家；同时追踪“归国首秀”是否进入受访者自己的复述。
+skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1.md
 ```
 
-### 6.4 Cross-Case Imported Finding
-
-```text
-The imported evidence reinforces that #159 should map each phrase into a role stack rather than only force one winning name.
-```
-
-Role stack:
+Evidence status:
 
 ```yaml
-public_category: user-repeatable first-glance phrase
-premium_positioning: budget-pull and status phrase
-bridge_explanation: sales explanation / plain language / mechanism phrase
-deep_narrative: Yuanli essence / founder-level story phrase
-diagnostic: internal strategic accuracy phrase
-control: plain-language comparison phrase
+feedback_source: Ming first-person field summary after asking users
+participant_records_created: 0
+participant_count_confirmed: unknown
+case_coverage:
+  CASE-01: qualitative feedback received
+  CASE-05: qualitative feedback received
+  CASE-08: qualitative feedback received
+count_as_159_interviews: partial / not yet countable
+user_tested_status: false
 ```
 
-Updated case stack before fieldwork:
+### 5.1 CASE-01 · 水月老师随身寺庙
+
+Ming field feedback:
+
+```yaml
+blind_name_reaction: 用户不听故事、只看名字时，仍然比较容易理解。
+after_story_reaction: 听完故事、出处之后，用户愿意把它理解为精神资产。
+```
+
+Interpretation:
+
+```yaml
+signal_strength: medium_positive
+public_category_signal:
+  随身寺庙: strengthened
+business_explanation_signal:
+  随身精神资产: strengthened_after_story
+bridge_explanation_signal:
+  可带走的东方精神器物: not directly resolved
+old_category_confusion: lower_than_expected
+budget_pull_signal: positive_after_origin_story
+main_learning: CASE-01 的关键不是用户完全听不懂，而是听完出处故事后，“精神资产”会获得更高可信度。
+```
+
+Updated role stack:
+
+```yaml
+public_category: 随身寺庙
+business_explanation: 随身精神资产
+bridge_explanation: 可带走的东方精神器物
+field_status: likely_pass_on_clarity; budget_pull_needs_structured_score
+```
+
+### 5.2 CASE-05 · 达哥张姐低奢皮草
+
+Ming field feedback:
+
+```yaml
+gift_to_close_friend: 暂时还不会自然想到送闺蜜。
+repeat_purchase_signal: 轻奢 / 轻度奢侈方向能让用户想到复购。
+high_net_worth_friend_signal: 送给高净值朋友时，会更像高净值姐姐的东西。
+```
+
+Interpretation:
+
+```yaml
+signal_strength: mixed_positive
+public_category_signal:
+  养成系稀缺美学: still plausible but not proven
+community_narrative_signal:
+  养成系社交货币: not strongly supported by gift-to-close-friend reaction yet
+product_mechanism_signal:
+  双奢结合: needs clarity testing; not resolved in this feedback
+plain_language_control_signal:
+  高净值姐姐专属高端皮草: strengthened for target-user fit
+budget_pull_signal:
+  repeat_purchase: positive
+  gift_to_close_friend: weak / not yet activated
+  high_net_worth_friend: positive
+main_learning: CASE-05 的预算牵引目前更偏“轻奢复购”和“高净值朋友场景”，而不是“闺蜜礼物场景”。
+```
+
+Updated role stack:
+
+```yaml
+public_category_candidate: 养成系稀缺美学
+plain_language_anchor: 高净值姐姐专属高端皮草
+budget_context: 轻奢复购 / 高净值朋友赠礼
+community_narrative: 养成系社交货币, still needs proof
+product_mechanism: 双奢结合, still needs proof
+field_status: partial_pass_on_repeat_purchase; gift_account_needs_refinement
+```
+
+### 5.3 CASE-08 · 高净值留学生游戏化婚礼
+
+Ming field feedback:
+
+```yaml
+story_seen_budget: “自己的故事被看见”特别被认可，用户愿意为此付费。
+gamification_signal: 游戏化是年轻人喜欢的，并且特别适合朋友推荐。
+life_narrative_signal: 人生叙事未必特别好理解。
+```
+
+Interpretation:
+
+```yaml
+signal_strength: strong_positive
+public_category_signal:
+  游戏化社交婚礼: strengthened for young users and referral
+premium_positioning_signal:
+  归国首秀导演: not directly resolved in this feedback; still plausible
+budget_pull_signal:
+  自己的故事被看见: strongly strengthened
+emotional_pull_signal:
+  被看见: strongly strengthened
+narrative_signal:
+  人生叙事的空间翻译: weakened as public-facing phrase; remains diagnostic / internal strategy phrase
+main_learning: CASE-08 最强用户语言不是“人生叙事”，而是“自己的故事被看见”；游戏化适合年轻用户和朋友推荐。
+```
+
+Updated role stack:
+
+```yaml
+public_category: 游戏化社交婚礼
+premium_positioning_candidate: 归国首秀导演
+bridge_explanation: 让自己的故事被看见
+deep_narrative: 人生主权宣言
+diagnostic_internal_phrase: 人生叙事的空间翻译
+field_status: likely_pass_on_emotional_pull_and_referral; narrative_phrase_should_not_be_primary
+```
+
+### 5.4 Cross-Case Field Finding
+
+```text
+用户语言比战略语言更具体。
+```
 
 ```yaml
 CASE-01:
-  public_category_candidate: 随身寺庙
+  user_entry: 名字能懂 + 故事后精神资产成立
+  risk: 仍缺 structured budget-pull score
+
+CASE-05:
+  user_entry: 轻奢复购 + 高净值朋友场景
+  risk: 闺蜜礼物场景暂未被激活；养成系语言仍需验证
+
+CASE-08:
+  user_entry: 自己的故事被看见 + 游戏化好推荐
+  risk: 人生叙事不宜直接做用户主语言
+```
+
+---
+
+## 6. Current Role-Stack Recommendation Snapshot
+
+```yaml
+CASE-01:
+  public_category: 随身寺庙
   business_explanation: 随身精神资产
   bridge_explanation: 可带走的东方精神器物
-  gap: emotional-pull evidence still requires T0 test
+  confidence: medium_positive
+  next_validation_need: structured recall and budget-pull score
 
 CASE-05:
   public_category_candidate: 养成系稀缺美学
-  community_narrative: 养成系社交货币
-  bridge_explanation: 双奢结合
-  control: 高净值姐姐专属高端皮草
-  strongest_import_signal: gift-account / referral / repeat-purchase logic
+  plain_language_anchor: 高净值姐姐专属高端皮草
+  budget_context: 轻奢复购 / 高净值朋友赠礼
+  community_narrative_candidate: 养成系社交货币
+  product_mechanism_candidate: 双奢结合
+  confidence: mixed_positive
+  next_validation_need: clarify whether “轻奢复购” should enter user-facing phrase stack
 
 CASE-08:
-  public_category_candidate: 游戏化社交婚礼
-  premium_positioning: 归国首秀导演
+  public_category: 游戏化社交婚礼
+  premium_positioning_candidate: 归国首秀导演
+  bridge_explanation: 让自己的故事被看见
   deep_narrative: 人生主权宣言
-  diagnostic: 人生叙事的空间翻译
-  strongest_import_signal: life-authority / family-trust / spatial-narrative logic
-```
-
-Fieldwork questions to emphasize:
-
-```text
-1. 这个词更像标题、副标题、销售解释、品牌故事，还是不适合对外？
-2. 听完解释后，你愿意为什么多付钱？
-3. 3-5 分钟后，你自然记住的是哪个词？
-4. 你会怎么介绍给朋友？
-5. 这个名字有没有把你拉回旧品类？
+  diagnostic_internal_phrase: 人生叙事的空间翻译
+  confidence: strong_positive
+  next_validation_need: structured recall for 游戏化社交婚礼 and budget-pull score for 故事被看见
 ```
 
 ---
 
-# 7. CASE-01 Results · 水月老师随身寺庙
+## 7. Structured Participant Scorecard Template
 
-## 7.1 Hypothesis Before Interviews
-
-Based on transcript and higher-tier evidence extraction:
+Use this if Ming later provides participant-level data:
 
 ```yaml
-public_poetic_name_hypothesis: 随身寺庙
-business_explanation_hypothesis: 随身精神资产
-bridge_phrase_hypothesis: 可带走的东方精神器物
-main_objection_to_test:
-  - 寺庙是否过于宗教化
-  - 精神资产是否太商业化或太冷
-  - 可带走的东方精神器物是否更像用户会转述的话
-  - 不听故事时是否会误解；听完出处/材料/供给故事后是否更愿意认可预算
-```
+participant_id:
+case_id:
+participant_profile:
+privacy_status: anonymized
+interview_date:
+interview_mode:
 
-## 7.2 Candidate Names
+field_reactions:
+  blind_name_reaction:
+  after_story_or_two_sentence_reaction:
+  budget_pull_reason:
+  referral_or_friend_intro:
+  delayed_recall:
+  role_classification:
 
-```text
-A. 随身寺庙
-B. 随身精神资产
-C. 可带走的东方精神器物
-```
+scores:
+  first_glance_clarity:
+  target_user_fit:
+  old_category_escape:
+  emotional_pull:
+  repeatability:
+  budget_pull:
+  premium_feel:
+  yuanli_fit:
+  role_clarity:
 
-## 7.3 Participant Score Table
-
-| Participant | Name | Role Chosen | First-glance clarity | Target-user fit | Old-category escape | Emotional pull | Repeatability | Budget pull | Premium feel | Yuanli fit | Role clarity | Notes |
-|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| C01-P1 | 随身寺庙 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P1 | 随身精神资产 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P1 | 可带走的东方精神器物 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P2 | 随身寺庙 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P2 | 随身精神资产 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P2 | 可带走的东方精神器物 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P3 | 随身寺庙 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P3 | 随身精神资产 |  |  |  |  |  |  |  |  |  |  |  |
-| C01-P3 | 可带走的东方精神器物 |  |  |  |  |  |  |  |  |  |  |  |
-
-## 7.4 Participant Intake Slots
-
-```yaml
-C01-P1:
-  case_id: CASE-01
-  response_status: pending
-C01-P2:
-  case_id: CASE-01
-  response_status: pending
-C01-P3:
-  case_id: CASE-01
-  response_status: pending
-```
-
-## 7.5 Result Summary
-
-```yaml
-participant_count: 0
-winner_name:
-secondary_name:
-bridge_or_diagnostic_phrase:
-losing_names:
-role_stack:
-  public_category:
-  premium_positioning:
-  bridge_explanation:
-  deep_narrative_line:
-average_scores:
-repeatability_quotes:
-budget_pull_quotes:
-confusing_words:
-recommended_category_name:
-recommended_secondary_narrative:
-result_status: pending
+safe_paraphrased_quote:
+researcher_notes:
 ```
 
 ---
 
-# 8. CASE-05 Results · 达哥张姐低奢皮草
-
-## 8.1 Hypothesis Before Interviews
-
-Based on transcript and higher-tier evidence extraction:
+## 8. Cross-Case Result Summary
 
 ```yaml
-public_category_hypothesis: 养成系稀缺美学
-community_narrative_hypothesis: 养成系社交货币
-product_mechanism_hypothesis: 双奢结合
-plain_language_control: 高净值姐姐专属高端皮草
-main_objection_to_test:
-  - 养成系是否亲近但不够高级
-  - 社交货币是否太互联网化
-  - 双奢结合是否清楚但不够有情绪
-  - 高净值姐姐专属高端皮草是否最清楚但不够独创
-  - 是否触发礼品心理账户、复购、转赠闺蜜和姐妹推荐
-```
-
-## 8.2 Candidate Names
-
-```text
-A. 养成系社交货币
-B. 养成系稀缺美学
-C. 双奢结合
-D. 高净值姐姐专属高端皮草
-```
-
-## 8.3 Participant Score Table
-
-| Participant | Name | Role Chosen | First-glance clarity | Target-user fit | Old-category escape | Emotional pull | Repeatability | Budget pull | Premium feel | Yuanli fit | Role clarity | Notes |
-|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| C05-P1 | 养成系社交货币 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P1 | 养成系稀缺美学 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P1 | 双奢结合 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P1 | 高净值姐姐专属高端皮草 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P2 | 养成系社交货币 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P2 | 养成系稀缺美学 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P2 | 双奢结合 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P2 | 高净值姐姐专属高端皮草 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P3 | 养成系社交货币 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P3 | 养成系稀缺美学 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P3 | 双奢结合 |  |  |  |  |  |  |  |  |  |  |  |
-| C05-P3 | 高净值姐姐专属高端皮草 |  |  |  |  |  |  |  |  |  |  |  |
-
-## 8.4 Participant Intake Slots
-
-```yaml
-C05-P1:
-  case_id: CASE-05
-  response_status: pending
-C05-P2:
-  case_id: CASE-05
-  response_status: pending
-C05-P3:
-  case_id: CASE-05
-  response_status: pending
-```
-
-## 8.5 Result Summary
-
-```yaml
-participant_count: 0
-winner_name:
-secondary_name:
-bridge_or_diagnostic_phrase:
-losing_names:
-role_stack:
-  public_category:
-  premium_positioning:
-  bridge_explanation:
-  deep_narrative_line:
-average_scores:
-repeatability_quotes:
-budget_pull_quotes:
-confusing_words:
-recommended_category_name:
-recommended_secondary_narrative:
-result_status: pending
-```
-
----
-
-# 9. CASE-08 Results · 高净值留学生游戏化婚礼
-
-## 9.1 Hypothesis Before Interviews
-
-Based on transcript and higher-tier evidence extraction:
-
-```yaml
-public_category_hypothesis: 游戏化社交婚礼
-premium_positioning_hypothesis: 归国首秀导演
-deep_narrative_line_hypothesis: 人生主权宣言
-diagnostic_phrase: 人生叙事的空间翻译
-main_objection_to_test:
-  - 游戏化社交婚礼是否清楚但太窄
-  - 归国首秀导演是否更能表达身份亮相
-  - 人生主权宣言是否动人但太抽象
-  - 人生叙事的空间翻译是否更准确但不像用户会转述的话
-  - 用户是否是在为婚礼布置付费，还是为自己的故事被看见付费
-```
-
-## 9.2 Candidate Names
-
-```text
-A. 游戏化社交婚礼
-B. 归国首秀导演
-C. 人生主权宣言
-D. 人生叙事的空间翻译
-```
-
-## 9.3 Participant Score Table
-
-| Participant | Name | Role Chosen | First-glance clarity | Target-user fit | Old-category escape | Emotional pull | Repeatability | Budget pull | Premium feel | Yuanli fit | Role clarity | Notes |
-|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| C08-P1 | 游戏化社交婚礼 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P1 | 归国首秀导演 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P1 | 人生主权宣言 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P1 | 人生叙事的空间翻译 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P2 | 游戏化社交婚礼 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P2 | 归国首秀导演 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P2 | 人生主权宣言 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P2 | 人生叙事的空间翻译 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P3 | 游戏化社交婚礼 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P3 | 归国首秀导演 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P3 | 人生主权宣言 |  |  |  |  |  |  |  |  |  |  |  |
-| C08-P3 | 人生叙事的空间翻译 |  |  |  |  |  |  |  |  |  |  |  |
-
-## 9.4 Participant Intake Slots
-
-```yaml
-C08-P1:
-  case_id: CASE-08
-  response_status: pending
-C08-P2:
-  case_id: CASE-08
-  response_status: pending
-C08-P3:
-  case_id: CASE-08
-  response_status: pending
-```
-
-## 9.5 Result Summary
-
-```yaml
-participant_count: 0
-winner_name:
-secondary_name:
-bridge_or_diagnostic_phrase:
-losing_names:
-role_stack:
-  public_category:
-  premium_positioning:
-  bridge_explanation:
-  deep_narrative_line:
-average_scores:
-repeatability_quotes:
-budget_pull_quotes:
-confusing_words:
-recommended_category_name:
-recommended_secondary_narrative:
-result_status: pending
-```
-
----
-
-## 10. Cross-Case Result Summary
-
-```yaml
-total_participants_completed: 0
-imported_pre_fieldwork_signals: added
+total_participants_completed_as_structured_scorecards: 0
+qualitative_field_feedback: recorded
 case_completion:
-  CASE-01: 0 / 3
-  CASE-05: 0 / 3
-  CASE-08: 0 / 3
+  CASE-01: qualitative feedback received / structured records pending
+  CASE-05: qualitative feedback received / structured records pending
+  CASE-08: qualitative feedback received / structured records pending
 validated_winners:
-  CASE-01:
-  CASE-05:
-  CASE-08:
-cross_case_pattern:
-  - role_stack_testing_required
-  - transcript_imports_do_not_count_as_participants
-user_language_status: pending
-skill_upgrade_recommendation: no_upgrade_until_results
-b2_validation_recommendation: no_upgrade_until_T0_evidence
+  CASE-01: not_formally_declared
+  CASE-05: not_formally_declared
+  CASE-08: not_formally_declared
+user_language_status: field_feedback_recorded
+skill_upgrade_recommendation: no_upgrade_until_Ming_approval_or_structured_results
+b2_validation_recommendation: no_upgrade_until_T0_or_approved_lightweight_standard
 ```
 
 ---
 
-## 11. Decision Rules After Results
-
-### 11.1 Case-level pass
+## 9. Decision Rules After Structured Results
 
 A case passes if:
 
 ```text
-1. At least 3 valid participant responses are recorded.
-2. One name or naming stack has average >= 4.0.
-3. Repeatability >= 4.
-4. Budget pull >= 4.
-5. No critical privacy or old-category confusion issue remains.
+1. At least 3 valid participant responses are recorded, or Ming explicitly approves a lightweight qualitative standard.
+2. One name or naming stack has average >= 4.0, or qualitative evidence is judged sufficient by Ming.
+3. Repeatability and budget pull are explicitly supported.
+4. No critical old-category confusion issue remains.
 ```
-
-### 11.2 Skill-level user-tested threshold
 
 The skill can move toward `user-tested` only if:
 
 ```text
 1. At least 2 of 3 cases pass.
-2. Each passed case has at least 3 target participant responses.
-3. Evidence includes repeatability and budget-pull quotes or paraphrased signals.
-4. Ming approves the interpretation.
-```
-
-### 11.3 B2 Validation 3/5 threshold
-
-B2 can only be considered for Validation 3/5 if:
-
-```text
-1. Controlled naming evidence exists with 5-10 target users or a clearly accepted lightweight equivalent.
-2. User-language results are written back to `assets/B2-品类独创/user-language.md`.
-3. Workshop scorecard / validation record is updated.
-4. Ming approves the upgrade.
+2. Evidence includes repeatability and budget-pull signals.
+3. Ming approves the interpretation.
+4. The approved evidence standard is recorded.
 ```
 
 ---
 
-## 12. Writeback Targets After Real Results
+## 10. Writeback Targets After Real / Approved Results
 
-After interviews are completed, write back to:
+After structured interviews or Ming-approved lightweight standard, write back to:
 
 ```text
 skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
+skills/yuanli-category-two-sentence/ROLE-STACK-RECOMMENDATION-v1.md
 assets/B2-品类独创/user-language.md
 assets/B2-品类独创/workshop-scorecard.md
 assets/B2-品类独创/validation-records.md
@@ -730,56 +489,8 @@ without explicit Ming approval and qualifying evidence.
 
 ---
 
-## 13. Fieldwork Collection Instructions
-
-For each interview, collect:
+## 11. Next Action
 
 ```text
-1. Target participant profile, anonymized.
-2. Blind reaction to each candidate phrase.
-3. Reaction after two-sentence explanation.
-4. Role classification: title / subtitle / sales explanation / narrative / do not use.
-5. Budget-pull reason.
-6. 3-5 minute delayed recall.
-7. Scores for all dimensions.
-8. Any direct user phrase that is safe to paraphrase.
-```
-
-Additional emphasis from imported signals:
-
-```text
-CASE-01: blind reaction first, then provenance/origin/proof explanation.
-CASE-05: gift account, repeat purchase, referral, sister language, premium feel vs clarity.
-CASE-08: role stack, returnee social debut, life story being seen, diagnostic phrase repeatability.
-```
-
-Suggested collection mode:
-
-```text
-Start with 9 lightweight interviews:
-CASE-01: 3 participants
-CASE-05: 3 participants
-CASE-08: 3 participants
-
-If early signal is promising, expand to 15 interviews.
-```
-
----
-
-## 14. Next Action
-
-```text
-Collect real target-user responses and paste them into this file or provide transcripts for extraction.
-```
-
-Once responses are collected, update this file from:
-
-```yaml
-result_status: fieldwork_prepared
-```
-
-to:
-
-```yaml
-result_status: user_language_results_recorded
+Create ROLE-STACK-RECOMMENDATION-v1.md based on Ming field feedback, then decide whether to collect structured participant scorecards or approve a lightweight evidence standard.
 ```
