@@ -1,0 +1,30 @@
+name: Evidence Review
+about: Validate proof, feedback, and writeback
+labels: evidence-review
+body:
+  - type: input
+    id: work_item
+    attributes:
+      label: Work Item
+  - type: input
+    id: evidence_path
+    attributes:
+      label: Evidence Path
+      placeholder: brain/evidence/...
+  - type: dropdown
+    id: evidence_strength
+    attributes:
+      label: Evidence Strength
+      options: [none,weak,medium,strong]
+  - type: textarea
+    id: finding
+    attributes:
+      label: Finding
+  - type: textarea
+    id: evolution_note
+    attributes:
+      label: Evolution Note Path
+  - type: textarea
+    id: next_reuse
+    attributes:
+      label: Next Reuse
