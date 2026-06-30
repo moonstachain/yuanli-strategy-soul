@@ -1,7 +1,7 @@
 # Yuanli Brain · SKILL CANDIDATES
 
 > Module: C2 一个大脑  
-> Issue: #141 / #142 / #143 / #145  
+> Issue: #141 / #142 / #143 / #145 / #159  
 > Date: 2026-06-30
 
 ---
@@ -37,7 +37,7 @@ candidate: workflow identified
 sampled: at least 3 examples exist
 review-ready: review checklist, review results scaffold, and AI pre-review exist; Ming human review pending
 real-case-draft: Ming selected real cases and draft transformations exist; user language test pending
-user-language-test-ready: user language test protocol, transcript extraction results, higher-tier extraction results, and results scaffold exist; interviews pending
+user-language-test-ready: user language test protocol, transcript extraction results, higher-tier extraction results, results scaffold, and open C4 collection issue exist; interviews pending
 user-tested: target user language results recorded
 reviewed: Ming human review completed
 active: converted into reusable SKILL.md or equivalent playbook with approval
@@ -68,7 +68,7 @@ A candidate can become active only if:
 ```yaml
 skill_candidate_id: yuanli-category-two-sentence
 state: user-language-test-ready
-related_issue: "#142 / #143 / #145"
+related_issue: "#142 / #143 / #145 / #159"
 skill_file: skills/yuanli-category-two-sentence/SKILL.md
 sample_pack: assets/C2-一个大脑/skillify-examples.md
 review_checklist: skills/yuanli-category-two-sentence/REVIEW-CHECKLIST-v1.md
@@ -81,6 +81,7 @@ transcript_evidence_extraction: skills/yuanli-category-two-sentence/TRANSCRIPT-E
 transcript_evidence_extraction_results: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md
 higher_tier_source_candidates: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-CANDIDATES-v1.md
 higher_tier_source_extraction_results: skills/yuanli-category-two-sentence/HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1.md
+c4_user_language_collection_issue: "#159"
 related_nodes:
   - A1 发现母体
   - B2 品类独创
@@ -149,10 +150,11 @@ REAL-CASE-TEST-v1 created draft transformations for the three selected cases.
 USER-LANGUAGE-TEST-v1 created test protocol for target user repeatability, emotional pull, and budget shift.
 TRANSCRIPT-EVIDENCE-EXTRACTION-v1 created extraction protocol to turn private llm-wiki transcripts into anonymized B2/C2 evidence.
 TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1 completed first-pass extraction from three T3 case writeups.
-USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold; interviews are still pending.
+USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold and was upgraded into a lightweight 9-interview fieldwork run; interviews are still pending.
 HIGHER-TIER-SOURCE-CANDIDATES-v1 indexed Get 笔记, transcripts, digests, minutes, and entity sources for deeper extraction.
 HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1 completed higher-tier first-pass extraction and recommended test refinements.
 USER-LANGUAGE-TEST-v1 was refined with bridge/control/diagnostic phrases and role-classification questions.
+#159 created an open C4 issue to collect 9 target-user interviews.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -184,12 +186,13 @@ state_change: review-ready -> real-case-draft, not reviewed
 
 ```yaml
 test_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
-results_scaffold: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
-status: protocol_refined_with_higher_tier_outputs
+results_file: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
+c4_collection_issue: "#159"
+status: protocol_refined_and_fieldwork_prepared
 participant_target:
-  CASE-01: 5 high-net-worth women / overseas Chinese / oriental aesthetics collectors
-  CASE-05: 5 high-net-worth women / high-repeat private-domain customers / female consumer founders
-  CASE-08: 5 overseas returnees / high-net-worth young adults / wedding-service potential customers
+  CASE-01: 3 high-net-worth women / overseas Chinese / oriental aesthetics collectors / premium gift buyers
+  CASE-05: 3 high-net-worth women / high-repeat private-domain customers / female consumer founders
+  CASE-08: 3 overseas returnees / high-net-worth young adults / wedding-service potential customers
 candidate_names:
   CASE-01: [随身寺庙, 随身精神资产, 可带走的东方精神器物]
   CASE-05: [养成系社交货币, 养成系稀缺美学, 双奢结合, 高净值姐姐专属高端皮草]
@@ -251,7 +254,7 @@ next_recommendation: collect real T0 responses
 ```text
 human_review_gap: Ming has not yet reviewed and approved the three real-case outputs.
 validation_gap: no controlled naming test with 5-10 target users yet.
-user_language_gap: USER-LANGUAGE-TEST-RESULTS-v1 exists, but target user responses have not been recorded.
+user_language_gap: USER-LANGUAGE-TEST-RESULTS-v1 exists and fieldwork is prepared, but target user responses have not been recorded.
 source_tier_gap: higher-tier extraction improved evidence, but it is still not T0 target-user test evidence.
 resolver_gap: route exists as seed and draft, but not repeated in live workflow.
 writeback_gap: skill evidence has not yet been tested in live user workflow.
@@ -266,7 +269,7 @@ Private llm-wiki learner/client cases are valuable for real case testing, but ra
 ### 3.13 Next C4 Task
 
 ```text
-Collect real target-user responses and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
+Collect real target-user responses for issue #159 and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
 ```
 
 ---
@@ -336,7 +339,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: collect real target-user responses for USER-LANGUAGE-TEST-RESULTS-v1.md.
-P0 next: analyze interview results and decide whether Candidate 001 can move to user-tested / reviewed.
-P1: Candidate 003 after first skill review/writeback.
+P0 current: collect real target-user responses for issue #159.
+P0 next: fill USER-LANGUAGE-TEST-RESULTS-v1.md with interview evidence.
+P1: analyze interview results and decide whether Candidate 001 can move to user-tested / reviewed.
 ```
