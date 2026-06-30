@@ -428,7 +428,7 @@ window.YUANLI_OS_CBM_V1 = {
       cbm_cell_id: 'investment.control.research-risk-router',
       capability_domain: 'investment',
       responsibility_layer: 'control',
-      capability_name: '投资研究风险由',
+      capability_name: '投资研究风险路由',
       canon_node: 'C3',
       secondary_node: 'C4',
       control_point: '风险、判断、资金边界、研究节奏',
