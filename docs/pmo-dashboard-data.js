@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T16:04:10.973Z"
+    "updated_at": "2026-06-30T16:04:23.498Z"
   },
   "fields": [
     "Canon Node",
@@ -503,7 +503,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "将 Top 15 必须治理仓库纳入 CBM-PMO 主治理层，完成 CBM Domain / Cell 映射、��据强度判断、下一步 C3 Gap / C4 Task 建议。"
+      "next": "将 Top 15 必须治理仓库纳入 CBM-PMO 主治理层，完成 CBM Domain / Cell 映射、证据强度判断、下一步 C3 Gap / C4 Task 建议。"
     },
     {
       "issue": "#154",
