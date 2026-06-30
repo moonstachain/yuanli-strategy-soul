@@ -25,6 +25,7 @@ review-ready
 real-case-draft
 user-language-test-ready
 field-tested-provisional
+repeatability-pilot-passed
 user-tested
 reviewed
 active
@@ -40,6 +41,7 @@ review-ready: review checklist, review results scaffold, and AI pre-review exist
 real-case-draft: Ming selected real cases and draft transformations exist; user language test pending
 user-language-test-ready: user language test protocol, transcript extraction results, higher-tier extraction results, results scaffold, transcript import protocol, and open C4 collection issue exist; interviews pending
 field-tested-provisional: Ming qualitative field feedback exists across selected cases; role-stack recommendation and decision file exist; usable for next iteration but not formal user-tested
+repeatability-pilot-passed: three new source-based cases have completed role stacks, two-sentence expressions, user-test questions, and writeback evidence; workflow repeatability passed, but target-user validation still pending
 user-tested: target user language results recorded in structured or approved evidence standard
 reviewed: Ming human review completed
 active: converted into reusable SKILL.md or equivalent playbook with approval
@@ -69,7 +71,7 @@ A candidate can become active only if:
 
 ```yaml
 skill_candidate_id: yuanli-category-two-sentence
-state: field-tested-provisional
+state: repeatability-pilot-passed
 related_issue: "#142 / #143 / #145 / #159"
 skill_file: skills/yuanli-category-two-sentence/SKILL.md
 sample_pack: assets/C2-一个大脑/skillify-examples.md
@@ -82,6 +84,12 @@ user_language_test_results: skills/yuanli-category-two-sentence/USER-LANGUAGE-TE
 user_language_test_field_feedback: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1.md
 user_language_test_decision: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-DECISION-v1.md
 role_stack_recommendation: skills/yuanli-category-two-sentence/ROLE-STACK-RECOMMENDATION-v1.md
+repeatability_pilot_candidates: skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CANDIDATES-v1.md
+repeatability_pilot_run: skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-RUN-v1.md
+repeatability_pilot_cases:
+  - skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CASE-01-TAOGE-SMART-YOUTH-v1.md
+  - skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CASE-02-KANGKANG-VENUE-ASSET-v1.md
+  - skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CASE-03-LIANGJIU-GROUPBUY-v1.md
 user_language_test_transcript_import: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-v1.md
 user_language_test_transcript_import_results: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-RESULTS-v1.md
 transcript_evidence_extraction: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
@@ -166,6 +174,9 @@ USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-RESULTS-v1 completed first import batch.
 USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1 recorded Ming qualitative field feedback after asking users.
 ROLE-STACK-RECOMMENDATION-v1 created recommended naming stacks.
 USER-LANGUAGE-TEST-DECISION-v1 approved field-tested-provisional state with explicit boundaries.
+REPEATABILITY-PILOT-CANDIDATES-v1 selected three new cross-domain cases.
+REPEATABILITY-PILOT-RUN-v1 processed three new cases: 涛哥智能少年, 康康文体场馆无形资产开发, 苹果妈妈良久团购.
+REPEATABILITY-PILOT-RUN-v1 completed role stacks, two-sentence expressions, user-test questions, and source-based evidence for all three cases.
 #159 remains open for optional structured scorecards.
 ```
 
@@ -209,7 +220,28 @@ b2_validation_upgrade: false
 constitution_update: false
 ```
 
-### 3.9 Role Stack Recommendation
+### 3.9 Repeatability Pilot Run
+
+```yaml
+pilot_file: skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-RUN-v1.md
+pilot_status: completed_from_source_material
+candidate_state_before: field-tested-provisional
+candidate_state_after: repeatability-pilot-passed
+cases_processed:
+  - PILOT-01 涛哥智能少年
+  - PILOT-02 康康大型文体场馆无形资产开发
+  - PILOT-03 苹果妈妈袁姐良久团购
+workflow_repeatability: pass
+cross_domain_fit: pass
+old_category_escape_method: pass
+expensive_problem_method: pass
+role_stack_method: pass
+two_sentence_output_method: pass
+user_testing_design_method: pass
+validation_status: not_user_validated
+```
+
+### 3.10 Role Stack Recommendation
 
 ```yaml
 recommendation_file: skills/yuanli-category-two-sentence/ROLE-STACK-RECOMMENDATION-v1.md
@@ -235,31 +267,15 @@ CASE-08:
   confidence: strong_positive
 ```
 
-### 3.10 User Language Test Protocol
-
-```yaml
-test_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
-results_file: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
-transcript_import_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-TRANSCRIPT-IMPORT-v1.md
-c4_collection_issue: "#159"
-status: field_feedback_recorded_and_decision_made
-participant_target:
-  CASE-01: 3 high-net-worth women / overseas Chinese / oriental aesthetics collectors / premium gift buyers
-  CASE-05: 3 high-net-worth women / high-repeat private-domain customers / female consumer founders
-  CASE-08: 3 overseas returnees / high-net-worth young adults / wedding-service potential customers
-structured_scorecards_completed: 0
-state_change: user-language-test-ready -> field-tested-provisional
-```
-
 ### 3.11 Current Gaps
 
 ```text
 formal_validation_gap: structured participant scorecards have not been completed.
-review_gap: Ming has approved provisional field-tested use, but not reviewed/active/canonical status.
+review_gap: Ming has approved provisional field-tested use and repeatability pilot pass, but not reviewed/active/canonical status.
 validation_gap: no controlled naming test with 5-10 target users yet.
-source_tier_gap: higher-tier extraction and Ming feedback improved evidence, but this is not formal T0 scorecard evidence.
+source_tier_gap: repeatability pilot is source-based and not formal T0 user scorecard evidence.
 resolver_gap: route exists as seed and draft, but not repeated in broader live workflow.
-writeback_gap: B2 module assets have not yet been updated from this decision.
+writeback_gap: B2 module assets have not yet been updated from this pilot.
 ```
 
 ### 3.12 Private Case Pool Policy
@@ -271,7 +287,7 @@ Private llm-wiki learner/client cases are valuable for real case testing, but ra
 ### 3.13 Next C4 Task
 
 ```text
-Use ROLE-STACK-RECOMMENDATION-v1 in next-round real case work, or collect structured participant scorecards if formal user-tested upgrade is desired.
+Use one pilot output in a real user / client conversation and collect target-user feedback. Recommended first validation: PILOT-02 康康大型文体场馆无形资产开发.
 ```
 
 ---
@@ -341,7 +357,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: use ROLE-STACK-RECOMMENDATION-v1 in next-round real case work.
+P0 current: validate one repeatability pilot output with real target users or clients. Recommended first: PILOT-02 康康大型文体场馆无形资产开发.
 P0 optional: collect structured participant scorecards if formal user-tested upgrade is desired.
-P1: write provisional user-language learnings into B2 assets after Ming approval.
+P1: write provisional repeatability learnings into B2 assets after Ming approval.
 ```
