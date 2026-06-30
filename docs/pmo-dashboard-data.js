@@ -3,7 +3,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T04:30:38.101Z"
+    "updated_at": "2026-06-30T04:30:49.932Z"
   },
   "fields": [
     "Canon Node",
@@ -214,6 +214,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 72,
       "evidence": "weak",
       "next": "Create selected-gap-to-task handoff so the top ranked C3 gap can generate a C4 execution issue."
+    },
+    {
+      "issue": "#76",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 70,
+      "evidence": "weak",
+      "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
       "issue": "#75",
