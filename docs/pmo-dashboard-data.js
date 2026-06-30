@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T13:31:58.635Z"
+    "updated_at": "2026-06-30T13:32:38.914Z"
   },
   "fields": [
     "Canon Node",
@@ -387,6 +387,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#156",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "创建 `docs/CAPABILITY-ASSET-POOL-v1.md`，把过去 6 个月活跃的大量 Agency / Skill / Tool / Automation / Writer / Publisher / Dashboard / Deployment 仓库纳入能��资产池，而不是直接进入主 PMO 看板。"
     },
     {
       "issue": "#155",
