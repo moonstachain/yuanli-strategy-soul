@@ -332,3 +332,90 @@ This does not update CONSTITUTION.md.
 ```text
 Use ROLE-STACK-RECOMMENDATION-v1 in next-round real case work, or collect structured participant scorecards if formal user-tested upgrade is desired.
 ```
+
+---
+
+### 2026-06-30 · 两句话品类独创 Skill · Repeatability Pilot Passed
+
+```yaml
+type: skill_candidate_writeback
+node: B2 / C2 / C4
+module: 品类独创 / 一个大脑 / 一条链路
+skill_candidate_id: yuanli-category-two-sentence
+source_strength: medium+
+writeback_level: L4
+result: REPEATABILITY_PILOT_PASSED_WITH_BOUNDARY
+```
+
+#### Decision
+
+```text
+Candidate 001 两句话品类独创 Skill 从 field-tested-provisional 推进到 repeatability-pilot-passed。
+```
+
+#### Evidence Standard
+
+```text
+Three new source-based cases completed with role stacks, two-sentence expressions, user-test questions, and evidence boundaries.
+```
+
+#### Pilot Cases
+
+```yaml
+PILOT-01:
+  case: 涛哥智能少年
+  domain: Education / high-net-worth family anxiety
+  public_category: 智能少年
+  premium_positioning: AI时代的家族周期穿越教育
+
+PILOT-02:
+  case: 康康大型文体场馆无形资产开发
+  domain: B2B / government-linked asset operations
+  public_category: 文体场馆无形资产开发
+  premium_positioning: 一号位资产运营工程
+
+PILOT-03:
+  case: 苹果妈妈袁姐良久团购
+  domain: Mass-market / reverse-cycle / supply-chain
+  public_category: 下沉市场极致性价比生活刚需系统
+  premium_positioning: 逆周期现金流网络
+```
+
+#### Repeatability Assessment
+
+```yaml
+workflow_repeatability: pass
+cross_domain_fit: pass
+old_category_escape_method: pass
+expensive_problem_method: pass
+role_stack_method: pass
+two_sentence_output_method: pass
+user_testing_design_method: pass
+validation_status: not_user_validated
+```
+
+#### Boundary
+
+```text
+This is source-based repeatability, not target-user validation.
+This is not formal user-tested.
+This is not reviewed / active / canonical.
+This does not upgrade B2 Validation 3/5.
+This does not update CONSTITUTION.md.
+```
+
+#### Created / Updated
+
+- `skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CANDIDATES-v1.md`
+- `skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-RUN-v1.md`
+- `skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CASE-01-TAOGE-SMART-YOUTH-v1.md`
+- `skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CASE-02-KANGKANG-VENUE-ASSET-v1.md`
+- `skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-CASE-03-LIANGJIU-GROUPBUY-v1.md`
+- `brain/SKILL-CANDIDATES.md`
+- `brain/WRITEBACK-LOG.md`
+
+#### Next C4 Action
+
+```text
+Validate one repeatability pilot output with real target users or clients. Recommended first: PILOT-02 康康大型文体场馆无形资产开发.
+```
