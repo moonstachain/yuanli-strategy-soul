@@ -12,9 +12,32 @@ Date: 2026-06-30
 
 ```text
 Validation: 1 / 5
-State: workshop execution package ready
+State: historical source preloaded + workshop execution package ready
 Boundary: no external user trial has been completed yet.
 ```
+
+## Historical Source Preload
+
+Source:
+
+```text
+brain/sources/llm-wiki-b2-extraction-v1.md
+```
+
+Preloaded from llm-wiki:
+
+```text
+B2 core claim
+comparison escape logic
+sixteen-word formula
+naming criteria
+budget test
+test card logic
+user task closed loop
+card note logic
+```
+
+This preload reduces workshop preparation risk, but it does not count as external validation.
 
 ## Why B2 First
 
@@ -29,6 +52,8 @@ validation-records.md
 workshop-runbook.md
 participant-screening.md
 workshop-scorecard.md
+live-validation-checklist.md
+llm-wiki-b2-extraction-v1.md
 ```
 
 ## Validation Goal
@@ -55,6 +80,8 @@ External Validation Started / Validation 2/5 or higher
 | workshop-runbook.md | 90-120 分钟工作坊执行流程 |
 | participant-screening.md | 筛选 5-10 个高质量目标用户 |
 | workshop-scorecard.md | 判断是否通过验证并是否提升 B2 Validation |
+| live-validation-checklist.md | 现场执行前中后检查 |
+| llm-wiki-b2-extraction-v1.md | 历史语料候选 |
 
 ## Minimum Validation Design
 
@@ -82,7 +109,7 @@ External Validation Started / Validation 2/5 or higher
 Status:
 
 ```text
-ready to run
+ready to run with historical source preload
 ```
 
 Next:
