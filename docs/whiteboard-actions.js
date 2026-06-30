@@ -35,8 +35,10 @@ function yuanliWriteOutput(kind){
 function yuanliContract(node){
   const data=window.YUANLI_AGENT_CBM_V12||{};
   const list=data.agent_contracts||[];
-  return list.find(x=>x.node===node)||{id:'default_'+node,node:node,domain:'matrix',layer:'strategy',status:'draft',level:'L1',control:'to_define',blocker:'missing_contract'};
+  return list.find(x=>x.node===node)||{id:'default_'+node,node:node,domain:'matrix',layer:'strategy',status:'draft',level:'L1',control:'to_define',blocker:'missing_contract',gates:['status_change'],signals:['missing'],writeback:['whiteboard']};
 }
+
+function yuanliJoin(v){ return Array.isArray(v) ? v.join(', ') : (v||''); }
 
 function yuanliRenderContract(){
   const box=document.getElementById('whiteboard-output');
@@ -54,7 +56,7 @@ function yuanliRenderContract(){
   }
   const node=yuanliCurrentNode();
   const c=yuanliContract(node);
-  card.innerHTML='<b>Agent Contract</b><br>node: '+c.node+' · domain: '+c.domain+' · layer: '+c.layer+' · level: '+c.level+'<br>status: '+c.status+' · control: '+c.control+' · blocker: '+c.blocker;
+  card.innerHTML='<b>Agent Contract</b><br>node: '+c.node+' · domain: '+c.domain+' · layer: '+c.layer+' · level: '+c.level+'<br>status: '+c.status+' · control: '+c.control+' · blocker: '+c.blocker+'<br>gates: '+yuanliJoin(c.gates)+'<br>signals: '+yuanliJoin(c.signals)+'<br>writeback: '+yuanliJoin(c.writeback);
 }
 
 function yuanliPanelV12(){
