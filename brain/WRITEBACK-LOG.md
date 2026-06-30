@@ -38,10 +38,6 @@ source_strength: medium
 writeback_level: L3
 ```
 
-#### Source
-
-GBrain / YC Company Brain reference study + 原力战略三部曲 C2 模块升级。
-
 #### Decision
 
 C2 从 P1 seed module 升级为 P0.5 Strategy+ memory hub。
@@ -59,14 +55,6 @@ C2 从 P1 seed module 升级为 P0.5 Strategy+ memory hub。
 - docs/TRILOGY-ASSET-MATURITY-SCORECARD-v1.md
 - docs/pmo-dashboard-data.js
 - scripts/sync-pmo-dashboard.js
-
-#### Next C4 Action
-
-Create C2 Brain Validation task and run first real query trial:
-
-```text
-B2 品类独创现在是否可以产品化？
-```
 
 ---
 
@@ -88,39 +76,90 @@ result: PASS
 B2 可以进入小范围产品化验证，但不建议直接规模化售卖。
 ```
 
-#### Evidence Used
-
-- assets/B2-品类独创/teaching-outline.md
-- assets/B2-品类独创/cases.md
-- assets/B2-品类独创/evidence.md
-- docs/TRILOGY-ASSET-MATURITY-SCORECARD-v1.md
-- brain/QUERY-EXAMPLES.md
-
 #### Gap Found
 
 ```text
 B2 仍缺 naming-test.md、user-language.md、validation-records.md、真实用户命名测试和真实用户语言采集。
 ```
 
-#### Decision
+#### Score Impact
 
-C2 Trial 1 passed as an internal Markdown Brain validation. C2 can retrieve evidence, synthesize a judgment, identify gaps, propose a C4 action, and recommend writeback.
+```text
+C2 Validation: 1/5 -> 2/5
+C2 Total Score: 31/40 -> 32/40
+```
+
+---
+
+### 2026-06-30 · C2 Trial 2 · C2 Productization Gap Query
+
+```yaml
+type: evidence_writeback
+node: C2
+module: 一个大脑
+source_strength: medium
+writeback_level: L2
+query: C2 一个大脑当前距离产品化还缺什么？
+result: PASS
+```
+
+#### Direct Answer
+
+```text
+C2 已经达到 Validated Strategy+，但还不能直接规模化产品化。它已具备战略产品化潜力，下一步必须从内部 Markdown Brain 验证进入真实学员、客户或项目验证。
+```
+
+#### Gap Found
+
+```text
+C2 仍缺外部真实用户验证、5 个高质量查询样例、3 个真实回写样例、PMO 周期联动和可演示产品形态。
+```
 
 #### Writeback Targets
 
 - assets/C2-一个大脑/validation-records.md
 - brain/WRITEBACK-LOG.md
 - assets/C2-一个大脑/evolution.md
-- docs/TRILOGY-ASSET-MATURITY-SCORECARD-v1.md
 
-#### Next C4 Action
+---
 
-- Create C2 Brain Validation Issue.
-- Create B2 Deepening Task.
+### 2026-06-30 · C2 Trial 3 · Learner Case Writeback Query
+
+```yaml
+type: evidence_writeback
+node: C2
+module: 一个大脑
+source_strength: medium
+writeback_level: L2
+query: 一个真实学员案例应该如何写回原力大脑？
+result: PASS
+```
+
+#### Direct Answer
+
+```text
+一个真实学员案例不能直接进入正典。它应先按类型写入 brain/cases/ 或对应模块 real-cases；如果能验证作业或课程有效，应写入对应模块 evidence；如果形成可复用教学规则，应写入 evolution note；如果可能更新正典，才进入 canonical candidate，并等待人工审批。
+```
+
+#### Writeback Decision
+
+```text
+case only -> brain/cases/
+module-specific case -> assets/<module>/real-cases.md
+validates assignment -> assets/<module>/evidence.md
+reusable learning -> evolution note
+canon-level rule -> canonical candidate
+```
 
 #### Score Impact
 
 ```text
-C2 Validation: 1/5 -> 2/5
-C2 Total Score: 31/40 -> 32/40
+C2 Validation: 2/5 -> 3/5
+C2 Total Score: 32/40 -> 33/40
+```
+
+#### Next C4 Action
+
+```text
+为 A1 或 B2 选择一个真实学员案例，完成从 case -> evidence -> evolution -> scorecard 的完整回写试跑。
 ```
