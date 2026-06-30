@@ -1,6 +1,6 @@
 # B2 · 品类独创 · Evidence
 
-PMO Issue: #91 / #129 / #130
+PMO Issue: #91 / #129 / #130 / #132
 Asset Type: evidence
 Date: 2026-06-30
 
@@ -9,6 +9,7 @@ Date: 2026-06-30
 - PMO Module Issue: #91
 - Deepening Task: #129
 - External Validation Task: #130
+- Evidence Coding Task: #132
 - Asset root: assets/B2-品类独创/
 
 ## Evidence Path
@@ -18,19 +19,19 @@ assets/B2-品类独创/evidence.md
 ## Evidence Strength
 
 ```text
-medium
+medium+
 ```
 
 ## Evidence Status
 
 ```text
-validation-pack-ready + external-source-discovered
+external-validation-started
 ```
 
 Boundary:
 
 ```text
-Do not upgrade B2 to Validation 2/5 until llm-wiki June 2026 transcripts are coded into structured user-language records, naming/category reaction samples, repeatable category sentences, and workshop-scorecard results.
+B2 can move to Validation 2/5 because June 2026 external fieldwork has been coded into structured user-language records, category/naming signals, repeatable category sentences, and workshop-scorecard results. It must not be treated as scaled-product ready.
 ```
 
 ## Verified Artifacts
@@ -60,12 +61,13 @@ Do not upgrade B2 to Validation 2/5 until llm-wiki June 2026 transcripts are cod
 
 - `brain/sources/llm-wiki-b2-extraction-v1.md`
 - `brain/sources/llm-wiki-b2-external-evidence-v1.md`
+- `assets/B2-品类独创/external-evidence-coding-2026-06.md`
 
 ## Finding
 
-B2 has moved from full seed module asset package to validation-pack-ready, and now to external-source-discovered. It can use `moonstachain/llm-wiki` June 2026 fieldwork transcripts as external evidence source candidates.
+B2 has moved from full seed module asset package to validation-pack-ready, then external-source-discovered, and now external-validation-started.
 
-However, the current evidence should not yet be treated as validation-complete. The next step is not a brand-new workshop from zero; it is evidence coding from existing June 2026 transcripts, followed by a decision on whether additional live workshop validation is still needed.
+The current evidence is strong enough to prove that real external user language exists and can be coded into B2 category-creation evidence. It is not strong enough to prove scaled productization.
 
 ## External Evidence Source Judgment
 
@@ -76,7 +78,7 @@ llm-wiki can be used as a valid external information source for B2 evidence.
 Reason:
 
 ```text
-The June 2026 transcripts contain real user/client problem language, business contexts, desired outcomes, category confusion, and purchase-adjacent signals.
+The June 2026 transcripts contain real user/client problem language, business contexts, desired outcomes, category confusion, category/naming signals, and purchase-adjacent signals.
 ```
 
 Primary source candidates:
@@ -89,16 +91,27 @@ Primary source candidates:
 - `moonstachain/llm-wiki/sources/transcripts/20260601-安全价值证明项目落地讨论-逐字稿.md`
 - `moonstachain/llm-wiki/sources/transcripts/20260612-原力OS与关键战役规划-逐字稿.md`
 
+## Evidence Coding Result
+
+| Acceptance | Target | Actual | Result |
+|---|---:|---:|---|
+| External user-language records | >=5 | 7 | Pass |
+| Naming / category reaction samples | >=5 | 7 | Pass with caveat: uncontrolled field signals |
+| Repeatable category sentences | >=3 | 7 | Pass |
+| Purchase / follow-up signals | >=1 | 5 | Pass |
+| Scorecard update | required | yes | Pass |
+| Validation records update | required | yes | Pass |
+
 ## Acceptance State
 
 ```text
-external evidence source discovered; scorecard pending
+external validation started; controlled naming test pending
 ```
 
 ## Current Boundary
 
 ```text
-B2 Validation remains 1/5 until real user naming tests, user language collection, repeatable category sentence extraction, and validation scorecard update are completed from llm-wiki or a live workshop.
+B2 Validation is now 2/5. Do not upgrade to 3/5 until controlled naming / repeatability testing with 5-10 target users is completed.
 ```
 
 ## Next Reuse
