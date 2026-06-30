@@ -48,7 +48,35 @@ Governance program / strategic asset portfolio program.
 | `client.control.project-portfolio-governance` | Client evidence repos need privacy and writeback boundary. |
 | `investment.direct.wealth-research-framework` | Research repos need decision-record evidence loop. |
 
-## 6. Current Maturity
+## 6. Shared Operating Protocol
+
+This program uses Yuanli OS Brain Loop v1 as its shared operating protocol.
+
+Protocol files:
+
+```text
+docs/YUANLI-OS-BRAIN-LOOP-v1.md
+docs/YUANLI-OS-BRAIN-LOOP-RUNBOOK-v1.md
+docs/YUANLI-OS-BRAIN-LOOP-DATA-MODEL-v1.md
+```
+
+GitHub Portfolio's role in the Brain Loop:
+
+```text
+Repo / Skill / Agent / Source → capability classification → C3/C4 governance → evidence → evolution → dashboard → review rhythm
+```
+
+Portfolio work must now pass these gates before it is treated as strategic progress:
+
+1. Source or repo role is known.
+2. Sensitivity / visibility boundary is known.
+3. Canon Node or Program route is assigned.
+4. Capability Resolver checks Zhiku / L1/L2 asset pool before build-new.
+5. Program Router confirms #184 or related program.
+6. Evidence exists for L1/L2 promotion.
+7. Evolution and backwrite exist before compounding.
+
+## 7. Current Maturity
 
 ```text
 M2 / 5
@@ -65,10 +93,10 @@ M2 / 5
 Current interpretation:
 
 ```text
-Governance architecture and human visibility reached. Recurring portfolio review not yet run.
+Governance architecture and human visibility reached. Recurring portfolio review not yet run. Brain Loop v1 now defines the shared source/capability/evidence protocol.
 ```
 
-## 7. Current Assets
+## 8. Current Assets
 
 | Asset | State |
 |---|---|
@@ -86,8 +114,9 @@ Governance architecture and human visibility reached. Recurring portfolio review
 | #180 Human Review Index PR | draft |
 | #181 Dashboard visibility overlay PR | draft |
 | #182 Review entry page PR | draft |
+| Brain Loop v1 protocol | draft protocol |
 
-## 8. First Milestone
+## 9. First Milestone
 
 Milestone name:
 
@@ -105,8 +134,9 @@ Completion criteria:
 6. Keep all draft / weak items not-green.
 7. Produce one portfolio review note.
 8. Update the program board with next P0.
+9. Run one Brain Loop capability/source review.
 
-## 9. First C3 Gaps
+## 10. First C3 Gaps
 
 | Gap | Source | Expected C4 |
 |---|---|---|
@@ -114,8 +144,9 @@ Completion criteria:
 | Draft work can be auto-synced into misleading green states | #179 / #181 | Keep visibility overlay not-green |
 | Humans need one entry point instead of hunting across PRs | #178 / #180 / #182 | Use review entry page |
 | L2 tools need asset contracts before promotion | #156 / #168 | Review capability asset pool |
+| Source, capability, and program routing are not yet one loop | Brain Loop v1 | Use Brain Loop data model for next review |
 
-## 10. First C4 Backlog
+## 11. First C4 Backlog
 
 | Priority | Task | Output |
 |---|---|---|
@@ -123,40 +154,46 @@ Completion criteria:
 | P0 | Review #165-#169 | portfolio governance decision |
 | P0 | Use #182 as entry point | one visible review page |
 | P0 | Produce first portfolio review note | weekly review artifact |
+| P0 | Run Brain Loop capability/source review | BLOOP-2026-001 source/capability routing |
 | P1 | Link entry page into cockpit | cockpit navigation update |
 | P1 | Run false-green audit after review | dashboard correction plan |
 
-## 11. KPIs
+## 12. KPIs
 
 | KPI | Initial Target |
 |---|---:|
 | L1 repo mapping reviewed | yes/no |
 | L2 asset pool reviewed | yes/no |
 | draft PRs reviewed | 5+ |
+| capability preflights completed | 1+ |
 | false-green risks accepted | 0 |
 | repo lifecycle mutations | 0 |
 | weekly portfolio review notes | 1 |
+| dream reviews completed | 1 |
 
-## 12. Guardrails
+## 13. Guardrails
 
 ```text
 No repo lifecycle mutation without human approval.
 No automatic merge.
 No evidence, no green.
+No evolution, no Done.
+No backwrite, no compounding.
 No dashboard false-green.
 No archive/delete/rename/visibility change from automation.
 ```
 
-## 13. Review Rhythm
+## 14. Review Rhythm
 
 | Rhythm | Review Question |
 |---|---|
 | Daily during setup | Is any draft work being misread as green? |
 | Weekly | Which repo assets move, stay, or remain observe-only? |
 | Monthly | Which L2 assets deserve promotion or deprecation review? |
+| Dream Review | Which repeated capability needs imply reusable skill/agent/repo consolidation? |
 
-## 14. Immediate Next Action
+## 15. Immediate Next Action
 
 ```text
-Use #182 as the human entry point, then review #166 before registry/onboarding/dashboard merge decisions.
+Use #182 as the human entry point, review #166 before registry/onboarding/dashboard merge decisions, and run Brain Loop v1 as the source/capability routing protocol.
 ```
