@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain",
-    "updated_at": "2026-06-30T08:51:59.722Z"
+    "updated_at": "2026-06-30T08:52:27.170Z"
   },
   "fields": [
     "Canon Node",
@@ -448,7 +448,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "选择一个真实客户项目或匿名样本，跑通客户项目组合治理试点，证明 CBM-PMO 能把真实项目瓶颈转成可执行、可验收、可回写的任务链。"
+      "next": "选择一个真实���户项目或匿名样本，跑通客户项目组合治理试点，证明 CBM-PMO 能把真实项目瓶颈转成可执行、可验收、可回写的任务链。"
     },
     {
       "issue": "#115",
