@@ -201,9 +201,9 @@ B2 remains Validation 1/5 until the transcripts are coded into user-language rec
 - #132 `[P0] B2 External Evidence Coding from llm-wiki June 2026 transcripts`
 - #133 `[P1-1] Upgrade 12 canon modules from seed asset to teaching-ready`
 - #134 `[P1-2] C2 Real Task Validation EPIC`
-- #136 `[P1-2A] Run first real client-project weekly review input through C2`
-- #137 `[P1-2B] Package Operator Skill into bounded live multi-tool execution`
-- #138 `[P1-2C] Create Daily CBM Review GitHub Action draft`
+- #136 `[P1-2B] Package Operator Skill into bounded live multi-tool execution`
+- #137 `[P1-2C] Create Daily CBM Review GitHub Action draft`
+- #138 `[P1-2D] Create C3 PMO Dashboard Auto-Sync Contract`
 
 #### Next C4 Action
 
@@ -257,159 +257,78 @@ This is not controlled naming-test completion.
 Do not upgrade B2 beyond 2/5 until a controlled naming and repeatability test with 5-10 target users is completed.
 ```
 
-#### Created / Updated
-
-- `assets/B2-品类独创/external-evidence-coding-2026-06.md`
-- `assets/B2-品类独创/workshop-scorecard.md`
-- `assets/B2-品类独创/validation-records.md`
-- `assets/B2-品类独创/evidence.md`
-
-#### Next C4 Action
-
-```text
-Run controlled B2 naming and repeatability test using the 7 category sentence candidates.
-```
-
 ---
 
-### 2026-06-30 · C2 Query Pack + Resolver Seed v1
-
-```yaml
-type: evolution_writeback
-node: C2
-module: 一个大脑
-source_strength: medium+
-writeback_level: L3 Evolution + L4 Skill Candidate
-related_issue: "#141"
-result: STRUCTURE_PASS_WITH_BOUNDARY
-```
-
-#### Decision
-
-```text
-C2 has completed its first Query Pack + Resolver Seed structure test. It can now answer a real strategic query with cited synthesis, unknown gaps, gap type, resolver route, next C4 task, skillify judgment, and writeback proposal.
-```
-
-#### Created / Updated
-
-- `docs/C2-YUANLI-BRAIN-QUERY-PACK-RESOLVER-P0-PLAN-v1.md`
-- `brain/GAP-TYPES.md`
-- `brain/CANON-GRAPH.md`
-- `brain/RESOLVER.md`
-- `brain/SKILL-CANDIDATES.md`
-- `brain/QUERY-EXAMPLES.md`
-- `assets/C2-一个大脑/retrieval-test.md`
-- `assets/C2-一个大脑/writeback-examples.md`
-- `assets/C2-一个大脑/query-pack-v1.md`
-
-#### Boundary
-
-```text
-This is not a B2 validation upgrade.
-This is not a C2 real external validation pass.
-This does not create active SKILL.md yet.
-Do not upgrade B2 to Validation 3/5 until controlled naming and repeatability testing is completed.
-```
-
-#### Next C4 Action
-
-```text
-Choose one: run controlled B2 naming test, or create 两句话品类独创 Skill v0 with 3 before/after samples.
-```
-
----
-
-### 2026-06-30 · 两句话品类独创 Skill v0
+### 2026-06-30 · 两句话品类独创 Skill · Field-Tested Provisional Decision
 
 ```yaml
 type: skill_candidate_writeback
-node: C2 / B2
-module: 一个大脑 / 品类独创
+node: B2 / C2 / C4
+module: 品类独创 / 一个大脑 / 一条链路
+skill_candidate_id: yuanli-category-two-sentence
 source_strength: medium+
-writeback_level: L4 Skill Candidate
-related_issue: "#142"
-result: SKILL_V0_SAMPLED_WITH_BOUNDARY
+writeback_level: L4
+related_issue: "#159"
+result: FIELD_TESTED_PROVISIONAL_WITH_BOUNDARY
 ```
 
 #### Decision
 
 ```text
-两句话品类独创 Skill v0 has been created as the first Yuanli Skillify sample inspired by YC's two-sentence company description skill.
+Candidate 001 两句话品类独创 Skill 从 user-language-test-ready 推进到 field-tested-provisional。
 ```
 
-#### Created / Updated
-
-- `skills/yuanli-category-two-sentence/SKILL.md`
-- `assets/C2-一个大脑/skillify-examples.md`
-- `brain/SKILL-CANDIDATES.md`
-- `brain/WRITEBACK-LOG.md`
-
-#### Sample Count
+#### Evidence Standard
 
 ```text
-3 before/after samples created.
+Ming qualitative field feedback + transcript imports + role-stack recommendation.
 ```
 
-#### Boundary
-
-```text
-This is v0-sampled, not active/canonical.
-This is not a controlled user naming test.
-This does not upgrade B2 to Validation 3/5.
-Human review is still pending.
-```
-
-#### Next C4 Action
-
-```text
-Run human review on 3 samples, then test with 3-5 real founder/client cases.
-```
-
----
-
-### 2026-06-30 · 两句话品类独创 Skill Review Checklist v1
+#### Role Stack Recommendation
 
 ```yaml
-type: skill_review_gate
-node: C2 / B2
-module: 一个大脑 / 品类独创
-source_strength: medium+
-writeback_level: L4 Skill Candidate Review
-related_issue: "#143"
-result: REVIEW_READY_WITH_BOUNDARY
-```
+CASE-01:
+  public_category: 随身寺庙
+  business_explanation: 随身精神资产
+  bridge_explanation: 可带走的东方精神器物
 
-#### Decision
+CASE-05:
+  public_category_candidate: 养成系稀缺美学
+  plain_language_anchor: 高净值姐姐专属高端皮草
+  budget_context: 轻奢复购 / 高净值朋友赠礼
+  community_narrative_candidate: 养成系社交货币
+  product_mechanism_candidate: 双奢结合
 
-```text
-Review Checklist v1 has been created. The skill moved from sampled to review-ready, not reviewed.
-```
-
-#### Created / Updated
-
-- `skills/yuanli-category-two-sentence/REVIEW-CHECKLIST-v1.md`
-- `brain/SKILL-CANDIDATES.md`
-- `brain/WRITEBACK-LOG.md`
-
-#### AI Pre-Review Result
-
-```text
-overall_average: 4.03 / 5
-decision: conditional_go
-condition: Ming human review required before real case testing
+CASE-08:
+  public_category: 游戏化社交婚礼
+  premium_positioning_candidate: 归国首秀导演
+  bridge_explanation: 让自己的故事被看见
+  deep_narrative: 人生主权宣言
+  diagnostic_internal_phrase: 人生叙事的空间翻译
 ```
 
 #### Boundary
 
 ```text
-This is not Ming human review completed.
-This is not active skill approval.
-This is not canonical approval.
-This is not B2 Validation 3/5.
+This is not formal user-tested.
+This is not reviewed / active / canonical.
+This does not upgrade B2 Validation 3/5.
+This does not close #159.
+This does not update CONSTITUTION.md.
 ```
+
+#### Created / Updated
+
+- `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-DECISION-v1.md`
+- `skills/yuanli-category-two-sentence/ROLE-STACK-RECOMMENDATION-v1.md`
+- `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md`
+- `skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-FIELD-FEEDBACK-v1.md`
+- `brain/SKILL-CANDIDATES.md`
+- `brain/WRITEBACK-LOG.md`
+- #159 issue comment
 
 #### Next C4 Action
 
 ```text
-Run Ming human review, then select 3-5 real founder/client cases for two-sentence category transformation test.
+Use ROLE-STACK-RECOMMENDATION-v1 in next-round real case work, or collect structured participant scorecards if formal user-tested upgrade is desired.
 ```
