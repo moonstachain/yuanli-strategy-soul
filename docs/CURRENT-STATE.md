@@ -24,8 +24,8 @@ Branch: systemize/trilogy-execution-v1-20260630
 | 层级 | 当前状态 | 真源文件 |
 |---|---|---|
 | Constitution | v0.9 · 原力 OS 四模块清晰化版 | `CONSTITUTION.md` |
-| Canon Map | v0.15 · 战略地图入口 | `docs/trilogy-concept-map.html` |
-| Whiteboard OS | v1.0 MVP，正在补齐数据结构 | `docs/WHITEBOARD-SPEC-v1.md`, `docs/whiteboard-data.js` |
+| Canon Map | v0.16 · 企业家诊断入口 | `docs/trilogy-concept-map.html` |
+| Whiteboard OS | v1.0 data-driven page added | `docs/whiteboard-v1.html`, `docs/whiteboard-data.js`, `docs/whiteboard-renderer.js`, `docs/whiteboard-v1.css` |
 | PMO | v3.1 seed E2E trial passed | `docs/PMO-V31-E2E-TRIAL.md` |
 | Module Assets | 12 module-canon seed completed | `assets/`, `docs/TRILOGY-12-MODULE-PMO-REGISTRY.md` |
 | Canonical Gate | Rubric established | `docs/CANONICAL-APPROVAL-RUBRIC.md` |
@@ -46,11 +46,10 @@ Branch: systemize/trilogy-execution-v1-20260630
 
 | 缺口 | 说明 | 下一步 |
 |---|---|---|
-| 版本真源分裂 | README、Source Registry、PMO、页面版本口径不完全一致 | 以本文为当前状态入口，README 指向本文 |
 | 12 模块资产不完整 | 当前多数模块只有 `module-canon.md` | 建立标准资产包与模板 |
-| Whiteboard 数据不足 | 规格要求 v1 节点模型，当前数据仍偏 MVP | 补齐 definition / inputs / standards / risks / tasks / evidence 等字段 |
+| Whiteboard 入口切换 | v1 独立页已新增，原 `whiteboard.html` 因工具拦截未替换 | 后续小步 patch 或人工改入口 |
 | Evidence 仍偏 seed | 目前多为工程证据，真实客户案例不足 | 每个模块至少跑一次真实 Evidence / Evolution 回写 |
-| Canon Map 偏目录入口 | 已有门户感，但需要更强企业家诊断入口 | 增加“你现在卡在哪”诊断区 |
+| Canon Map 偏目录入口 | 已加入“你现在卡在哪”诊断区 | 下一步做真实用户路径测试 |
 
 ## 5. 当前禁止事项
 
@@ -88,6 +87,7 @@ Canon Node
 | P1 | 跑通 A1 / B1 / C3 三个样板模块 | 完整资产包 |
 | P1 | 给其余 9 模块补齐骨架 | 标准资产包目录 |
 | P1 | 升级 Whiteboard OS 数据结构 | `docs/whiteboard-data.js` |
+| P1 | 增加 Whiteboard v1 数据驱动页面 | `docs/whiteboard-v1.html` |
 | P2 | Canon Map 增加企业家诊断入口 | `docs/trilogy-concept-map.html` |
 | P2 | 建立 Evidence / Evolution / Candidate 回写 | `brain/` 下三类记录 |
 
