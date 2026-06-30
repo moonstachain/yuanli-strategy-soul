@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GitHub CBM-PMO Review Entry</title>
+  <style>
+    :root{--bg:#05060a;--panel:#0b1016;--line:#27313d;--text:#f4eadb;--muted:#94a09a;--gold:#d8b46e;--green:#77c7a5;--yellow:#d6b45f;--red:#d27676;--shadow:0 24px 80px rgba(0,0,0,.38)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 18% 0%,rgba(216,180,110,.16),transparent 32%),linear-gradient(180deg,#05060a,#070a0f 55%,#040506);color:var(--text);font:14px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Arial,"PingFang SC","Microsoft YaHei",sans-serif}a{color:var(--green);text-decoration:none}header{padding:38px 36px 24px;border-bottom:1px solid rgba(216,180,110,.16);background:rgba(17,24,33,.72)}main{max-width:1280px;margin:0 auto;padding:24px}.eyebrow{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:.18em;margin-bottom:8px}h1{font-size:32px;line-height:1.12;margin:0 0 10px}.subtitle{color:var(--muted);max-width:920px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid rgba(216,180,110,.16);border-radius:22px;background:linear-gradient(180deg,rgba(17,24,33,.95),rgba(9,14,20,.95));box-shadow:var(--shadow);padding:18px;margin-bottom:18px}.card h2{color:var(--gold);margin:0 0 12px;font-size:20px}.item{border:1px solid var(--line);border-radius:18px;padding:16px;background:rgba(255,255,255,.025)}.item h3{margin:8px 0 8px;font-size:17px}.muted{color:var(--muted)}.pill{display:inline-flex;border:1px solid rgba(216,180,110,.35);border-radius:999px;padding:4px 9px;color:var(--gold);font-size:12px;background:rgba(216,180,110,.06);margin:2px 4px 2px 0}.pill.red{border-color:rgba(210,118,118,.45);color:var(--red);background:rgba(210,118,118,.06)}.pill.yellow{border-color:rgba(214,180,95,.45);color:var(--yellow);background:rgba(214,180,95,.06)}.pill.green{border-color:rgba(119,199,165,.45);color:var(--green);background:rgba(119,199,165,.06)}table{width:100%;border-collapse:collapse}th,td{border-top:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{color:var(--gold);font-size:12px}.rule{border-left:3px solid var(--gold);background:rgba(216,180,110,.055);padding:10px 12px;border-radius:10px;margin:8px 0}.footer{padding:24px;text-align:center;color:var(--muted)}@media(max-width:960px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Yuanli OS · GitHub CBM-PMO Control Entry</div>
+  <h1>GitHub CBM-PMO Review Entry</h1>
+  <div class="subtitle">把分散在 Issues / PRs / docs 的 GitHub CBM-PMO 推进状态，收敛成一个人类可见入口。当前所有项目仍为 draft / review-needed / not-green。</div>
+</header>
+<main>
+  <section class="card">
+    <h2>第一优先入口 / Start Here</h2>
+    <div class="grid">
+      <div class="item">
+        <span class="pill yellow">#180</span><span class="pill red">Draft / Review Needed</span>
+        <h3>Human Review Index</h3>
+        <p class="muted">一张人类总控表：Issue、PR、产物、状态、证据强度、review 顺序与下一步。</p>
+        <a target="_blank" href="https://github.com/moonstachain/yuanli-strategy-soul/pull/180">Open PR #180</a>
+      </div>
+      <div class="item">
+        <span class="pill yellow">#181</span><span class="pill red">False-green Guard</span>
+        <h3>Dashboard Visibility Overlay</h3>
+        <p class="muted">保守 overlay：把 draft / weak evidence 保持为 amber / not-green，避免自动同步误导。</p>
+        <a target="_blank" href="https://github.com/moonstachain/yuanli-strategy-soul/pull/181">Open PR #181</a>
+      </div>
+      <div class="item">
+        <span class="pill yellow">#166</span><span class="pill red">Policy First</span>
+        <h3>Repo Governance Policy</h3>
+        <p class="muted">先审规则，再审注册表和 dashboard：L1 / L2 / L3、人审门、no evidence no green。</p>
+        <a target="_blank" href="https://github.com/moonstachain/yuanli-strategy-soul/pull/166">Open PR #166</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Review Order / 推荐审阅顺序</h2>
+    <table>
+      <tr><th>Order</th><th>PR</th><th>Artifact</th><th>Decision</th></tr>
+      <tr><td>1</td><td>#166</td><td>REPO-GOVERNANCE-POLICY-v1.md</td><td>Policy before merge decisions</td></tr>
+      <tr><td>2</td><td>#165</td><td>GITHUB-6M-CBM-PMO-VALUE-AUDIT-v1.md</td><td>Registry after policy</td></tr>
+      <tr><td>3</td><td>#167</td><td>GITHUB-PORTFOLIO-L1-ONBOARDING-v1.md</td><td>L1 mapping after registry</td></tr>
+      <tr><td>4</td><td>#168</td><td>CAPABILITY-ASSET-POOL-v1.md</td><td>L2 asset pool after L1 boundary</td></tr>
+      <tr><td>5</td><td>#169</td><td>GITHUB-PORTFOLIO-REVIEW-RHYTHM-v1.md</td><td>Dashboard rhythm before data automation</td></tr>
+      <tr><td>6</td><td>#172 / #176</td><td>C2 ownership + evidence routing</td><td>Review before real evidence trial</td></tr>
+      <tr><td>7</td><td>#173 / #177</td><td>Content contract + 30D feedback schema</td><td>Review before content feedback trial</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Guardrails / 当前硬规则</h2>
+    <div class="rule">No automatic merge. 所有相关 PR 保持 Draft 或 review-needed，未经人审不合并。</div>
+    <div class="rule">No repo lifecycle mutation. 不移动、不归档、不删除、不改名、不改 visibility。</div>
+    <div class="rule">No weak evidence green. weak / draft / review-needed 不显示为 green / validated / compounding。</div>
+    <div class="rule">Dashboard overlay is not historical truth replacement. #181 是保守可见层，不覆盖历史 dashboard 数据。</div>
+  </section>
+
+  <section class="card">
+    <h2>Current Milestone / 当前里程碑</h2>
+    <table>
+      <tr><th>Milestone</th><th>Status</th><th>Next</th></tr>
+      <tr><td>GitHub Portfolio Governance Architecture v1</td><td><span class="pill yellow">Reached / Review Pending</span></td><td>Review #166-#169</td></tr>
+      <tr><td>Human-visible review layer</td><td><span class="pill yellow">Reached by #180 + this page</span></td><td>Keep as entry point</td></tr>
+      <tr><td>Dashboard visibility overlay</td><td><span class="pill yellow">Draft by #181</span></td><td>Wire into cockpit after review</td></tr>
+      <tr><td>First real evidence loop</td><td><span class="pill red">Not yet</span></td><td>Start after #172/#176 review</td></tr>
+      <tr><td>First content feedback loop</td><td><span class="pill red">Not yet</span></td><td>Start after #173/#177 review</td></tr>
+    </table>
+  </section>
+</main>
+<div class="footer">Entry file: <code>docs/github-cbm-pmo-review-entry.html</code> · Source task: <code>#179</code> · Related PRs: <code>#180 / #181 / #166</code></div>
+</body>
+</html>
