@@ -92,7 +92,48 @@ Potential two-sentence direction:
 
 ---
 
-### Rank 2 · CASE-07 · 澳洲高净值房产开发 / 海外建房价值贡献模型
+### Rank 2 · CASE-01 · 旧物造 / 随身寺庙
+
+```yaml
+source_case_hint: 水月老师 / 旧物造与随身寺庙
+old_category: 文创 / 木作 / 手串 / 艺术收藏 / 文玩
+new_category_candidate: 随身寺庙 / 随身精神资产
+sweet_user: 顶级高净值人群 / 海外华人高净值人群
+expensive_problem: 精神安顿、顶级礼品、精神供养预算、有钱没处花
+unique_mechanism: 寺院旧木 + 百年时间加持 + 非遗匠人 + 高审美高意义 + 展览定价 + 公益赋能
+proof_signal: 爱马仕级客户一眼相中并退货购买；嘉德拍卖行无法分类；独占稀缺材料和匠人产能
+```
+
+Score:
+
+```yaml
+category_leap: 5
+expensive_problem: 5
+two_sentence_compressibility: 5
+old_category_escape: 5
+proof_signal: 5
+yuanli_taste: 5
+anonymization_safety: 4
+b2_validation_value: 5
+overall: 4.88 / 5
+```
+
+Why upgraded:
+
+```text
+Ming explicitly nominated this case, and the dedicated source confirms it is a textbook B2 品类独创 case: 无法分类、重新定义、自带预算、品类独创. It should be in TOP3 for any Yuanli-flavored B2 test.
+```
+
+Potential two-sentence direction:
+
+```text
+我们帮助顶级高净值人群，把东方美学收藏从好看的文玩，升级为可安顿内心、可证明来历、可送出敬意的随身寺庙。
+它不同于普通木作或手串，因为它用寺院旧木、百年时间加持、非遗匠人和宗教美学隐知识，把一件器物变成有精神出处的随身精神资产。
+```
+
+---
+
+### Rank 3 · CASE-07 · 澳洲高净值房产开发 / 海外建房价值贡献模型
 
 ```yaml
 source_case_hint: 悉尼小地主 / 开维咨询
@@ -133,7 +174,7 @@ Potential two-sentence direction:
 
 ---
 
-### Rank 3 · CASE-02 · 智能少年 / 高净值家庭阶层防跌落教育
+### Rank 4 · CASE-02 · 智能少年 / 高净值家庭阶层防跌落教育
 
 ```yaml
 source_case_hint: 涛哥 / AI 教育
@@ -174,16 +215,57 @@ Potential two-sentence direction:
 
 ---
 
-### Rank 4 · CASE-01 · 旧物造 / 随身寺庙
+### Rank 5 · CASE-11 · 文体场馆无形资产开发 / 一号位资产运营工程
 
 ```yaml
-source_case_hint: 水月老师 / 旧物造与随身寺庙
-old_category: 文创 / 木作 / 手串 / 艺术收藏
-new_category_candidate: 随身寺庙 / 东方美学情绪疗愈资产
-sweet_user: K 型社会顶端高净值人群
-expensive_problem: 精神安顿、身份表达、保值资产、宗教美学稀缺性
-unique_mechanism: 玉佛寺旧木 + 非遗匠人产能 + 宗教美学隐知识
-proof_signal: 垄断稀缺材料和匠人产能，十年修行形成隐知识壁垒
+source_case_hint: 康康 / 大型文体场馆运营与无形资产开发
+old_category: 咨询服务 / 场馆运营 / 活动策划 / 运营顾问
+new_category_candidate: 文体场馆无形资产开发战略外脑 / 一号位资产运营工程
+sweet_user: 大型文体场馆一号位 / 政府背景资产负责人 / 场馆运营方
+expensive_problem: 场馆重建设轻运营、无形资产收益低、财政压力、政绩风险、资产保值增值
+unique_mechanism: 战略外脑 + 无形资产开发 + 冠名广告权益规划 + 咨询陪跑分润 + 结构洞资源枢纽
+proof_signal: 目标帮助场馆无形资产收益占比从 15% 提升至 50%-70%；成都场馆冠名收入 1.8 亿 / 5 年案例
+```
+
+Score:
+
+```yaml
+category_leap: 5
+expensive_problem: 5
+two_sentence_compressibility: 4
+old_category_escape: 5
+proof_signal: 5
+yuanli_taste: 4
+anonymization_safety: 4
+b2_validation_value: 5
+overall: 4.75 / 5
+```
+
+Why upgraded:
+
+```text
+The dedicated meeting source is stronger than the 12-case summary. It is a high-stakes To-B/To-G category creation case with clear expensive problem, proof signal, and strategic category potential.
+```
+
+Potential two-sentence direction:
+
+```text
+我们帮助大型文体场馆一号位，把重建设轻运营的沉睡资产，变成冠名、广告、权益和生态分润持续放大的无形资产开发系统。
+它不同于场馆运营咨询，因为它不是卖方案，而是用战略外脑、权益设计和资源结构洞，帮助场馆把无形资产收益从边角料升级为第二增长曲线。
+```
+
+---
+
+### Rank 6 · CASE-05 · 低奢皮草 / 高净值姐姐粉养成系稀缺美学
+
+```yaml
+source_case_hint: 达哥 & 张姐 / 低奢皮草与高净值女装
+old_category: 普通皮草 / 普通皮包 / 淘宝服饰电商
+new_category_candidate: 高净值姐姐粉养成系稀缺美学 / 双奢结合
+sweet_user: 全球高净值华人女性 / 姐姐粉 / 价值敏感价格不敏感用户
+expensive_problem: 不是买包保暖，而是小圈子的社交货币、独特审美、养成系情感陪伴
+unique_mechanism: 张姐真实人格 IP + 稀有皮草与稀有皮包双奢结合 + 达哥供应链战略护航 + 极低投流私域复购
+proof_signal: 投流成本从流水 10% 降至 0.5% 以内；高溢价高复购；张姐人格/IP 是核心壁垒
 ```
 
 Score:
@@ -191,40 +273,40 @@ Score:
 ```yaml
 category_leap: 5
 expensive_problem: 4
- two_sentence_compressibility: 4
+two_sentence_compressibility: 5
 old_category_escape: 5
 proof_signal: 5
 yuanli_taste: 5
 anonymization_safety: 4
-b2_validation_value: 4
-overall: 4.50 / 5
+b2_validation_value: 5
+overall: 4.75 / 5
 ```
 
-Why strong:
+Why upgraded:
 
 ```text
-High Yuanli taste and strong old-category escape. The challenge is making the expensive problem concrete enough for broad testing.
+Ming nominated this case. It is excellent for testing emotional-commerce category creation: from commodity e-commerce to IP-driven scarcity and relationship asset.
 ```
 
 Potential two-sentence direction:
 
 ```text
-我们帮助顶级高净值人群，把东方美学收藏从好看的文创，升级为可安顿内心、可证明来历、可传承的随身寺庙。
-它不同于普通木作或手串，因为它用寺庙旧木、非遗匠人和长期修行形成的宗教美学隐知识，把一件器物变成有精神出处的保值资产。
+我们帮助高净值华人姐姐，把买皮草和包从淘宝比价，升级为参与一个真实设计师成长、拥有双重稀缺美学的养成系社交货币。
+它不同于普通皮草电商，因为它不是卖标品，而是用张姐的天真审美、稀有材质组合和私域情感关系，把一件产品变成小圈层里拿得出手的独特身份表达。
 ```
 
 ---
 
-### Rank 5 · CASE-11 · 文体场馆资产开发 / 体制内一号位资产保值系统
+### Rank 7 · CASE-03 · 良久团购 / 下沉市场极致性价比生活刚需系统
 
 ```yaml
-source_case_hint: 康康 / 大型文体场馆运营与资产开发
-old_category: 咨询服务 / 场馆运营 / 活动策划
-new_category_candidate: 文体场馆资产保值增值系统 / 一号位资产运营工程
-sweet_user: 体制内一号位 / 文体资产负责人
-expensive_problem: 大型场馆闲置、财政压力、资产保值增值、政绩风险
-unique_mechanism: 三大样板店 + 运营框架 + 生态分润
-proof_signal: 从一次性咨询切入长期运营与利益分配
+source_case_hint: 苹果妈妈 / 良久团购
+old_category: 团购 / 微商 / 直销 / 白牌生活用品
+new_category_candidate: 下沉市场极致性价比生活刚需系统 / 互联网分发版 Costco
+sweet_user: 三四五线城市中产及以下人群 / 宝妈 / 退休人员 / 下沉市场家庭
+expensive_problem: 经济下行中既要省钱，又怕买到垃圾；生存质量维持与风险兜底
+unique_mechanism: F2C 工厂直达 + 私域信任网络 + 教师型分享人格 + 供应链低价壁垒 + 分销飞轮
+proof_signal: 年流水从 1 亿到 3 亿，预计 5 亿；集团 50 亿；60 天游轮测试业务从 3 亿到 5 亿
 ```
 
 Score:
@@ -234,93 +316,38 @@ category_leap: 4
 expensive_problem: 5
 two_sentence_compressibility: 4
 old_category_escape: 4
-proof_signal: 4
-yuanli_taste: 4
-anonymization_safety: 4
-b2_validation_value: 4
-overall: 4.13 / 5
-```
-
-Why useful:
-
-```text
-Good for testing To-G / To-B high-stakes strategic category language, but harder than consumer-facing cases.
-```
-
----
-
-### Rank 6 · CASE-04 · 政企健康服务 / 政治与情绪安全供应商
-
-```yaml
-source_case_hint: 花姐 / 政企健康体检与医疗服务
-old_category: 体检供应商 / 医疗服务
-new_category_candidate: 政企健康安全供应商 / 不出错不担责健康服务系统
-sweet_user: 体制内老处长 / 领导级决策者
-expensive_problem: 合规、安全、不出错、不担责、政治风险
-unique_mechanism: 极度靠谱的供应商服务 + 情绪安全 + 风险规避
-proof_signal: 60秒高浓度沟通传递隐形价值；高替换成本和政治风险壁垒
-```
-
-Score:
-
-```yaml
-category_leap: 4
-expensive_problem: 5
-two_sentence_compressibility: 4
-old_category_escape: 4
-proof_signal: 4
-yuanli_taste: 4
-anonymization_safety: 4
-b2_validation_value: 4
-overall: 4.13 / 5
-```
-
-Why useful:
-
-```text
-Very good for “selling hidden risk reduction, not visible service”. But wording must be careful and anonymized.
-```
-
----
-
-### Rank 7 · CASE-10 · 科研基金申报 / 政策直觉黑箱
-
-```yaml
-source_case_hint: 艾琳 / 专利与科研基金申报
-old_category: 申报代理 / 政策咨询 / 专利服务
-new_category_candidate: 科研政策直觉黑箱 / 政府补贴工艺系统
-sweet_user: 企业主 / 科研型企业 / 创新项目负责人
-expensive_problem: 政策机会看不懂、申报不确定、补贴拿不到、资质难过
-unique_mechanism: 20年政策嗅觉 + 非标经验 + 工艺黑箱
-proof_signal: 连 PPT / 飞书都写不清的隐知识壁垒
-```
-
-Score:
-
-```yaml
-category_leap: 4
-expensive_problem: 4
-two_sentence_compressibility: 4
-old_category_escape: 4
-proof_signal: 4
+proof_signal: 5
 yuanli_taste: 4
 anonymization_safety: 5
 b2_validation_value: 4
-overall: 4.13 / 5
+overall: 4.50 / 5
+```
+
+Why useful:
+
+```text
+This is very strong for system-asset and逆周期 strategy testing. It is slightly less pure as a B2 品类独创 test because the category leap is closer to business-model reframing than high-concept category naming.
+```
+
+Potential two-sentence direction:
+
+```text
+我们帮助下沉市场家庭，把消费降级里的将就省钱，变成花十分之一价格维持生活品质的极致性价比生活刚需系统。
+它不同于普通团购或微商，因为它用 F2C 供应链、私域信任网络和自动运转的分销飞轮，把“省钱”做成经济下行周期里的反脆弱系统资产。
 ```
 
 ---
 
-### Rank 8 · CASE-06 · 泥土生活方式 / 反城市精神疗愈体验
+### Rank 8 · CASE-13 · 新中式羊绒 / 小镇贵妇东方审美社交礼物
 
 ```yaml
-source_case_hint: 波波 / 泥土生活方式与瑜伽体验
-old_category: 瑜伽馆 / 农场体验 / 民宿 / 身心灵课程
-new_category_candidate: 泥土生活方式 / 反城市化精神疗愈体验
-sweet_user: 城市高压高净值人群
-expensive_problem: 城市压力、身心耗竭、自然感丧失、情绪账户需要修复
-unique_mechanism: 农村自然场域 + 瑜伽体验 + 泥土与回归自然
-proof_signal: 聚焦相似人群，以情绪账户做高溢价长期复利生意
+source_case_hint: 彤姐 / 新中式羊绒赛道
+old_category: 羊绒服饰 / 中老年女装 / 高端服装 / 礼品服饰
+new_category_candidate: 小镇贵妇新中式羊绒社交礼物 / 东方审美身份羊绒
+sweet_user: 二三线城市高净值女性 / 小镇贵妇 / 礼物需求人群
+expensive_problem: 缺少兼具东方美学、身份表达、文化深度和高端质感的羊绒产品
+unique_mechanism: 20年羊绒产业经验 + 智者/创造者人格 + 新中式东方美学 + 创新工艺 + 礼物系列 / 会员制
+proof_signal: 目标 LTV 2万-5万；6-8个月首个100万营收模型；明确小镇贵妇与礼物需求画布
 ```
 
 Score:
@@ -328,64 +355,100 @@ Score:
 ```yaml
 category_leap: 4
 expensive_problem: 4
-two_sentence_compressibility: 4
+two_sentence_compressibility: 5
 old_category_escape: 4
 proof_signal: 3
 yuanli_taste: 5
 anonymization_safety: 5
 b2_validation_value: 4
-overall: 4.13 / 5
+overall: 4.25 / 5
+```
+
+Why useful:
+
+```text
+This is a very good fashion/lifestyle product-positioning case. It may be weaker than 水月/达哥张姐 because proof signal is more business-plan oriented than field-validated, but it is excellent for testing product positioning and 小红书 style category language.
+```
+
+Potential two-sentence direction:
+
+```text
+我们帮助二三线高净值女性，把羊绒从保暖服饰，升级为表达东方审美、身份体面和姐妹情谊的新中式社交礼物。
+它不同于普通羊绒品牌，因为它用二十年产业经验、东方文化设计和创新工艺，把一件羊绒单品变成小镇贵妇社交圈里有品位、有温度、拿得出手的身份表达。
 ```
 
 ---
 
-## 3. My Recommended TOP3
+## 3. Ming-Nominated Cases Reassessment
 
-If the goal is to maximize B2 category-creation validation:
+Ming specifically asked to re-check:
+
+```text
+水月老师的随身寺庙
+苹果妈妈的良久团购
+康康的体育场馆无形资产运营
+达哥张姐的皮草
+彤姐的羊绒
+```
+
+Updated judgment:
+
+```text
+水月老师：must-enter TOP3 if testing Yuanli taste and pure B2 category creation.
+康康：much stronger than first ranking after reading dedicated source; excellent To-B/To-G high-stakes category case.
+达哥张姐：strong emotional-commerce and IP-commerce category case; should be seriously considered.
+良久团购：great system-asset case but slightly less pure B2 category naming case.
+彤姐羊绒：good product-positioning and lifestyle category case; stronger for 小红书/品牌表达 than for hard B2 validation.
+```
+
+---
+
+## 4. My Updated Recommended TOP3
+
+If the goal is highest-quality B2 品类独创 Skill testing with both Yuanli taste and business diversity:
 
 ```text
 TOP1 CASE-08 高净值留学生游戏化婚礼 / 归国首秀导演
-TOP2 CASE-07 澳洲高净值房产开发 / 海外建房价值贡献模型
-TOP3 CASE-02 智能少年 / 高净值家庭阶层防跌落教育
+TOP2 CASE-01 旧物造 / 随身寺庙
+TOP3 CASE-11 文体场馆无形资产开发 / 一号位资产运营工程
 ```
 
-Why this TOP3:
+Why this updated TOP3:
 
 ```text
-1. Each has a very clear old category trap.
-2. Each has a strong expensive problem.
-3. Each has a new category candidate that can be tested in two sentences.
-4. Together they cover emotional-social, asset-investment, and education-status markets.
-5. They are diverse enough to test whether the skill generalizes beyond one industry.
+1. CASE-08 tests emotional-social category creation.
+2. CASE-01 tests high-concept spiritual-aesthetic category creation.
+3. CASE-11 tests To-B/To-G high-stakes strategic category creation.
+Together they test whether the skill can generalize across consumer emotion, luxury spirituality, and institutional asset development.
 ```
 
-Alternative TOP3 if the goal is strongest Yuanli taste:
+Alternative if Ming wants more商业/现金流闭环 rather than高概念美学:
 
 ```text
 TOP1 CASE-08 高净值留学生游戏化婚礼
-TOP2 CASE-01 旧物造 / 随身寺庙
-TOP3 CASE-06 泥土生活方式 / 反城市精神疗愈体验
+TOP2 CASE-07 澳洲高净值房产开发
+TOP3 CASE-05 达哥张姐低奢皮草
 ```
 
-Alternative TOP3 if the goal is To-B / To-G high-stakes testing:
+Alternative if Ming wants all nominated cases only:
 
 ```text
-TOP1 CASE-07 澳洲高净值房产开发
-TOP2 CASE-11 文体场馆资产开发
-TOP3 CASE-04 政企健康安全供应商
+TOP1 CASE-01 水月老师随身寺庙
+TOP2 CASE-11 康康文体场馆无形资产开发
+TOP3 CASE-05 达哥张姐低奢皮草
 ```
 
 ---
 
-## 4. Selection Instruction for Ming
+## 5. Selection Instruction for Ming
 
 Please select one set:
 
 ```text
-A. Use my recommended TOP3 for B2 validation.
-B. Use Yuanli taste TOP3.
-C. Use To-B/To-G TOP3.
-D. Manually choose any 3 cases from Rank 1-8.
+A. Updated best TOP3: CASE-08 + CASE-01 + CASE-11
+B. Commercial TOP3: CASE-08 + CASE-07 + CASE-05
+C. Ming-nominated TOP3: CASE-01 + CASE-11 + CASE-05
+D. Manually choose any 3 cases from Rank 1-8
 ```
 
 After Ming selects TOP3, create:
