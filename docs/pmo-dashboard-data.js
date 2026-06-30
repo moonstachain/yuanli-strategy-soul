@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain",
-    "updated_at": "2026-06-30T08:49:22.033Z"
+    "updated_at": "2026-06-30T08:51:59.722Z"
   },
   "fields": [
     "Canon Node",
@@ -425,6 +425,45 @@ window.YUANLI_PMO_V22={
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
+      "issue": "#117",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "选择一个低风险 Operator Skill 场景，完成跨工具复用 dry-run，验证 C4 工程自动化能力是否能被结构化、审批化、证据化、回写化。"
+    },
+    {
+      "issue": "#116",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "选择一个真实客户项目或匿名样本，跑通客户项目组合治理试点，证明 CBM-PMO 能把真实项目瓶颈转成可执行、可验收、可回写的任务链。"
+    },
+    {
+      "issue": "#115",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "把 OS 治理内核从 seed 推进为可审查、可执行、可证据化的 control loop，防止 CBM-PMO 后续任务滑回普通页面优化或 Issue 堆积。"
+    },
+    {
       "issue": "#103",
       "node": "C2",
       "type": "evidence",
@@ -789,6 +828,45 @@ window.YUANLI_PMO_V22={
       "next": "chain-template.md + operating-examples.md"
     },
     {
+      "issue": "#114",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 5,
+      "evidence": "weak",
+      "next": "rank and handoff"
+    },
+    {
+      "issue": "#113",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 5,
+      "evidence": "weak",
+      "next": "rank and handoff"
+    },
+    {
+      "issue": "#112",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 5,
+      "evidence": "weak",
+      "next": "rank and handoff"
+    },
+    {
       "issue": "#109",
       "node": "C3",
       "type": "gap",
@@ -836,7 +914,7 @@ window.YUANLI_PMO_V22={
       "score": 27,
       "formula": "C2 Trial 1 gap analysis",
       "selected": true,
-      "next_issue": "#83"
+      "next_issue": "#117"
     }
   ],
   "roadmap_current": [
