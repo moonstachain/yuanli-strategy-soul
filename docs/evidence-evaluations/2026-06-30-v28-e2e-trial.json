@@ -1,0 +1,14 @@
+{
+  "file": "brain/evidence/2026-06-30-v28-e2e-trial.md",
+  "generated_at": "2026-06-30T05:10:00Z",
+  "state": "accepted",
+  "score": "6/6",
+  "checks": {
+    "has_work_items": true,
+    "has_evidence_path": true,
+    "has_strength": true,
+    "has_finding": true,
+    "has_evolution": true,
+    "has_next_reuse": true
+  }
+}
