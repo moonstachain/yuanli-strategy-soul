@@ -3,7 +3,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues",
-    "updated_at": "2026-06-30T04:04:19.850Z"
+    "updated_at": "2026-06-30T04:29:51.025Z"
   },
   "fields": [
     "Canon Node",
@@ -138,6 +138,19 @@ window.YUANLI_PMO_V22={
   ],
   "seed_items": [
     {
+      "issue": "#70",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "yellow",
+      "priority": "P0",
+      "gap_score": 88,
+      "evidence": "weak",
+      "next": "Patch PMO dashboard data, sync script version, roadmap, and automation labels so UI and data source are aligned."
+    },
+    {
       "issue": "#64",
       "node": "C4",
       "type": "task",
@@ -180,9 +193,9 @@ window.YUANLI_PMO_V22={
   "gap_ranking": [
     {
       "rank": 1,
-      "issue": "#63",
-      "gap": "Create selected-gap-to-task handoff so the top ranked C3 gap can generate a C4 execution issue.",
-      "score": 72,
+      "issue": "#70",
+      "gap": "Patch PMO dashboard data, sync script version, roadmap, and automation labels so UI and data source are aligned.",
+      "score": 88,
       "formula": "parsed from issue body",
       "selected": true,
       "next_issue": "#64"
