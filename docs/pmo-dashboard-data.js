@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T16:03:52.098Z"
+    "updated_at": "2026-06-30T16:04:10.973Z"
   },
   "fields": [
     "Canon Node",
@@ -503,7 +503,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "将 Top 15 必须治理仓库纳入 CBM-PMO 主治理层，完成 CBM Domain / Cell 映射、证据强度判断、下一步 C3 Gap / C4 Task 建议。"
+      "next": "将 Top 15 必须治理仓库纳入 CBM-PMO 主治理层，完成 CBM Domain / Cell 映射、��据强度判断、下一步 C3 Gap / C4 Task 建议。"
     },
     {
       "issue": "#154",
@@ -542,7 +542,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把过去 6 个月所有有更新的 GitHub 仓库，从“活跃 repo 列表”升级为 CBM-PMO ���值审计注册表，判断每个项目是否具备战略地图价值、能力资产价值、客户证据价值、内容增长价值、工程复用价值，或仅应观察 / 归档候选。"
+      "next": "把过去 6 个月所有有更新的 GitHub 仓库，从“活跃 repo 列表”升级为 CBM-PMO 价值审计注册表，判断每个项目是否具备战略地图价值、能力资产价值、客户证据价值、内容增长价值、工程复用价值，或仅应观察 / 归档候选。"
     },
     {
       "issue": "#149",
