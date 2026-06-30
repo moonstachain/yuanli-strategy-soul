@@ -9,8 +9,17 @@ function yuanliInfo(node){
   return map[node]||{status:'draft',upstream:'',downstream:'',control:'',bottleneck:''};
 }
 
+function yuanliContract(node){
+  const data=window.YUANLI_AGENT_CBM_V12||{};
+  const list=data.agent_contracts||[];
+  return list.find(x=>x.node===node)||{id:'default_'+node,node:node,domain:'matrix',layer:'strategy',status:'draft',level:'L1',control:'to_define',blocker:'missing_contract',gates:['status_change'],signals:['missing'],writeback:['whiteboard']};
+}
+
+function yuanliJoin(v){ return Array.isArray(v) ? v.join(', ') : (v||''); }
+
 function yuanliBase(node,info){
-  return 'Node: '+node+'\nStatus: '+info.status+'\nUpstream: '+info.upstream+'\nDownstream: '+info.downstream+'\nControl: '+info.control+'\nBlocker: '+info.bottleneck;
+  const c=yuanliContract(node);
+  return 'Node: '+node+'\nStatus: '+info.status+'\nUpstream: '+info.upstream+'\nDownstream: '+info.downstream+'\nControl: '+info.control+'\nBlocker: '+info.bottleneck+'\nDomain: '+c.domain+'\nLayer: '+c.layer+'\nLevel: '+c.level+'\nGates: '+yuanliJoin(c.gates)+'\nSignals: '+yuanliJoin(c.signals)+'\nWriteback: '+yuanliJoin(c.writeback);
 }
 
 function yuanliOutputText(kind,node,info){
@@ -31,14 +40,6 @@ function yuanliWriteOutput(kind){
   if(!box) return;
   box.value=yuanliOutputText(kind,node,info);
 }
-
-function yuanliContract(node){
-  const data=window.YUANLI_AGENT_CBM_V12||{};
-  const list=data.agent_contracts||[];
-  return list.find(x=>x.node===node)||{id:'default_'+node,node:node,domain:'matrix',layer:'strategy',status:'draft',level:'L1',control:'to_define',blocker:'missing_contract',gates:['status_change'],signals:['missing'],writeback:['whiteboard']};
-}
-
-function yuanliJoin(v){ return Array.isArray(v) ? v.join(', ') : (v||''); }
 
 function yuanliRenderContract(){
   const box=document.getElementById('whiteboard-output');
