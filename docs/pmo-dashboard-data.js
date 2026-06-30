@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T14:49:29.819Z"
+    "updated_at": "2026-06-30T14:57:16.788Z"
   },
   "fields": [
     "Canon Node",
@@ -389,6 +389,32 @@ window.YUANLI_PMO_V22={
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
+      "issue": "#179",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "Patch dashboard data so humans can see GitHub CBM-PMO portfolio state in a structured dashboard layer."
+    },
+    {
+      "issue": "#178",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "Create a single human-readable index for the current GitHub CBM-PMO workstream."
+    },
+    {
       "issue": "#175",
       "node": "C4",
       "type": "task",
@@ -542,7 +568,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行项目：建立内容工程驾驶舱、30 天内容日历、渠道生产链、Evidence / Evolution / Backwrite 规则，并将其接入 growth CBM cells。"
+      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行项目：建立内容工程驾驶舱、30 天内容日历、渠道生产链、Evidence / Evolution / Backwrite ��则，并将其接入 growth CBM cells。"
     },
     {
       "issue": "#140",
