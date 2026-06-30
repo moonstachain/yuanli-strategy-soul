@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-06-30T10:18:00Z",
+  "contract": "docs/CBM-PMO-AUTO-SYNC-CONTRACT-v1.1.md",
+  "mode": "audit_report_only",
+  "source_files": {
+    "cockpit": "docs/cbm-capability-cockpit-data.js",
+    "os_cbm": "docs/os-cbm-data.js",
+    "pmo_dashboard": "docs/pmo-dashboard-data.js",
+    "weekly_review_generator": "scripts/generate-weekly-cbm-review.js"
+  },
+  "stage": "Weekly Review Ready",
+  "overall_maturity": "3.2/5",
+  "cell_count": 18,
+  "pilot_cell_count": 3,
+  "validated_cells": 0,
+  "false_green_risks": [],
+  "conflicts": [],
+  "warnings": [],
+  "human_gates": [
+    {
+      "cell": "strategy.direct.os-governance-core",
+      "decision": "是否将 P0 gate 作为 PMO 自动准入规则",
+      "gates": ["priority_change", "canonical_update"]
+    },
+    {
+      "cell": "client.control.project-portfolio-governance",
+      "decision": "是否将客户项目四元组纳入默认复盘输入",
+      "gates": ["external_write", "validated_status"]
+    },
+    {
+      "cell": "engineering.execute.operator-skill-reuse",
+      "decision": "是否将 weekly review generator 纳入自动同步链路",
+      "gates": ["external_write", "publish", "validated_status"]
+    }
+  ],
+  "next_p0": {
+    "id": "cbm-pmo-v1.1-auto-sync-contract",
+    "issue": "#131",
+    "task": "Define and audit sync contract between cbm-capability-cockpit-data.js, os-cbm-data.js, pmo-dashboard-data.js, and weekly review generator.",
+    "status": "contract_created"
+  },
+  "assertions": {
+    "no_constitution_write": true,
+    "no_auto_validated_upgrade": true,
+    "no_auto_strong_evidence_upgrade": true,
+    "pmo_dashboard_is_derived_view": true,
+    "cockpit_data_is_durable_source": true
+  }
+}
