@@ -210,3 +210,62 @@ B2 remains Validation 1/5 until the transcripts are coded into user-language rec
 ```text
 Execute #132 first, then use #136 to process one real client/project input through C2.
 ```
+
+---
+
+### 2026-06-30 · B2 External Evidence Coding Completed
+
+```yaml
+type: evidence_writeback
+node: B2 / C2
+module: 品类独创 / 一个大脑
+source_strength: medium+
+writeback_level: L2
+source_repo: moonstachain/llm-wiki
+related_issues: ["#130", "#132"]
+result: PASS_WITH_BOUNDARY
+```
+
+#### Decision
+
+```text
+B2 has enough real June 2026 learner / client fieldwork evidence to move from "pre-fieldwork ready" to "external validation started".
+```
+
+#### Score Impact
+
+```text
+B2 Validation: 1/5 -> 2/5
+Stage: External Validation Started
+Evidence Strength: medium+
+```
+
+#### Evidence Produced
+
+```text
+7 external user-language records
+7 category / naming signals
+7 repeatable category sentence candidates
+5 purchase / follow-up signals
+```
+
+#### Boundary
+
+```text
+This is not scaled product validation.
+This is not controlled naming-test completion.
+Do not upgrade B2 beyond 2/5 until a controlled naming and repeatability test with 5-10 target users is completed.
+```
+
+#### Created / Updated
+
+- `assets/B2-品类独创/external-evidence-coding-2026-06.md`
+- `assets/B2-品类独创/workshop-scorecard.md`
+- `assets/B2-品类独创/validation-records.md`
+- `assets/B2-品类独创/evidence.md`
+
+#### Next C4 Action
+
+```text
+Run controlled B2 naming and repeatability test using the 7 category sentence candidates.
+```
