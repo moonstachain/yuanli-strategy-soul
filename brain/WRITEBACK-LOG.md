@@ -269,3 +269,50 @@ Do not upgrade B2 beyond 2/5 until a controlled naming and repeatability test wi
 ```text
 Run controlled B2 naming and repeatability test using the 7 category sentence candidates.
 ```
+
+---
+
+### 2026-06-30 · C2 Query Pack + Resolver Seed v1
+
+```yaml
+type: evolution_writeback
+node: C2
+module: 一个大脑
+source_strength: medium+
+writeback_level: L3 Evolution + L4 Skill Candidate
+related_issue: "#141"
+result: STRUCTURE_PASS_WITH_BOUNDARY
+```
+
+#### Decision
+
+```text
+C2 has completed its first Query Pack + Resolver Seed structure test. It can now answer a real strategic query with cited synthesis, unknown gaps, gap type, resolver route, next C4 task, skillify judgment, and writeback proposal.
+```
+
+#### Created / Updated
+
+- `docs/C2-YUANLI-BRAIN-QUERY-PACK-RESOLVER-P0-PLAN-v1.md`
+- `brain/GAP-TYPES.md`
+- `brain/CANON-GRAPH.md`
+- `brain/RESOLVER.md`
+- `brain/SKILL-CANDIDATES.md`
+- `brain/QUERY-EXAMPLES.md`
+- `assets/C2-一个大脑/retrieval-test.md`
+- `assets/C2-一个大脑/writeback-examples.md`
+- `assets/C2-一个大脑/query-pack-v1.md`
+
+#### Boundary
+
+```text
+This is not a B2 validation upgrade.
+This is not a C2 real external validation pass.
+This does not create active SKILL.md yet.
+Do not upgrade B2 to Validation 3/5 until controlled naming and repeatability testing is completed.
+```
+
+#### Next C4 Action
+
+```text
+Choose one: run controlled B2 naming test, or create 两句话品类独创 Skill v0 with 3 before/after samples.
+```
