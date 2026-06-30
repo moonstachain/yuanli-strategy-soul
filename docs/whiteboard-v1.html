@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>原力战略白板 OS · v1.0</title>
+  <link rel="stylesheet" href="whiteboard-v1.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><div class="sigil">ʸx</div><div>原力战略白板 OS · v1.0</div></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="trilogy-concept-map.html">Canon Map</a>
+        <a href="modules/index.html">Modules</a>
+        <a href="asset.html">Asset Tool</a>
+        <a href="startup.html">Startup Tool</a>
+        <a href="os.html">OS Tool</a>
+        <a class="active" href="whiteboard-v1.html">Whiteboard v1</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="panel"><div class="tag" id="version"></div><h1>把正典变成可运行白板</h1><p>原力战略白板 OS = 正典地图 × 事业能力组件地图 × 任务链路 × 递归回写。</p><p>北极星：<span id="northstar"></span></p></div>
+      <div class="panel"><p>母公理：<span id="axiom"></span></p><p>白板必须回答：什么最重要？什么是控制点？什么是瓶颈？什么先做？做完回写到哪里？</p></div>
+    </section>
+    <section class="board"><aside class="panel tree" id="tree"></aside><section class="panel detail" id="detail"></section></section>
+  </main>
+  <script src="whiteboard-data.js"></script>
+  <script src="whiteboard-renderer.js"></script>
+</body>
+</html>
