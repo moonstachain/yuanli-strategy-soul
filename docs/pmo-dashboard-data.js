@@ -1,4 +1,5 @@
 window.YUANLI_PMO_V22={
+  version:'v2.3',
   fields:['Canon Node','Work Type','Strategic Layer','Capability Domain','Status','PMO Health','Priority','Gap Score','Evidence Strength','Agent Level','Approval Gate','Writeback Target','Owner','Review Cadence'],
   views:[
     {id:'strategic_cockpit',name:'Strategic Cockpit',layout:'table',purpose:'project health and next strategic decision',fields:['Canon Node','PMO Health','Priority','Gap Score','Evidence Strength','Next Action']},
@@ -12,8 +13,11 @@ window.YUANLI_PMO_V22={
   objects:['Portfolio','Project','Work Item','Gap','Task','Evidence','Evolution Note','Asset','Review'],
   automation:['c3-gap -> ready','c4-task -> todo','pr opened -> in_progress','pr merged -> done','evidence added -> weak+','evolution added -> writeback complete','blocked 7d -> red'],
   seed_items:[
-    {node:'C3',type:'gap',domain:'matrix',layer:'design',status:'ready',health:'yellow',priority:'P0',gap_score:72,evidence:'weak',next:'Build gap ranking'},
-    {node:'C4',type:'task',domain:'delivery',layer:'execution',status:'done',health:'green',priority:'P0',gap_score:64,evidence:'medium',next:'Selected gap to task handoff'},
-    {node:'C2',type:'brain',domain:'data',layer:'recursive',status:'in_progress',health:'yellow',priority:'P1',gap_score:55,evidence:'weak',next:'Evidence ledger'}
+    {issue:'#63',node:'C3',type:'gap',domain:'matrix',layer:'design',status:'ready',health:'yellow',priority:'P0',gap_score:72,evidence:'weak',next:'handoff to #64'},
+    {issue:'#64',node:'C4',type:'task',domain:'delivery',layer:'execution',status:'ready',health:'green',priority:'P0',gap_score:72,evidence:'medium',next:'execute selected-gap handoff'},
+    {issue:'#65',node:'C2',type:'evidence',domain:'data',layer:'validation',status:'qa',health:'green',priority:'P1',gap_score:50,evidence:'medium',next:'review v2.3 evidence'}
+  ],
+  gap_ranking:[
+    {rank:1,issue:'#63',gap:'matrix design gap ranking',score:72,formula:'5 x 4 x 3 x 3 x 4 normalized',selected:true,next_issue:'#64'}
   ]
 };
