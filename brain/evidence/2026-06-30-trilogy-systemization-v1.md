@@ -10,11 +10,14 @@ Strength: medium
 - assets/MODULE-ASSET-PACK-STANDARD.md
 - assets/MODULE-ASSET-PACK-COVERAGE-v1.md
 - docs/whiteboard-data.js
+- docs/whiteboard-v1.html
+- docs/whiteboard-renderer.js
+- docs/whiteboard-v1.css
 - docs/trilogy-concept-map.html
 
 ## Finding
 
-The system now has a current-state file, asset pack standard, coverage registry, upgraded whiteboard data, and a diagnosis entry.
+The system now has a current-state file, asset pack standard, coverage registry, upgraded whiteboard data, a data-driven Whiteboard v1 page, and a diagnosis entry.
 
 ## Boundary
 
