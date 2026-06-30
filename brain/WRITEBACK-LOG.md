@@ -23,7 +23,7 @@ docs/C2-BRAIN-WRITEBACK-PROTOCOL-v1.md
 | L1 | Inbox capture |
 | L2 | Evidence writeback |
 | L3 | Evolution writeback |
-| L4 | Canonical candidate |
+| L4 | Skill candidate writeback |
 | L5 | Canon approved |
 
 ## Log Entries
@@ -315,4 +315,52 @@ Do not upgrade B2 to Validation 3/5 until controlled naming and repeatability te
 
 ```text
 Choose one: run controlled B2 naming test, or create 两句话品类独创 Skill v0 with 3 before/after samples.
+```
+
+---
+
+### 2026-06-30 · 两句话品类独创 Skill v0
+
+```yaml
+type: skill_candidate_writeback
+node: C2 / B2
+module: 一个大脑 / 品类独创
+source_strength: medium+
+writeback_level: L4 Skill Candidate
+related_issue: "#142"
+result: SKILL_V0_SAMPLED_WITH_BOUNDARY
+```
+
+#### Decision
+
+```text
+两句话品类独创 Skill v0 has been created as the first Yuanli Skillify sample inspired by YC's two-sentence company description skill.
+```
+
+#### Created / Updated
+
+- `skills/yuanli-category-two-sentence/SKILL.md`
+- `assets/C2-一个大脑/skillify-examples.md`
+- `brain/SKILL-CANDIDATES.md`
+- `brain/WRITEBACK-LOG.md`
+
+#### Sample Count
+
+```text
+3 before/after samples created.
+```
+
+#### Boundary
+
+```text
+This is v0-sampled, not active/canonical.
+This is not a controlled user naming test.
+This does not upgrade B2 to Validation 3/5.
+Human review is still pending.
+```
+
+#### Next C4 Action
+
+```text
+Run human review on 3 samples, then test with 3-5 real founder/client cases.
 ```
