@@ -419,3 +419,74 @@ This does not update CONSTITUTION.md.
 ```text
 Validate one repeatability pilot output with real target users or clients. Recommended first: PILOT-02 康康大型文体场馆无形资产开发.
 ```
+
+---
+
+### 2026-06-30 · 两句话品类独创 Skill · Single Pilot User Validated
+
+```yaml
+type: skill_candidate_writeback
+node: B2 / C2 / C4
+module: 品类独创 / 一个大脑 / 一条链路
+skill_candidate_id: yuanli-category-two-sentence
+source_strength: medium++
+writeback_level: L4
+related_issue: "#186"
+result: SINGLE_PILOT_USER_VALIDATED_WITH_BOUNDARY
+```
+
+#### Decision
+
+```text
+Candidate 001 两句话品类独创 Skill 从 repeatability-pilot-passed 推进到 single-pilot-user-validated。
+```
+
+#### Evidence Standard
+
+```text
+PILOT-02 康康大型文体场馆无形资产开发 received real user/client feedback through Ming first-person summary.
+```
+
+#### Feedback Result
+
+```yaml
+validated_pilot_output: PILOT-02 康康大型文体场馆无形资产开发
+first_glance_clarity: pass
+old_category_escape: pass
+premium_positioning: pass
+budget_pull: pass
+repeatability: pass
+real_sales_usage: pass
+```
+
+#### Key Learning
+
+```text
+“文体场馆无形资产开发” is clear enough as public category.
+“一号位资产运营工程” carries high-end decision-maker feel.
+“把沉睡资产变成现金流” is the strongest budget-pull bridge.
+The two-sentence expression can be used in real sales/client conversation.
+```
+
+#### Boundary
+
+```text
+This validates one repeatability pilot output in real conversation.
+This is not full user-tested across cases.
+This is not reviewed / active / canonical.
+This does not upgrade B2 Validation 3/5.
+This does not update CONSTITUTION.md.
+```
+
+#### Created / Updated
+
+- `skills/yuanli-category-two-sentence/REPEATABILITY-PILOT-USER-FEEDBACK-v1.md`
+- `brain/SKILL-CANDIDATES.md`
+- `brain/WRITEBACK-LOG.md`
+- #186 closed as completed
+
+#### Next C4 Action
+
+```text
+Use PILOT-02 as the first serious B2B public example of role-stack category creation; optionally validate PILOT-01 and PILOT-03 with real target users.
+```
