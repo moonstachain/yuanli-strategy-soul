@@ -48,23 +48,33 @@ function yuanliRenderContract(){
   const panel=box.closest('section');
   if(!panel) return;
   const h2=panel.querySelector('h2');
-  if(h2) h2.textContent='Human-Agent Negotiation Panel · v1.7';
+  if(h2) h2.textContent='Human-Agent Negotiation Panel · v1.8';
   let card=document.getElementById('agent-contract-card');
-  if(!card){
-    card=document.createElement('div');
-    card.id='agent-contract-card';
-    card.className='task';
-    panel.insertBefore(card,box);
-  }
+  if(!card){card=document.createElement('div');card.id='agent-contract-card';card.className='task';panel.insertBefore(card,box);}
   const node=yuanliCurrentNode();
   const c=yuanliContract(node);
   card.innerHTML='<b>Agent Contract</b><br>node: '+c.node+' · domain: '+c.domain+' · layer: '+c.layer+' · level: '+c.level+'<br>status: '+c.status+' · control: '+c.control+' · blocker: '+c.blocker+'<br>gates: '+yuanliJoin(c.gates)+'<br>signals: '+yuanliJoin(c.signals)+'<br>writeback: '+yuanliJoin(c.writeback)+'<br>human: '+c.human_role+' · agent: '+c.agent_role+'<br>evidence: '+yuanliJoin(c.evidence_required)+'<br>acceptance: '+yuanliJoin(c.acceptance_criteria);
 }
 
+function yuanliRenderMatrix(){
+  const box=document.getElementById('whiteboard-output');
+  if(!box) return;
+  const panel=box.closest('section');
+  if(!panel) return;
+  let card=document.getElementById('agent-cbm-matrix');
+  if(!card){card=document.createElement('div');card.id='agent-cbm-matrix';card.className='task';panel.insertBefore(card,box);}
+  const data=window.YUANLI_AGENT_CBM_V12||{};
+  const domains=data.capability_domains||[];
+  const layers=data.responsibility_layers||[];
+  const list=data.agent_contracts||[];
+  const rows=layers.map(layer=>'<tr><td><b>'+layer+'</b></td>'+domains.map(domain=>{const x=list.find(c=>c.domain===domain&&c.layer===layer);return '<td>'+ (x?x.node+' '+x.status:'missing') +'</td>';}).join('')+'</tr>').join('');
+  card.innerHTML='<b>Agent-Oriented CBM Matrix</b><br><table style="width:100%;border-collapse:collapse;margin-top:8px"><tr><td></td>'+domains.map(d=>'<td><b>'+d+'</b></td>').join('')+'</tr>'+rows+'</table>';
+}
+
 function yuanliEnsureUI(){
-  document.title='Yuanli Whiteboard OS v1.7';
+  document.title='Yuanli Whiteboard OS v1.8';
   const brand=document.querySelector('.brand div:last-child');
-  if(brand) brand.textContent='原力战略白板 OS · v1.7';
+  if(brand) brand.textContent='原力战略白板 OS · v1.8';
   const bar=document.querySelector('.actionbar');
   if(bar) bar.innerHTML='<button onclick="yuanliWriteOutput(\'strategy\')">AI Strategy Draft</button><button onclick="yuanliWriteOutput(\'approval\')">Approval Request</button><button onclick="yuanliWriteOutput(\'task\')">Codex Task</button><button onclick="yuanliWriteOutput(\'dryrun\')">Dry-run Plan</button><button onclick="yuanliWriteOutput(\'feedback\')">Feedback Note</button><button onclick="yuanliWriteOutput(\'evolution\')">Evolution Note</button>';
 }
@@ -72,7 +82,8 @@ function yuanliEnsureUI(){
 function yuanliPanelV12(){
   yuanliEnsureUI();
   yuanliRenderContract();
-  document.querySelectorAll('input[name="node"]').forEach(x=>x.addEventListener('change',yuanliRenderContract));
+  yuanliRenderMatrix();
+  document.querySelectorAll('input[name="node"]').forEach(x=>x.addEventListener('change',function(){yuanliRenderContract();yuanliRenderMatrix();}));
 }
 
 (function(){
