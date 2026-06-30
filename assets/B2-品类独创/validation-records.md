@@ -12,8 +12,8 @@ Date: 2026-06-30
 
 ```text
 Validation: 1 / 5
-State: pre-fieldwork ready
-Boundary: no external user trial has been completed yet.
+State: external evidence source discovered / coding pending
+Boundary: llm-wiki June 2026 client and learner transcripts can now be used as external evidence source candidates, but B2 validation should not be upgraded until the evidence is coded into user-language records, naming/category samples, repeatable category sentences, and scorecard results.
 ```
 
 ## Historical Source Preload
@@ -38,6 +38,54 @@ card note logic
 ```
 
 This preload reduces workshop preparation risk, but it does not count as external validation.
+
+## External Evidence Source Discovery · 2026-06-30
+
+Source:
+
+```text
+brain/sources/llm-wiki-b2-external-evidence-v1.md
+```
+
+Decision:
+
+```text
+llm-wiki can be used as a valid external information source for B2 evidence.
+```
+
+Current boundary:
+
+```text
+It is evidence-source-ready, not validation-complete.
+```
+
+Why:
+
+```text
+June 2026 transcripts include real learner/client problem language, business contexts, category confusion, desired outcomes, and purchase-adjacent signals. However, #130 still requires structured extraction and scoring before B2 can move from Validation 1/5 to 2/5.
+```
+
+Initial source candidates:
+
+| Source | Evidence Use |
+|---|---|
+| `moonstachain/llm-wiki/sources/transcripts/20260610-D1AM-M2_学员自我介绍与三天期望-逐字稿.md` | strongest immediate B2 user-language source |
+| `moonstachain/llm-wiki/sources/transcripts/20260610-D1AM-M3_共性需求归纳·三天核心目标-智能纪要.md` | group-level needs aggregation candidate |
+| `moonstachain/llm-wiki/sources/transcripts/20260609-M4_达哥分享AI业务整合+讲师·知识主权-逐字稿.md` | business integration / knowledge sovereignty candidate |
+| `moonstachain/llm-wiki/sources/transcripts/20260618-D1AM-M11_卷卷用AI把想法变成接满的订单-逐字稿.md` | AI-to-order productization candidate |
+| `moonstachain/llm-wiki/sources/transcripts/20260624-LXSH-M2_一句话口述,AI做出深度市场调研-智能纪要.md` | AI market research product language candidate |
+| `moonstachain/llm-wiki/sources/transcripts/20260601-安全价值证明项目落地讨论-逐字稿.md` | client-project weekly review input candidate |
+| `moonstachain/llm-wiki/sources/transcripts/20260612-原力OS与关键战役规划-逐字稿.md` | C2/C3/C4 real task validation candidate |
+
+Preliminary B2 patterns from June transcript evidence:
+
+| Pattern | Candidate Category Sentence | Status |
+|---|---|---|
+| 人工项目 → 人机协同系统 | 把爆款技能变成可复用的人机协同系统 | needs coding |
+| 零散 demo → 精准建模路径 | 不是做更多 demo，而是把业务打成一套可持续调优的精准模型 | needs coding |
+| 数据分析 → CEO 秒懂战略信号 | 把复杂经营数据变成 CEO 秒懂的战略信号 | needs coding |
+| 个人经验 → 可持续 IP / 组织技能 | 把个人爆点技能升级成可持续放大的组织技能 | needs coding |
+| 复杂行业知识 → 行业 AI/IP 框架 | 把复杂行业知识沉淀成可复用的行业 AI/IP 框架 | needs coding |
 
 ## Candidate Naming Set
 
@@ -72,6 +120,7 @@ participant-screening.md
 workshop-scorecard.md
 live-validation-checklist.md
 llm-wiki-b2-extraction-v1.md
+llm-wiki-b2-external-evidence-v1.md
 candidate-names.md
 ```
 
@@ -101,6 +150,7 @@ External Validation Started / Validation 2/5 or higher
 | workshop-scorecard.md | 判断是否通过验证并是否提升 B2 Validation |
 | live-validation-checklist.md | 现场执行前中后检查 |
 | llm-wiki-b2-extraction-v1.md | 历史语料候选 |
+| llm-wiki-b2-external-evidence-v1.md | June 2026 external transcript source candidates |
 | candidate-names.md | 现场测试候选命名 |
 
 ## Minimum Validation Design
@@ -129,21 +179,23 @@ External Validation Started / Validation 2/5 or higher
 Status:
 
 ```text
-ready to run after fieldwork scheduling
+fieldwork source discovered; evidence coding pending
 ```
 
 Next:
 
 ```text
-When fieldwork is available, recruit 5-10 participants and run B2 small validation workshop.
+Extract B2 evidence from llm-wiki June 2026 transcripts before scheduling any additional live workshop.
 ```
 
 ## Writeback Rule
 
-完成试跑后更新：
+完成试跑或证据编码后更新：
 
 ```text
 assets/B2-品类独创/evidence.md
+assets/B2-品类独创/user-language.md
+assets/B2-品类独创/workshop-scorecard.md
 brain/WRITEBACK-LOG.md
 docs/TRILOGY-ASSET-MATURITY-SCORECARD-v1.md
 docs/pmo-dashboard-data.js
