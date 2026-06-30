@@ -47,7 +47,7 @@ function yuanliRenderContract(){
   const panel=box.closest('section');
   if(!panel) return;
   const h2=panel.querySelector('h2');
-  if(h2) h2.textContent='Human-Agent Negotiation Panel';
+  if(h2) h2.textContent='Human-Agent Negotiation Panel · v1.6';
   let card=document.getElementById('agent-contract-card');
   if(!card){
     card=document.createElement('div');
@@ -60,7 +60,16 @@ function yuanliRenderContract(){
   card.innerHTML='<b>Agent Contract</b><br>node: '+c.node+' · domain: '+c.domain+' · layer: '+c.layer+' · level: '+c.level+'<br>status: '+c.status+' · control: '+c.control+' · blocker: '+c.blocker+'<br>gates: '+yuanliJoin(c.gates)+'<br>signals: '+yuanliJoin(c.signals)+'<br>writeback: '+yuanliJoin(c.writeback);
 }
 
+function yuanliEnsureUI(){
+  document.title='Yuanli Whiteboard OS v1.6';
+  const brand=document.querySelector('.brand div:last-child');
+  if(brand) brand.textContent='原力战略白板 OS · v1.6';
+  const bar=document.querySelector('.actionbar');
+  if(bar) bar.innerHTML='<button onclick="yuanliWriteOutput(\'strategy\')">AI Strategy Draft</button><button onclick="yuanliWriteOutput(\'approval\')">Approval Request</button><button onclick="yuanliWriteOutput(\'task\')">Codex Task</button><button onclick="yuanliWriteOutput(\'dryrun\')">Dry-run Plan</button><button onclick="yuanliWriteOutput(\'feedback\')">Feedback Note</button><button onclick="yuanliWriteOutput(\'evolution\')">Evolution Note</button>';
+}
+
 function yuanliPanelV12(){
+  yuanliEnsureUI();
   yuanliRenderContract();
   document.querySelectorAll('input[name="node"]').forEach(x=>x.addEventListener('change',yuanliRenderContract));
 }
