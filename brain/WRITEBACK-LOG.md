@@ -163,3 +163,50 @@ C2 Total Score: 32/40 -> 33/40
 ```text
 为 A1 或 B2 选择一个真实学员案例，完成从 case -> evidence -> evolution -> scorecard 的完整回写试跑。
 ```
+
+---
+
+### 2026-06-30 · B2 External Evidence Source Discovery
+
+```yaml
+type: evidence_writeback
+node: B2 / C2
+module: 品类独创 / 一个大脑
+source_strength: medium
+writeback_level: L2
+source_repo: moonstachain/llm-wiki
+related_issues: ["#130", "#132", "#134", "#136"]
+result: SOURCE_FOUND
+```
+
+#### Decision
+
+```text
+llm-wiki June 2026 client / learner transcripts can be used as valid external evidence source candidates for B2.
+```
+
+#### Boundary
+
+```text
+External evidence source discovered does not equal B2 validation completed.
+B2 remains Validation 1/5 until the transcripts are coded into user-language records, naming/category reaction samples, repeatable category sentences, and scorecard results.
+```
+
+#### Created / Updated
+
+- `brain/sources/llm-wiki-b2-external-evidence-v1.md`
+- `assets/B2-品类独创/validation-records.md`
+- `assets/B2-品类独创/evidence.md`
+- `assets/B2-品类独创/user-language.md`
+- #132 `[P0] B2 External Evidence Coding from llm-wiki June 2026 transcripts`
+- #133 `[P1-1] Upgrade 12 canon modules from seed asset to teaching-ready`
+- #134 `[P1-2] C2 Real Task Validation EPIC`
+- #136 `[P1-2A] Run first real client-project weekly review input through C2`
+- #137 `[P1-2B] Package Operator Skill into bounded live multi-tool execution`
+- #138 `[P1-2C] Create Daily CBM Review GitHub Action draft`
+
+#### Next C4 Action
+
+```text
+Execute #132 first, then use #136 to process one real client/project input through C2.
+```
