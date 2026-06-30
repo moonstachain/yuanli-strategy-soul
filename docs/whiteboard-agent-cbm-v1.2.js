@@ -1,0 +1,13 @@
+window.YUANLI_AGENT_CBM_V12={
+  capability_domains:['matrix','user','content','product','delivery','growth','data','moat'],
+  responsibility_layers:['strategy','design','execution','validation','recursive'],
+  autonomy_levels:['L0_read','L1_draft','L2_dry_run','L3_approval','L4_loop'],
+  approval_gates:['status_change','priority_change','external_write','public_publish'],
+  feedback_signals:['covered','missing','risk','next','operating','compounding'],
+  writeback_targets:['whiteboard','brain','project','codex','docs','templates'],
+  agent_contracts:[
+    {id:'c3_design',node:'C3',domain:'matrix',layer:'design',status:'draft',control:'capability_config',blocker:'missing_evidence',human:'approve_tradeoff',agent:'draft_options',level:'L2_dry_run',context:['constitution','brain_index'],tools:['read','draft'],outputs:['strategy_draft','task_draft'],gates:['status_change'],evidence:['source','decision'],signals:['missing','next'],writeback:['whiteboard','brain','project']},
+    {id:'c4_execution',node:'C4',domain:'delivery',layer:'execution',status:'draft',control:'task_chain',blocker:'acceptance',human:'approve_boundary',agent:'prepare_task',level:'L3_approval',context:['map_cell','task_template'],tools:['read','draft'],outputs:['codex_task','dry_run','feedback_note'],gates:['external_write'],evidence:['output','acceptance'],signals:['covered','next'],writeback:['codex','project','brain']},
+    {id:'c2_recursive',node:'C2',domain:'data',layer:'recursive',status:'operating',control:'memory_index',blocker:'freshness',human:'decide_reuse',agent:'prepare_note',level:'L2_dry_run',context:['evidence','note'],tools:['read','draft'],outputs:['feedback_note','evolution_note'],gates:['canonical_change'],evidence:['source','version'],signals:['covered','risk'],writeback:['brain','docs']}
+  ]
+};
