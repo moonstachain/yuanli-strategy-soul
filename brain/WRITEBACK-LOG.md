@@ -364,3 +364,52 @@ Human review is still pending.
 ```text
 Run human review on 3 samples, then test with 3-5 real founder/client cases.
 ```
+
+---
+
+### 2026-06-30 · 两句话品类独创 Skill Review Checklist v1
+
+```yaml
+type: skill_review_gate
+node: C2 / B2
+module: 一个大脑 / 品类独创
+source_strength: medium+
+writeback_level: L4 Skill Candidate Review
+related_issue: "#143"
+result: REVIEW_READY_WITH_BOUNDARY
+```
+
+#### Decision
+
+```text
+Review Checklist v1 has been created. The skill moved from sampled to review-ready, not reviewed.
+```
+
+#### Created / Updated
+
+- `skills/yuanli-category-two-sentence/REVIEW-CHECKLIST-v1.md`
+- `brain/SKILL-CANDIDATES.md`
+- `brain/WRITEBACK-LOG.md`
+
+#### AI Pre-Review Result
+
+```text
+overall_average: 4.03 / 5
+decision: conditional_go
+condition: Ming human review required before real case testing
+```
+
+#### Boundary
+
+```text
+This is not Ming human review completed.
+This is not active skill approval.
+This is not canonical approval.
+This is not B2 Validation 3/5.
+```
+
+#### Next C4 Action
+
+```text
+Run Ming human review, then select 3-5 real founder/client cases for two-sentence category transformation test.
+```
