@@ -1,6 +1,6 @@
 # B2 · 品类独创 · User Language
 
-PMO Issue: #129
+PMO Issue: #129 / #130
 Asset Type: user-language
 Date: 2026-06-30
 
@@ -12,6 +12,95 @@ Date: 2026-06-30
 
 ```text
 先记录用户原话，再做模型解释。
+```
+
+## Historical Source Preload
+
+Source:
+
+```text
+brain/sources/llm-wiki-b2-extraction-v1.md
+```
+
+This preload is not external validation completion. It is historical source preparation for #130.
+
+## Preloaded Language / Criteria
+
+### 1. 品类核心命题
+
+```text
+不在现有品类里竞争，而是创造一个无法分类的新品类。
+```
+
+Use:
+
+```text
+workshop opening
+repeatability test
+```
+
+### 2. 对标逃逸
+
+```text
+从“和谁谁谁很像”变成“找不到对标”。
+```
+
+Use:
+
+```text
+category language test
+confusion detection
+```
+
+### 3. 十六字诀
+
+```text
+无法分类 / 重新定义 / 自带预算 / 独创品类
+```
+
+Use:
+
+```text
+category card
+scorecard criteria
+```
+
+### 4. 命名标准
+
+```text
+简单、易传播、有对比锚。
+```
+
+Use:
+
+```text
+naming-test.md
+workshop-scorecard.md
+```
+
+### 5. 预算测试
+
+```text
+用户是否天然带有消费预算？预算来自哪个心理账户？
+```
+
+Use:
+
+```text
+purchase signal test
+```
+
+### 6. 测试卡逻辑
+
+```text
+先判断人群够不够大、能拿到多少、是否已经有跑通信号，再拆成测试卡。
+```
+
+Use:
+
+```text
+validation-records.md
+C4 action chain
 ```
 
 ## Interview Target
@@ -96,14 +185,4 @@ Date: 2026-06-30
 高频误解点
 最容易复述的一句话
 最有购买信号的表达
-```
-
-## Output
-
-```text
-user-language-summary
-winning words
-bad words
-confusion map
-purchase triggers
 ```
