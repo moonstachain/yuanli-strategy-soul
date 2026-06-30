@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T14:26:58.926Z"
+    "updated_at": "2026-06-30T14:30:38.914Z"
   },
   "fields": [
     "Canon Node",
@@ -389,6 +389,19 @@ window.YUANLI_PMO_V22={
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
+      "issue": "#170",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "Build `docs/C2-REPO-OWNERSHIP-MAP-v1.md` to define the ownership, SSOT boundary, evidence routing, transcript/source memory boundary, and writeback rules for C2 Brain related repos."
+    },
+    {
       "issue": "#157",
       "node": "C4",
       "type": "task",
@@ -464,7 +477,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把过去 6 个月所有有更新的 GitHub 仓库，从“活跃 repo 列表”升级为 CBM-PMO 价值审计注册表，判断每个项目是否具备战略地图价值、能力资产价值、客户证据价值、内容增长价值、工程复用价值，或仅应观察 / 归档候选。"
+      "next": "把过去 6 个月所有有更新的 GitHub 仓库，从“活跃 repo 列表”升级为 CBM-PMO 价值审计注册表，判断每个项目是否具备战略地图价值、能力资产价值、客户证据价值、内容增长价值、工���复用价值，或仅应观察 / 归档候选。"
     },
     {
       "issue": "#149",
@@ -477,7 +490,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把最�� 30 天活跃 GitHub 仓库从“repo 列表”转成 CBM-PMO 可治理的 Portfolio Intake Registry，明确哪些项目进入 P0 / P1 / P2 / Observe，以及它们分别归属哪个 CBM Domain / Cell、需要什么 Evidence、下一步 C3 Gap / C4 Task 是什么。"
+      "next": "把最近 30 天活跃 GitHub 仓库从“repo 列表”转成 CBM-PMO 可治理的 Portfolio Intake Registry，明确哪些项目进入 P0 / P1 / P2 / Observe，以及它们分别归属哪个 CBM Domain / Cell、需要什么 Evidence、下一步 C3 Gap / C4 Task 是什么。"
     },
     {
       "issue": "#147",
