@@ -1,6 +1,6 @@
 # B2 · 品类独创 · Validation Records
 
-PMO Issue: #129 / #130
+PMO Issue: #129 / #130 / #132
 Asset Type: validation-records
 Date: 2026-06-30
 
@@ -11,9 +11,10 @@ Date: 2026-06-30
 ## Current Validation State
 
 ```text
-Validation: 1 / 5
-State: external evidence source discovered / coding pending
-Boundary: llm-wiki June 2026 client and learner transcripts can now be used as external evidence source candidates, but B2 validation should not be upgraded until the evidence is coded into user-language records, naming/category samples, repeatable category sentences, and scorecard results.
+Validation: 2 / 5
+State: External Validation Started
+Evidence Strength: medium+
+Boundary: B2 has coded external June 2026 fieldwork evidence, but it is not scaled-product ready and still needs controlled naming / repeatability tests.
 ```
 
 ## Historical Source Preload
@@ -53,39 +54,63 @@ Decision:
 llm-wiki can be used as a valid external information source for B2 evidence.
 ```
 
-Current boundary:
+## External Evidence Coding · 2026-06-30
+
+Source:
 
 ```text
-It is evidence-source-ready, not validation-complete.
+assets/B2-品类独创/external-evidence-coding-2026-06.md
+```
+
+Decision:
+
+```text
+B2 has enough real June 2026 learner / client fieldwork evidence to move from "pre-fieldwork ready" to "external validation started".
+```
+
+Validation impact:
+
+```text
+B2 Validation: 1/5 -> 2/5
+Stage: External Validation Started
+Evidence Strength: medium+
 ```
 
 Why:
 
 ```text
-June 2026 transcripts include real learner/client problem language, business contexts, category confusion, desired outcomes, and purchase-adjacent signals. However, #130 still requires structured extraction and scoring before B2 can move from Validation 1/5 to 2/5.
+The evidence coding produced 7 external user-language records, 7 category/naming signals, 7 repeatable category sentence candidates, and 5 purchase/follow-up signals.
 ```
 
-Initial source candidates:
+Caveat:
+
+```text
+This was evidence coding from existing fieldwork, not a controlled B2 workshop. Controlled naming and repeatability tests are still required before productization or scale.
+```
+
+## Coded Source Candidates
 
 | Source | Evidence Use |
 |---|---|
-| `moonstachain/llm-wiki/sources/transcripts/20260610-D1AM-M2_学员自我介绍与三天期望-逐字稿.md` | strongest immediate B2 user-language source |
-| `moonstachain/llm-wiki/sources/transcripts/20260610-D1AM-M3_共性需求归纳·三天核心目标-智能纪要.md` | group-level needs aggregation candidate |
-| `moonstachain/llm-wiki/sources/transcripts/20260609-M4_达哥分享AI业务整合+讲师·知识主权-逐字稿.md` | business integration / knowledge sovereignty candidate |
-| `moonstachain/llm-wiki/sources/transcripts/20260618-D1AM-M11_卷卷用AI把想法变成接满的订单-逐字稿.md` | AI-to-order productization candidate |
-| `moonstachain/llm-wiki/sources/transcripts/20260624-LXSH-M2_一句话口述,AI做出深度市场调研-智能纪要.md` | AI market research product language candidate |
-| `moonstachain/llm-wiki/sources/transcripts/20260601-安全价值证明项目落地讨论-逐字稿.md` | client-project weekly review input candidate |
+| `moonstachain/llm-wiki/sources/transcripts/20260610-D1AM-M2_学员自我介绍与三天期望-逐字稿.md` | individual B2 user-language source |
+| `moonstachain/llm-wiki/sources/transcripts/20260610-D1AM-M3_共性需求归纳·三天核心目标-智能纪要.md` | group-level needs aggregation |
+| `moonstachain/llm-wiki/sources/transcripts/20260609-M4_达哥分享AI业务整合+讲师·知识主权-逐字稿.md` | business integration / category reframing |
+| `moonstachain/llm-wiki/sources/transcripts/20260618-D1AM-M11_卷卷用AI把想法变成接满的订单-逐字稿.md` | AI-to-order productization and paid-result signal |
+| `moonstachain/llm-wiki/sources/transcripts/20260624-LXSH-M2_一句话口述,AI做出深度市场调研-智能纪要.md` | AI market research category signal |
+| `moonstachain/llm-wiki/sources/transcripts/20260601-安全价值证明项目落地讨论-逐字稿.md` | client-project category validation |
 | `moonstachain/llm-wiki/sources/transcripts/20260612-原力OS与关键战役规划-逐字稿.md` | C2/C3/C4 real task validation candidate |
 
-Preliminary B2 patterns from June transcript evidence:
+## Coded B2 Patterns
 
 | Pattern | Candidate Category Sentence | Status |
 |---|---|---|
-| 人工项目 → 人机协同系统 | 把爆款技能变成可复用的人机协同系统 | needs coding |
-| 零散 demo → 精准建模路径 | 不是做更多 demo，而是把业务打成一套可持续调优的精准模型 | needs coding |
-| 数据分析 → CEO 秒懂战略信号 | 把复杂经营数据变成 CEO 秒懂的战略信号 | needs coding |
-| 个人经验 → 可持续 IP / 组织技能 | 把个人爆点技能升级成可持续放大的组织技能 | needs coding |
-| 复杂行业知识 → 行业 AI/IP 框架 | 把复杂行业知识沉淀成可复用的行业 AI/IP 框架 | needs coding |
+| 人工项目 → 人机协同系统 | 把爆款技能变成可复用的人机协同系统 | coded |
+| 零散 demo → 精准建模路径 | 不是做更多 demo，而是把业务打成一套可持续调优的精准模型 | coded |
+| 数据分析 → CEO 秒懂战略信号 | 把复杂经营数据变成 CEO 秒懂的战略信号 | coded |
+| 个人经验 → 可持续 IP / 组织技能 | 把个人爆点技能升级成可持续放大的组织技能 | coded |
+| 复杂行业知识 → 行业 AI/IP 框架 | 把复杂行业知识沉淀成可复用的行业 AI/IP 框架 | coded |
+| 高客单服务 → AI 工作台 | 把高客单服务变成现场可视化、可成交、可管理的 AI 工作台 | coded |
+| 一句话机会假设 → AI 市场验证报告 | 把一句话机会假设变成可决策的 AI 原生市场验证报告 | coded |
 
 ## Candidate Naming Set
 
@@ -103,7 +128,17 @@ Current candidate names:
 无法分类实验室
 ```
 
-These are testing candidates only, not final names.
+These remain testing candidates. The June evidence also produced field category signals:
+
+```text
+安全价值证明
+CEO 战略仪表盘 / 经营表盘
+精准建模路径
+AI 原生战略诊断报告
+行业 AI/IP 框架
+东方含蓄美学的一件解决方案
+高净值女性的品质入口
+```
 
 ## Why B2 First
 
@@ -121,21 +156,28 @@ workshop-scorecard.md
 live-validation-checklist.md
 llm-wiki-b2-extraction-v1.md
 llm-wiki-b2-external-evidence-v1.md
+external-evidence-coding-2026-06.md
 candidate-names.md
 ```
 
 ## Validation Goal
 
-把 B2 从：
+B2 has moved from:
 
 ```text
 Seed+ / P0 / Validation 1/5
 ```
 
-推进到：
+to:
 
 ```text
-External Validation Started / Validation 2/5 or higher
+External Validation Started / Validation 2/5
+```
+
+Next target:
+
+```text
+Controlled Naming Test / Validation 2.5-3/5 candidate
 ```
 
 ## Execution Package
@@ -151,46 +193,32 @@ External Validation Started / Validation 2/5 or higher
 | live-validation-checklist.md | 现场执行前中后检查 |
 | llm-wiki-b2-extraction-v1.md | 历史语料候选 |
 | llm-wiki-b2-external-evidence-v1.md | June 2026 external transcript source candidates |
+| external-evidence-coding-2026-06.md | coded external evidence record |
 | candidate-names.md | 现场测试候选命名 |
-
-## Minimum Validation Design
-
-| Item | Design |
-|---|---|
-| Participants | 5-10 个目标用户 |
-| User Type | 专家型个体、早期创业者、传统行业转型者 |
-| Duration | 90-120 分钟 |
-| Output | 每人完成一张 B2 品类独创卡 |
-| Naming Test | 3 个候选名称 |
-| Language Capture | 每人至少 3 条原话 |
-| Pass Signal | 至少 3 人能复述同一句品类定义 |
-
-## Pass Criteria
-
-```text
-至少 5 个命名样本
-至少 5 条用户原话
-至少 3 个可复述的一句话品类定义
-至少 1 个明确付费或进一步了解信号
-```
 
 ## Trial 1
 
 Status:
 
 ```text
-fieldwork source discovered; evidence coding pending
+completed as evidence coding from existing June 2026 external fieldwork
 ```
 
-Next:
+Result:
 
 ```text
-Extract B2 evidence from llm-wiki June 2026 transcripts before scheduling any additional live workshop.
+PASS with caveat: uncontrolled field signals, not controlled workshop naming test.
+```
+
+## Next
+
+```text
+Run controlled B2 naming and repeatability test with 5-10 target users using the 7 category sentence candidates.
 ```
 
 ## Writeback Rule
 
-完成试跑或证据编码后更新：
+After next controlled test, update:
 
 ```text
 assets/B2-品类独创/evidence.md
