@@ -38,7 +38,37 @@ Production program / growth capability program.
 | `strategy.direct.os-governance-core` | Protects canon boundary and no-false-green governance. |
 | `engineering.execute.operator-skill-reuse` | Provides reusable tooling such as wechat-writer, clip automation, and publishing helpers. |
 
-## 5. Current Maturity
+## 5. Shared Operating Protocol
+
+This program uses Yuanli OS Brain Loop v1 as its shared operating protocol.
+
+Protocol files:
+
+```text
+docs/YUANLI-OS-BRAIN-LOOP-v1.md
+docs/YUANLI-OS-BRAIN-LOOP-RUNBOOK-v1.md
+docs/YUANLI-OS-BRAIN-LOOP-DATA-MODEL-v1.md
+```
+
+Content Engine's role in the Brain Loop:
+
+```text
+Canon Node → content artifact → feedback → evidence → evolution → dream review → backwrite
+```
+
+Content work must now pass these gates before it is treated as compounding:
+
+1. Source Intake exists.
+2. Sensitivity Gate is complete.
+3. Canon Resolver assigns a Canon Node.
+4. Capability Resolver checks Zhiku / GitHub asset pool before new tooling.
+5. Program Router confirms #183 as primary program.
+6. Feedback is captured or explicit no-feedback state is recorded.
+7. Evidence Note exists.
+8. Evolution Note exists.
+9. Backwrite target is defined.
+
+## 6. Current Maturity
 
 ```text
 M1.5 / 5
@@ -55,10 +85,10 @@ M1.5 / 5
 Current interpretation:
 
 ```text
-Contract architecture reached. Real feedback loop not yet run.
+Contract architecture reached. Real feedback loop not yet run. Brain Loop v1 now defines the shared execution protocol.
 ```
 
-## 6. Current Assets
+## 7. Current Assets
 
 | Asset | State |
 |---|---|
@@ -69,8 +99,9 @@ Contract architecture reached. Real feedback loop not yet run.
 | #173 Content Engine Repo Integration Contract | draft PR |
 | #175 30D content feedback schema task | open |
 | #177 Content 30D Feedback Schema | draft PR |
+| Brain Loop v1 protocol | draft protocol |
 
-## 7. First Milestone
+## 8. First Milestone
 
 Milestone name:
 
@@ -88,57 +119,65 @@ Completion criteria:
 6. Write one evolution note.
 7. Define one reuse path.
 8. Update the content program board.
+9. Run one Brain Loop backwrite.
 
-## 8. First C3 Gaps
+## 9. First C3 Gaps
 
 | Gap | Source | Expected C4 |
 |---|---|---|
 | Content tools are not yet governed as a single production chain | #161 | Use #173 as integration contract |
 | No first content item feedback record exists | #175 | Run first content item feedback loop |
 | Channel adaptation is not yet tested against real audience signal | #177 | Choose one WeChat / Xiaohongshu / short video test |
+| Content work lacks explicit Brain Loop routing | Brain Loop v1 | Run BLOOP-2026-001 |
 
-## 9. First C4 Backlog
+## 10. First C4 Backlog
 
 | Priority | Task | Output |
 |---|---|---|
 | P0 | Review #173 and #177 | approved or revised contract/schema |
 | P0 | Select first canon topic | content item seed |
+| P0 | Run BLOOP-2026-001 | first Brain Loop run |
 | P0 | Create first content feedback record | feedback record file or issue comment |
 | P0 | Produce first channel artifact | article/card/script draft |
 | P0 | Capture feedback | feedback metric or qualitative signal |
 | P1 | Write evidence and evolution notes | `brain/evidence/` and `brain/evolution-notes/` |
 
-## 10. KPIs
+## 11. KPIs
 
 | KPI | Initial Target |
 |---|---:|
 | content items created | 1 |
 | content items with feedback | 1 |
+| capability preflights completed | 1 |
 | evidence notes written | 1 |
 | evolution notes written | 1 |
+| dream reviews completed | 1 |
 | reuse paths identified | 1 |
 | weak evidence marked green | 0 |
 
-## 11. Guardrails
+## 12. Guardrails
 
 ```text
 No feedback, no Done.
 No evidence, no green.
+No evolution, no Done.
+No backwrite, no compounding.
 No sensitive source exposure.
 No external publish from private source without human approval.
 No automatic merge.
 ```
 
-## 12. Review Rhythm
+## 13. Review Rhythm
 
 | Rhythm | Review Question |
 |---|---|
 | Daily during first trial | Is the content item blocked? |
 | Weekly | Did feedback create evidence or only output? |
 | End of first loop | Can this become a reusable content production pattern? |
+| Dream Review | What recurring pattern should update canon, content, or capability routing? |
 
-## 13. Immediate Next Action
+## 14. Immediate Next Action
 
 ```text
-Review #173 and #177, then select one B2 or C2 topic for the first real content feedback loop.
+Review #173 and #177, then run BLOOP-2026-001 with one B2/C2/C4 topic.
 ```
