@@ -23,6 +23,8 @@ candidate
 sampled
 review-ready
 real-case-draft
+user-language-test-ready
+user-tested
 reviewed
 active
 retired
@@ -35,6 +37,8 @@ candidate: workflow identified
 sampled: at least 3 examples exist
 review-ready: review checklist, review results scaffold, and AI pre-review exist; Ming human review pending
 real-case-draft: Ming selected real cases and draft transformations exist; user language test pending
+user-language-test-ready: user language test protocol exists; interviews pending
+user-tested: target user language results recorded
 reviewed: Ming human review completed
 active: converted into reusable SKILL.md or equivalent playbook with approval
 retired: replaced or merged
@@ -63,7 +67,7 @@ A candidate can become active only if:
 
 ```yaml
 skill_candidate_id: yuanli-category-two-sentence
-state: real-case-draft
+state: user-language-test-ready
 related_issue: "#142 / #143 / #145"
 skill_file: skills/yuanli-category-two-sentence/SKILL.md
 sample_pack: assets/C2-一个大脑/skillify-examples.md
@@ -71,6 +75,7 @@ review_checklist: skills/yuanli-category-two-sentence/REVIEW-CHECKLIST-v1.md
 review_results: skills/yuanli-category-two-sentence/REVIEW-RESULTS-v1.md
 real_case_candidates: skills/yuanli-category-two-sentence/REAL-CASE-CANDIDATES-v1.md
 real_case_test: skills/yuanli-category-two-sentence/REAL-CASE-TEST-v1.md
+user_language_test: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
 related_nodes:
   - A1 发现母体
   - B2 品类独创
@@ -136,6 +141,7 @@ B2 has 7 coded category sentence candidates from June 2026 external fieldwork, b
 #145 created review results scaffold for Ming human review.
 Ming selected three real cases: 水月老师随身寺庙, 达哥张姐低奢皮草, 高净值留学生游戏化婚礼.
 REAL-CASE-TEST-v1 created draft transformations for the three selected cases.
+USER-LANGUAGE-TEST-v1 created test protocol for target user repeatability, emotional pull, and budget shift.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -163,26 +169,42 @@ controlled_user_test: pending
 state_change: review-ready -> real-case-draft, not reviewed
 ```
 
-### 3.8 Current Gaps
+### 3.8 User Language Test Protocol
+
+```yaml
+test_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
+status: protocol_created
+participant_target:
+  CASE-01: 5 high-net-worth women / overseas Chinese / oriental aesthetics collectors
+  CASE-05: 5 high-net-worth women / high-repeat private-domain customers / female consumer founders
+  CASE-08: 5 overseas returnees / high-net-worth young adults / wedding-service potential customers
+candidate_names:
+  CASE-01: [随身寺庙, 随身精神资产]
+  CASE-05: [养成系社交货币, 养成系稀缺美学, 双奢结合]
+  CASE-08: [游戏化社交婚礼, 归国首秀导演, 人生主权宣言]
+state_change: real-case-draft -> user-language-test-ready, not user-tested
+```
+
+### 3.9 Current Gaps
 
 ```text
 human_review_gap: Ming has not yet reviewed and approved the three real-case outputs.
 validation_gap: no controlled naming test with 5-10 target users yet.
-user_language_gap: target users have not yet selected or repeated preferred category names.
+user_language_gap: USER-LANGUAGE-TEST-v1 exists, but target users have not yet selected or repeated preferred category names.
 resolver_gap: route exists as seed and draft, but not repeated in live workflow.
 writeback_gap: skill evidence has not yet been tested in live user workflow.
 ```
 
-### 3.9 Private Case Pool Policy
+### 3.10 Private Case Pool Policy
 
 ```text
 Private llm-wiki learner/client cases are valuable for real case testing, but raw private content must not be copied into this public repo without anonymization and Ming approval.
 ```
 
-### 3.10 Next C4 Task
+### 3.11 Next C4 Task
 
 ```text
-Ming reviews REAL-CASE-TEST-v1 outputs and selects which category names enter USER-LANGUAGE-TEST-v1.
+Run target user interviews and create USER-LANGUAGE-TEST-RESULTS-v1.md.
 ```
 
 ---
@@ -252,7 +274,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: Ming reviews REAL-CASE-TEST-v1 outputs.
-P0 next: create USER-LANGUAGE-TEST-v1 after Ming selects names to test.
+P0 current: run USER-LANGUAGE-TEST-v1 with target users.
+P0 next: create USER-LANGUAGE-TEST-RESULTS-v1.md after interviews.
 P1: Candidate 003 after first skill review/writeback.
 ```
