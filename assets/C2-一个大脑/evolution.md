@@ -64,16 +64,49 @@ C2 从 P1 提升为 P0.5。
 2. 没有 C2，C3/C4/PMO 会变成机械看板。
 3. 没有 C2，原力 OS 没有长期记忆和判断来源。
 
+## Trial 1 Writeback
+
+### Query
+
+```text
+B2 品类独创现在是否可以产品化？
+```
+
+### Result
+
+```text
+PASS
+```
+
+### Learning
+
+C2 已经可以用现有 GitHub 仓库材料完成一次内部 Markdown Brain 查询：
+
+```text
+检索证据 -> 形成判断 -> 识别缺口 -> 生成下一步 C4 行动 -> 给出回写建议
+```
+
+### Strategic Judgment
+
+B2 可以进入小范围产品化验证，但不能直接规模化售卖。B2 当前具备 seed asset package、27/40 成熟度和 P0 优先级，但真实验证仍弱，需要 naming-test、user-language、validation-records 和真实用户命名测试。
+
+### Score Impact
+
+```text
+C2 Validation: 1/5 -> 2/5
+C2 Total Score: 31/40 -> 32/40
+```
+
 ## Remaining Gap
 
-C2 仍需要真实验证：
+C2 仍需要继续真实验证：
 
-- retrieval-test.md
-- tagging-template.md
-- writeback-examples.md
-- validation-records.md
-- first real query trial
+- Trial 2：C2 一个大脑当前距离产品化还缺什么？
+- Trial 3：一个真实学员案例应该如何写回原力大脑？
+- 至少 3 个真实使用场景
+- 至少 5 个查询样例
+- 至少 3 个回写样例
 
 ## Next Reuse
 
-把 C2 战略包作为后续 Yuanli Brain / 原力大脑技术实现、PMO 回写机制、课程产品化和 Agent 记忆系统的标准依据。
+把 Trial 1 作为 C2 Brain Validation Issue 的第一条证据，并创建 B2 Deepening Task。
