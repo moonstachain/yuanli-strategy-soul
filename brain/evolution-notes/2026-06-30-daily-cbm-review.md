@@ -1,40 +1,23 @@
 # Evolution Note · Daily CBM Iteration Review
 
 Date: 2026-06-30
-Parent: #134 / #138
+
+Source: `docs/cbm-capability-cockpit-data.js`
+
+---
 
 ## What Changed
 
-Daily CBM Review moved from requested PMO path to implemented first seed:
+Daily CBM Iteration Review was generated as a review draft.
 
-```text
-docs/CBM-DAILY-ITERATION-REVIEW-SPEC-v1.md
-scripts/generate-daily-cbm-review.js
-.github/workflows/daily-cbm-review.yml
-docs/daily-cbm-review-latest.md
-```
+## Status Decision
 
-## What Was Proven
+No CBM cell is upgraded to validated / operating / compounding by this script.
 
-```text
-The system can generate a daily governance review layer that points to next P0 without automatically upgrading maturity or changing canon.
-```
+## Next P0
 
-## Today’s Next P0
+Choose first path to strong or repeated evidence: real client-project weekly review, live multi-tool Operator Skill run, or GitHub Action for weekly CBM review generation.
 
-```text
-#140 Build Safety Value Proof project cockpit runbook and evidence chain
-```
+## Canonical Boundary
 
-## Boundary
-
-```text
-Daily review is a governance draft.
-It does not update CONSTITUTION.md.
-It does not publish externally.
-It does not upgrade cells to validated / operating / compounding.
-```
-
-## Next Reuse
-
-Run the GitHub Action and compare generated output with this seed artifact.
+This note is a governance artifact. It does not update `CONSTITUTION.md`.
