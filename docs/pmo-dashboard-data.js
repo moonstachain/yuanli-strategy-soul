@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T13:32:38.914Z"
+    "updated_at": "2026-06-30T13:32:59.978Z"
   },
   "fields": [
     "Canon Node",
@@ -389,6 +389,19 @@ window.YUANLI_PMO_V22={
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
     },
     {
+      "issue": "#157",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "把 GitHub Portfolio Governance 接入 CBM-PMO 的驾驶舱和例会节奏，使仓库组合治理从一次性盘点变成可持续 review rhythm。"
+    },
+    {
       "issue": "#156",
       "node": "C4",
       "type": "task",
@@ -399,7 +412,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "创建 `docs/CAPABILITY-ASSET-POOL-v1.md`，把过去 6 个月活跃的大量 Agency / Skill / Tool / Automation / Writer / Publisher / Dashboard / Deployment 仓库纳入能��资产池，而不是直接进入主 PMO 看板。"
+      "next": "创建 `docs/CAPABILITY-ASSET-POOL-v1.md`，把过去 6 个月活跃的大量 Agency / Skill / Tool / Automation / Writer / Publisher / Dashboard / Deployment 仓库纳入能力资产池，而不是直接进入主 PMO 看板。"
     },
     {
       "issue": "#155",
