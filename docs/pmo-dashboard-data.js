@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T16:03:24.208Z"
+    "updated_at": "2026-06-30T16:03:39.924Z"
   },
   "fields": [
     "Canon Node",
@@ -490,7 +490,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "创建 `docs/CAPABILITY-ASSET-POOL-v1.md`，把过去 6 个月活跃的大量 Agency / Skill / Tool / Automation / Writer / Publisher / Dashboard / Deployment 仓库纳入能力资产池，而不是直接进入��� PMO 看板。"
+      "next": "创建 `docs/CAPABILITY-ASSET-POOL-v1.md`，把过去 6 个月活跃的大量 Agency / Skill / Tool / Automation / Writer / Publisher / Dashboard / Deployment 仓库纳入能力资产池，而不是直接进入主 PMO 看板。"
     },
     {
       "issue": "#155",
