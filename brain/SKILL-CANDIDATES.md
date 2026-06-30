@@ -152,6 +152,7 @@ TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1 completed first-pass extraction from t
 USER-LANGUAGE-TEST-RESULTS-v1 created results scaffold; interviews are still pending.
 HIGHER-TIER-SOURCE-CANDIDATES-v1 indexed Get 笔记, transcripts, digests, minutes, and entity sources for deeper extraction.
 HIGHER-TIER-SOURCE-EXTRACTION-RESULTS-v1 completed higher-tier first-pass extraction and recommended test refinements.
+USER-LANGUAGE-TEST-v1 was refined with bridge/control/diagnostic phrases and role-classification questions.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -184,15 +185,15 @@ state_change: review-ready -> real-case-draft, not reviewed
 ```yaml
 test_protocol: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
 results_scaffold: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-RESULTS-v1.md
-status: protocol_and_results_scaffold_created
+status: protocol_refined_with_higher_tier_outputs
 participant_target:
   CASE-01: 5 high-net-worth women / overseas Chinese / oriental aesthetics collectors
   CASE-05: 5 high-net-worth women / high-repeat private-domain customers / female consumer founders
   CASE-08: 5 overseas returnees / high-net-worth young adults / wedding-service potential customers
 candidate_names:
-  CASE-01: [随身寺庙, 随身精神资产]
-  CASE-05: [养成系社交货币, 养成系稀缺美学, 双奢结合]
-  CASE-08: [游戏化社交婚礼, 归国首秀导演, 人生主权宣言]
+  CASE-01: [随身寺庙, 随身精神资产, 可带走的东方精神器物]
+  CASE-05: [养成系社交货币, 养成系稀缺美学, 双奢结合, 高净值姐姐专属高端皮草]
+  CASE-08: [游戏化社交婚礼, 归国首秀导演, 人生主权宣言, 人生叙事的空间翻译]
 interviews_completed: 0
 state_change: no state upgrade; still user-language-test-ready
 ```
@@ -234,7 +235,7 @@ source_types_used:
 extracted_cases:
   CASE-01:
     tier: T2 / partial T1-like live course segment
-    strengthened: 随身寺庙 as public category, 随身精神资产 as business explanation
+    strengthened: 随身寺庙 as public category, 随身精神资产 as business explanation, 可带走的东方精神器物 as bridge phrase
   CASE-05:
     tier: T1/T2 Get 笔记
     strengthened: 养成系稀缺美学 as public category, 双奢结合 as mechanism, 高净值姐姐专属高端皮草 as control phrase
@@ -242,7 +243,7 @@ extracted_cases:
     tier: T3+ source-linked strategic report
     strengthened: 归国首秀导演 as premium positioning, 人生主权宣言 as narrative line, 人生叙事的空间翻译 as diagnostic phrase
 boundary: not T0 target-user testing; no validation upgrade
-next_recommendation: refine USER-LANGUAGE-TEST-v1 before collecting T0 responses
+next_recommendation: collect real T0 responses
 ```
 
 ### 3.11 Current Gaps
@@ -252,7 +253,6 @@ human_review_gap: Ming has not yet reviewed and approved the three real-case out
 validation_gap: no controlled naming test with 5-10 target users yet.
 user_language_gap: USER-LANGUAGE-TEST-RESULTS-v1 exists, but target user responses have not been recorded.
 source_tier_gap: higher-tier extraction improved evidence, but it is still not T0 target-user test evidence.
-user_language_test_refinement_gap: USER-LANGUAGE-TEST-v1 has not yet been updated with the new control / diagnostic / bridge phrases.
 resolver_gap: route exists as seed and draft, but not repeated in live workflow.
 writeback_gap: skill evidence has not yet been tested in live user workflow.
 ```
@@ -266,7 +266,7 @@ Private llm-wiki learner/client cases are valuable for real case testing, but ra
 ### 3.13 Next C4 Task
 
 ```text
-Refine USER-LANGUAGE-TEST-v1 with higher-tier extraction outputs, then collect real target-user responses and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
+Collect real target-user responses and fill USER-LANGUAGE-TEST-RESULTS-v1.md.
 ```
 
 ---
@@ -336,7 +336,7 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: refine USER-LANGUAGE-TEST-v1 with higher-tier extraction outputs.
-P0 next: collect real target-user responses for USER-LANGUAGE-TEST-RESULTS-v1.md.
+P0 current: collect real target-user responses for USER-LANGUAGE-TEST-RESULTS-v1.md.
+P0 next: analyze interview results and decide whether Candidate 001 can move to user-tested / reviewed.
 P1: Candidate 003 after first skill review/writeback.
 ```
