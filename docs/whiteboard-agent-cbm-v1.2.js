@@ -1,0 +1,13 @@
+window.YUANLI_AGENT_CBM_V12={
+  capability_domains:['matrix','user','content','product','delivery','growth','data','moat'],
+  responsibility_layers:['strategy','design','execution','validation','recursive'],
+  autonomy_levels:['L0','L1','L2','L3','L4'],
+  approval_gates:['status_change','priority_change','publish'],
+  feedback_signals:['covered','missing','risk','next'],
+  writeback_targets:['whiteboard','brain','project','codex','docs'],
+  agent_contracts:[
+    {id:'c3_design',node:'C3',domain:'matrix',layer:'design',status:'draft',level:'L2',control:'capability_config',blocker:'missing_evidence'},
+    {id:'c4_execution',node:'C4',domain:'delivery',layer:'execution',status:'draft',level:'L3',control:'task_chain',blocker:'acceptance'},
+    {id:'c2_recursive',node:'C2',domain:'data',layer:'recursive',status:'operating',level:'L2',control:'memory_index',blocker:'freshness'}
+  ]
+};
