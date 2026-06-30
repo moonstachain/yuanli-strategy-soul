@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T15:30:10.789Z"
+    "updated_at": "2026-06-30T15:30:27.448Z"
   },
   "fields": [
     "Canon Node",
@@ -477,7 +477,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把 GitHub Portfolio Governance 接入 CBM-PMO 的驾驶舱和例会节奏，使仓库组合治理从一次性盘点变成可��续 review rhythm。"
+      "next": "把 GitHub Portfolio Governance 接入 CBM-PMO 的驾驶舱和例会节奏，使仓库组合治理从一次性盘点变成可持续 review rhythm。"
     },
     {
       "issue": "#156",
@@ -581,7 +581,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把“安全价值证明”真实客户项目输入，转化为可复用的项目驾驶舱 / 通关���图 / 证据链路，使 C2 能检索、C3 能判断、C4 能执行。"
+      "next": "把“安全价值证明”真实客户项目输入，转化为可复用的项目驾驶舱 / 通关地图 / 证据链路，使 C2 能检索、C3 能判断、C4 能执行。"
     },
     {
       "issue": "#103",
