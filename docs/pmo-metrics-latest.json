@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-06-30T04:45:00Z",
+  "metrics": {
+    "evidence_coverage": {"numerator": 6, "denominator": 12, "value": 50, "unit": "%", "interpretation": "Evidence review count divided by gap plus task count."},
+    "strong_evidence_rate": {"numerator": 1, "denominator": 6, "value": 17, "unit": "%", "interpretation": "Strong evidence reviews as a share of all evidence reviews."},
+    "backwrite_rate": {"numerator": 6, "denominator": 6, "value": 100, "unit": "%", "interpretation": "Evidence reviews with planned evolution note writeback."},
+    "c3_gap_close_rate": {"numerator": 0, "denominator": 6, "value": 0, "unit": "%", "interpretation": "Closed or accepted C3 gaps divided by total C3 gaps."},
+    "blocked_age": {"numerator": 0, "denominator": 18, "value": 0, "unit": "items", "interpretation": "Current blocked item count; age computation requires issue timestamps from API."}
+  }
+}
