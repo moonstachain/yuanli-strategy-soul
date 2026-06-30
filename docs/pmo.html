@@ -1,81 +1,9 @@
 <!doctype html>
 <meta charset="utf-8">
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="refresh" content="0; url=pmo-v27.html">
 <title>Yuanli PMO OS v2.7</title>
-<script src="pmo-dashboard-data.js"></script>
-<style>
-body{margin:0;background:#05070b;color:#f1ece1;font:14px/1.5 -apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif}header{padding:28px 32px;border-bottom:1px solid #263036;background:#0d1214}h1{margin:0;color:#c9a96a}.sub{color:#8a918c}.wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;padding:24px}.card{background:#0d1214;border:1px solid #263036;border-radius:18px;padding:18px}.gold{color:#c9a96a}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.kpi{background:#101820;border:1px solid #263036;border-radius:16px;padding:14px}.kpi b{display:block;font-size:24px;color:#c9a96a}.pill{display:inline-block;border:1px solid #8b6f2e;border-radius:999px;padding:3px 9px;color:#c9a96a;margin:3px 5px 3px 0}table{width:100%;border-collapse:collapse}td,th{border-top:1px solid #263036;padding:8px;text-align:left}.muted{color:#8a918c}.ok{color:#7fb88a}.warn{color:#d2a24c}.bad{color:#c97a72}.chain{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr;gap:10px;align-items:center}.arrow{color:#c9a96a;font-size:22px}.big{font-size:30px;color:#c9a96a}.link{color:#6eb7a8;text-decoration:none}.rank{font-size:44px;color:#c9a96a;font-weight:700}.mini{font-size:12px;color:#8a918c}.wide{grid-column:1/3}.signal{font-size:18px;line-height:1.7}@media(max-width:1100px){.kpis{grid-template-columns:repeat(2,1fr)}.chain{grid-template-columns:1fr}.arrow{display:none}}@media(max-width:900px){.wrap{grid-template-columns:1fr}.wide{grid-column:auto}.grid{grid-template-columns:1fr}}
-</style>
-<header><h1 id="title">Yuanli PMO OS v2.7</h1><div class="sub" id="subtitle">Overview-first cockpit · total system health before local dispatch detail</div></header>
-<div class="wrap">
-  <section class="card wide"><h2 class="gold">Executive Overview</h2><div id="overview" class="kpis"></div></section>
-  <section class="card wide"><h2 class="gold">Strategic Signal</h2><div id="signal" class="signal"></div></section>
-  <section class="card wide"><h2 class="gold">Operating Chain</h2><div id="chain" class="chain"></div></section>
-  <section class="card"><h2 class="gold">C3 Gap Ranking</h2><div id="ranking"></div></section>
-  <section class="card"><h2 class="gold">Selected Gap → C4 Task</h2><div id="handoff"></div></section>
-  <section class="card"><h2 class="gold">Evidence & Learning</h2><div id="evidence"></div></section>
-  <section class="card"><h2 class="gold">Six PMO Views</h2><div id="views" class="grid"></div></section>
-  <section class="card"><h2 class="gold">PMO Fields</h2><div id="fields"></div></section>
-  <section class="card"><h2 class="gold">Roadmap</h2><div id="roadmap"></div></section>
-  <section class="card"><h2 class="gold">Automation & Metrics</h2><div id="automation"></div><h2 class="gold">Metrics</h2><div id="metrics"></div></section>
-  <section class="card wide"><h2 class="gold">Raw PMO Items</h2><table id="items"></table></section>
-</div>
-<script>
-(function(){
- const d=window.YUANLI_PMO_V22||{};
- const repo='https://github.com/moonstachain/yuanli-strategy-soul/issues/';
- const docs='https://github.com/moonstachain/yuanli-strategy-soul/blob/main/';
- const dataVersion=d.version||'v2.4';
- const uiVersion='v2.7';
- document.title='Yuanli PMO OS '+uiVersion;
- document.getElementById('title').textContent='Yuanli PMO OS '+uiVersion;
- document.getElementById('subtitle').textContent='Overview-first cockpit · data '+dataVersion+' · C3 → C4 → Evidence → Weekly Review → Evolution';
- const byIssue={};
- const items=d.seed_items||[];
- items.forEach(x=>{byIssue[x.issue]=x;});
- function issueLink(id){return '<a class="link" target="_blank" href="'+repo+String(id).replace('#','')+'">'+id+'</a>'}
- function fileLink(path,label){return '<a class="link" target="_blank" href="'+docs+path+'">'+label+'</a>'}
- function metric(label,value,note,cls){return '<div class="kpi"><span class="mini">'+label+'</span><b class="'+(cls||'')+'">'+value+'</b><span class="muted">'+note+'</span></div>'}
- function box(x,label){x=x||{};return '<div class="card"><div class="mini">'+label+'</div><h3>'+(x.issue?issueLink(x.issue):'-')+' · '+(x.node||'PMO')+' '+(x.type||'work')+'</h3><div>status: <b>'+(x.status||'-')+'</b> · health: <b>'+(x.health||'-')+'</b> · priority: <b>'+(x.priority||'-')+'</b></div><div>gap score: <span class="big">'+(x.gap_score||'-')+'</span></div><div class="muted">next: '+(x.next||'-')+'</div></div>'}
- const gaps=items.filter(x=>x.type==='gap');
- const tasks=items.filter(x=>x.type==='task');
- const evs=items.filter(x=>x.type==='evidence');
- const weak=items.filter(x=>x.evidence==='weak').length;
- const reds=items.filter(x=>x.health==='red').length;
- const health=reds?'Red':weak?'Yellow':'Green';
- const healthCls=reds?'bad':weak?'warn':'ok';
- const coverage=Math.round((evs.length/Math.max(1,gaps.length+tasks.length))*100)+'%';
- const g=(d.gap_ranking||[])[0]||{};
- const nextP0=g.issue||'#63';
- function renderOverview(extra){
-  document.getElementById('overview').innerHTML=
-   metric('PMO Health',health,weak?'weak evidence exists':'no red signal',healthCls)+
-   metric('UI Version',uiVersion,'overview-first cockpit')+
-   metric('Data Version',dataVersion,'issue-driven source')+
-   metric('Open Items',extra.open||items.length,'PMO objects tracked')+
-   metric('Evidence Coverage',extra.coverage||coverage,'evidence / gaps+tasks')+
-   metric('Next P0',nextP0,'strategic focus','warn');
- }
- renderOverview({});
- document.getElementById('signal').innerHTML='System state: <b class="gold">PMO has moved from local dispatch to overview-first management.</b><br>Current strategic signal: keep #63 as the single P0 until the C3 gap ranking can reliably hand off selected gaps into C4 execution and evidence review.<br>'+fileLink('docs/pmo-weekly-review-latest.md','Open Weekly Review')+' · '+fileLink('brain/evolution-notes/2026-06-30-weekly-pmo-review.md','Open Evolution Note');
- const c3=byIssue['#63']||gaps[0]||{}; const c4=byIssue['#64']||tasks[0]||{}; const ev=byIssue['#65']||evs[0]||{};
- const weekly={issue:'weekly',node:'PMO',type:'review',status:'latest',health:'green',priority:'P1',gap_score:'-',next:'write evolution note'};
- const evo={issue:'evo',node:'Brain',type:'evolution',status:'written',health:'green',priority:'P1',gap_score:'-',next:'reuse in next review'};
- function linkBox(label,url,title,body){return '<div class="card"><div class="mini">'+label+'</div><h3><a class="link" target="_blank" href="'+url+'">'+title+'</a></h3><div class="muted">'+body+'</div></div>'}
- document.getElementById('chain').innerHTML=box(c3,'C3 Strategic Judgment')+'<div class="arrow">→</div>'+box(c4,'C4 Execution Task')+'<div class="arrow">→</div>'+box(ev,'Evidence Review')+'<div class="arrow">→</div>'+linkBox('Weekly Review','pmo-weekly-review-latest.md','PMO Weekly Review','issue data becomes management signal')+'<div class="arrow">→</div>'+linkBox('Evolution Note','../brain/evolution-notes/2026-06-30-weekly-pmo-review.md','Brain Writeback','management signal becomes reusable learning');
- document.getElementById('ranking').innerHTML='<div class="rank">#'+(g.rank||1)+'</div><h3>'+issueLink(g.issue||'#63')+' '+(g.gap||'gap')+'</h3><div>score: <span class="big">'+(g.score||'')+'</span></div><div class="muted">formula: '+(g.formula||'')+'</div><div>selected: <b class="ok">'+(g.selected?'true':'false')+'</b></div>';
- document.getElementById('handoff').innerHTML='<h3>'+issueLink('#63')+' → '+issueLink('#64')+'</h3><p>Top ranked C3 gap is handed off as a C4 execution task.</p><p class="muted">The next issue carries objective, steps, acceptance, evidence, risk, and writeback target.</p>';
- document.getElementById('evidence').innerHTML='<h3>'+issueLink('#65')+' + '+fileLink('brain/evolution-notes/2026-06-30-weekly-pmo-review.md','Evolution Note')+'</h3><p>Evidence Review validates the chain; Weekly Review converts operating signal into reusable organizational learning.</p><p class="ok">Current evidence strength: medium</p>';
- document.getElementById('views').innerHTML=(d.views||[]).map(v=>'<div class="card"><b>'+v.name+'</b><br><span class="muted">'+v.layout+' · '+v.purpose+'</span></div>').join('');
- document.getElementById('fields').innerHTML=(d.fields||[]).map(x=>'<span class="pill">'+x+'</span>').join('');
- const roadmap=((d.views||[]).find(v=>v.id==='roadmap')||{}).milestones||['v2.7 Overview-first Cockpit'];
- document.getElementById('roadmap').innerHTML=roadmap.map(x=>'<div>→ '+x+'</div>').join('')+'<div>→ v2.7 PMO Overview-first Cockpit</div>';
- document.getElementById('automation').innerHTML=(d.automation||[]).map(x=>'<div>→ '+x+'</div>').join('')+'<div>→ weekly review → evolution note</div>';
- document.getElementById('metrics').innerHTML=(d.metrics||[]).map(x=>'<span class="pill">'+x+'</span>').join('');
- const rows=items.map(x=>'<tr><td>'+issueLink(x.issue)+'</td><td>'+x.node+'</td><td>'+x.type+'</td><td>'+x.status+'</td><td>'+x.health+'</td><td>'+x.priority+'</td><td>'+x.gap_score+'</td><td>'+x.evidence+'</td><td>'+x.next+'</td></tr>').join('');
- document.getElementById('items').innerHTML='<tr><th>Issue</th><th>Node</th><th>Type</th><th>Status</th><th>Health</th><th>Priority</th><th>Gap</th><th>Evidence</th><th>Next</th></tr>'+rows;
- fetch('pmo-weekly-review-latest.md').then(r=>r.text()).then(md=>{
-  function val(label){const m=md.match(new RegExp('- '+label+': ([^\\n]+)'));return m?m[1]:''}
-  renderOverview({open:val('Open PMO items'),coverage:val('Evidence coverage signal')});
- }).catch(()=>{});
-})();
-</script>
+<script>location.replace('pmo-v27.html'+location.search)</script>
+<a href="pmo-v27.html">Open Yuanli PMO OS v2.7 / 打开原力 PMO OS v2.7</a>
