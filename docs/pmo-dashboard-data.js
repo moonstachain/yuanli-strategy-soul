@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T13:17:50.191Z"
+    "updated_at": "2026-06-30T13:22:46.439Z"
   },
   "fields": [
     "Canon Node",
@@ -387,6 +387,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#149",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "把最近 30 天活跃 GitHub 仓库从“repo 列表”转成 CBM-PMO 可治理的 Portfolio Intake Registry，明确哪些项目进入 P0 / P1 / P2 / Observe，以及它们分别归属哪个 CBM Domain / Cell、需要什么 Evidence、下一步 C3 Gap / C4 Task 是什么。"
     },
     {
       "issue": "#147",
@@ -827,6 +840,19 @@ window.YUANLI_PMO_V22={
       "health": "green",
       "priority": "P0",
       "gap_score": 5,
+      "evidence": "weak",
+      "next": "rank and handoff"
+    },
+    {
+      "issue": "#150",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0",
+      "gap_score": 0,
       "evidence": "weak",
       "next": "rank and handoff"
     },
