@@ -76,6 +76,7 @@ review_results: skills/yuanli-category-two-sentence/REVIEW-RESULTS-v1.md
 real_case_candidates: skills/yuanli-category-two-sentence/REAL-CASE-CANDIDATES-v1.md
 real_case_test: skills/yuanli-category-two-sentence/REAL-CASE-TEST-v1.md
 user_language_test: skills/yuanli-category-two-sentence/USER-LANGUAGE-TEST-v1.md
+transcript_evidence_extraction: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
 related_nodes:
   - A1 发现母体
   - B2 品类独创
@@ -142,6 +143,7 @@ B2 has 7 coded category sentence candidates from June 2026 external fieldwork, b
 Ming selected three real cases: 水月老师随身寺庙, 达哥张姐低奢皮草, 高净值留学生游戏化婚礼.
 REAL-CASE-TEST-v1 created draft transformations for the three selected cases.
 USER-LANGUAGE-TEST-v1 created test protocol for target user repeatability, emotional pull, and budget shift.
+TRANSCRIPT-EVIDENCE-EXTRACTION-v1 created extraction protocol to turn private llm-wiki transcripts into anonymized B2/C2 evidence.
 ```
 
 ### 3.6 AI Pre-Review Result
@@ -185,26 +187,50 @@ candidate_names:
 state_change: real-case-draft -> user-language-test-ready, not user-tested
 ```
 
-### 3.9 Current Gaps
+### 3.9 Transcript Evidence Extraction Protocol
+
+```yaml
+protocol: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-v1.md
+status: protocol_created
+source_pool: private moonstachain/llm-wiki transcripts / meeting notes / case summaries
+source_tiers:
+  T0: target-user user-language test transcript
+  T1: founder/client/learner interview transcript
+  T2: course/private-board/work-meeting transcript
+  T3: digest/summary/case writeup
+extraction_objects:
+  - old_category_signal
+  - expensive_problem_signal
+  - new_category_signal
+  - budget_pull_signal
+  - emotional_pull_signal
+  - objection_signal
+  - repeatable_phrase
+boundary: private raw transcripts must not be copied into public repo
+next_output: skills/yuanli-category-two-sentence/TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md
+```
+
+### 3.10 Current Gaps
 
 ```text
 human_review_gap: Ming has not yet reviewed and approved the three real-case outputs.
 validation_gap: no controlled naming test with 5-10 target users yet.
 user_language_gap: USER-LANGUAGE-TEST-v1 exists, but target users have not yet selected or repeated preferred category names.
+transcript_extraction_gap: TRANSCRIPT-EVIDENCE-EXTRACTION-v1 exists, but extraction results have not yet been created.
 resolver_gap: route exists as seed and draft, but not repeated in live workflow.
 writeback_gap: skill evidence has not yet been tested in live user workflow.
 ```
 
-### 3.10 Private Case Pool Policy
+### 3.11 Private Case Pool Policy
 
 ```text
 Private llm-wiki learner/client cases are valuable for real case testing, but raw private content must not be copied into this public repo without anonymization and Ming approval.
 ```
 
-### 3.11 Next C4 Task
+### 3.12 Next C4 Task
 
 ```text
-Run target user interviews and create USER-LANGUAGE-TEST-RESULTS-v1.md.
+Run transcript extraction and create TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md; then run target user interviews and create USER-LANGUAGE-TEST-RESULTS-v1.md.
 ```
 
 ---
@@ -274,7 +300,8 @@ Do not build until Query Pack + Resolver Seed produces at least one live query r
 ## 6. Current Priority
 
 ```text
-P0 current: run USER-LANGUAGE-TEST-v1 with target users.
-P0 next: create USER-LANGUAGE-TEST-RESULTS-v1.md after interviews.
+P0 current: run transcript extraction using TRANSCRIPT-EVIDENCE-EXTRACTION-v1.
+P0 next: create TRANSCRIPT-EVIDENCE-EXTRACTION-RESULTS-v1.md.
+P0 after that: run USER-LANGUAGE-TEST-v1 with target users and create USER-LANGUAGE-TEST-RESULTS-v1.md.
 P1: Candidate 003 after first skill review/writeback.
 ```
