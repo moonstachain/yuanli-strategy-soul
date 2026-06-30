@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T13:12:22.384Z"
+    "updated_at": "2026-06-30T13:17:50.191Z"
   },
   "fields": [
     "Canon Node",
@@ -399,7 +399,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行项目：建立内容工程驾驶舱、30 天内容日历、渠��生产链、Evidence / Evolution / Backwrite 规则，并将其接入 growth CBM cells。"
+      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行项目：建立内容工程驾驶舱、30 天内容日历、渠道生产链、Evidence / Evolution / Backwrite 规则，并将其接入 growth CBM cells。"
     },
     {
       "issue": "#140",
@@ -827,6 +827,19 @@ window.YUANLI_PMO_V22={
       "health": "green",
       "priority": "P0",
       "gap_score": 5,
+      "evidence": "weak",
+      "next": "rank and handoff"
+    },
+    {
+      "issue": "#148",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0",
+      "gap_score": 0,
       "evidence": "weak",
       "next": "rank and handoff"
     },
