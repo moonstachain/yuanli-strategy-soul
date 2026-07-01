@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-07-01T06:04:49.734Z"
+    "updated_at": "2026-07-01T11:50:02.543Z"
   },
   "fields": [
     "Canon Node",
@@ -1010,6 +1010,19 @@ window.YUANLI_PMO_V22={
       "priority": "P0",
       "gap_score": 5,
       "evidence": "weak",
+      "next": "rank and handoff"
+    },
+    {
+      "issue": "#213",
+      "node": "C3",
+      "type": "gap",
+      "domain": "matrix",
+      "layer": "design",
+      "status": "ready",
+      "health": "green",
+      "priority": "P0",
+      "gap_score": 0,
+      "evidence": "```text",
       "next": "rank and handoff"
     },
     {
