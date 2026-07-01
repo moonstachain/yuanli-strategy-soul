@@ -103,6 +103,31 @@
 
 ---
 
+## 2026-07-01 · GitHub 仓库统一统筹 P1 首批 repo extracts
+
+- 来源任务 / Issue：#208 `[治理] GitHub 仓库统一统筹与 repo-to-module map`；#210 `[内容工程 / B1] 生成《原力创业》第一章：原力借势黄金样章`
+- 来源仓库：
+  - `moonstachain/yuanli-startup-map-book`
+  - `moonstachain/yuanli-startup-map-site`
+  - `moonstachain/yuanli-strategy-playbook`
+  - `moonstachain/yuanli-os-greenbook`
+- 来源文件 / 输出物：README、`volume-1-zonggang.md`、创业地图网站 README、playbook README、OS greenbook README
+- 归属模块：B1 / B2-B4 / C1-C4 / 共享脊骨 / 治理
+- 服务脊骨：财富 = 借势 × 合力 / 信息五层 / OSA / 递归回写
+- 回写类型：案例抽取 / 索引更新 / 看板治理
+- 已回写位置：
+  - `source/extracts/repo-extracts/yuanli-startup-map-book-extract.md`
+  - `source/extracts/repo-extracts/yuanli-startup-map-site-extract.md`
+  - `source/extracts/repo-extracts/yuanli-strategy-playbook-extract.md`
+  - `source/extracts/repo-extracts/yuanli-os-greenbook-extract.md`
+  - `project/backwrite-log.md`
+- 产生的新资产：B1 黄金样章源料包、创业地图外显抽取、playbook 公理抽取、OS greenbook C4/Skill 管线抽取、B1 黄金样章 Issue
+- 下一次如何复用：后续生成《原力创业》第一章·原力借势时，必须先读取这四份 repo extract，再调用 `templates/chapter-template.md` 与 `templates/startup/原力借势卡.md`
+- 仍需人工裁决：是否立即生成 B1 正文章节；是否同时生成 `source/extracts/startup-extracts/第一章-原力借势-extract.md`；是否把 B1 样章纳入一鱼多吃内容工程
+- Commit / PR / Issue：#208 / #210
+
+---
+
 ## 4. 回写验收
 
 每条回写必须通过五问：
