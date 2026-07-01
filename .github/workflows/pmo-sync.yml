@@ -2,15 +2,28 @@ name: PMO Sync
 
 on:
   workflow_dispatch:
+  # One scheduled full refresh per day keeps the dashboard fresh without
+  # per-event churn. The generator is idempotent, so this only commits when
+  # the substantive payload actually changed.
+  schedule:
+    - cron: '0 16 * * *'
+  # Only lifecycle events that change the open-issue set. Dropped
+  # edited/labeled/unlabeled/synchronize: they fired a push on every keystroke
+  # and were the main source of empty "sync pmo dashboard" commits.
   issues:
-    types: [opened, edited, closed, reopened, labeled, unlabeled]
+    types: [opened, closed, reopened]
   pull_request:
-    types: [opened, edited, closed, reopened, synchronize]
+    types: [opened, reopened]
 
 permissions:
   contents: write
   issues: read
   pull-requests: read
+
+# Serialize runs so two syncs never race to push main (non-fast-forward).
+concurrency:
+  group: pmo-sync
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -20,10 +33,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: node scripts/sync-pmo-dashboard.js
+      - name: Regenerate PMO dashboard data
+        run: node scripts/sync-pmo-dashboard.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # On pull_request the checkout is a detached merge ref, so `git push`
+      # cannot work. Run validate-only: report the would-be diff, never push.
+      # This turns the previously-always-failing PR check green.
+      - name: Validate dashboard (PR context, no push)
+        if: github.event_name == 'pull_request'
+        run: |
+          if git diff --quiet docs/pmo-dashboard-data.js; then
+            echo "PMO Sync validated: dashboard already in sync."
+          else
+            echo "PMO Sync validated: dashboard would update (not pushed on PR):"
+            git --no-pager diff --stat docs/pmo-dashboard-data.js
+          fi
+
       - name: Commit dashboard update
+        if: github.event_name != 'pull_request'
         run: |
           if git diff --quiet docs/pmo-dashboard-data.js; then
             echo "No PMO dashboard changes"
@@ -32,5 +61,9 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add docs/pmo-dashboard-data.js
             git commit -m "sync pmo dashboard"
+            # Rebase onto latest main in case another workflow (e.g. daily CBM
+            # review) pushed meanwhile, then push. Concurrency already serializes
+            # PMO Sync itself; this covers cross-workflow races.
+            git pull --rebase --autostash origin main || true
             git push
           fi
