@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-06-30T16:05:39.012Z"
+    "updated_at": "2026-07-01T01:53:54.658Z"
   },
   "fields": [
     "Canon Node",
@@ -542,7 +542,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "���过去 6 个月所有有更新的 GitHub 仓库，从“活跃 repo 列表”升级为 CBM-PMO 价值审计注册表，判断每个项目是否具备战略地图价值、能力资产价值、客户证据价值、内容增长价值、工程复用价值，或仅应观察 / 归档候选。"
+      "next": "把过去 6 个月所有有更新的 GitHub 仓库，从“活跃 repo 列表”升级为 CBM-PMO 价值审计注册表，判断每个项目是否具备战略地图价值、能力资产价值、客户证据价值、内容增长价值、工程复用价值，或仅应观察 / 归档候选。"
     },
     {
       "issue": "#149",
@@ -568,7 +568,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行���目：建立内容工程驾驶舱、30 天内容日历、渠道生产链、Evidence / Evolution / Backwrite 规则，并将其接入 growth CBM cells。"
+      "next": "把原力战略内容工程从普通内容 EPIC 升级为 CBM-PMO 可执行项目：建立内容工程驾驶舱、30 天内容日历、渠道生产链、Evidence / Evolution / Backwrite 规则，并将其接入 growth CBM cells。"
     },
     {
       "issue": "#140",
@@ -581,7 +581,7 @@ window.YUANLI_PMO_V22={
       "priority": "P1",
       "gap_score": 50,
       "evidence": "medium",
-      "next": "把“安全价值证���”真实客户项目输入，转化为可复用的项目驾驶舱 / 通关地图 / 证据链路，使 C2 能检索、C3 能判断、C4 能执行。"
+      "next": "把“安全价值证明”真实客户项目输入，转化为可复用的项目驾驶舱 / 通关地图 / 证据链路，使 C2 能检索、C3 能判断、C4 能执行。"
     },
     {
       "issue": "#103",
