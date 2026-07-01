@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-07-01T15:48:39.028Z"
+    "updated_at": "2026-07-01T15:49:00.347Z"
   },
   "fields": [
     "Canon Node",
@@ -387,6 +387,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#216",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "Use `moonstachain/llm-wiki` as the second validation chain after B2, to test whether there is real evidence for B3 模式升维: delivery, order, productization, workflow, repeatability, human-machine leverage, and profit-container signals."
     },
     {
       "issue": "#214",
