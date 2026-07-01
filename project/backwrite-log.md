@@ -82,6 +82,27 @@
 
 ---
 
+## 2026-07-01 · GitHub 仓库统一统筹 P0
+
+- 来源任务 / Issue：#208 `[治理] GitHub 仓库统一统筹与 repo-to-module map`
+- 来源仓库：`moonstachain/*`
+- 来源文件 / 输出物：GitHub 仓库搜索结果、P0/P1 关键仓 README、仓库战略索引
+- 归属模块：跨三部 / 治理 / C2 / C3 / C4
+- 服务脊骨：ʸx / 信息五层 / OSA / 递归回写
+- 回写类型：索引更新 / 看板治理 / 项目治理
+- 已回写位置：
+  - `source/indexes/github-repository-strategy-index.md`
+  - `source/indexes/repo-to-module-map.md`
+  - `source/indexes/repo-source-index-p0-p1.md`
+  - `project/github-repo-governance-roadmap.md`
+  - `project/backwrite-log.md`
+- 产生的新资产：GitHub 仓库角色标签体系、repo-to-module 映射表、P0/P1 仓库源索引、仓库治理路线图
+- 下一次如何复用：后续任何新仓库、旧仓库、源料仓、产品仓、Agent 仓，都先通过 repo-to-module-map 判断角色、模块和回写位置
+- 仍需人工裁决：是否执行 GitHub → Feishu 仓库总表同步；是否给 `yuanli-website` 补 README；是否正式创建 `source/extracts/repo-extracts/`
+- Commit / PR / Issue：#208
+
+---
+
 ## 4. 回写验收
 
 每条回写必须通过五问：
