@@ -5,7 +5,7 @@ window.YUANLI_PMO_V22={
   "sync": {
     "mode": "github_actions",
     "source": "issues+content_assets+c2_brain+validation_tasks",
-    "updated_at": "2026-07-01T11:50:02.543Z"
+    "updated_at": "2026-07-01T11:50:27.172Z"
   },
   "fields": [
     "Canon Node",
@@ -387,6 +387,19 @@ window.YUANLI_PMO_V22={
       "gap_score": 70,
       "evidence": "medium",
       "next": "Create GitHub Projects native setup package with field list, view design, and GraphQL/manual instructions."
+    },
+    {
+      "issue": "#214",
+      "node": "C4",
+      "type": "task",
+      "domain": "delivery",
+      "layer": "execution",
+      "status": "ready",
+      "health": "green",
+      "priority": "P1",
+      "gap_score": 50,
+      "evidence": "medium",
+      "next": "Create the first governed operating layer for `moonstachain/llm-wiki` as Yuanli Field Evidence Lake by producing source-map, extraction protocol, and SOURCE_REGISTRY update proposal."
     },
     {
       "issue": "#209",
