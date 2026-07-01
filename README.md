@@ -1,8 +1,8 @@
 # 原力战略三部曲 · Soul Operating Base
 
-> **一条公理，三本书，一个灵魂地基仓。**
+> **一条公理，三部十二模块，一个灵魂地基仓。**
 >
-> 本仓是「原力战略三部曲」未来所有衍生任务的**唯一入口仓**：承接概念宪法、项目治理、衍生任务拆解、Codex 执行模板、看板规则、知识库治理与外显网站。
+> 本仓是「原力战略三部曲」未来所有衍生任务的**唯一入口仓**与**基石概念体系**：承接概念宪法、龙骨总纲、十二模块、术语词典、跨部接口、模板工具、Codex 执行、项目看板、知识库治理与递归回写。
 
 ---
 
@@ -10,7 +10,7 @@
 
 本仓不是正文仓，不替代：
 
-- `yuanli-strategy-trilogy`：三部曲知识总纲与知识地图
+- `yuanli-strategy-trilogy`：三部曲内容工程工作仓 / 书稿与课程孵化仓 / 外显表达仓
 - `yuanli-strategy-trilogy-private`：三部曲私有知识与骨架仓
 - 未来各产品 / 网站 / 课程 / Agent 仓
 
@@ -18,6 +18,12 @@
 
 > **原力战略三部曲的 Soul / Operating Base**  
 > 用来保证所有衍生任务不偏离母公理、不重造轮子、不丢失上下文、不把一次性工作误当成系统工程。
+
+未来所有项目遵循：
+
+```text
+所有项目从 soul 出发，所有经验回到 soul。
+```
 
 ---
 
@@ -28,8 +34,9 @@
 ```text
 新想法 / 新需求 / 新项目
 → 先在 yuanli-strategy-soul 开 Issue
-→ 归属裁决：资产 / 创业 / OS / 跨三部
-→ 脊骨裁决：ʸx / 你×AI / 借势×合力 / 四关 / OSA / 递归回写
+→ 归属裁决：资产 / 创业 / OS / 跨三部 / 治理
+→ 模块裁决：A1-C4
+→ 脊骨裁决：ʸx / 你×AI / 借势×合力 / 信息五层 / OSA / 递归回写
 → 拆解任务
 → 分发到内容仓 / 网站仓 / Codex 执行仓 / Agent 仓
 → 完成后回写本仓
@@ -80,31 +87,176 @@
 
 ---
 
-## 3. 三部曲主结构
+## 3. 三部十二模块
 
 ```text
-原力战略白皮书：公理层 umbrella
-└── ʸx：做会自我繁殖的事
+原力战略三部曲
+│
+├─ 第一部：原力资产 · 向内 · 人
+│   ├─ A1 发现母体
+│   ├─ A2 回到母体
+│   ├─ A3 获得原力
+│   └─ A4 显化原力
+│
+├─ 第二部：原力创业 · 向外 · 事
+│   ├─ B1 原力借势
+│   ├─ B2 品类独创
+│   ├─ B3 模式升维
+│   └─ B4 壁垒锁定
+│
+└─ 第三部：原力 OS · 向上 · 法
+    ├─ C1 一纸文脉
+    ├─ C2 一个大脑
+    ├─ C3 一张地图
+    └─ C4 一条链路
+```
 
-    ├── 原力资产：找到你
-    │   ├── 公式：你 × AI
-    │   ├── 结构：原力U
-    │   └── 终态：会复利的你
-    │
-    ├── 原力创业：变现你
-    │   ├── 公式：财富 = 借势 × 合力
-    │   ├── 结构：四关
-    │   └── 终态：会复利的生意
-    │
-    └── 原力OS：系统你
-        ├── 公式：文脉 × 大脑 × 地图 × 链路 × 递归回写
-        ├── 结构：工作生命体
-        └── 终态：ʸx 孵化者
+三部曲总飞轮：
+
+```text
+母体 → 原力 → 市场 → 生意 → OS → 母体升级
 ```
 
 ---
 
-## 4. 外显网站
+## 4. 本仓当前能力层
+
+```text
+龙骨
+→ 模块
+→ 术语
+→ 接口
+→ 模板
+→ 索引
+→ Issue
+→ 回写
+```
+
+对应目录：
+
+```text
+modules/      A1-C4 十二模块正典文件
+glossary/     术语正典词典与子词典
+interfaces/   A→B、B→C、C→A 跨部接口与去重三缝
+templates/    章节、资产、创业、OS 工具模板
+source/       源文件索引与 extracts
+codex/        Codex 任务模板与提示词包
+project/      看板模板与回写日志
+docs/         正典文档与外显网站
+```
+
+---
+
+## 5. trilogy 吸收工程
+
+`yuanli-strategy-trilogy` 已被裁决为内容工程工作仓，其正典概念、模块、术语、工具和样章方法正在原子级吸收回本仓。
+
+核心 Issue：
+
+```text
+#206 [治理] trilogy 原子级拆解并吸收回 soul
+```
+
+已完成吸收链路：
+
+```text
+trilogy 源文件
+→ source/indexes/trilogy-source-index.md
+→ modules/A1-C4
+→ glossary/术语正典词典.md
+→ interfaces/去重三缝.md
+→ templates/*
+→ project/backwrite-log.md
+```
+
+---
+
+## 6. 关键文件入口
+
+### 6.1 正典与龙骨
+
+```text
+CONSTITUTION.md
+INTAKE.md
+docs/07-原力战略三部曲-龙骨总纲.md
+docs/04-跨三部脊骨矩阵.md
+docs/05-衍生任务治理规则.md
+```
+
+### 6.2 十二模块
+
+```text
+modules/A-原力资产/A1-发现母体.md
+modules/A-原力资产/A2-回到母体.md
+modules/A-原力资产/A3-获得原力.md
+modules/A-原力资产/A4-显化原力.md
+
+modules/B-原力创业/B1-原力借势.md
+modules/B-原力创业/B2-品类独创.md
+modules/B-原力创业/B3-模式升维.md
+modules/B-原力创业/B4-壁垒锁定.md
+
+modules/C-原力OS/C1-一纸文脉.md
+modules/C-原力OS/C2-一个大脑.md
+modules/C-原力OS/C3-一张地图.md
+modules/C-原力OS/C4-一条链路.md
+```
+
+### 6.3 术语与接口
+
+```text
+glossary/术语正典词典.md
+glossary/shared-共享脊骨术语.md
+glossary/asset-资产术语.md
+glossary/startup-创业术语.md
+glossary/os-OS术语.md
+
+interfaces/去重三缝.md
+interfaces/A-to-B-资产到创业接口.md
+interfaces/B-to-C-创业到OS接口.md
+interfaces/C-to-A-OS回写资产接口.md
+```
+
+### 6.4 模板与工具卡
+
+```text
+templates/chapter-template.md
+
+templates/asset/算力活-原力活清算卡.md
+templates/asset/母体候选卡.md
+templates/asset/我的说明书V3.md
+
+templates/startup/原力借势卡.md
+templates/startup/品类独创卡.md
+templates/startup/三链路画布.md
+templates/startup/壁垒地图.md
+
+templates/os/一纸文脉.md
+templates/os/战略地图.md
+templates/os/闭环检查卡.md
+templates/os/收口句模板.md
+templates/os/Skill蒸馏卡.md
+```
+
+### 6.5 索引与回写
+
+```text
+source/indexes/trilogy-source-index.md
+source/indexes/module-to-file-map.md
+project/backwrite-log.md
+project/KANBAN_TEMPLATE.md
+```
+
+### 6.6 Codex
+
+```text
+codex/CODEX_TASK_TEMPLATE.md
+codex/PROMPT_PACK.md
+```
+
+---
+
+## 7. 外显网站
 
 本仓已提供一个单页 HTML 人类可视化入口：
 
@@ -126,66 +278,41 @@ Codex 执行前对齐
 
 ---
 
-## 5. 仓库目录
-
-```text
-.
-├── README.md
-├── CONSTITUTION.md
-├── INTAKE.md
-├── docs/
-│   ├── index.html
-│   ├── 00-原力战略三部曲-概念体系宪法版.md
-│   ├── 01-原力资产-概念体系.md
-│   ├── 02-原力创业-概念体系.md
-│   ├── 03-原力OS-概念体系.md
-│   ├── 04-跨三部脊骨矩阵.md
-│   └── 05-衍生任务治理规则.md
-├── codex/
-│   ├── CODEX_TASK_TEMPLATE.md
-│   └── PROMPT_PACK.md
-├── project/
-│   └── KANBAN_TEMPLATE.md
-└── .github/
-    └── ISSUE_TEMPLATE/
-        ├── 00-universal-intake.md
-        ├── 01-concept-governance.md
-        ├── 02-codex-task.md
-        └── 03-derived-project.md
-```
-
----
-
-## 6. 使用原则
-
-每个衍生任务必须先归类：
-
-| 任务类型 | 归属 | 判断标准 |
-|---|---|---|
-| 概念修订 | 概念宪法 | 是否改变母公理、三部边界、核心公式、关键命名 |
-| 内容生产 | 正文 / 课程 / 公众号 | 是否基于既有概念体系向外表达 |
-| 产品开发 | 网站 / Agent / 看板 | 是否把概念变成可交互系统 |
-| Codex 执行 | 代码 / 自动化 / 仓库治理 | 是否需要明确输入、输出、验收标准 |
-| 项目治理 | 看板 / Issue / 路线图 | 是否涉及优先级、依赖、里程碑、复盘 |
-
----
-
-## 7. 任务启动五问
+## 8. 任务启动五问
 
 任何新任务，先回答五问：
 
 ```text
-1. 它属于原力资产、原力创业、原力OS，还是跨三部？
+1. 它属于原力资产、原力创业、原力OS，还是跨三部 / 治理？
 2. 它服务哪条母公理或共享脊骨？
-3. 它的输入是什么？
-4. 它的输出物是什么？
+3. 它归属 A1-C4 哪个模块？
+4. 它的输入与输出物是什么？
 5. 它如何递归回写，成为下一次任务的资产？
 ```
 
 ---
 
-## 8. 当前状态
+## 9. 回写验收
 
-- `v0.2`：正式设为原力衍生任务唯一入口仓
-- 已建立：概念宪法、三部概念体系、OS 重构、衍生任务治理、Codex 模板、Issue 模板、看板模板、外显 HTML 网站
-- 下一步：把现有三部曲知识仓的正典文件挂回本仓，建立跨仓引用台账与 GitHub Project 看板
+每个任务完成后，必须更新或引用：
+
+```text
+project/backwrite-log.md
+```
+
+回写必须回答：
+
+```text
+产生了什么新资产？
+回写到了哪里？
+更新了哪个模块、术语、模板、接口或地图？
+下一次如何复用？
+```
+
+---
+
+## 10. 当前状态
+
+- `v0.3`：正式升级为原力战略三部曲基石概念体系与递归回写中心。
+- 已建立：概念宪法、龙骨总纲、A1-C4 十二模块、术语词典、跨部接口、模板工具卡、Codex 模板、Issue 模板、看板模板、回写日志、外显 HTML 网站。
+- 当前重点：继续把 `trilogy`、书稿、课程、网站、Agent、Codex 任务的输出回写为可复用正典资产。
