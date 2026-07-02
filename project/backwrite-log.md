@@ -128,6 +128,25 @@
 
 ---
 
+## 2026-07-02 · C2 专家大脑 v2 gbrain 实装工程立项（EPIC #218）
+
+- 来源任务 / Issue：#218（血缘：#135 → #128 → #141 → 本 EPIC；Phase 2 挂接 #130）
+- 来源仓库：moonstachain/yuanli-strategy-soul + garrytan/gbrain（钉版 v0.42.53.0 commit 814258d + 3 个本地补丁）
+- 归属模块：C2 一个大脑（次级 C4）
+- 服务脊骨：递归回写 / ʸx
+- 回写类型：模块更新 / CBM 单元注册 / 索引更新
+- 已回写位置：
+  - `docs/os-cbm-data.js`（knowledge.direct.knowledge-asset-architecture：seed→draft、pmo_issue #218、evidence_path 就位；版本 v1.4-expert-brain-gbrain）
+  - `docs/YUANLI-GRAND-STRATEGY-V2.md` / `docs/C2-EXPERT-BRAIN-V2-GBRAIN-PLAN.md` / `docs/C2-GBRAIN-BOUNDARY-V1.md`
+  - `brain/evidence/2026-07-02-c2-gbrain-bootstrap-trial.md`
+  - `project/backwrite-log.md`（本条）
+- 产生的新资产：运行中的 gbrain 专家大脑（405 页/1470 块/100% 嵌入）、原力 Schema Pack v1（16 类型 8 边）、EPIC #218 + C4 Task #219/#220/#221、90 天三阶段验收门
+- 下一次如何复用：Phase 2/3 任务到期从 #218 checklist 开 issue；升级窗按边界正典 §4 runbook 重放 3 个本地补丁；一脑五源拓扑作为 founder/clients 源接入模板
+- 仍需人工裁决：Phase 2 夜航日报接入 Dashboard 的"只建议不改分"边界（#218 §6 C3 Gap）；founder/clients 源建仓时机
+- Commit / PR / Issue：#218 / #219 / #220 / #221
+
+---
+
 ## 4. 回写验收
 
 每条回写必须通过五问：
