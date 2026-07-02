@@ -1,43 +1,72 @@
 {
-  "generated_at": "2026-06-30T10:18:00Z",
+  "generated_at": "2026-07-02T06:21:40.667Z",
   "contract": "docs/CBM-PMO-AUTO-SYNC-CONTRACT-v1.1.md",
   "mode": "audit_report_only",
   "source_files": {
     "cockpit": "docs/cbm-capability-cockpit-data.js",
     "os_cbm": "docs/os-cbm-data.js",
-    "pmo_dashboard": "docs/pmo-dashboard-data.js",
-    "weekly_review_generator": "scripts/generate-weekly-cbm-review.js"
+    "pmo_dashboard": "docs/pmo-dashboard-data.js"
   },
-  "stage": "Weekly Review Ready",
-  "overall_maturity": "3.2/5",
+  "stage": "Auto Sync Contract Ready",
+  "overall_maturity": "3.3/5",
   "cell_count": 18,
-  "pilot_cell_count": 3,
+  "pilot_cell_count": 4,
   "validated_cells": 0,
   "false_green_risks": [],
   "conflicts": [],
-  "warnings": [],
+  "warnings": [
+    {
+      "cell": "knowledge.direct.knowledge-asset-architecture",
+      "type": "draft_without_evolution_note"
+    }
+  ],
   "human_gates": [
     {
       "cell": "strategy.direct.os-governance-core",
       "decision": "是否将 P0 gate 作为 PMO 自动准入规则",
-      "gates": ["priority_change", "canonical_update"]
+      "gates": [
+        "priority_change",
+        "canonical_update"
+      ]
     },
     {
       "cell": "client.control.project-portfolio-governance",
       "decision": "是否将客户项目四元组纳入默认复盘输入",
-      "gates": ["external_write", "validated_status"]
+      "gates": [
+        "external_write",
+        "validated_status"
+      ]
     },
     {
       "cell": "engineering.execute.operator-skill-reuse",
       "decision": "是否将 weekly review generator 纳入自动同步链路",
-      "gates": ["external_write", "publish", "validated_status"]
+      "gates": [
+        "external_write",
+        "publish",
+        "validated_status"
+      ]
+    },
+    {
+      "cell": "knowledge.direct.knowledge-asset-architecture",
+      "decision": "Phase 2 夜航日报接入 Dashboard 的只建议不改分边界（#218 §6 C3 Gap）",
+      "gates": [
+        "status_change"
+      ]
     }
   ],
   "next_p0": {
-    "id": "cbm-pmo-v1.1-auto-sync-contract",
-    "issue": "#131",
-    "task": "Define and audit sync contract between cbm-capability-cockpit-data.js, os-cbm-data.js, pmo-dashboard-data.js, and weekly review generator.",
-    "status": "contract_created"
+    "id": "first-strong-or-repeated-evidence",
+    "issue": null,
+    "task": "Choose first path to strong or repeated evidence: real client-project weekly review, live multi-tool Operator Skill run, or GitHub Action for weekly CBM review generation.",
+    "reason": "v1.1 sync contract prevents data drift; next maturity jump requires external/repeated/operating evidence, not more architecture.",
+    "first_view_file": "docs/cbm-capability-cockpit.html",
+    "data_source": "docs/cbm-capability-cockpit-data.js",
+    "acceptance": [
+      "At least one pilot cell gains repeated or external evidence.",
+      "No pilot cell upgrades to validated without human approval.",
+      "Sync report remains clean: no conflicts, no false-green risks.",
+      "Weekly review consumes the result and updates next P0."
+    ]
   },
   "assertions": {
     "no_constitution_write": true,

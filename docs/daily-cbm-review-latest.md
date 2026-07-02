@@ -12,7 +12,7 @@
 Stage: Auto Sync Contract Ready
 Overall maturity: 3.3/5
 Total CBM cells: 18
-Pilot cells: 3
+Pilot cells: 4
 Validated cells: 0
 False-green risks: 0
 ```
@@ -26,6 +26,7 @@ False-green risks: 0
 | `strategy.direct.os-governance-core` | draft | medium | 58 | 是否将 P0 gate 作为 PMO 自动准入规则 | priority_change / canonical_update |
 | `client.control.project-portfolio-governance` | draft | medium | 66 | 是否将客户项目四元组纳入默认复盘输入 | external_write / validated_status |
 | `engineering.execute.operator-skill-reuse` | draft | medium | 70 | 是否将 weekly review generator 纳入自动同步链路 | external_write / publish / validated_status |
+| `knowledge.direct.knowledge-asset-architecture` | draft | medium | 72 | Phase 2 夜航日报接入 Dashboard 的只建议不改分边界（#218 §6 C3 Gap） | status_change |
 
 ---
 
@@ -49,6 +50,7 @@ No Backwrite -> no compounding.
 - strategy.direct.os-governance-core: 是否将 P0 gate 作为 PMO 自动准入规则; gates: priority_change / canonical_update
 - client.control.project-portfolio-governance: 是否将客户项目四元组纳入默认复盘输入; gates: external_write / validated_status
 - engineering.execute.operator-skill-reuse: 是否将 weekly review generator 纳入自动同步链路; gates: external_write / publish / validated_status
+- knowledge.direct.knowledge-asset-architecture: Phase 2 夜航日报接入 Dashboard 的只建议不改分边界（#218 §6 C3 Gap）; gates: status_change
 
 ---
 
@@ -87,3 +89,4 @@ v1.1 sync contract prevents data drift; next maturity jump requires external/rep
 - Do not upgrade `strategy.direct.os-governance-core` beyond draft / medium.
 - Do not upgrade `client.control.project-portfolio-governance` beyond draft / medium.
 - Do not upgrade `engineering.execute.operator-skill-reuse` beyond draft / medium.
+- Do not upgrade `knowledge.direct.knowledge-asset-architecture` beyond draft / medium.
