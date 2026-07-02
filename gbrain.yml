@@ -1,0 +1,13 @@
+# 原力专家大脑 v2 · soul 源检索台账（正本=本仓 Markdown，DB 为派生缓存）
+storage:
+  db_tracked:
+    - docs/
+    - brain/
+    - assets/
+    - modules/
+    - project/
+    - interfaces/
+    - manuscript/
+    - codex/
+  db_only:
+    - source/raw/
