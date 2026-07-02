@@ -4,6 +4,7 @@
 - **归属裁决**：C2 一个大脑（主服务脊骨：递归回写；次级：ʸx）
 - **决策前提（已定）**：v2 采用 gbrain 作引擎，原力语义以自定义 Schema Pack + Source 布局 + 薄胶水 Skills 表达；不自建引擎
 - **上游钉版**：garrytan/gbrain v0.42.53.0，commit `814258dda67945ffec9457a1e73980e947b7e462`，本地克隆 `/Users/liming/AI Project/gbrain`，bun link 安装，self-upgrade 不启用
+- **本地补丁（钉版偏差，共 3 个，均已本地 commit）**：① ollama recipe 声明 bge-m3 + dims_options [768,1024]（否则 init 拒绝 1024 维）；② import-file.ts 的 frontmatter 推断在 schema pack 激活时不再合成 `type:`（否则兜底规则把所有裸 md 钉成 note，pack 的 path_prefixes 永远轮不到）；③ ollama recipe 声明 chat 触点（否则 probeChatModel 拒绝本地模型，think 降级"no LLM"）。另：think 走 tier 体系而非 chat_model 键——`models.tier.deep/reasoning/utility` 已设 ollama:deepseek-r1:8b。升级窗合并上游时需重放这三个补丁或确认上游已修
 - **回写位置**：`docs/C2-ONE-BRAIN-STRATEGY-v1.md`（架构实现状态）、#128 / #141 Issue
 - **配套边界正典**：`docs/C2-GBRAIN-BOUNDARY-V1.md`
 
